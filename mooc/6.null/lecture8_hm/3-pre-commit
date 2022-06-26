@@ -1,0 +1,5 @@
+if  ! make ; then
+     echo "build failed, commit rejected"
+     exit 1
+fi
+# make 注意路径
