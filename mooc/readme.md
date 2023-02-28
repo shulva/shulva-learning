@@ -5,8 +5,9 @@
 - 相关的project我会放在computerScience这个文件夹中
 - 对相关的readings所作的笔记，我会放在notes文件夹中
 - 对slides所作的笔迹放在平板上了
+- 以xxxx课程(eg: 操作系统课程/公开课)的格式在类似知乎的平台上搜索会有相应的结果
 ## 一些textbook以及notes的收集
-
+复试之后最好根据mooc_source里的内容做一个总结好的链接
 ### MIT
 
 mit ocw有不少课程是没有更新的(其实所有大学的archive都存在这个问题)，一般来说你需要自己去寻找相关的课程主页。受疫情影响大部分的课程都将自己的课程video放到了网上，可以自己学习
@@ -29,10 +30,12 @@ mit ocw有不少课程是没有更新的(其实所有大学的archive都存在�
 - 6.042j 已有pdf
 - 6.045j 计算理论导引和Computational Complexity::a modern approach(已有pdf)
 - 6.046j 仍然是算法导论
-- 6.041 概率导论已有
+- 6.041  概率导论已有
 - 6.042j pdf已有
 
 ## standford
 - CS106X Programming Abstraction in C++,书籍已有,106X的内容有不少要去106B的网站上找
 
+### 已完成
+- 6.null √
 
