@@ -1,0 +1,148 @@
+{
+  "main": {
+    "id": "de32ae480af988e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "05278ee8f607c025",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d1fdff755c88efb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13fa4115fd775353",
+    "type": "split",
+    "children": [
+      {
+        "id": "e13823cc3f55fbbe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0db522602aac9a26",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5935dda67287c5c9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "55c17c08a75f304c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4119bbc3639472b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b20d06f20391f4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5a85b7e3f0dc623",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e28f0896c1e5c786",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9e9c50986e591345",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c37b2a663210ca2e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "6d1fdff755c88efb",
+  "lastOpenFiles": [
+    "notes/assembly/assembly.pdf",
+    "README.md",
+    "notes/README.md",
+    "notes/assembly/assembly.md"
+  ]
+}
