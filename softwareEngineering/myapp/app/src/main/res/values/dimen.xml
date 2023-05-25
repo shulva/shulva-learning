@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<resources>
-    <dimen name="dp_value">16dp</dimen>
-    <dimen name="px_value">16px</dimen>
-    <dimen name="sp_value">16sp</dimen>
-</resources>

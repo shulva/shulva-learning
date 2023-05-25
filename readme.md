@@ -1,8 +1,6 @@
 - books  
 - codetest 测试代码运行环境
-- computerScience
 - mooc 
 - projects
-- softwareEngineering
 - [如何用mpe](https://zhuanlan.zhihu.com/p/56699805)
 - 详情请看文件夹各自的readme文件
