@@ -1003,7 +1003,7 @@ end start
 例如： mov al, ds:[0] 寄存器al指明了数据为1字节
 
 - 在没有寄存器名存在的情况下，用操作符X ptr指明内存单元的长度，X在汇编指令中可以为word或byte。  
-例如：mov byte ptr ds:[0], 1   
+例如：mov byte ptr ds:[0], 1
 byte ptr 指明了指令访问的内存单元是一个字节单元
 
 - 有些指令默认了访问的是字单元还是字节单元  
