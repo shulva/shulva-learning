@@ -14,8 +14,6 @@
 ***
 
 ### notes
-- notes中首要的形式是markdown
+- notes中首要的形式是.tm文件生成的pdf
 - 书籍无pdf的可能需要手动输入书籍内容撰写笔记 ->vscode
-- 有pdf的可以用vscode做笔记 -> 先在pdf上批注，与关键内容转移至vscode并以Markdown形式记录后转为pdf,再将批注转移至pdf上
-- 我会将markdown形式的笔记终稿用插件转化为一份html文件并放在与md文件相同的文件夹下
-- 导出的html文件会被转换为一份pdf文件以供阅读
+- 只有书籍需要建立索引
