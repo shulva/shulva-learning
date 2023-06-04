@@ -18,8 +18,7 @@
 // and operates on the resulting values, as follows:
 // if (zx == 1) set x = 0        // 16-bit constant
 // if (nx == 1) set x = !x       // bitwise not
-// if (zy == 1) set y = 0        // 16-bit constant
-// if (ny == 1) set y = !y       // bitwise not
+// if (zy == 1) set y = 0        // 16-bit constant/ if (ny == 1) set y = !y       // bitwise not
 // if (f == 1)  set out = x + y  // integer 2's complement addition
 // if (f == 0)  set out = x & y  // bitwise and
 // if (no == 1) set out = !out   // bitwise not
@@ -70,6 +69,5 @@ CHIP ALU {
     Or8Way(in=high8,out=out4);
     Or(a=out3,b=out4,out=zr1);
     Not(in=zr1,out=zr);
-
 
 }
