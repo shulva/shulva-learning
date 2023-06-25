@@ -77,7 +77,7 @@
   \<#7B80\>\<#5355\>\<#6765\>\<#8BF4\>\<#FF1A\>
 
   <\with|par-mode|center>
-    <small-table|<block|<tformat|<table|<row|<cell|r>|<cell|\<#662F\>\<#5426\>\<#88AB\>\<#5141\>\<#8BB8\>\<#770B\>\<#5230\>\<#8FD9\>\<#4E2A\>\<#76EE\>\<#5F55\>\<#4E2D\>\<#7684\>\<#6587\>\<#4EF6\>>>|<row|<cell|w>|<cell|\<#662F\>\<#5426\>\<#88AB\>\<#5141\>\<#8BB8\>\<#5728\>\<#8BE5\>\<#76EE\>\<#5F55\>\<#4E2D\>\<#91CD\>\<#547D\>\<#540D\>\<#FF0C\>\<#521B\>\<#5EFA\>\<#6216\>\<#4FEE\>\<#6539\>\<#6587\>\<#4EF6\>>>|<row|<cell|x>|<cell|\<#662F\>\<#5426\>\<#88AB\>\<#5141\>\<#8BB8\>\<#8FDB\>\<#5165\>\<#8BE5\>\<#76EE\>\<#5F55\>\<#6216\>\<#662F\>\<#6267\>\<#884C\>\<#6587\>\<#4EF6\>>>>>>|>
+    <small-table|<block|<tformat|<table|<row|<cell|r>|<cell|\<#662F\>\<#5426\>\<#88AB\>\<#5141\>\<#8BB8\>\<#770B\>\<#5230\>\<#8FD9\>\<#4E2A\>\<#76EE\>\<#5F55\>\<#4E2D\>\<#7684\>\<#6587\>\<#4EF6\>>>|<row|<cell|w>|<cell|\<#662F\>\<#5426\>\<#88AB\>\<#5141\>\<#8BB8\>\<#5728\>\<#8BE5\>\<#76EE\>\<#5F55\>\<#4E2D\>\<#91CD\>\<#547D\>\<#540D\>\<#FF0C\>\<#521B\>\<#5EFA\>\<#6216\>\<#4FEE\>\<#6539\>\<#6587\>\<#4EF6\>>>|<row|<cell|x>|<cell|\<#662F\>\<#5426\>\<#88AB\>\<#5141\>\<#8BB8\>\<#8FDB\>\<#5165\>\<#8BE5\>\<#76EE\>\<#5F55\>\<#6216\>\<#662F\>\<#6267\>\<#884C\>\<#6587\>\<#4EF6\>>>>>>|rwx>
   </with>
 
   \;
@@ -129,11 +129,135 @@
 
   \;
 
+  \<#4E00\>\<#822C\>\<#6765\>\<#8BF4\>\<#FF0C\>shell\<#811A\>\<#672C\>\<#4E2D\>\<#7684\>\<#7A7A\>\<#683C\>\<#662F\>\<#7528\>\<#6765\>\<#4F5C\>\<#4E3A\>\<#53C2\>\<#6570\>\<#5206\>\<#9694\>\<#7684\>\<#3002\>
+
+  \<#5728\>shell\<#4E2D\>\<#FF0C\>$1\<#8868\>\<#793A\>\<#7684\>\<#662F\>\<#811A\>\<#672C\>\<#7684\>\<#7B2C\>\<#4E00\>\<#4E2A\>\<#53C2\>\<#6570\>\<#3002\>\<#5177\>\<#4F53\>\<#5982\>\<#4E0B\>\<#FF1A\>
+
+  \;
+
+  <\with|par-mode|center>
+    <small-table|<block|<tformat|<table|<row|<cell|$0>|<cell|\<#811A\>\<#672C\>\<#540D\>>>|<row|<cell|$1-<math|$9>>|<cell|\<#811A\>\<#672C\>\<#7B2C\>\<#4E00\>\<#5230\>\<#7B2C\>\<#4E5D\>\<#4E2A\>\<#53C2\>\<#6570\>>>|<row|<cell|$@>|<cell|\<#6240\>\<#6709\>\<#53C2\>\<#6570\>>>|<row|<cell|<math|$>#>|<cell|\<#53C2\>\<#6570\>\<#7684\>\<#6570\>\<#91CF\>>>|<row|<cell|$?>|<cell|\<#4E0A\>\<#4E00\>\<#6761\>\<#6307\>\<#4EE4\>\<#7684\>\<#8FD4\>\<#56DE\>\<#503C\>>>|<row|<cell|$$>|<cell|\<#73B0\>\<#5728\>\<#811A\>\<#672C\>\<#8FDB\>\<#7A0B\>\<#7684\>pid>>|<row|<cell|<math|>!!>|<cell|\<#4E0A\>\<#4E00\>\<#6761\>\<#6307\>\<#4EE4\>(\<#5305\>\<#62EC\>\<#53C2\>\<#6570\>)\<#FF0C\>\<#7528\>\<#6765\>sudo
+    !!\<#6267\>\<#884C\>\<#4E0A\>\<#4E00\>\<#6761\>\<#6CA1\>\<#6267\>\<#884C\>\<#6210\>\<#529F\>\<#7684\>\<#6307\>\<#4EE4\>\<#65F6\>\<#5F88\>\<#6709\>\<#7528\>>>|<row|<cell|$_>|<cell|\<#4E0A\>\<#4E00\>\<#6761\>\<#6307\>\<#4EE4\>\<#7684\>\<#6700\>\<#540E\>\<#4E00\>\<#4E2A\>\<#53C2\>\<#6570\>>>>>>|bash\<#7279\>\<#6B8A\>\<#7B26\>>
+  </with>
+
   \;
 
   <\with|par-mode|center>
     \;
   </with>
+
+  \<#547D\>\<#4EE4\>\<#4F1A\>\<#901A\>\<#8FC7\>STDOUT\<#8FD4\>\<#56DE\>\<#503C\>\<#FF0C\>\<#9519\>\<#8BEF\>\<#5219\>\<#901A\>\<#8FC7\>STDERR\<#3002\>
+
+  0\<#8868\>\<#793A\>\<#6267\>\<#884C\>\<#6B63\>\<#786E\>\<#FF0C\>\<#5176\>\<#4ED6\>\<#503C\>\<#5219\>\<#662F\>\<#9519\>\<#8BEF\>\<#3002\>
+
+  \;
+
+  short-circuting<\footnote>
+    <hlink|Short-circuit evaluation - Wikipedia|https://en.wikipedia.org/wiki/Short-circuit_evaluation>\<#3002\>
+  </footnote>\<#903B\>\<#8F91\>\<#77ED\>\<#8DEF\>\<#6307\>\<#4F7F\>\<#7528\>\<#8BA1\>\<#7B97\>\<#673A\>\<#4E2D\>\<#7684\>\<#4E0E\>\<#6216\>\<#8FD0\>\<#7B97\>\<#6765\>\<#8DF3\>\<#8FC7\>\<#8BED\>\<#53E5\>\<#3002\>
+
+  eg: <shell|ture \|\| echo "will not be printed"> and <shell|false && echo
+  "will not be printed">
+
+  \;
+
+  \<#5728\>shell\<#4E2D\>\<#FF0C\>\<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#4E00\>\<#4E2A\>\<#547D\>\<#4EE4\>\<#7684\>\<#8F93\>\<#51FA\>\<#4F5C\>\<#4E3A\>\<#4E00\>\<#4E2A\>\<#53D8\>\<#91CF\>\<#5904\>\<#7406\>\<#3002\>\<#4F8B\>\<#5982\><shell|
+  for file in $(ls)>\<#3002\>
+
+  \<#6211\>\<#4EEC\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>
+  <shell|\<less\>(cmd)>\<#7684\>\<#5F62\>\<#5F0F\>\<#5C06\>\<#547D\>\<#4EE4\>\<#7684\>\<#8F93\>\<#51FA\>\<#653E\>\<#5165\>\<#4E00\>\<#4E2A\>\<#4E34\>\<#65F6\>\<#6587\>\<#4EF6\>\<#4E2D\>\<#3002\>\<#56E0\>\<#4E3A\>\<#6709\>\<#4E9B\>\<#547D\>\<#4EE4\>\<#662F\>\<#4ECE\>\<#6587\>\<#4EF6\>\<#4E2D\>\<#83B7\>\<#53D6\>\<#8F93\>\<#5165\>\<#800C\>\<#975E\>STDIN\<#6807\>\<#51C6\>\<#8F93\>\<#5165\>\<#FF0C\>\<#6240\>\<#4EE5\>\<#6709\>\<#65F6\>\<#8FD9\>\<#5F88\>\<#6709\>\<#6548\>\<#3002\><shell|eg:
+  diff \<less\>(ls aaa) \<less\>(ls bbb)>\<#3002\>
+
+  \;
+
+  \<#5F53\>\<#5728\>bash\<#4E2D\>\<#8FDB\>\<#884C\>\<#903B\>\<#8F91\>\<#5224\>\<#65AD\>\<#65F6\>\<#FF0C\>\<#6211\>\<#4EEC\>\<#63A8\>\<#8350\>\<#4F7F\>\<#7528\>[[
+  ]]\<#800C\>\<#975E\>[ ]<\footnote>
+    <hlink|BashFAQ/031 - Greg's Wiki (wooledge.org)|http://mywiki.wooledge.org/BashFAQ/031>
+  </footnote>\<#3002\>\<#5C3D\>\<#7BA1\>\<#5176\>\<#4E0D\>\<#517C\>\<#5BB9\>\<#4E0E\>sh\<#FF0C\>\<#4F46\>\<#8FD9\>\<#66F4\>\<#5B89\>\<#5168\>\<#3002\>\<#3002\>
+
+  \;
+
+  \<#5728\>bash\<#4E2D\>\<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>\<#901A\>\<#914D\>\<#7B26\>\<#6765\>\<#7B80\>\<#5316\>\<#64CD\>\<#4F5C\>\<#548C\>\<#53C2\>\<#6570\>\<#3002\>
+
+  \<#901A\>\<#914D\>\<#7B26\>*\<#4E0E\>\<#FF1F\>\<#3002\>*\<#5339\>\<#914D\>\<#591A\>\<#4F4D\>\<#FF0C\>\<#FF1F\>\<#53EA\>\<#5339\>\<#914D\>\<#4E00\>\<#4F4D\>\<#3002\>
+
+  <shell|eg: foo1,foo2,foo10. foo?--\<gtr\>foo1,foo2.
+  foo*--\<gtr\>foo1,foo2,foo10>
+
+  \<#82B1\>\<#62EC\>\<#53F7\>\<#5219\>\<#53EF\>\<#4EE5\>\<#7528\>\<#6765\>\<#62D3\>\<#5C55\>\<#3002\>
+
+  <shell|eg: mv *{.py,.sh} will move all *.py and *.sh\<#3002\> touch
+  {foo,bar}/{a..h} will create files foo/a,foo/b...foo/h,bar/a...bar/h\<#3002\>>
+
+  \;
+
+  \<#4F60\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>\<#5176\>\<#4ED6\>\<#8BED\>\<#8A00\>\<#5199\>\<#811A\>\<#672C\>\<#3002\>
+
+  \;
+
+  \<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>\<#6587\>\<#4EF6\>\<#9876\>\<#90E8\>\<#7684\>shebang<\footnote>
+    <hlink|Shebang (Unix) - Wikipedia|https://en.wikipedia.org/wiki/Shebang_(Unix)>
+  </footnote>\<#6765\>\<#6307\>\<#5B9A\>\<#6267\>\<#884C\>\<#811A\>\<#672C\>\<#7684\>\<#89E3\>\<#91CA\>\<#5668\>\<#3002\>
+
+  \<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#5728\>shebang\<#4E2D\>\<#4F7F\>\<#7528\>env<\footnote>
+    <hlink|env(1) - Linux manual page (man7.org)|https://www.man7.org/linux/man-pages/man1/env.1.html>
+  </footnote>\<#547D\>\<#4EE4\>\<#6765\>\<#89E3\>\<#6790\>\<#7CFB\>\<#7EDF\>\<#4E2D\>\<#76F8\>\<#5173\>\<#547D\>\<#4EE4\>\<#7684\>\<#4F4D\>\<#7F6E\>\<#FF0C\>\<#4ECE\>\<#800C\>\<#63D0\>\<#9AD8\>\<#53EF\>\<#79FB\>\<#690D\>\<#6027\>\<#3002\>
+
+  <shell|eg: #!/usr/bin/env python>
+
+  \;
+
+  man\<#624B\>\<#518C\>\<#53EF\>\<#4EE5\>\<#5E2E\>\<#52A9\>\<#6211\>\<#4EEC\>\<#4E86\>\<#89E3\>\<#547D\>\<#4EE4\>\<#7684\>\<#4F7F\>\<#7528\>\<#65B9\>\<#6CD5\>\<#FF0C\>\<#4F46\>\<#6709\>\<#65F6\>\<#5019\>man\<#624B\>\<#518C\>\<#63D0\>\<#4F9B\>\<#7684\>\<#5185\>\<#5BB9\>\<#8FC7\>\<#591A\>\<#4E86\>\<#3002\>\<#8FD9\>\<#65F6\>\<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>tldr<\footnote>
+    <hlink|tldr pages|https://tldr.sh/>
+  </footnote>\<#6765\>\<#4E86\>\<#89E3\>\<#76F8\>\<#5173\>\<#547D\>\<#4EE4\>\<#7684\>\<#4F8B\>\<#5B50\>\<#4ECE\>\<#800C\>\<#66F4\>\<#597D\>\<#7684\>\<#4F7F\>\<#7528\>\<#5B83\>\<#4EEC\>\<#3002\>
+
+  \;
+
+  <shell|find>\<#547D\>\<#4EE4\>\<#53EF\>\<#4EE5\>\<#7528\>\<#6765\>\<#5BFB\>\<#627E\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#540C\>\<#65F6\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#5BF9\>\<#8FD9\>\<#4E9B\>\<#6587\>\<#4EF6\>\<#8FDB\>\<#884C\>\<#64CD\>\<#4F5C\>\<#3002\>
+
+  <\shell>
+    eg: find . -name `*.tmp' -exec rm {} \\; delete all files with .tmp
+    extension
+  </shell>
+
+  \<#6211\>\<#4EEC\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#5E94\>\<#7528\>\<#66F4\>\<#73B0\>\<#4EE3\>\<#4E14\>\<#8BED\>\<#6CD5\>\<#66F4\>\<#4FBF\>\<#6377\>\<#7684\>fd<\footnote>
+    <hlink|sharkdp/fd: A simple, fast and user-friendly alternative to 'find'
+    (github.com)|https://github.com/sharkdp/fd>
+  </footnote>\<#6765\>\<#641C\>\<#7D22\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  <shell|locate>\<#547D\>\<#4EE4\>\<#3002\>\<#3002\>\<#611F\>\<#89C9\>\<#6CA1\>\<#5565\>\<#7528\>\<#3002\>
+
+  \;
+
+  \<#641C\>\<#7D22\>\<#6587\>\<#4EF6\>\<#4E2D\>\<#7684\>\<#5185\>\<#5BB9\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>grep\<#547D\>\<#4EE4\>\<#3002\>\<#4F60\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#66F4\>\<#73B0\>\<#4EE3\>\<#7684\>ripgrep\<#3002\>
+
+  <\shell>
+    eg: rg -u --files-without-match "^#!" \ \ 
+
+    it will find all files (including hidden files by using -u) without a
+    shebang(by using --files.. to print those who don't match the pattern we
+    give to command)
+  </shell>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\><shell|history>\<#547D\>\<#4EE4\>\<#6765\>\<#5FEB\>\<#901F\>\<#7684\>\<#56DE\>\<#5F52\>\<#547D\>\<#4EE4\>\<#5386\>\<#53F2\>\<#3002\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>\<less\>c-r\<gtr\>\<#6765\>\<#53CD\>\<#5411\>\<#641C\>\<#7D22\>\<#547D\>\<#4EE4\>\<#5386\>\<#53F2\>\<#3002\>
+
+  fzf<\footnote>
+    <hlink|Configuring shell key bindings \<centerdot\> junegunn/fzf Wiki
+    (github.com)|https://github.com/junegunn/fzf/wiki/Configuring-shell-key-bindings#ctrl-r>
+  </footnote>\<#662F\>\<#66F4\>\<#9AD8\>\<#6548\>\<#7684\>\<#53CD\>\<#5411\>\<#641C\>\<#7D22\>\<#5DE5\>\<#5177\>\<#3002\>
+
+  \ 
+
+  \<#5FEB\>\<#901F\>\<#7684\>\<#663E\>\<#73B0\>\<#76EE\>\<#5F55\>\<#7ED3\>\<#6784\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\><shell|ls
+  -R \<#6216\>\<#662F\> tree>\<#6765\>\<#5B9E\>\<#73B0\>\<#3002\>
+
+  \;
+
+  <section|Editors(Vim)>
+
+  \;
 
   \;
 </body>
@@ -149,13 +273,31 @@
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|1|1>>
     <associate|auto-3|<tuple|2|2>>
+    <associate|auto-4|<tuple|2|2>>
+    <associate|auto-5|<tuple|3|?>>
+    <associate|footnote-1|<tuple|1|2>>
+    <associate|footnote-2|<tuple|2|2>>
+    <associate|footnote-3|<tuple|3|3>>
+    <associate|footnote-4|<tuple|4|3>>
+    <associate|footnote-5|<tuple|5|3>>
+    <associate|footnote-6|<tuple|6|3>>
+    <associate|footnote-7|<tuple|7|?>>
+    <associate|footnr-1|<tuple|1|2>>
+    <associate|footnr-2|<tuple|2|2>>
+    <associate|footnr-3|<tuple|3|3>>
+    <associate|footnr-4|<tuple|4|3>>
+    <associate|footnr-5|<tuple|5|3>>
+    <associate|footnr-6|<tuple|6|3>>
+    <associate|footnr-7|<tuple|7|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|table>
-      <tuple|normal|<surround|<hidden-binding|<tuple>|1>||>|<pageref|auto-2>>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|1>||rwx>|<pageref|auto-2>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|2>||bash\<#7279\>\<#6B8A\>\<#7B26\>>|<pageref|auto-4>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Lecture1
