@@ -13,6 +13,20 @@
   - \<#7B2C\>1\<#8BB2\> - \<#8BFE\>\<#7A0B\>\<#6982\>\<#89C8\>\<#4E0E\>
   shell_\<#54D4\>\<#54E9\>\<#54D4\>\<#54E9\>_bilibili|https://www.bilibili.com/video/BV1uc411N7eK/?spm_id_from=333.337.search-card.all.click&vd_source=0db98bb4efd84607a32ed6386f61994e>\<#3002\>\<#4E2A\>\<#4EBA\>\<#8BA4\>\<#4E3A\>\<#80DC\>\<#8FC7\>youtube\<#7248\>\<#672C\>\<#3002\>
 
+  <\table-of-contents|toc>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Lecture1
+    CourseOverview and Shell> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-1><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>Shell
+    Tools and Scripting> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-3><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>Editors(Vim)>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-5><vspace|0.5fn>
+  </table-of-contents>
+
   <section|Lecture1 CourseOverview and Shell>
 
   <space|2em>\<#672C\>\<#8BFE\>\<#7A0B\>\<#5305\>\<#542B\> 11
@@ -259,6 +273,97 @@
 
   \;
 
+  Vim\<#662F\>\<#57FA\>\<#4E8E\>\<#6A21\>\<#5F0F\>\<#7684\>\<#3002\>\<#5177\>\<#4F53\>\<#8F6C\>\<#6362\>\<#5982\>\<#4E0B\>:
+
+  \;
+
+  <\with|par-mode|center>
+    normal <math|<rsup|i>\<longleftrightarrow\><rsup|esc>> insert
+
+    normal <math|<rsup|r>\<longleftrightarrow\><rsup|esc>> replace
+
+    normal <math|<rsup|v>\<longleftrightarrow\><rsup|esc>> visual
+
+    normal <math|<rsup|shift+v>\<longleftrightarrow\><rsup|esc>> visual-line
+
+    normal <math|<rsup|\<less\>c-v\<gtr\>>\<longleftrightarrow\><rsup|esc>>
+    viusal-block
+
+    normal <math|<rsup|:>\<longleftrightarrow\><rsup|esc>> command
+  </with>
+
+  \;
+
+  <\with|par-mode|center>
+    <small-table|<block|<tformat|<table|<row|<cell|:q>|<cell|\<#9000\>\<#51FA\>\<#5F53\>\<#524D\>\<#7A97\>\<#53E3\>>>|<row|<cell|:w>|<cell|\<#4FDD\>\<#5B58\>>>|<row|<cell|:wq>|<cell|\<#4FDD\>\<#5B58\>\<#5E76\>\<#9000\>\<#51FA\>>>|<row|<cell|:help
+    {topic}>|<cell|open help>>|<row|<cell|:e
+    {filename}>|<cell|\<#5207\>\<#6362\>\<#6587\>\<#4EF6\>>>|<row|<cell|:ls>|<cell|\<#663E\>\<#793A\>\<#6253\>\<#5F00\>\<#7684\>buffers>>>>>|vim
+    :>
+  </with>
+
+  \;
+
+  Vim\<#4F1A\>\<#7EF4\>\<#6301\>\<#4E00\>\<#7EC4\>\<#6253\>\<#5F00\>\<#7684\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#5373\><em|buffer>\<#3002\>
+
+  Vim\<#5177\>\<#6709\>\<#5F88\>\<#591A\>\<#7684\><em|tab>,\<#6BCF\>\<#4E00\>\<#4E2A\>\<#90FD\>\<#5BF9\>\<#5E94\>\<#4E00\>\<#4E2A\>\<#6216\>\<#591A\>\<#4E2A\><em|window>\<#3002\>
+
+  \<#6BCF\>\<#4E00\>\<#4E2A\><em|window>\<#663E\>\<#793A\>\<#51FA\>\<#4E00\>\<#4E2A\><em|buffer>\<#3002\>
+
+  \<#4E00\>\<#4E2A\><em|buffer>\<#53EF\>\<#4EE5\>\<#88AB\>\<#591A\>\<#4E2A\><em|window>\<#663E\>\<#793A\>\<#FF0C\>\<#5373\>\<#4F7F\>\<#8FD9\>\<#4E9B\><em|window>\<#5728\>\<#540C\>\<#4E00\>\<#4E2A\><em|tab>\<#4E2D\>\<#3002\>
+
+  \;
+
+  <\with|par-mode|center>
+    <small-table|<block|<tformat|<table|<row|<cell|w>|<cell|\<#4E0B\>\<#4E00\>\<#4E2A\>\<#8BCD\>
+    next word>>|<row|<cell|b>|<cell|\<#5355\>\<#8BCD\>\<#5F00\>\<#5934\>(\<#5411\>\<#524D\>)
+    begining of word>>|<row|<cell|e>|<cell|\<#5355\>\<#8BCD\>\<#5C3E\>\<#90E8\>(\<#5411\>\<#540E\>)
+    end of word>>|<row|<cell|0>|<cell|\<#884C\>\<#5F00\>\<#5934\>>>|<row|<cell|^>|<cell|\<#6B64\>\<#884C\>\<#7B2C\>\<#4E00\>\<#4E2A\>\<#975E\>\<#7A7A\>\<#5B57\>\<#7B26\>>>|<row|<cell|$>|<cell|\<#884C\>\<#5C3E\>>>|<row|<cell|H>|<cell|\<#7A97\>\<#53E3\>\<#9876\>\<#90E8\>>>|<row|<cell|M>|<cell|\<#7A97\>\<#53E3\>\<#4E2D\>\<#90E8\>>>|<row|<cell|L>|<cell|\<#7A97\>\<#53E3\>\<#5E95\>\<#90E8\>>>|<row|<cell|\<less\>C-u\<gtr\>>|<cell|\<#5411\>\<#4E0A\>\<#6EDA\>\<#52A8\>(up)>>|<row|<cell|\<less\>C-d\<gtr\>>|<cell|\<#5411\>\<#4E0B\>\<#6EDA\>\<#52A8\>(down)>>|<row|<cell|gg>|<cell|\<#6587\>\<#4EF6\>\<#5F00\>\<#5934\>>>|<row|<cell|G>|<cell|\<#6587\>\<#4EF6\>\<#5C3E\>\<#90E8\>>>|<row|<cell|{number}G>|<cell|\<#8DF3\>\<#5230\>\<#76F8\>\<#5E94\>\<#884C\>>>|<row|<cell|%>|<cell|\<#5728\>{\<#FF0C\>[\<#FF0C\>(\<#4E0A\>\<#4F7F\>\<#7528\>\<#4F1A\>\<#8DF3\>\<#8F6C\>\<#5230\>\<#5BF9\>\<#5E94\>\<#7684\>\<#62EC\>\<#53F7\>>>|<row|<cell|f{character}>|<cell|\<#5411\>\<#540E\>\<#8DF3\>\<#8F6C\>\<#5230\>\<#6B64\>\<#5B57\>\<#7B26\>>>|<row|<cell|t{character}>|<cell|\<#5411\>\<#540E\>\<#8DF3\>\<#8F6C\>\<#5230\>\<#6B64\>\<#5B57\>\<#7B26\>\<#524D\>>>|<row|<cell|F{character}>|<cell|\<#5411\>\<#524D\>\<#8DF3\>\<#8F6C\>\<#5230\>\<#6B64\>\<#5B57\>\<#7B26\>>>|<row|<cell|T{character}>|<cell|\<#5411\>\<#524D\>\<#8DF3\>\<#8F6C\>\<#5230\>\<#6B64\>\<#5B57\>\<#7B26\>\<#540E\>>>|<row|<cell|/(word)>|<cell|\<#4F7F\>\<#7528\>/\<#8FDB\>\<#884C\>\<#5355\>\<#8BCD\>\<#641C\>\<#7D22\>\<#FF0C\>\<#6309\>\<#4E0B\>\<#56DE\>\<#8F66\>\<#540E\>\<#4F1A\>\<#8DF3\>\<#8F6C\>\<#5230\>\<#76F8\>\<#5E94\>\<#5904\>>>>>>|Vim
+    movement>
+  </with>
+
+  \;
+
+  \;
+
+  \;
+
+  <\with|par-mode|center>
+    <small-table|<block|<tformat|<table|<row|<cell|~>|<cell|\<#7FFB\>\<#8F6C\>\<#5927\>\<#5C0F\>\<#5199\>>>|<row|<cell|ci[>|<cell|\<#4FEE\>\<#6539\>[
+    ]\<#4E2D\>\<#7684\>\<#5185\>\<#5BB9\>>>|<row|<cell|da(>|<cell|\<#5220\>\<#9664\>\<#5305\>\<#62EC\>(
+    ) \<#5728\>\<#5185\>\<#7684\>\<#6240\>\<#6709\>\<#5185\>\<#5BB9\>>>>>>|Vim
+    modify>
+  </with>
+
+  \;
+
+  \;
+
+  \<#4F7F\>\<#7528\>~/.vimrc\<#6587\>\<#4EF6\>\<#81EA\>\<#5B9A\>\<#4E49\>\<#4F60\>\<#7684\>Vim\<#3002\>
+
+  \<#4F60\>\<#53EF\>\<#4EE5\>\<#5728\>\<#81EA\>\<#5DF1\>\<#7684\>shell\<#4E2D\>\<#542F\>\<#7528\>vim\<#6A21\>\<#5F0F\>\<#3002\>
+
+  bash\<#4F7F\>\<#7528\>set -o vi\<#3002\>zsh\<#4F7F\>\<#7528\>bindkey
+  -v\<#3002\>fish\<#4F7F\>\<#7528\>fish_vi_key_bindings\<#3002\>
+
+  \<#4F60\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#4E0D\>\<#8BBA\>shell\<#7C7B\>\<#578B\>\<#76F4\>\<#63A5\>\<#4F7F\>\<#7528\>export
+  EDITOR=vim\<#3002\>\<#4F46\>\<#8FD9\>\<#4E5F\>\<#4F1A\>\<#6539\>\<#53D8\>\<#5176\>\<#4ED6\>\<#7A0B\>\<#5E8F\>\<#7684\>editor\<#FF0C\>\<#6BD4\>\<#5982\>git\<#3002\>Readline\<#4E5F\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>
+  set editing-mode vi\<#6765\>\<#8FDB\>\<#5165\>Vim\<#6A21\>\<#5F0F\>\<#3002\>\<#4F8B\>\<#5982\>python
+  repl\<#4FBF\>\<#4F1A\>\<#6536\>\<#5230\>\<#5F71\>\<#54CD\>\<#3002\>
+
+  \;
+
+  \<#4F7F\>\<#7528\><hlink|Vimium - Chrome Web Store
+  (google.com)|https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en>\<#5728\>chorme\<#4E2D\>\<#542F\>\<#7528\>Vim\<#6A21\>\<#5F0F\>\<#3002\>
+
+  \<#5B8F\>\<#5C31\>\<#4E0D\>\<#4ECB\>\<#7ECD\>\<#4E86\>\<#FF0C\>\<#4E00\>\<#65F6\>\<#534A\>\<#4F1A\>\<#8BF4\>\<#4E0D\>\<#6E05\>\<#695A\>\<#3002\>
+
+  \<#4F7F\>\<#7528\>\<#6700\>\<#5C11\>\<#7684\>\<#64CD\>\<#4F5C\>\<#5B8C\>\<#6210\>\<#6587\>\<#4EF6\>\<#5904\>\<#7406\>:<hlink|VimGolf
+  - real Vim ninjas count every keystroke!|https://www.vimgolf.com/>\<#3002\>
+
+  \;
+
+  \;
+
   \;
 </body>
 
@@ -274,21 +379,24 @@
     <associate|auto-2|<tuple|1|1>>
     <associate|auto-3|<tuple|2|2>>
     <associate|auto-4|<tuple|2|2>>
-    <associate|auto-5|<tuple|3|?>>
+    <associate|auto-5|<tuple|3|3>>
+    <associate|auto-6|<tuple|3|4>>
+    <associate|auto-7|<tuple|4|4>>
+    <associate|auto-8|<tuple|5|4>>
     <associate|footnote-1|<tuple|1|2>>
-    <associate|footnote-2|<tuple|2|2>>
+    <associate|footnote-2|<tuple|2|3>>
     <associate|footnote-3|<tuple|3|3>>
     <associate|footnote-4|<tuple|4|3>>
     <associate|footnote-5|<tuple|5|3>>
     <associate|footnote-6|<tuple|6|3>>
-    <associate|footnote-7|<tuple|7|?>>
+    <associate|footnote-7|<tuple|7|3>>
     <associate|footnr-1|<tuple|1|2>>
-    <associate|footnr-2|<tuple|2|2>>
+    <associate|footnr-2|<tuple|2|3>>
     <associate|footnr-3|<tuple|3|3>>
     <associate|footnr-4|<tuple|4|3>>
     <associate|footnr-5|<tuple|5|3>>
     <associate|footnr-6|<tuple|6|3>>
-    <associate|footnr-7|<tuple|7|?>>
+    <associate|footnr-7|<tuple|7|3>>
   </collection>
 </references>
 
@@ -298,6 +406,15 @@
       <tuple|normal|<surround|<hidden-binding|<tuple>|1>||rwx>|<pageref|auto-2>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|2>||bash\<#7279\>\<#6B8A\>\<#7B26\>>|<pageref|auto-4>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|3>||vim
+      :>|<pageref|auto-6>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|4>||Vim
+      movement>|<pageref|auto-7>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|5>||Vim
+      modify>|<pageref|auto-8>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Lecture1
@@ -307,6 +424,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Shell
       Tools and Scripting> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Editors(Vim)>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
