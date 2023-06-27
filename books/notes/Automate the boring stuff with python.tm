@@ -13,6 +13,10 @@
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>\<#63A7\>\<#5236\>\<#6D41\>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-2><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>\<#7A0B\>\<#5E8F\>>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-3><vspace|0.5fn>
   </table-of-contents>
 
   <section|python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -26,6 +30,25 @@
   'Alice'*2='AliceAlice'>\<#3002\>
 
   \<#4F7F\>\<#7528\>#\<#8FDB\>\<#884C\>\<#6CE8\>\<#91CA\>\<#3002\>
+
+  \<#4F7F\>\<#7528\>\Q'\<#548C\>"""\<#8FDB\>\<#884C\>\<#591A\>\<#884C\>\<#6CE8\>\<#91CA\>\<#3002\>
+
+  <\python-code>
+    eg: \ \ 
+
+    """
+
+    Write a function named collatz() that has one parameter named number. If\ 
+
+    number is even, then collatz() should print number // 2 and return this
+    value.\ 
+
+    If number is odd, then collatz() should print and return 3 * number + 1.
+
+    """
+
+    \;
+  </python-code>
 
   \<#4F7F\>\<#7528\>input()\<#51FD\>\<#6570\>\<#7B49\>\<#5F85\>\<#7528\>\<#6237\>\<#5728\>\<#952E\>\<#76D8\>\<#4E0A\>\<#8F93\>\<#5165\>\<#4E00\>\<#4E9B\>\<#6587\>\<#672C\>\<#FF0C\>\<#5E76\>\<#6309\>\<#56DE\>\<#8F66\>\<#952E\>\<#3002\>
 
@@ -106,6 +129,56 @@
 
   \;
 
+  python\<#51FD\>\<#6570\>\<#5B9A\>\<#4E49\>\<#5F62\>\<#5F0F\>\<#5982\>\<#4E0B\>\<#FF1A\>
+
+  <\python-code>
+    def hello(name):
+
+    \ \ \ \ print('hello'+name)
+
+    \ \ \ \ return name
+  </python-code>
+
+  \;
+
+  python\<#4E2D\>\<#7684\>"null"\<#662F\>None\<#3002\>
+
+  \<#5728\>Python\<#4E2D\>\<#8BA9\>\<#5C40\>\<#90E8\>\<#53D8\>\<#91CF\>\<#4E0E\>\<#5168\>\<#5C40\>\<#53D8\>\<#91CF\>\<#540C\>\<#540D\>\<#662F\>\<#53EF\>\<#4EE5\>\<#7684\>\<#3002\>
+
+  \<#5982\>\<#679C\>\<#60F3\>\<#8981\>\<#5728\>\<#4E00\>\<#4E2A\>\<#51FD\>\<#6570\>\<#5185\>\<#4FEE\>\<#6539\>\<#5168\>\<#5C40\>\<#53D8\>\<#91CF\>\<#7684\>\<#503C\>\<#FF0C\>\<#5C31\>\<#5FC5\>\<#987B\>\<#5BF9\>\<#53D8\>\<#91CF\>\<#4F7F\>\<#7528\>global\<#8BED\>\<#53E5\>\<#3002\>\<#793A\>\<#4F8B\>\<#6700\>\<#7EC8\>\<#7684\>\<#8F93\>\<#51FA\>\<#7ED3\>\<#679C\>\<#662F\>hello\<#3002\>
+
+  python\<#7684\>\<#9519\>\<#8BEF\>\<#5904\>\<#7406\>\<#5982\>\<#4E0B\>\<#FF1A\>
+
+  <\python-code>
+    def hello(name):
+
+    \ \ \ \ global eggs
+
+    \ \ \ \ eggs='hello'
+
+    eggs='global'
+
+    hello()
+
+    print(eggs)
+
+    \;
+
+    def divide(a):
+
+    \ \ \ \ try:
+
+    \ \ \ \ \ \ \ \ return 42/a
+
+    \ \ \ \ except ZeroDivisionError:
+
+    \ \ \ \ \ \ \ \ print('error')
+  </python-code>
+
+  \;
+
+  \<#4E00\>\<#65E6\>\<#6267\>\<#884C\>\<#8DF3\>\<#5230\>except\<#5B50\>\<#53E5\>\<#7684\>\<#4EE3\>\<#7801\>\<#FF0C\>\<#5C31\>\<#65E0\>\<#6CD5\>\<#56DE\>\<#5230\>try\<#8BED\>\<#53E5\>\<#3002\>\<#5B83\>\<#4F1A\>\<#7EE7\>\<#7EED\>\<#5411\>\<#4E0B\>\<#8FD0\>\<#884C\>\<#3002\>
+
   \;
 </body>
 
@@ -119,7 +192,7 @@
   <\collection>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|2|1>>
-    <associate|auto-3|<tuple|3|?>>
+    <associate|auto-3|<tuple|3|2>>
   </collection>
 </references>
 
@@ -133,6 +206,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>\<#63A7\>\<#5236\>\<#6D41\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>\<#7A0B\>\<#5E8F\>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
