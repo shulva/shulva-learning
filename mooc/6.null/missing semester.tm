@@ -18,13 +18,93 @@
     CourseOverview and Shell> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-1><vspace|0.5fn>
 
+    <with|par-left|1tab|1.1<space|2spc>shell\<#57FA\>\<#672C\>\<#547D\>\<#4EE4\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-2>>
+
+    <with|par-left|1tab|1.2<space|2spc>\<#7A0B\>\<#5E8F\>\<#95F4\>\<#7684\>\<#6D41\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-4>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>Shell
     Tools and Scripting> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-3><vspace|0.5fn>
+    <no-break><pageref|auto-5><vspace|0.5fn>
+
+    <with|par-left|1tab|2.1<space|2spc>Shell \<#811A\>\<#672C\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-6>>
+
+    <with|par-left|1tab|2.2<space|2spc>shell\<#5DE5\>\<#5177\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-8>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>Editors(Vim)>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-5><vspace|0.5fn>
+    <no-break><pageref|auto-9><vspace|0.5fn>
+
+    <with|par-left|1tab|3.1<space|2spc>Vim\<#6A21\>\<#5F0F\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-10>>
+
+    <with|par-left|1tab|3.2<space|2spc>Vim\<#57FA\>\<#7840\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-11>>
+
+    <with|par-left|1tab|3.3<space|2spc>Vim\<#81EA\>\<#5B9A\>\<#4E49\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-15>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|4<space|2spc>Data
+    Wrangling> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-16><vspace|0.5fn>
+
+    <with|par-left|1tab|4.1<space|2spc>\<#6B63\>\<#5219\>\<#8868\>\<#8FBE\>\<#5F0F\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-17>>
+
+    <with|par-left|1tab|4.2<space|2spc>\<#5176\>\<#4ED6\>\<#6570\>\<#636E\>\<#5DE5\>\<#5177\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-19>>
+
+    <with|par-left|1tab|4.3<space|2spc>awk
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-20>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>Command-line
+    Environment> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-21><vspace|0.5fn>
+
+    <with|par-left|1tab|5.1<space|2spc>job control
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-22>>
+
+    <with|par-left|1tab|5.2<space|2spc>Terminal Multiplexers
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-23>>
+
+    <with|par-left|1tab|5.3<space|2spc>dotfiles
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-24>>
+
+    <with|par-left|1tab|5.4<space|2spc>Remote Machines
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-25>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Version
+    Control(Git)> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-26><vspace|0.5fn>
+
+    <with|par-left|1tab|6.1<space|2spc>Git's data model
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-27>>
+
+    <with|par-left|1tab|6.2<space|2spc>Staging Area
+    \<#6682\>\<#5B58\>\<#533A\> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-28>>
+
+    <with|par-left|1tab|6.3<space|2spc>Git command-line interface
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-29>>
   </table-of-contents>
 
   <section|Lecture1 CourseOverview and Shell>
@@ -516,11 +596,371 @@
 
   begin\<#5339\>\<#914D\>\<#8F93\>\<#5165\>\<#5F00\>\<#5934\>\<#FF0C\>end\<#5339\>\<#914D\>\<#8F93\>\<#5165\>\<#5C3E\>\<#3002\>
 
-  <section|command-line environment>
+  <section|Command-line Environment>
+
+  <hlink|command-line environment \<centerdot\>
+  lecture5.pdf|command-line%20environment%20%C2%B7%20lecture5_220304_004014.pdf>
+
+  <subsection|job control>
 
   \;
 
+  \<less\>C-c\<gtr\>\<#505C\>\<#6B62\>\<#5F53\>\<#524D\>\<#8FDB\>\<#7A0B\>\<#662F\>\<#56E0\>\<#4E3A\>\<#7EC8\>\<#7AEF\>\<#5411\>\<#7A0B\>\<#5E8F\>\<#53D1\>\<#9001\>\<#4E86\>\<#4E00\>\<#4E2A\>SIGINT\<#4FE1\>\<#53F7\>\<#3002\>\<#8BE5\>\<#4FE1\>\<#53F7\>\<#8868\>\<#793A\>\<#7A0B\>\<#5E8F\>\<#4E2D\>\<#65AD\>\<#3002\>
+
+  \<#6211\>\<#4EEC\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<less\>C-\\\<gtr\>\<#6765\>\<#53D1\>\<#9001\>SIGQUIT\<#4FE1\>\<#53F7\>\<#6765\>\<#7EC8\>\<#6B62\>\<#7A0B\>\<#5E8F\>\<#3002\>\<#4E2D\>\<#65AD\>\<#548C\>\<#7EC8\>\<#6B62\>\<#662F\>\<#4E0D\>\<#540C\>\<#7684\>\<#3002\>
+
+  SIGKILL\<#65E0\>\<#6CD5\>\<#88AB\>\<#7A0B\>\<#5E8F\>\<#6355\>\<#83B7\>\<#FF0C\>\<#5982\>\<#679C\>\<#53D1\>\<#9001\>SIGKILL\<#FF0C\>\<#5B83\>\<#65E0\>\<#8BBA\>\<#5982\>\<#4F55\>\<#90FD\>\<#5C06\>\<#7EC8\>\<#6B62\>\<#8FDB\>\<#7A0B\>\<#7684\>\<#6267\>\<#884C\>\<#3002\>
+
   \;
+
+  \<#901A\>\<#8FC7\>\<less\>C-z\<gtr\>\<#53D1\>\<#9001\>SIGSTOP\<#4FE1\>\<#53F7\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#7A0B\>\<#5E8F\>\<#6682\>\<#505C\>\<#3002\>
+
+  \<#4F7F\>\<#5DF2\>\<#7ECF\>\<#6682\>\<#505C\>\<#7684\>\<#5728\>\<#540E\>\<#53F0\>\<#8FDB\>\<#7A0B\>\<#518D\>\<#6B21\>\<#8FD0\>\<#884C\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>bg
+  %n\<#3002\>n\<#6307\>\<#5176\>\<#5728\>Jobs\<#4E2D\>\<#7684\>\<#5E8F\>\<#53F7\>\<#3002\>
+
+  \<#5728\>\<#547D\>\<#4EE4\>\<#540E\>\<#52A0\>\<#4E0A\>&\<#4F1A\>\<#4F7F\>\<#547D\>\<#4EE4\>\<#5728\>\<#540E\>\<#53F0\>\<#8FD0\>\<#884C\>\<#3002\>
+
+  \;
+
+  \<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>kill\<#547D\>\<#4EE4\>\<#53D1\>\<#9001\>\<#4EFB\>\<#4F55\>\<#4FE1\>\<#53F7\>\<#3002\><shell|eg:kill
+  -STOP %1>\<#505C\>\<#6B62\>\<#9009\>\<#5B9A\>\<#8FDB\>\<#7A0B\>\<#3002\>
+
+  nohup\<#547D\>\<#4EE4\>\<#5C06\>\<#6240\>\<#6267\>\<#884C\>\<#7684\>\<#547D\>\<#4EE4\>\<#5C01\>\<#88C5\>\<#8D77\>\<#6765\>\<#FF0C\>\<#5FFD\>\<#7565\>\<#4EFB\>\<#4F55\>\<#6302\>\<#8D77\>\<#4FE1\>\<#53F7\>\<#FF0C\>\<#5E76\>\<#4F7F\>\<#5176\>\<#7EE7\>\<#7EED\>\<#8FD0\>\<#884C\>\<#3002\>
+
+  <subsection|Terminal Multiplexers>
+
+  \;
+
+  <strong|\<#63A8\>\<#8350\>\<#5C06\>\<less\>C-b\<gtr\>\<#91CD\>\<#6620\>\<#5C04\>\<#4E3A\>\<less\>C-a\<gtr\>\<#FF0C\>\<#53CD\>\<#6B63\>\<#4F60\>\<#81EA\>\<#5DF1\>\<#5DF2\>\<#7ECF\>\<#5728\>dotfiles\<#4E2D\>\<#8BBE\>\<#7F6E\>\<#597D\>\<#4E86\>\<#3002\>>
+
+  \;
+
+  tmux\<#7684\>\<#51E0\>\<#4E2A\>\<#6838\>\<#5FC3\>\<#6982\>\<#5FF5\>\<#FF1A\>
+
+  -sessions\<#FF1A\> \<#6709\>\<#591A\>\<#4E2A\>windows
+
+  <\shell-code>
+    tmux ls\<#4F1A\>\<#663E\>\<#793A\>\<#5F53\>\<#524D\>\<#6240\>\<#6709\>tmux
+    sessions
+
+    tmux new -s NAME \<#521B\>\<#5EFA\>\<#5E26\>\<#540D\>\<#5B57\>\<#7684\>session
+
+    \<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<less\>C-b\<gtr\> d
+    \<#8131\>\<#79BB\>\<#6B64\>session
+
+    tmux a \<#91CD\>\<#65B0\>\<#56DE\>\<#5230\>\<#4E0A\>\<#4E00\>\<#4E2A\>session\<#FF0C\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>-t\<#6307\>\<#5B9A\>\<#56DE\>\<#5F52\>\<#7684\>session
+  </shell-code>
+
+  \;
+
+  -windows\<#FF1A\>\<#7C7B\>\<#4F3C\>\<#4E8E\>\<#7F16\>\<#8F91\>\<#5668\>\<#548C\>\<#6D4F\>\<#89C8\>\<#5668\>\<#4E2D\>\<#7684\>\<#6807\>\<#7B7E\>\<#3002\>
+
+  <\shell-code>
+    \<less\>C-b\<gtr\> c\<#53EF\>\<#4EE5\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>\<#65B0\>\<#7A97\>\<#53E3\>\<#3002\>\<#5173\>\<#95ED\>\<#53EA\>\<#9700\>\<#7528\>\<less\>C-d\<gtr\>\<#5373\>\<#53EF\>
+
+    \<less\>C-b\<gtr\> p\<#524D\>\<#5F80\>\<#4E0A\>\<#4E00\>\<#4E2A\>\<#7A97\>\<#53E3\>\<#FF0C\>\<less\>C-b\<gtr\>
+    n\<#524D\>\<#5F80\>\<#4E0B\>\<#4E00\>\<#4E2A\>\<#7A97\>\<#53E3\>\<#3002\>
+
+    \<less\>C-b\<gtr\> ,\<#53EF\>\<#4EE5\>\<#66F4\>\<#6539\>\<#7A97\>\<#53E3\>\<#540D\>\<#3002\>\<less\>C-b\<gtr\>
+    w\<#663E\>\<#73B0\>\<#51FA\>\<#6240\>\<#6709\>\<#73B0\>\<#5728\>\<#7684\>\<#7A97\>\<#53E3\>\<#3002\>
+
+    \<less\>C-b\<gtr\> N\<#53EF\>\<#4EE5\>\<#8DF3\>\<#8F6C\>\<#81F3\>N\<#53F7\>\<#7A97\>\<#53E3\>\<#3002\>
+  </shell-code>
+
+  \;
+
+  -panes\<#FF1A\>\<#5206\>\<#88C2\>\<#7A97\>\<#53E3\>
+
+  <\shell-code>
+    \<less\>C-b\<gtr\> "\<#5782\>\<#76F4\>\<#5206\>\<#88C2\>\<#7A97\>\<#53E3\>\<#3002\>\<less\>C-b\<gtr\>
+    %\<#6C34\>\<#5E73\>\<#5206\>\<#88C2\>\<#7A97\>\<#53E3\>\<#3002\>
+
+    \<less\>C-b\<gtr\> \<#7BAD\>\<#5934\>\<#7528\>\<#6765\>\<#5728\>panes\<#95F4\>\<#6309\>\<#65B9\>\<#5411\>\<#8DF3\>\<#52A8\>\<#3002\>
+
+    \<less\>C-b\<gtr\> \<#6269\>\<#5F20\>\<#5F53\>\<#524D\>\<#7A97\>\<#53E3\>\<#3002\>
+
+    \<less\>C-b\<gtr\> space \<#6539\>\<#53D8\>\<#5F53\>\<#524D\>panes\<#7684\>\<#6392\>\<#5217\>\<#3002\>
+  </shell-code>
+
+  \;
+
+  <subsection|dotfiles>
+
+  \;
+
+  alisa\<#522B\>\<#540D\>\<#53EF\>\<#4EE5\>\<#7701\>\<#53BB\>\<#5F88\>\<#591A\>\<#65F6\>\<#5019\>\<#8F93\>\<#5165\>\<#547D\>\<#4EE4\>\<#53C2\>\<#6570\>\<#7684\>\<#9EBB\>\<#70E6\>\<#3002\>
+
+  <\shell>
+    eg: alisa ll="ls -lh" \<#7531\>\<#4E8E\>alias\<#662F\>shell\<#547D\>\<#4EE4\>\<#FF0C\>\<#6240\>\<#4EE5\>=\<#65C1\>\<#8FB9\>\<#4E0D\>\<#80FD\>\<#6709\>\<#7A7A\>\<#683C\>\<#3002\>
+
+    mv=mv -i mkdir=mkdir -p\<#90FD\>\<#662F\>\<#53EF\>\<#4EE5\>\<#5C1D\>\<#8BD5\>\<#7684\>\<#3002\>
+    \ \ \ 
+  </shell>
+
+  \;
+
+  \<#6709\>\<#8BB8\>\<#591A\>\<#5F88\>\<#5173\>\<#952E\>\<#7684\>\<#914D\>\<#7F6E\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#4F8B\>\<#5982\>.vimrc\<#FF0C\>.bashrc\<#53EF\>\<#4EE5\>\<#653E\>\<#7F6E\>\<#5728\>dotfiles\<#4E2D\>\<#3002\>
+
+  \<#6211\>\<#4EEC\>\<#4F7F\>\<#7528\>dotfiles\<#4E0B\>\<#7684\>\<#5B89\>\<#88C5\>\<#811A\>\<#672C\>\<#5EFA\>\<#7ACB\>\<#8F6F\>\<#94FE\>\<#63A5\>\<#FF0C\>\<#4ECE\>\<#800C\>\<#5FEB\>\<#6377\>\<#7684\>\<#5B89\>\<#88C5\>\<#6240\>\<#6709\>\<#7684\>\<#914D\>\<#7F6E\>\<#6587\>\<#4EF6\>\<#3002\>dotfiles\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>git\<#83B7\>\<#53D6\>\<#FF0C\>\<#800C\>\<#94FE\>\<#63A5\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>ln
+  -s\<#521B\>\<#5EFA\>\<#3002\>\<#53EF\>\<#4EE5\>\<#53C2\>\<#89C1\>\<#4F60\>\<#81EA\>\<#5DF1\>\<#7684\>dotfiles\<#4E2D\>\<#7684\>install.sh\<#660E\>\<#6670\>\<#5B89\>\<#88C5\>\<#8FC7\>\<#7A0B\>\<#3002\>
+
+  \<#4F60\>\<#53EF\>\<#4EE5\>\<#4E0A\>\<#7F51\>\<#5B66\>\<#4E60\>\<#5176\>\<#4ED6\>\<#4EBA\>\<#7684\>dotfiles\<#4E2D\>\<#7684\>\<#914D\>\<#7F6E\>\<#5E76\>\<#5316\>\<#4E3A\>\<#5DF1\>\<#7528\>\<#3002\>
+
+  <subsection|Remote Machines>
+
+  \;
+
+  ssh\<#4E3A\>\<#5176\>\<#4E2D\>\<#5173\>\<#952E\>\<#3002\>
+
+  \<#4E00\>\<#822C\>\<#6765\>\<#8BF4\>\<#4F7F\>\<#7528\>ssh
+  username@ip\<#6765\>\<#8FDB\>\<#884C\>\<#8FDE\>\<#63A5\>\<#3002\>
+
+  \<#6BCF\>\<#6B21\>\<#90FD\>\<#8981\>\<#8F93\>\<#5165\>\<#5BC6\>\<#7801\>\<#662F\>\<#6709\>\<#70B9\>\<#9EBB\>\<#70E6\>\<#7684\>\<#FF0C\>\<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#516C\>\<#94A5\>\<#79C1\>\<#94A5\>\<#4F53\>\<#7CFB\>\<#3002\>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#5148\>\<#4F7F\>\<#7528\><shell|ssh-keygen -o -a 100 -t
+  ed25519 -f ~/.ssh/id_ed25519>\<#521B\>\<#5EFA\>keys\<#3002\>
+
+  \<#5F53\>\<#7136\>\<#FF0C\>\<#4F60\>\<#5728\>\<#4F7F\>\<#7528\>github\<#65F6\>\<#53EF\>\<#80FD\>\<#914D\>\<#7F6E\>\<#8FC7\>\<#4E86\>\<#3002\>
+
+  \<#8FD0\>\<#884C\><shell|cat .ssh/id_ed25519.pub \| ssh username@ip 'cat
+  \<gtr\>\<gtr\> ~/.ssh/authorized_keys>
+
+  \<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#66F4\>\<#7B80\>\<#5355\>\<#7684\><shell|ssh-copy-id
+  -i .ssh/id_ed25519.pub username@ip>\<#3002\>\<#5176\>\<#4F1A\>\<#590D\>\<#5236\>\<#5BC6\>\<#94A5\>\<#3002\>
+
+  \;
+
+  \<#5728\>\<#8FDC\>\<#7AEF\>\<#590D\>\<#5236\>\<#6587\>\<#4EF6\>\<#4E0D\>\<#80FD\>\<#4F7F\>\<#7528\>cp\<#FF0C\>\<#4F46\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>scp\<#547D\>\<#4EE4\>\<#3002\>
+
+  \<#4F7F\>\<#7528\>rsync\<#590D\>\<#5236\>\<#5219\>\<#662F\>\<#66F4\>\<#4E3A\>\<#5148\>\<#8FDB\>\<#3002\>
+
+  \;
+
+  \<#4F60\>\<#53EF\>\<#4EE5\>\<#5728\>./ssh/config\<#6587\>\<#4EF6\>\<#91CC\>\<#914D\>\<#7F6E\>\<#5185\>\<#5BB9\>\<#3002\>
+
+  <\shell-code>
+    Host vm
+
+    \ \ \ \ \ User shulva
+
+    \ \ \ \ \ HostName 111.111.111.111
+
+    \ \ \ \ \ Port 2222
+
+    \ \ \ \ \ IdentitiyFile ~/.ssh/id_ed25519
+
+    \ \ \ \ \ 
+
+    \ \<#4E4B\>\<#540E\>\<#4F7F\>\<#7528\>ssh
+    vm\<#5373\>\<#53EF\>\<#767B\>\<#5F55\>\<#3002\>\ 
+
+    \ \<#5728\>config\<#91CC\>\<#914D\>\<#7F6E\>\<#FF0C\>\<#4FBF\>\<#5229\>\<#6027\>\<#548C\>\<#53EF\>\<#79FB\>\<#690D\>\<#6027\>\<#90FD\>\<#6709\>\<#6240\>\<#63D0\>\<#9AD8\>\<#3002\>\<#4F60\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#81EA\>\<#5DF1\>\<#7684\>ssh\<#6587\>\<#4EF6\>\<#653E\>\<#5728\>dotfiles\<#4E2D\>\<#3002\>
+
+    \ \<#4F46\>\<#8FD9\>\<#4F1A\>\<#5BF9\>\<#5B89\>\<#5168\>\<#6027\>\<#6709\>\<#6240\>\<#5F71\>\<#54CD\>\<#3002\>
+  </shell-code>
+
+  <section|Version Control(Git)>
+
+  <hlink|Version Control (Git) \<centerdot\>
+  lecture6.pdf|Version%20Control%20(Git)%20%C2%B7%20lecture6.pdf>
+
+  <subsection|Git's data model>
+
+  \;
+
+  \<#5728\>git\<#6570\>\<#636E\>\<#6A21\>\<#578B\>\<#4E2D\>\<#FF0C\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#88AB\>\<#79F0\>\<#4E4B\>\<#4E3A\>blob\<#FF0C\>\<#4E00\>\<#5806\>\<#5B57\>\<#8282\>\<#7684\>\<#5408\>\<#96C6\>\<#3002\>\<#800C\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#5939\>\<#5219\>\<#88AB\>\<#79F0\>\<#4E4B\>\<#4E3A\>tree\<#3002\>tree\<#4E2D\>\<#53EF\>\<#4EE5\>\<#5305\>\<#542B\>\<#4E00\>\<#7CFB\>\<#5217\>tree\<#548C\>blob\<#3002\>
+
+  \<#4E00\>\<#4E2A\>git\<#7684\>\<#5FEB\>\<#7167\>snapshot\<#672C\>\<#8D28\>\<#4E0A\>\<#662F\>\<#5BF9\>\<#6700\>\<#9876\>\<#5C42\>\<#7684\>tree(directory)\<#7684\>\<#8FFD\>\<#8E2A\>\<#3002\>
+
+  \;
+
+  git\<#4F7F\>\<#7528\>DAG\<#6765\>\<#5904\>\<#7406\>\<#5FEB\>\<#7167\>\<#95F4\>\<#7684\>\<#5173\>\<#7CFB\>\<#3002\>\<#4E00\>\<#822C\>\<#6765\>\<#8BF4\>git\<#5C06\>\<#8FD9\>\<#4E9B\>\<#5FEB\>\<#7167\>\<#79F0\>\<#4E3A\>commit\<#3002\>
+
+  git\<#4E2D\>\<#7684\>commit\<#662F\>\<#4E0D\>\<#53EF\>\<#6539\>\<#53D8\>\<#7684\>\<#FF0C\>\<#4F46\>\<#8FD9\>\<#5E76\>\<#4E0D\>\<#610F\>\<#5473\>\<#7740\>\<#9519\>\<#8BEF\>\<#662F\>\<#4E0D\>\<#53EF\>\<#66F4\>\<#6539\>\<#7684\>\<#3002\>\<#4F46\>\<#662F\>\<#8FD9\>\<#79CD\>\<#66F4\>\<#6539\>\<#4F1A\>\<#4EA7\>\<#751F\>\<#65B0\>\<#7684\>commit\<#3002\>\<#4F60\>\<#53EF\>\<#4EE5\>\<#6DFB\>\<#52A0\>\<#65B0\>\<#7684\>\<#4E1C\>\<#897F\>\<#FF0C\>\<#4F46\>\<#662F\>\<#65E0\>\<#6CD5\>\<#6539\>\<#52A8\>\<#56FE\>\<#7684\>\<#7ED3\>\<#6784\>\<#3002\>
+
+  <\shell-code>
+    git\<#7684\>\<#6570\>\<#636E\>\<#6A21\>\<#578B\>\<#4F2A\>\<#4EE3\>\<#7801\>\<#793A\>\<#4F8B\>\<#5982\>\<#4E0B\>\<#FF1A\>
+
+    type blob = array\<less\>byte\<gtr\>
+
+    type tree = map\<less\>string,tree\|blob\<gtr\>
+
+    type commit = struct{
+
+    \ \ \ \ parent:array\<less\>commit\<gtr\>
+
+    \ \ \ \ author:string
+
+    \ \ \ \ message:string
+
+    \ \ \ \ snapshot:tree
+
+    \ \ \ \ }
+
+    \ \ \ \ 
+
+    git\<#6570\>\<#636E\>\<#6A21\>\<#578B\>\<#5B9E\>\<#9645\>\<#78C1\>\<#76D8\>\<#5B58\>\<#50A8\>\<#7684\>\<#6570\>\<#636E\>\<#7ED3\>\<#6784\>\<#5982\>\<#4E0B\>,\<#4F7F\>\<#7528\>hash\<#51FD\>\<#6570\>\<#8BB0\>\<#5F55\>\<#FF1A\>
+
+    type object = blob\|tree\|commit
+
+    objects = map\<less\>string,object\<gtr\>
+
+    \;
+
+    def store(objects):
+
+    \ \ \ \ id = sha1(object)
+
+    \ \ \ \ object[id]=object
+
+    \ \ \ \ 
+
+    def load(objects):
+
+    \ \ \ \ return objects[id]
+  </shell-code>
+
+  \;
+
+  blob,tree,commit\<#90FD\>\<#662F\>Objects\<#3002\>\<#5F53\>\<#4ED6\>\<#4EEC\>\<#6307\>\<#5411\>\<#5176\>\<#4ED6\>objects\<#65F6\>\<#FF0C\>\<#4ED6\>\<#4EEC\>\<#5E76\>\<#4E0D\>\<#662F\>\<#771F\>\<#7684\>\<#5305\>\<#542B\>Objects\<#3002\>\<#4ED6\>\<#4EEC\>\<#53EA\>\<#662F\>\<#62E5\>\<#6709\>\<#4ED6\>\<#4EEC\>\<#7684\>\<#5F15\>\<#7528\>\<#3002\>
+
+  \<#6240\>\<#6709\>object\<#90FD\>\<#50A8\>\<#5B58\>\<#4E8E\>Object\<#8868\>\<#4E2D\>\<#FF0C\>git\<#4E2D\>\<#4E0D\>\<#540C\>\<#5BF9\>\<#8C61\>\<#4E4B\>\<#95F4\>\<#7684\>\<#5F15\>\<#7528\>\<#90FD\>\<#662F\>\<#901A\>\<#8FC7\>\<#5B83\>\<#4EEC\>\<#7684\>id\<#FF0C\>\<#4E5F\>\<#5373\>\<#662F\>hash\<#503C\>\<#3002\>
+
+  \<#6240\>\<#6709\>\<#7684\>\<#5FEB\>\<#7167\>\<#90FD\>\<#53EF\>\<#4EE5\>\<#88AB\>\<#5B83\>\<#4EEC\>\<#7684\>SHA-1
+  hash\<#503C\>\<#552F\>\<#4E00\>\<#6807\>\<#8BC6\>\<#3002\>\<#4F46\>\<#662F\>hash\<#503C\>\<#662F\>\<#4E00\>\<#7EC4\>\<#957F\>\<#4E3A\>40\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#4E0D\>\<#597D\>\<#8BB0\>\<#5FC6\>\<#3002\>\<#6240\>\<#4EE5\>git\<#901A\>\<#8FC7\>\<#7EF4\>\<#62A4\>references\<#6765\>\<#89E3\>\<#51B3\>\<#8FD9\>\<#4E00\>\<#95EE\>\<#9898\>\<#3002\>
+
+  <\shell-code>
+    git\<#7684\>\<#5F15\>\<#7528\>\<#6A21\>\<#578B\>\<#4F2A\>\<#4EE3\>\<#7801\>\<#793A\>\<#4F8B\>\<#5982\>\<#4E0B\>\<#FF1A\>
+
+    references = map\<less\>string1_name,string2_hash\<gtr\>\ 
+
+    \<#901A\>\<#8FC7\>\<#81EA\>\<#5DF1\>\<#53EF\>\<#8BB0\>\<#5FC6\>\<#7684\>name\<#6765\>\<#6620\>\<#5C04\>hash\<#503C\>\<#3002\>
+  </shell-code>
+
+  <subsection|Staging Area \<#6682\>\<#5B58\>\<#533A\>>
+
+  \;
+
+  \<#6682\>\<#5B58\>\<#533A\>\<#4F1A\>\<#544A\>\<#77E5\>git\<#5728\>\<#4E0B\>\<#4E00\>\<#6B21\>\<#521B\>\<#5EFA\>\<#5FEB\>\<#7167\>/commit\<#65F6\>\<#5E94\>\<#8BE5\>\<#5305\>\<#542B\>\<#54EA\>\<#4E9B\>\<#66F4\>\<#6539\>\<#3002\>
+
+  git\<#5C06\>\<#8FFD\>\<#8E2A\>\<#6587\>\<#4EF6\>\<#7684\>\<#6743\>\<#529B\>\<#4EA4\>\<#7ED9\>\<#4E86\>\<#7528\>\<#6237\>\<#FF0C\>\<#4ECE\>\<#800C\>\<#8BA9\>\<#7528\>\<#6237\>\<#53EF\>\<#4EE5\>\<#81EA\>\<#5DF1\>\<#5B9A\>\<#4E49\>\<#5FEB\>\<#7167\>\<#FF0C\>\<#800C\>\<#975E\>\<#76F4\>\<#63A5\>\<#5FEB\>\<#7167\>\<#6574\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  \<#4F7F\>\<#7528\>git add \<less\>filename\<gtr\>\<#53EF\>\<#4EE5\>\<#76F4\>\<#63A5\>\<#5C06\>\<#6587\>\<#4EF6\>\<#6DFB\>\<#52A0\>\<#5230\>\<#6682\>\<#5B58\>\<#533A\>\<#3002\>
+
+  <subsection|Git command-line interface>
+
+  \;
+
+  \<#63A8\>\<#8350\><hlink|Git - Book (git-scm.com)|https://git-scm.com/book/en/v2>\<#4E86\>\<#89E3\>\<#5177\>\<#4F53\>\<#7EC6\>\<#8282\>\<#3002\>
+
+  git commit\<#7684\>\<#4FE1\>\<#606F\>\<#7F16\>\<#5199\>\<#FF1A\>
+
+  <hlink|How to Write a Git Commit Message
+  (cbea.ms)|https://cbea.ms/git-commit/>
+
+  <hlink|tbaggery - A Note About Git Commit
+  Messages|https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>
+
+  <\shell-code>
+    HEAD\<#6307\>\<#5411\>\<#6700\>\<#540E\>\<#4E00\>\<#4E2A\>\<#5FEB\>\<#7167\>\<#3002\>
+
+    git log --all --graph --decorate \<#5C06\>\<#63D0\>\<#4EA4\>\<#5386\>\<#53F2\>\<#7528\>DAG\<#7684\>\<#65B9\>\<#5F0F\>\<#663E\>\<#73B0\>\<#51FA\>\<#6765\>\<#FF08\>\<#5176\>\<#5B9E\>\<#4E5F\>\<#6CA1\>\<#663E\>\<#793A\>\<#591A\>\<#5C11\>\<#FF09\>
+
+    git log --all --graph --decorate --oneline
+    \<#66F4\>\<#7CBE\>\<#7B80\>\<#7684\>\<#56FE\>\<#7ED3\>\<#6784\>
+
+    git checkout \<less\>reference\<gtr\>
+    \<#66F4\>\<#65B0\>HEAD\<#5230\>\<#4F60\>\<#6307\>\<#5411\>\<#7684\>commit\<#6216\>\<#662F\>\<#5206\>\<#652F\>\<#FF0C\>\<#6539\>\<#53D8\>\<#4F60\>\<#5F53\>\<#524D\>\<#5DE5\>\<#4F5C\>\<#76EE\>\<#5F55\>
+
+    \;
+
+    git diff\<#53EF\>\<#4EE5\>\<#663E\>\<#793A\>\<#5F53\>\<#524D\>\<#76EE\>\<#5F55\>\<#4E0E\>\<#4E0A\>\<#6B21\>\<#5FEB\>\<#7167\>\<#4E4B\>\<#95F4\>\<#7684\>\<#4E0D\>\<#540C\>
+
+    git diff \<less\>filename\<gtr\>\<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#4E0E\>\<#4E0A\>\<#6B21\>\<#5FEB\>\<#7167\>\<#95F4\>\<#7684\>\<#4E0D\>\<#540C\>
+
+    git diff \<less\>reference\<gtr\> \<less\>filename\<gtr\>\<#5F53\>\<#524D\>\<#5DE5\>\<#4F5C\>\<#76EE\>\<#5F55\>\<#4E0E\>\<#6307\>\<#5B9A\>\<#5FEB\>\<#7167\>\<#95F4\>\<#6587\>\<#4EF6\>\<#7684\>\<#4E0D\>\<#540C\>
+
+    git diff \<less\>reference\<gtr\> \<less\>reference\<gtr\>
+    \<less\>filename\<gtr\>\<#4E24\>\<#4E2A\>\<#6307\>\<#5B9A\>\<#5FEB\>\<#7167\>\<#95F4\>\<#6587\>\<#4EF6\>\<#7684\>\<#4E0D\>\<#540C\>
+
+    \;
+
+    git branch -vv\<#4F1A\>\<#5217\>\<#51FA\>\<#5728\>\<#672C\>\<#5730\>\<#4ED3\>\<#5E93\>\<#7684\>\<#6240\>\<#6709\>\<#5206\>\<#652F\>,-vv\<#662F\>\<#8BE6\>\<#7EC6\>\<#4FE1\>\<#606F\>\<#3002\>
+
+    git branch \<less\>name\<gtr\> \<#521B\>\<#5EFA\>\<#65B0\>\<#5206\>\<#652F\>\<#3002\>
+
+    git checkout -b \<less\>name\<gtr\> \<#521B\>\<#5EFA\>\<#5E76\>\<#5207\>\<#6362\>\<#5230\>\<#65B0\>\<#5206\>\<#652F\>
+
+    \;
+
+    git merge \<less\>name\<gtr\> \<#5C06\>\<#6B64\>\<#5206\>\<#652F\>\<#5408\>\<#5E76\>\<#5230\>\<#5F53\>\<#524D\>\<#5206\>\<#652F\>
+
+    git mergetool \<#542F\>\<#7528\>\<#4E13\>\<#95E8\>\<#5DE5\>\<#5177\>\<#5904\>\<#7406\>\<#5408\>\<#5E76\>\<#51B2\>\<#7A81\>
+
+    \;
+
+    \<#4E00\>\<#822C\>\<#6765\>\<#8BF4\>\<#51B2\>\<#7A81\>\<#6587\>\<#4EF6\>\<#4E2D\>\<#4F1A\>\<#5305\>\<#542B\>\<#5982\>\<#4E0B\>\<#5185\>\<#5BB9\>\<#FF1A\>
+
+    \<less\>\<less\>\<less\>\<less\>\<less\> HEAD
+
+    ...\<#5F53\>\<#524D\>\<#5206\>\<#652F\>\<#7684\>
+
+    =========
+
+    ...\<#5408\>\<#5E76\>\<#5206\>\<#652F\>\<#7684\>
+
+    \<gtr\>\<gtr\>\<gtr\>\<gtr\>\<gtr\> branch name
+
+    \;
+
+    git remote \<#53EF\>\<#4EE5\>\<#5217\>\<#51FA\>\<#5F53\>\<#524D\>\<#4ED3\>\<#5E93\>\<#6240\>\<#77E5\>\<#9053\>\<#7684\>\<#6240\>\<#6709\>\<#8FDC\>\<#7A0B\>\<#4ED3\>\<#5E93\>\<#3002\>
+
+    git remote add \<less\>name\<gtr\> \<less\>url\<gtr\>
+    \<#6DFB\>\<#52A0\>\<#4E00\>\<#4E2A\>\<#8FDC\>\<#7A0B\>\<#4ED3\>\<#5E93\>\<#3002\>
+
+    git push \<less\>remote\<gtr\> \<less\>local branch\<gtr\>:\<less\>remote
+    branch\<gtr\> \<#901A\>\<#8FC7\>\<#672C\>\<#5730\>\<#5206\>\<#652F\>\<#521B\>\<#5EFA\>\<#8FDC\>\<#7A0B\>\<#4ED3\>\<#5E93\>\<#4E0A\>\<#7684\>\<#5206\>\<#652F\>\<#3002\>
+
+    git branch --set-upsteram-to=\<less\>remote\<gtr\>/\<less\>remote
+    branch\<gtr\> \<#5C06\>\<#672C\>\<#5730\>\<#5206\>\<#652F\>\<#4E0E\>\<#8FDC\>\<#7A0B\>\<#5206\>\<#652F\>\<#76F8\>\<#5BF9\>\<#5E94\>\<#3002\>
+
+    \<#8FD9\>\<#4F1A\>\<#7B80\>\<#5316\>git
+    pull/push,\<#4E0D\>\<#7528\>\<#8F93\>\<#5165\>\<#5927\>\<#91CF\>\<#53C2\>\<#6570\>\<#3002\>
+
+    git fetch \<#83B7\>\<#53D6\>\<#8FDC\>\<#7AEF\>\<#66F4\>\<#6539\>\<#FF0C\>\<#4ECE\>\<#8FDC\>\<#7AEF\>\<#83B7\>\<#53D6\>\<#5BF9\>\<#8C61\>\<#548C\>\<#5F15\>\<#7528\>\<#FF0C\>\<#4E0D\>\<#4F1A\>\<#66F4\>\<#6539\>\<#4EFB\>\<#4F55\>\<#672C\>\<#5730\>\<#5386\>\<#53F2\>\<#8BB0\>\<#5F55\>\<#3002\>
+
+    git pull= git fetch+git merge
+
+    \;
+
+    git config \<#81EA\>\<#5B9A\>\<#4E49\>\<#FF0C\>\<#81EA\>\<#5DF1\>\<#4FEE\>\<#6539\>~/.gitconfig\<#4EA6\>\<#53EF\>\<#3002\>
+
+    git clone --depth=1 \<#4E0D\>\<#4F1A\>clone\<#5386\>\<#53F2\>\<#63D0\>\<#4EA4\>\<#8BB0\>\<#5F55\>
+
+    git add -p \<#4EA4\>\<#4E92\>\<#5F0F\>\<#7684\>\<#6682\>\<#5B58\>
+
+    git blame \<#663E\>\<#793A\>\<#6BCF\>\<#4E00\>\<#884C\>\<#662F\>\<#8C01\>\<#4FEE\>\<#6539\>\<#63D0\>\<#4EA4\>\<#7684\>
+
+    git show \<#663E\>\<#793A\>\<#63D0\>\<#4EA4\>\<#4FE1\>\<#606F\>
+
+    git stash \<#6682\>\<#65F6\>\<#79FB\>\<#9664\>\<#66F4\>\<#6539\> git
+    stash pop\<#662F\>\<#76F8\>\<#5BF9\>\<#5E94\>\<#7684\>\<#9006\>\<#8FC7\>\<#7A0B\>
+
+    git bisect (binary search history?)
+
+    .gitignore \<#4F7F\>\<#7528\>gitignore\<#6587\>\<#4EF6\>\<#6307\>\<#5B9A\>\<#65E0\>\<#9700\>\<#4E0A\>\<#4F20\>\<#7684\>\<#6587\>\<#4EF6\>\<#7C7B\>\<#578B\>
+    eg:*.DS_Store
+
+    \;
+
+    git commit --amend \<#4FEE\>\<#6539\>\<#4E00\>\<#4E2A\>commit\<#7684\>\<#5185\>\<#5BB9\>\<#548C\>\<#4FE1\>\<#606F\>
+
+    git reset HEAD \<less\>file\<gtr\>:\<#53CD\>\<#6682\>\<#5B58\>\<#6587\>\<#4EF6\>
+
+    git checkout -- \<less\>file\<gtr\>:\<#820D\>\<#5F03\>\<#4FEE\>\<#6539\>
+  </shell-code>
 
   \;
 
@@ -536,75 +976,161 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|3.1|?>>
-    <associate|auto-11|<tuple|3.2|?>>
-    <associate|auto-12|<tuple|3|?>>
-    <associate|auto-13|<tuple|4|?>>
-    <associate|auto-14|<tuple|5|?>>
-    <associate|auto-15|<tuple|3.3|?>>
-    <associate|auto-16|<tuple|4|?>>
-    <associate|auto-17|<tuple|4.1|?>>
-    <associate|auto-18|<tuple|6|?>>
-    <associate|auto-19|<tuple|4.2|?>>
-    <associate|auto-2|<tuple|1.1|1>>
-    <associate|auto-20|<tuple|4.3|?>>
-    <associate|auto-21|<tuple|5|?>>
+    <associate|auto-10|<tuple|3.1|4>>
+    <associate|auto-11|<tuple|3.2|4>>
+    <associate|auto-12|<tuple|3|4>>
+    <associate|auto-13|<tuple|4|5>>
+    <associate|auto-14|<tuple|5|5>>
+    <associate|auto-15|<tuple|3.3|5>>
+    <associate|auto-16|<tuple|4|5>>
+    <associate|auto-17|<tuple|4.1|6>>
+    <associate|auto-18|<tuple|6|6>>
+    <associate|auto-19|<tuple|4.2|6>>
+    <associate|auto-2|<tuple|1.1|2>>
+    <associate|auto-20|<tuple|4.3|6>>
+    <associate|auto-21|<tuple|5|7>>
+    <associate|auto-22|<tuple|5.1|7>>
+    <associate|auto-23|<tuple|5.2|7>>
+    <associate|auto-24|<tuple|5.3|8>>
+    <associate|auto-25|<tuple|5.4|8>>
+    <associate|auto-26|<tuple|6|8>>
+    <associate|auto-27|<tuple|6.1|8>>
+    <associate|auto-28|<tuple|6.2|9>>
+    <associate|auto-29|<tuple|6.3|9>>
     <associate|auto-3|<tuple|1|2>>
     <associate|auto-4|<tuple|1.2|2>>
     <associate|auto-5|<tuple|2|3>>
-    <associate|auto-6|<tuple|2.1|4>>
-    <associate|auto-7|<tuple|2|4>>
+    <associate|auto-6|<tuple|2.1|3>>
+    <associate|auto-7|<tuple|2|3>>
     <associate|auto-8|<tuple|2.2|4>>
-    <associate|auto-9|<tuple|3|5>>
-    <associate|footnote-1|<tuple|1|2>>
+    <associate|auto-9|<tuple|3|4>>
+    <associate|footnote-1|<tuple|1|3>>
     <associate|footnote-2|<tuple|2|3>>
     <associate|footnote-3|<tuple|3|3>>
     <associate|footnote-4|<tuple|4|3>>
-    <associate|footnote-5|<tuple|5|3>>
-    <associate|footnote-6|<tuple|6|3>>
-    <associate|footnote-7|<tuple|7|3>>
-    <associate|footnr-1|<tuple|1|2>>
+    <associate|footnote-5|<tuple|5|4>>
+    <associate|footnote-6|<tuple|6|4>>
+    <associate|footnote-7|<tuple|7|4>>
+    <associate|footnr-1|<tuple|1|3>>
     <associate|footnr-2|<tuple|2|3>>
     <associate|footnr-3|<tuple|3|3>>
     <associate|footnr-4|<tuple|4|3>>
-    <associate|footnr-5|<tuple|5|3>>
-    <associate|footnr-6|<tuple|6|3>>
-    <associate|footnr-7|<tuple|7|3>>
+    <associate|footnr-5|<tuple|5|4>>
+    <associate|footnr-6|<tuple|6|4>>
+    <associate|footnr-7|<tuple|7|4>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|table>
-      <tuple|normal|<surround|<hidden-binding|<tuple>|1>||rwx>|<pageref|auto-2>>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|1>||rwx>|<pageref|auto-3>>
 
-      <tuple|normal|<surround|<hidden-binding|<tuple>|2>||bash\<#7279\>\<#6B8A\>\<#7B26\>>|<pageref|auto-4>>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|2>||bash\<#7279\>\<#6B8A\>\<#7B26\>>|<pageref|auto-7>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|3>||vim
-      :>|<pageref|auto-6>>
+      :>|<pageref|auto-12>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|4>||Vim
-      movement>|<pageref|auto-7>>
+      movement>|<pageref|auto-13>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|5>||Vim
-      modify>|<pageref|auto-8>>
+      modify>|<pageref|auto-14>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|6>||>|<pageref|auto-18>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Lecture1
       CourseOverview and Shell> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
+      <with|par-left|<quote|1tab>|1.1<space|2spc>shell\<#57FA\>\<#672C\>\<#547D\>\<#4EE4\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|1.2<space|2spc>\<#7A0B\>\<#5E8F\>\<#95F4\>\<#7684\>\<#6D41\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Shell
       Tools and Scripting> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.5fn>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|2.1<space|2spc>Shell \<#811A\>\<#672C\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|2.2<space|2spc>shell\<#5DE5\>\<#5177\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Editors(Vim)>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5><vspace|0.5fn>
+      <no-break><pageref|auto-9><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|3.1<space|2spc>Vim\<#6A21\>\<#5F0F\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|1tab>|3.2<space|2spc>Vim\<#57FA\>\<#7840\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
+
+      <with|par-left|<quote|1tab>|3.3<space|2spc>Vim\<#81EA\>\<#5B9A\>\<#4E49\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>Data
       Wrangling> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9><vspace|0.5fn>
+      <no-break><pageref|auto-16><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|4.1<space|2spc>\<#6B63\>\<#5219\>\<#8868\>\<#8FBE\>\<#5F0F\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-17>>
+
+      <with|par-left|<quote|1tab>|4.2<space|2spc>\<#5176\>\<#4ED6\>\<#6570\>\<#636E\>\<#5DE5\>\<#5177\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-19>>
+
+      <with|par-left|<quote|1tab>|4.3<space|2spc>awk
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Command-line
+      Environment> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-21><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|5.1<space|2spc>job control
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-22>>
+
+      <with|par-left|<quote|1tab>|5.2<space|2spc>Terminal Multiplexers
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-23>>
+
+      <with|par-left|<quote|1tab>|5.3<space|2spc>dotfiles
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-24>>
+
+      <with|par-left|<quote|1tab>|5.4<space|2spc>Remote Machines
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-25>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Version
+      Control(Git)> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-26><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|6.1<space|2spc>Git's data model
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-27>>
+
+      <with|par-left|<quote|1tab>|6.2<space|2spc>Staging Area
+      \<#6682\>\<#5B58\>\<#533A\> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-28>>
+
+      <with|par-left|<quote|1tab>|6.3<space|2spc>Git command-line interface
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-29>>
     </associate>
   </collection>
 </auxiliary>
