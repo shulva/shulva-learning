@@ -21,6 +21,14 @@
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|4<space|2spc>\<#5217\>\<#8868\>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-5><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-6><vspace|0.5fn>
   </table-of-contents>
 
   <section|python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -625,6 +633,52 @@
 
   \;
 
+  \<#5B57\>\<#7B26\>\<#4E32\>\<#53EF\>\<#4EE5\>\<#4EE5\>\<#5355\>/\<#53CC\>\<#5F15\>\<#53F7\>\<#5F00\>\<#59CB\>\<#548C\>\<#7ED3\>\<#675F\>\<#3002\>
+
+  \<#5728\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>\<#63D2\>\<#5165\>\<#7684\>\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>\<#5982\>\<#4E0B\>\<#FF1A\>
+
+  \;
+
+  <\with|par-mode|center>
+    <small-table|<block|<tformat|<table|<row|<cell|\\'>|<cell|\<#5355\>\<#5F15\>\<#53F7\>>>|<row|<cell|\\">|<cell|\<#53CC\>\<#5F15\>\<#53F7\>>>|<row|<cell|\\t>|<cell|\<#5236\>\<#8868\>\<#7B26\>>>|<row|<cell|\\n>|<cell|\<#6362\>\<#884C\>\<#7B26\>>>|<row|<cell|\\\\>|<cell|\<#5012\>\<#659C\>\<#6760\>>>>>>|\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>>
+  </with>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#5728\>\<#5B57\>\<#7B26\>\<#4E32\>\<#524D\>\<#52A0\>\<#5165\>r\<#4F7F\>\<#5176\>\<#6210\>\<#4E3A\>\<#539F\>\<#59CB\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>\<#539F\>\<#59CB\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5B8C\>\<#5168\>\<#5FFD\>\<#7565\>\<#6240\>\<#6709\>\<#7684\>\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>\<#FF0C\>\<#53EF\>\<#8F93\>\<#51FA\>\<#5B57\>\<#7B26\>\<#4E2D\>\<#6240\>\<#6709\>\<#7684\>\<#5012\>\<#659C\>\<#6760\>\<#3002\>
+
+  <python|eg:print(r'aaa\\'a') --\<gtr\> aaa\\'a>
+
+  python\<#8BA4\>\<#4E3A\>\\\<#662F\>\<#659C\>\<#6760\>\<#7684\>\<#4E00\>\<#90E8\>\<#5206\>\<#FF0C\>\<#800C\>\<#4E0D\>\<#662F\>\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>\<#7684\>\<#5F00\>\<#59CB\>\<#3002\>
+
+  \;
+
+  \<#591A\>\<#884C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7528\>3\<#4E2A\>\<#5355\>\<#5F15\>\<#53F7\>\<#6216\>\<#53CC\>\<#5F15\>\<#53F7\>\<#5305\>\<#56F4\>\<#3002\>\<#4E09\>\<#91CD\>\<#5F15\>\<#53F7\>\<#4E4B\>\<#95F4\>\<#7684\>\<#6240\>\<#6709\>\<#5F15\>\<#53F7\>\<#FF0C\>\<#5236\>\<#8868\>\<#7B26\>\<#6216\>\<#662F\>\<#6362\>\<#884C\>\<#7B26\>\<#FF0C\>\<#90FD\>\<#4F1A\>\<#88AB\>\<#8BA4\>\<#4E3A\>\<#662F\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#4E00\>\<#90E8\>\<#5206\>\<#3002\>\<#6B64\>\<#65F6\>\<#4F8B\>\<#5982\>\<#5355\>\<#5F15\>\<#53F7\>\<#5C31\>\<#65E0\>\<#9700\>\<#8F6C\>\<#4E49\>\<#3002\>
+
+  \;
+
+  \<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#7D22\>\<#5F15\>\<#6765\>\<#8BBF\>\<#95EE\>\<#3002\>\<#5F00\>\<#59CB\>\<#4E3A\>0\<#3002\>
+
+  \<#5982\>\<#679C\>\<#7528\>\<#4E00\>\<#4E2A\>\<#7D22\>\<#5F15\>\<#4EE5\>\<#53CA\>\<#53E6\>\<#4E00\>\<#4E2A\>\<#7D22\>\<#5F15\>\<#6307\>\<#5B9A\>\<#8303\>\<#56F4\>\<#FF0C\>\<#5219\>\<#5F00\>\<#59CB\>\<#7D22\>\<#5F15\>\<#5C06\>\<#88AB\>\<#5305\>\<#542B\>\<#FF0C\>\<#7ED3\>\<#675F\>\<#7D22\>\<#5F15\>\<#5219\>\<#4E0D\>\<#5305\>\<#542B\>\<#3002\>
+
+  <python|eg:spam='Hello,world' spam[0:5]='Hello'>
+
+  \;
+
+  in\<#548C\>not in\<#64CD\>\<#4F5C\>\<#7B26\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#8FD0\>\<#7528\>\<#4E8E\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>\<#533A\>\<#5206\>\<#5927\>\<#5C0F\>\<#5199\>\<#3002\>
+
+  <\python>
+    eg: 'Hello' in 'Hello,world' == True
+
+    \ \ \ \ 'HelLo' in 'Hello' == False
+  </python>
+
+  \;
+
+  \<#867D\>\<#7136\>\<#52A0\>\<#53F7\>\<#53EF\>\<#4EE5\>\<#5B9E\>\<#73B0\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#63D2\>\<#5165\>\<#548C\>\<#8FDE\>\<#63A5\>\<#FF0C\>\<#4F46\>\<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#66F4\>\<#65B9\>\<#4FBF\>\<#7684\>\<#65B9\>\<#6CD5\>\<#3002\>
+
+  \;
+
   \;
 
   \;
@@ -641,9 +695,10 @@
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|2|1>>
     <associate|auto-3|<tuple|3|2>>
-    <associate|auto-4|<tuple|4|2>>
-    <associate|auto-5|<tuple|5|?>>
-    <associate|auto-6|<tuple|6|?>>
+    <associate|auto-4|<tuple|4|3>>
+    <associate|auto-5|<tuple|5|5>>
+    <associate|auto-6|<tuple|6|7>>
+    <associate|auto-7|<tuple|1|?>>
   </collection>
 </references>
 
@@ -665,6 +720,14 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>\<#5217\>\<#8868\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
