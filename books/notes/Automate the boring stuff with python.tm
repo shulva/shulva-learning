@@ -6,32 +6,39 @@
   <doc-data|<doc-title|Automate the boring stuff with python>>
 
   <\table-of-contents|toc>
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Part
+    1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-1><vspace|0.5fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>\<#63A7\>\<#5236\>\<#6D41\>>
+    <with|par-left|1tab|1.1<space|2spc>python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-2><vspace|0.5fn>
+    <no-break><pageref|auto-2>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>\<#7A0B\>\<#5E8F\>>
+    <with|par-left|1tab|1.2<space|2spc>\<#63A7\>\<#5236\>\<#6D41\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-3><vspace|0.5fn>
+    <no-break><pageref|auto-3>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|4<space|2spc>\<#5217\>\<#8868\>>
+    <with|par-left|1tab|1.3<space|2spc>\<#7A0B\>\<#5E8F\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-4><vspace|0.5fn>
+    <no-break><pageref|auto-4>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>>
+    <with|par-left|1tab|1.4<space|2spc>\<#5217\>\<#8868\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-5><vspace|0.5fn>
+    <no-break><pageref|auto-5>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>>
+    <with|par-left|1tab|1.5<space|2spc>\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-6><vspace|0.5fn>
+    <no-break><pageref|auto-6>>
+
+    <with|par-left|1tab|1.6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-7>>
   </table-of-contents>
 
-  <section|python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
+  <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
+
+  <subsection|python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
 
   \;
 
@@ -74,7 +81,7 @@
 
   \;
 
-  <section|\<#63A7\>\<#5236\>\<#6D41\>>
+  <subsection|\<#63A7\>\<#5236\>\<#6D41\>>
 
   \;
 
@@ -141,7 +148,7 @@
 
   \<#8C03\>\<#7528\>sys.exit()\<#53EF\>\<#4EE5\>\<#63D0\>\<#524D\>\<#7EC8\>\<#6B62\>\<#7A0B\>\<#5E8F\>\<#3002\>
 
-  <section|\<#7A0B\>\<#5E8F\>>
+  <subsection|\<#7A0B\>\<#5E8F\>>
 
   \;
 
@@ -195,7 +202,7 @@
 
   \<#4E00\>\<#65E6\>\<#6267\>\<#884C\>\<#8DF3\>\<#5230\>except\<#5B50\>\<#53E5\>\<#7684\>\<#4EE3\>\<#7801\>\<#FF0C\>\<#5C31\>\<#65E0\>\<#6CD5\>\<#56DE\>\<#5230\>try\<#8BED\>\<#53E5\>\<#3002\>\<#5B83\>\<#4F1A\>\<#7EE7\>\<#7EED\>\<#5411\>\<#4E0B\>\<#8FD0\>\<#884C\>\<#3002\>
 
-  <section|\<#5217\>\<#8868\>>
+  <subsection|\<#5217\>\<#8868\>>
 
   \;
 
@@ -481,7 +488,7 @@
     id(cheese)!=id(spam) \<#4F46\>\<#4E24\>\<#8005\>\<#5185\>\<#5BB9\>\<#76F8\>\<#540C\>
   </python-code>
 
-  <section|\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>>
+  <subsection|\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>>
 
   \;
 
@@ -629,7 +636,7 @@
 
   \;
 
-  <section|\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>>
+  <subsection|\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>>
 
   \;
 
@@ -677,7 +684,173 @@
 
   \<#867D\>\<#7136\>\<#52A0\>\<#53F7\>\<#53EF\>\<#4EE5\>\<#5B9E\>\<#73B0\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#63D2\>\<#5165\>\<#548C\>\<#8FDE\>\<#63A5\>\<#FF0C\>\<#4F46\>\<#6211\>\<#4EEC\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#66F4\>\<#65B9\>\<#4FBF\>\<#7684\>\<#65B9\>\<#6CD5\>\<#3002\>
 
+  \<#4F7F\>\<#7528\>\<#5B57\>\<#7B26\>\<#4E32\>\<#63D2\>\<#503C\>\<#6CD5\>\<#3002\>\<#5176\>\<#4E2D\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>\<#7684\>%s\<#8FD0\>\<#7B97\>\<#7B26\>\<#4F1A\>\<#5145\>\<#5F53\>\<#6807\>\<#8BB0\>\<#FF0C\>\<#5E76\>\<#7531\>\<#5B57\>\<#7B26\>\<#4E32\>\<#540E\>\<#7684\>\<#503C\>\<#4EE3\>\<#66FF\>\<#3002\>
+
+  \<#597D\>\<#5904\>\<#662F\>\<#65E0\>\<#9700\>\<#8C03\>\<#7528\>str()\<#4FBF\>\<#53EF\>\<#5C06\>\<#503C\>\<#8F6C\>\<#5316\>\<#4E3A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  <python|eg: 'My name is %s. I am %s years old' % (name,age)>
+
   \;
+
+  python3.6\<#5F15\>\<#5165\>\<#4E86\>\<#201C\>f\<#5B57\>\<#7B26\>\<#4E32\>\<#201D\>\<#FF0C\>\<#8BE5\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E0E\>\<#5B57\>\<#7B26\>\<#4E32\>\<#63D2\>\<#503C\>\<#7C7B\>\<#4F3C\>\<#FF0C\>\<#4E0D\>\<#540C\>\<#4E4B\>\<#5904\>\<#5728\>\<#4E8E\>\<#7528\>\<#82B1\>\<#62EC\>\<#53F7\>\<#4EE3\>\<#66FF\>%s\<#FF0C\>\<#5E76\>\<#5C06\>\<#8868\>\<#8FBE\>\<#5F0F\>\<#76F4\>\<#63A5\>\<#653E\>\<#5728\>\<#82B1\>\<#62EC\>\<#53F7\>\<#5185\>\<#3002\>
+
+  <\python>
+    eg: name='shulva'
+
+    \ \ \ \ age=15
+
+    \ \ \ \ f'my name is {name}, I am {age} years old'
+  </python>
+
+  \;
+
+  upper()\<#548C\>lower()\<#5B57\>\<#7B26\>\<#4E32\>\<#65B9\>\<#6CD5\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#65B0\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5176\>\<#4E2D\>\<#539F\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#6240\>\<#6709\>\<#5B57\>\<#6BCD\>\<#90FD\>\<#88AB\>\<#76F8\>\<#5E94\>\<#5730\>\<#8F6C\>\<#6362\>\<#4E3A\>\<#5927\>\<#5199\>\<#6216\>\<#5C0F\>\<#5199\>\<#3002\>\<#8FD9\>\<#4E9B\>\<#65B9\>\<#6CD5\>\<#4E0D\>\<#4F1A\>\<#6539\>\<#53D8\>\<#5B57\>\<#7B26\>\<#4E32\>\<#672C\>\<#8EAB\>\<#FF0C\>\<#800C\>\<#662F\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#65B0\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  \<#5982\>\<#679C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>\<#542B\>\<#6709\>\<#5B57\>\<#6BCD\>\<#FF0C\>\<#5E76\>\<#4E14\>\<#6240\>\<#6709\>\<#5B57\>\<#6BCD\>\<#90FD\>\<#662F\>\<#5C0F\>\<#5199\>\<#548C\>\<#5927\>\<#5199\>\<#FF0C\>\<#90A3\>\<#4E48\>isupper()\<#548C\>islower()\<#65B9\>\<#6CD5\>\<#5C31\>\<#4F1A\>\<#76F8\>\<#5E94\>\<#7684\>\<#8FD4\>\<#56DE\>True,\<#5426\>\<#5219\>\<#8FD4\>\<#56DE\>False\<#3002\>
+
+  <\with|par-mode|center>
+    <small-table|<block|<tformat|<table|<row|<cell|isalpha()>|<cell|\<#5982\>\<#679C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#53EA\>\<#5305\>\<#542B\>\<#5B57\>\<#6BCD\>\<#4E14\>\<#975E\>\<#7A7A\>\<#FF0C\>\<#8FD4\>\<#56DE\>True>>|<row|<cell|isalnum()>|<cell|\<#5982\>\<#679C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#53EA\>\<#5305\>\<#542B\>\<#6570\>\<#5B57\>\<#548C\>\<#5B57\>\<#6BCD\>\<#4E14\>\<#975E\>\<#7A7A\>\<#FF0C\>\<#8FD4\>\<#56DE\>True>>|<row|<cell|isdecimal()>|<cell|\<#5982\>\<#679C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#53EA\>\<#5305\>\<#542B\>\<#6570\>\<#5B57\>\<#5B57\>\<#7B26\>\<#4E14\>\<#975E\>\<#7A7A\>\<#FF0C\>\<#8FD4\>\<#56DE\>True>>|<row|<cell|isspace()>|<cell|\<#5982\>\<#679C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#53EA\>\<#5305\>\<#542B\>\<#7A7A\>\<#683C\>\<#FF0C\>\<#5236\>\<#8868\>\<#7B26\>\<#548C\>\<#6362\>\<#884C\>\<#7B26\>\<#FF0C\>\<#8FD4\>\<#56DE\>True>>|<row|<cell|istitle()>|<cell|\<#5982\>\<#679C\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4EC5\>\<#5305\>\<#542B\>\<#4EE5\>\<#5927\>\<#5199\>\<#5B57\>\<#6BCD\>\<#5F00\>\<#5934\>\<#FF0C\>\<#540E\>\<#9762\>\<#90FD\>\<#662F\>\<#5C0F\>\<#5199\>\<#5B57\>\<#6BCD\>\<#7684\>\<#5355\>\<#8BCD\>\<#FF0C\>\<#6570\>\<#5B57\>\<#6216\>\<#7A7A\>\<#683C\>\<#FF0C\>\<#8FD4\>\<#56DE\>True>>>>>|\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>is()\<#65B9\>\<#6CD5\>>
+  </with>
+
+  \;
+
+  \;
+
+  \<#5982\>\<#679C\>startwith()\<#548C\>endwith()\<#65B9\>\<#6CD5\>\<#6240\>\<#8C03\>\<#7528\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4EE5\>\<#8BE5\>\<#65B9\>\<#6CD5\>\<#4F20\>\<#5165\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5F00\>\<#59CB\>\<#548C\>\<#7ED3\>\<#675F\>\<#FF0C\>\<#5219\>\<#8FD4\>\<#56DE\>True\<#FF0C\>\<#5426\>\<#5219\>\<#8FD4\>\<#56DE\>False\<#3002\>
+
+  \;
+
+  \<#5982\>\<#679C\>\<#6709\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5217\>\<#8868\>\<#FF0C\>\<#9700\>\<#8981\>\<#5C06\>\<#4ED6\>\<#4EEC\>\<#8FDE\>\<#8D77\>\<#6765\>\<#6210\>\<#4E3A\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#90A3\>\<#4E48\>join()\<#65B9\>\<#6CD5\>\<#5C31\>\<#5F88\>\<#6709\>\<#7528\>\<#3002\>join()\<#65B9\>\<#6CD5\>\<#53EF\>\<#5728\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E0A\>\<#88AB\>\<#8C03\>\<#7528\>\<#FF0C\>\<#53C2\>\<#6570\>\<#662F\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5217\>\<#8868\>\<#FF0C\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  <\python>
+    eg: 'ABC'.join(['My', 'name', 'is', 'Simon'])=='MyABCnameABCisABCSimon'
+  </python>
+
+  split()\<#65B9\>\<#6CD5\>\<#6240\>\<#505A\>\<#7684\>\<#4E8B\>\<#6B63\>\<#597D\>\<#76F8\>\<#53CD\>\<#FF0C\>\<#5B83\>\<#9488\>\<#5BF9\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#503C\>\<#8C03\>\<#7528\>\<#FF0C\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5217\>\<#8868\>\<#3002\>
+
+  <python|eg: 'My name is Simon'.split()==['My', 'name', 'is', 'Simon']>
+
+  \<#9ED8\>\<#8BA4\>\<#60C5\>\<#51B5\>\<#4E0B\>\<#5176\>\<#6309\>\<#7167\>\<#5404\>\<#79CD\>\<#7A7A\>\<#767D\>\<#5B57\>\<#7B26\>\<#5206\>\<#9694\>\<#3002\>\<#4E5F\>\<#53EF\>\<#5411\>split()\<#65B9\>\<#6CD5\>\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#5206\>\<#9694\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#6307\>\<#5B9A\>\<#5176\>\<#6309\>\<#7167\>\<#4E0D\>\<#540C\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5206\>\<#9694\>\<#3002\>\\n\<#4E5F\>\<#662F\>\<#53EF\>\<#4EE5\>\<#7684\>\<#3002\>
+
+  <\python>
+    eg: 'MyABCnameABCisABCSimon'.split('ABC')==['My', 'name', 'is', 'Simon']
+
+    \ \ \ \ 'My name is Simon'.split('m')==['My na', 'e is Si', 'on']
+  </python>
+
+  \;
+
+  partition()\<#5B57\>\<#7B26\>\<#4E32\>\<#65B9\>\<#6CD5\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5206\>\<#6210\>\<#5206\>\<#9694\>\<#7B26\>\<#5B57\>\<#7B26\>\<#4E32\>\<#524D\>\<#540E\>\<#7684\>\<#6587\>\<#672C\>\<#3002\>\<#5176\>\<#4F1A\>\<#8FD4\>\<#56DE\>\<#4E09\>\<#4E2A\>\<#5B50\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5143\>\<#7EC4\>\<#3002\>\<#5982\>\<#679C\>\<#5206\>\<#9694\>\<#7B26\>\<#5B57\>\<#7B26\>\<#4E32\>\<#591A\>\<#6B21\>\<#51FA\>\<#73B0\>\<#FF0C\>\<#5176\>\<#53EA\>\<#53D6\>\<#7B2C\>\<#4E00\>\<#6B21\>\<#51FA\>\<#73B0\>\<#5904\>\<#3002\>\<#5982\>\<#679C\>\<#627E\>\<#4E0D\>\<#5230\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5219\>\<#8FD4\>\<#56DE\>\<#5143\>\<#7EC4\>\<#4E2D\>\<#7B2C\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5C06\>\<#662F\>\<#6574\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#800C\>\<#5176\>\<#4ED6\>\<#4E24\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E3A\>\<#7A7A\>\<#3002\>
+
+  <\python>
+    eg:'Hello, world!'.partition('w')
+
+    \ \ \ ('Hello, ', 'w', 'orld!')
+
+    \ \ \ 'Hello, world!'.partition('world')
+
+    \ \ \ ('Hello, ', 'world', '!')
+  </python>
+
+  \<#53EF\>\<#4EE5\>\<#5229\>\<#7528\>\<#591A\>\<#91CD\>\<#8D4B\>\<#503C\>\<#6280\>\<#5DE7\>\<#7ED9\>3\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#8D4B\>\<#503C\>\<#3002\>
+
+  <\python>
+    eg:\<gtr\>\<gtr\>\<gtr\> before, sep, after = 'Hello, world!'.partition('
+    ')
+
+    \ \ \ \<gtr\>\<gtr\>\<gtr\> before \ \ 'Hello,' \ \ \<gtr\>\<gtr\>\<gtr\>
+    after \ 'world!'
+  </python>
+
+  \;
+
+  rjust()\<#548C\>ljust()\<#8FD4\>\<#56DE\>\<#8C03\>\<#7528\>\<#4ED6\>\<#4EEC\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#586B\>\<#5145\>\<#7248\>\<#672C\>\<#FF0C\>\<#901A\>\<#8FC7\>\<#63D2\>\<#5165\>\<#7A7A\>\<#683C\>\<#6765\>\<#5BF9\>\<#9F50\>\<#6587\>\<#672C\>\<#3002\>
+
+  <\python>
+    eg:
+
+    \ \<gtr\>\<gtr\>\<gtr\> 'Hello'.ljust(10)
+    \<#5DE6\>\<#5BF9\>\<#9F50\>\<#5C06\>Hello\<#653E\>\<#5728\>\<#957F\>\<#4E3A\>10\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>
+
+    \ 'Hello \ \ \ \ '
+
+    \ \<gtr\>\<gtr\>\<gtr\> 'Hello'.rjust(10)
+    \<#53F3\>\<#5BF9\>\<#9F50\>\<#5C06\>Hello\<#653E\>\<#5728\>\<#957F\>\<#4E3A\>10\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>
+
+    \ ' \ \ \ \ Hello'
+
+    \ \<gtr\>\<gtr\>\<gtr\> 'Hello'.rjust(20, '*')
+
+    \ '***************Hello'
+
+    \ \<gtr\>\<gtr\>\<gtr\> 'Hello'.ljust(20, '-')
+
+    \ 'Hello---------------'
+
+    \ \<gtr\>\<gtr\>\<gtr\> 'Hello'.center(20, '=')
+
+    \ '=======Hello========'
+  </python>
+
+  \;
+
+  \<#5229\>\<#7528\>rjust()\<#FF0C\>ljust()\<#548C\>center()\<#65B9\>\<#6CD5\>\<#786E\>\<#4FDD\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5BF9\>\<#9F50\>\<#FF0C\>\<#5373\>\<#4F7F\>\<#4F60\>\<#4E0D\>\<#6E05\>\<#695A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#6709\>\<#591A\>\<#5C11\>\<#5B57\>\<#7B26\>\<#3002\>
+
+  \;
+
+  strip()\<#65B9\>\<#6CD5\>\<#5C06\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#65B0\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5C06\>\<#8C03\>\<#7528\>\<#5176\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>\<#7684\>\<#5F00\>\<#5934\>\<#4E0E\>\<#672B\>\<#5C3E\>\<#7684\>\<#7A7A\>\<#767D\>\<#5B57\>\<#7B26\>\<#5220\>\<#9664\>\<#3002\>
+
+  lstrip()\<#FF0C\>rstrip()\<#5220\>\<#9664\>\<#5DE6\>\<#8FB9\>\<#548C\>\<#53F3\>\<#8FB9\>\<#7684\>\<#7A7A\>\<#767D\>\<#5B57\>\<#7B26\>\<#3002\>
+
+  <\python>
+    eg:
+
+    \ \<gtr\>\<gtr\>\<gtr\> spam = ' \ \ \ Hello, World \ \ \ '
+
+    \ \<gtr\>\<gtr\>\<gtr\> spam.strip()
+
+    \ 'Hello, World'
+
+    \ \<gtr\>\<gtr\>\<gtr\> spam.lstrip()
+
+    \ 'Hello, World \ \ \ '
+
+    \ \<gtr\>\<gtr\>\<gtr\> spam.rstrip()
+
+    \ ' \ \ \ Hello, World'
+
+    \ 
+
+    \ strip()\<#65B9\>\<#6CD5\>\<#53EF\>\<#5E26\>\<#6709\>\<#4E00\>\<#4E2A\>\<#53EF\>\<#9009\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#53C2\>\<#6570\>\<#FF0C\>\<#6307\>\<#5B9A\>\<#4E24\>\<#8FB9\>\<#7684\>\<#54EA\>\<#4E9B\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5E94\>\<#8BE5\>\<#5220\>\<#9664\>\<#3002\>
+
+    \ \<gtr\>\<gtr\>\<gtr\> spam = 'SpamSpamBaconSpamEggsSpamSpam'
+
+    \ \<gtr\>\<gtr\>\<gtr\> spam.strip('ampS')#\<#5220\>\<#9664\>\<#51FA\>\<#73B0\>\<#7684\>a,m,p,S
+    \<#5B57\>\<#7B26\>\<#987A\>\<#5E8F\>\<#5E76\>\<#4E0D\>\<#91CD\>\<#8981\>\<#3002\>
+
+    \ 'BaconSpamEggs'
+  </python>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>ord()\<#51FD\>\<#6570\>\<#83B7\>\<#53D6\>\<#4E00\>\<#4E2A\>\<#5355\>\<#5B57\>\<#7B26\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>unicode\<#4EE3\>\<#7801\>\<#70B9\><\footnote>
+    Unicode \<#4EE3\>\<#7801\>\<#70B9\>\<#FF08\>Unicode code
+    point\<#FF09\>\<#662F\>\<#6307\>\<#4E00\>\<#4E2A\>\<#62BD\>\<#8C61\>\<#7684\>\<#6982\>\<#5FF5\>\<#FF0C\>\<#8868\>\<#793A\>
+    Unicode \<#5B57\>\<#7B26\>\<#96C6\>\<#4E2D\>\<#7684\>\<#6BCF\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#6240\>\<#5BF9\>\<#5E94\>\<#7684\>\<#552F\>\<#4E00\>\<#7F16\>\<#53F7\>\<#3002\>Unicode
+    \<#7801\>\<#70B9\>\<#7684\>\<#53D6\>\<#503C\>\<#8303\>\<#56F4\>\<#662F\>
+    0x0000 \<#5230\> 0x10FFFF\<#FF0C\>\<#5171\> 1,114,112
+    \<#4E2A\>\<#7801\>\<#70B9\>\<#3002\>\<#5176\>\<#4E2D\>\<#FF0C\>0x0000
+    \<#5230\> 0xFFFF \<#4E4B\>\<#95F4\>\<#7684\>\<#7801\>\<#70B9\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>\<#4E24\>\<#4E2A\>\<#5B57\>\<#8282\>\<#7684\>
+    UTF-16 \<#7F16\>\<#7801\>\<#8868\>\<#793A\>\<#FF0C\>\<#800C\> 0x10000
+    \<#5230\> 0x10FFFF \<#4E4B\>\<#95F4\>\<#7684\>\<#7801\>\<#70B9\>\<#9700\>\<#8981\>\<#4F7F\>\<#7528\>\<#56DB\>\<#4E2A\>\<#5B57\>\<#8282\>\<#7684\>
+    UTF-16 \<#7F16\>\<#7801\>\<#8868\>\<#793A\>\<#FF0C\>\<#6216\>\<#8005\>\<#4F7F\>\<#7528\>
+    UTF-8 \<#6216\> UTF-32 \<#7F16\>\<#7801\>\<#8868\>\<#793A\>\<#3002\>
+  </footnote>\<#3002\>\<#7528\>chr()\<#51FD\>\<#6570\>\<#83B7\>\<#53D6\>\<#4E00\>\<#4E2A\>\<#6574\>\<#6570\>\<#4EE3\>\<#7801\>\<#70B9\>\<#7684\>\<#5355\>\<#5B57\>\<#7B26\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  <\python>
+    eg: \<gtr\>\<gtr\>\<gtr\> ord('!') == 33 \ \<gtr\>\<gtr\>\<gtr\> chr(65)
+    == 'A'
+  </python>
 
   \;
 
@@ -693,41 +866,55 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-2|<tuple|2|1>>
-    <associate|auto-3|<tuple|3|2>>
-    <associate|auto-4|<tuple|4|3>>
-    <associate|auto-5|<tuple|5|5>>
-    <associate|auto-6|<tuple|6|7>>
-    <associate|auto-7|<tuple|1|?>>
+    <associate|auto-2|<tuple|1.1|1>>
+    <associate|auto-3|<tuple|1.2|1>>
+    <associate|auto-4|<tuple|1.3|2>>
+    <associate|auto-5|<tuple|1.4|2>>
+    <associate|auto-6|<tuple|1.5|5>>
+    <associate|auto-7|<tuple|1.6|6>>
+    <associate|auto-8|<tuple|1|7>>
+    <associate|auto-9|<tuple|2|7>>
+    <associate|footnote-1|<tuple|1|8>>
+    <associate|footnr-1|<tuple|1|8>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
+    <\associate|table>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|1>||\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>>|<pageref|auto-8>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|2>||\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>is()\<#65B9\>\<#6CD5\>>|<pageref|auto-9>>
+    </associate>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Part
+      1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>\<#63A7\>\<#5236\>\<#6D41\>>
+      <with|par-left|<quote|1tab>|1.1<space|2spc>python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.5fn>
+      <no-break><pageref|auto-2>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>\<#7A0B\>\<#5E8F\>>
+      <with|par-left|<quote|1tab>|1.2<space|2spc>\<#63A7\>\<#5236\>\<#6D41\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.5fn>
+      <no-break><pageref|auto-3>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>\<#5217\>\<#8868\>>
+      <with|par-left|<quote|1tab>|1.3<space|2spc>\<#7A0B\>\<#5E8F\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4><vspace|0.5fn>
+      <no-break><pageref|auto-4>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>>
+      <with|par-left|<quote|1tab>|1.4<space|2spc>\<#5217\>\<#8868\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5><vspace|0.5fn>
+      <no-break><pageref|auto-5>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>>
+      <with|par-left|<quote|1tab>|1.5<space|2spc>\<#5B57\>\<#5178\>\<#548C\>\<#7ED3\>\<#6784\>\<#5316\>\<#6570\>\<#636E\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|1.6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
     </associate>
   </collection>
 </auxiliary>
