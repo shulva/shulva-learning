@@ -105,3 +105,7 @@ some cli tools:
 - STFW
 - RTFM
 - RTFSC
+## [PA1 - 开天辟地的篇章: 最简单的计算机](https://ysyx.oscc.cc/docs/ics-pa/PA1.html)
+### [在开始愉快的PA之旅之前](https://ysyx.oscc.cc/docs/ics-pa/1.1.html)
+#### NEMU是什么？
+- 你可以通过[FUEUX(你在PA0中已经克隆了)](https://github.com/NJU-ProjectN/fceux-am)运行一些老游戏的ROM,阅读并根据fceux-am/README.md中的内容进行操作
