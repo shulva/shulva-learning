@@ -1,19 +1,20 @@
 # [PA 南京大学 计算机系统基础实验](https://ysyx.oscc.cc/docs/ics-pa/)
 ## [PA0 世界诞生的前夜：开发环境配置](https://ysyx.oscc.cc/docs/ics-pa/PA0.html) 
 ### [Preparation](https://ysyx.oscc.cc/docs/ics-pa/0.1.html)
+#### [Installing Ubuntu](https://ysyx.oscc.cc/docs/ics-pa/0.1.html#installing-ubuntu)
 - Remember, the machine is always right!
 ### [First Exploration with GNU/Linux](https://ysyx.oscc.cc/docs/ics-pa/0.2.html) 
 - you can use df -h to see how much disk space linux occupies
 ### [installing tools](https://ysyx.oscc.cc/docs/ics-pa/0.3.html) 
 - you will download and install some tools needed for the PAs from the network mirrors.
-#### checking network state
+#### [checking network state](https://ysyx.oscc.cc/docs/ics-pa/0.3.html#checking-network-state)
 - If you can ping Baidu successfully, you should successfully ping the mirror host above, too.
-#### Setting APT source file
+#### [Setting APT source file](https://ysyx.oscc.cc/docs/ics-pa/0.3.html#setting-apt-source-file)
 - 如果你的系统不是Ubuntu 22.04, 请更换合适的源
 - you can use cat /etc/apt/sources.list to see the apt source
-#### Updating APT package information
+#### [Updating APT package information](https://ysyx.oscc.cc/docs/ics-pa/0.3.html#setting-apt-source-file)
 - you can use apt-get update to update the source
-#### Installing tools for PAs
+#### [installing tools for pas](https://ysyx.oscc.cc/docs/ics-pa/0.3.html#installing-tools-for-pas)
 - The following tools are necessary for PAs:
 ```
 apt-get install build-essential    # build-essential packages, include binary utilities, gcc, make, and so on
@@ -27,11 +28,11 @@ apt-get install llvm llvm-dev      # llvm project, which contains libraries used
 apt-get install llvm-11 llvm-11-dev # only for ubuntu20.04
 ```
 ### [Configuring vim](https://ysyx.oscc.cc/docs/ics-pa/0.4.html)
-#### Learning vim
+#### [Learning vim](https://ysyx.oscc.cc/docs/ics-pa/0.4.html#learning-vim)
 - [Vim Genius](http://www.vimgenius.com/)
-#### Enabling syntax highlight
+#### [Enabling syntax highlight](https://ysyx.oscc.cc/docs/ics-pa/0.4.html#enabling-syntax-highlight)
 - missing semester include this 
-#### Enabling more vim features
+#### [Enabling more vim features](https://ysyx.oscc.cc/docs/ics-pa/0.4.html#enabling-more-vim-features)
 ```
 set background=dark
 setlocal noswapfile " 不要生成swap文件
@@ -70,14 +71,14 @@ set incsearch          " Incremental search
 set hidden             " Hide buffers when they are abandoned
 ```
 ### [More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
-#### Learning to use basic tools
+#### [Learning to use basic tools](https://ysyx.oscc.cc/docs/ics-pa/0.5.html#learning-to-use-basic-tools)
 - [Here(Linux)](https://ysyx.oscc.cc/docs/ics-pa/linux.html) is a small tutorial for GNU/Linux written by jyy
 - [RTFM](https://en.wikipedia.org/wiki/RTFM) Read The Fucking Manual. Sometime you need to use it as the final weapon
 - [Here(GDB)](https://www.cprogramming.com/gdb.html) is a small tutorial for GDB
-#### installing tmux
+#### [installing tmux](https://ysyx.oscc.cc/docs/ics-pa/0.5.html#installing-tmux)
 missing semester include this
 - how to ask question? you need read [this](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md) and [this](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
-#### Why GNU/Linux and How to 
+#### [Why GNU/Linux and How to] (https://ysyx.oscc.cc/docs/ics-pa/0.5.html#why-gnu-linux-and-how-to)
 Unix Philosophy:
 - 每个工具只做一件事情, 但做到极致
 - 工具采用文本方式进行输入输出, 从而易于使用
@@ -93,19 +94,27 @@ some cli tools:
 - 不要使用root账户做实验!!!
 - [why it is bad to login as root?](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root)
 - [git visualizing](http://onlywei.github.io/explain-git-with-d3/)
-#### Git Usage
+#### [Git Usage](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 - include in missing semester
-#### Compiling and Running NEMU
+#### [Compiling and Running NEMU](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 - please not the warning of "no such file or directory" and install correspondent tools
-#### Development Tracing
-#### Local Commit
-#### Writing Report
-#### Submission
+#### [Development] Tracing(https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
+#### [Local Commit](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
+#### [Writing Report](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
+#### [Submission](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 - [Here(C language)](https://docs.huihoo.com/c/linux-c-programming/) is an excellent tutorial about C language. It contains a lot like ds,arch,assembly,os and so on.
 - STFW
 - RTFM
 - RTFSC
 ## [PA1 - 开天辟地的篇章: 最简单的计算机](https://ysyx.oscc.cc/docs/ics-pa/PA1.html)
 ### [在开始愉快的PA之旅之前](https://ysyx.oscc.cc/docs/ics-pa/1.1.html)
-#### NEMU是什么？
-- 你可以通过[FUEUX(你在PA0中已经克隆了)](https://github.com/NJU-ProjectN/fceux-am)运行一些老游戏的ROM,阅读并根据fceux-am/README.md中的内容进行操作
+#### [NEMU是什么？](https://ysyx.oscc.cc/docs/ics-pa/1.1.html#nemu%E6%98%AF%E4%BB%80%E4%B9%88)
+- 你可以通过[FUEUX(你在PA0中已经克隆了)](https://github.com/NJU-ProjectN/fceux-am)运行一些老游戏的ROM,阅读并根据fceux-am/README.md中的内容进行操作.我写了个shell脚本，将游戏名作为参数输入即可
+- make程序默认使用单线程来顺序地编译所有文件,为了加快编译的过程, 我们可以让make创建多个线程来并行地编译文件.具体地, 首先你需要通过lscpu命令来查询你的系统中有多少个CPU. 然后在运行make的时候添加一个-j?的参数, 其中?为你查询到的CPU数量.
+- 你也可以通过ccache来缩短编译时间
+#### [选择你的角色](https://ysyx.oscc.cc/docs/ics-pa/1.1.html#%E9%80%89%E6%8B%A9%E4%BD%A0%E7%9A%84%E8%A7%92%E8%89%B2)
+- 你需要从x86/mips32/riscv32(64)这三种指令集架构(ISA)中选择一种
+- 为了方便叙述, 讲义将用$ISA来表示你选择的ISA
+- NEMU的框架代码会把riscv32作为默认的ISA: [Volume1](https://github.com/riscv/riscv-isa-manual/releases/download/draft-20210813-7d0006e/riscv-spec.pdf),[Volume2](https://github.com/riscv/riscv-isa-manual/releases/download/draft-20210813-7d0006e/riscv-privileged.pdf),[ABI for riscv](https://github.com/riscv-non-isa/riscv-elf-psabi-doc)
+#### [还等什么呢？](https://ysyx.oscc.cc/docs/ics-pa/1.1.html#%E8%BF%98%E7%AD%89%E4%BB%80%E4%B9%88%E5%91%A2)
+- 记得随时记录实验心得！
