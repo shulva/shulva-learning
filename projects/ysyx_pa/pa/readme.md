@@ -75,10 +75,14 @@ set hidden             " Hide buffers when they are abandoned
 - [Here(Linux)](https://ysyx.oscc.cc/docs/ics-pa/linux.html) is a small tutorial for GNU/Linux written by jyy
 - [RTFM](https://en.wikipedia.org/wiki/RTFM) Read The Fucking Manual. Sometime you need to use it as the final weapon
 - [Here(GDB)](https://www.cprogramming.com/gdb.html) is a small tutorial for GDB
+- homework:Write a "Hello World" program under GNU/Linux:[link](./pa0/hello_world.c)
+- homework:Write a Makefile to compile the "Hello World" program:[link](./pa0/Makefile)
+- homework:Learn to use GDB
 #### [installing tmux](https://ysyx.oscc.cc/docs/ics-pa/0.5.html#installing-tmux)
 missing semester include this
 - how to ask question? you need read [this](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md) and [this](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
-#### [Why GNU/Linux and How to] (https://ysyx.oscc.cc/docs/ics-pa/0.5.html#why-gnu-linux-and-how-to)
+- think:things behind scrolling
+#### [Why GNU/Linux and How to](https://ysyx.oscc.cc/docs/ics-pa/0.5.html#why-gnu-linux-and-how-to)
 Unix Philosophy:
 - 每个工具只做一件事情, 但做到极致
 - 工具采用文本方式进行输入输出, 从而易于使用
@@ -109,12 +113,25 @@ some cli tools:
 ## [PA1 - 开天辟地的篇章: 最简单的计算机](https://ysyx.oscc.cc/docs/ics-pa/PA1.html)
 ### [在开始愉快的PA之旅之前](https://ysyx.oscc.cc/docs/ics-pa/1.1.html)
 #### [NEMU是什么？](https://ysyx.oscc.cc/docs/ics-pa/1.1.html#nemu%E6%98%AF%E4%BB%80%E4%B9%88)
+- 简要介绍了模拟器，编译加速以及NEMU的概念
 - 你可以通过[FUEUX(你在PA0中已经克隆了)](https://github.com/NJU-ProjectN/fceux-am)运行一些老游戏的ROM,阅读并根据fceux-am/README.md中的内容进行操作.我写了个shell脚本，将游戏名作为参数输入即可
 - make程序默认使用单线程来顺序地编译所有文件,为了加快编译的过程, 我们可以让make创建多个线程来并行地编译文件.具体地, 首先你需要通过lscpu命令来查询你的系统中有多少个CPU. 然后在运行make的时候添加一个-j?的参数, 其中?为你查询到的CPU数量.
 - 你也可以通过ccache来缩短编译时间
 #### [选择你的角色](https://ysyx.oscc.cc/docs/ics-pa/1.1.html#%E9%80%89%E6%8B%A9%E4%BD%A0%E7%9A%84%E8%A7%92%E8%89%B2)
+- 简要介绍了ISA的概念，给予了三个ISA的手册
 - 你需要从x86/mips32/riscv32(64)这三种指令集架构(ISA)中选择一种
 - 为了方便叙述, 讲义将用$ISA来表示你选择的ISA
 - NEMU的框架代码会把riscv32作为默认的ISA: [Volume1](https://github.com/riscv/riscv-isa-manual/releases/download/draft-20210813-7d0006e/riscv-spec.pdf),[Volume2](https://github.com/riscv/riscv-isa-manual/releases/download/draft-20210813-7d0006e/riscv-privileged.pdf),[ABI for riscv](https://github.com/riscv-non-isa/riscv-elf-psabi-doc)
 #### [还等什么呢？](https://ysyx.oscc.cc/docs/ics-pa/1.1.html#%E8%BF%98%E7%AD%89%E4%BB%80%E4%B9%88%E5%91%A2)
 - 记得随时记录实验心得！
+### [开天辟地的篇章](https://ysyx.oscc.cc/docs/ics-pa/1.2.html)
+#### [最简单的计算机](https://ysyx.oscc.cc/docs/ics-pa/1.2.html#%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA)
+- 简要介绍了一个简单的计算模型
+- CPU怎么知道现在执行到哪一条指令呢? 为此, 先驱为CPU创造了一个特殊的计数器, 叫"程序计数器"(Program Counter, PC). 在x86中, 它有一个特殊的名字, 叫EIP(Extended Instruction Pointer).
+- [turing machine(计算模型)](https://en.wikipedia.org/wiki/Universal_Turing_machine)
+- think:计算机可以没有寄存器吗? (建议二周目思考)
+- homework:尝试理解计算机如何计算
+#### [重新认识程序:程序是个状态机](https://ysyx.oscc.cc/docs/ics-pa/1.2.html#%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%E7%A8%8B%E5%BA%8F-%E7%A8%8B%E5%BA%8F%E6%98%AF%E4%B8%AA%E7%8A%B6%E6%80%81%E6%9C%BA)
+- 简要介绍了将计算机与程序看作状态机的思想,介绍了其的优点
+- homework:从状态机视角理解程序运行
+(0,x,x)->(1,0,x)->(2,0,0)->(3,0,1)->(4,1,1)->(2,1,1)->(3,1,2)->(4,3,2)->...->(2,4851,98)->(3,4851,99)->(4,4950,99)->(2,4950,99)->(3,4950,100)->(4,5050,100)->(5,5050,100)

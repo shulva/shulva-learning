@@ -34,6 +34,14 @@
     <with|par-left|1tab|1.6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>\<#81EA\>\<#52A8\>\<#5316\>\<#4EFB\>\<#52A1\>>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-10><vspace|0.5fn>
+
+    <with|par-left|1tab|2.1<space|2spc>\<#6A21\>\<#5F0F\>\<#5339\>\<#914D\>\<#4E0E\>\<#6B63\>\<#5219\>\<#8868\>\<#8FBE\>\<#5F0F\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-11>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -888,12 +896,12 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|2|?>>
-    <associate|auto-11|<tuple|2.1|?>>
+    <associate|auto-10|<tuple|2|9>>
+    <associate|auto-11|<tuple|2.1|9>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.2|1>>
     <associate|auto-4|<tuple|1.3|2>>
-    <associate|auto-5|<tuple|1.4|2>>
+    <associate|auto-5|<tuple|1.4|3>>
     <associate|auto-6|<tuple|1.5|5>>
     <associate|auto-7|<tuple|1.6|6>>
     <associate|auto-8|<tuple|1|7>>
@@ -939,6 +947,14 @@
       <with|par-left|<quote|1tab>|1.6<space|2spc>\<#5B57\>\<#7B26\>\<#4E32\>\<#64CD\>\<#4F5C\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>\<#81EA\>\<#52A8\>\<#5316\>\<#4EFB\>\<#52A1\>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|2.1<space|2spc>\<#6A21\>\<#5F0F\>\<#5339\>\<#914D\>\<#4E0E\>\<#6B63\>\<#5219\>\<#8868\>\<#8FBE\>\<#5F0F\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
     </associate>
   </collection>
 </auxiliary>
