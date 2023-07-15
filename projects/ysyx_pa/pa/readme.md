@@ -156,5 +156,21 @@ some cli tools:
 - think:为什么全部都是函数?
 - think:参数的处理过程
 - [Disk image](https://en.wikipedia.org/wiki/Disk_image)
-- homework:实现x86的寄存器结构体
+- homework:实现x86的寄存器结构体(二周目再写x86,一周目先用riscv)
 - think: reg\_test()是如何测试你的实现的?
+#### [运行第一个客户程序](https://ysyx.oscc.cc/docs/ics-pa/1.3.html#%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%A2%E6%88%B7%E7%A8%8B%E5%BA%8F)
+- 简要介绍了NEMU的使用方法和内部运行的流程,以及一些在调试中有用的内置宏
+- 在cmd_c()函数中, 调用cpu_exec()的时候传入了参数-1, 你知道这是什么意思吗?
+- 调用cpu_exec()的时候传入了参数-1, 这一做法属于未定义行为吗? 请查阅C99手册确认你的想法.
+- think:谁来指示程序的结束?
+- think:有始有终 (建议二周目思考)
+- homework:理解框架代码
+- GDB还自带一个叫TUI的简单界面. 在一个高度较高的窗口中运行GDB后, 输入layout split就可以切换到TUI, 这样你就可以同时从源代码和指令的角度来观察程序的行为了. 
+- [gdb command](http://www.gdbtutorial.com/gdb_commands)
+- homework:为NEMU编译时添加GDB调试信息
+- homework:优美地退出
+#### [就是这么简单](https://ysyx.oscc.cc/docs/ics-pa/1.3.html#%E5%B0%B1%E6%98%AF%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95)
+- 存储器是个在nemu/src/memory/paddr.c中定义的大数组
+- PC和通用寄存器都在nemu/src/isa/$ISA/include/isa-def.h中的结构体中定义
+- 加法器在... 嗯, 这部分框架代码有点复杂, 不过它并不影响我们对TRM的理解, 我们还是在PA2里面再介绍它吧
+- TRM(turing machine)的工作方式通过cpu_exec()和exec_once()体现
