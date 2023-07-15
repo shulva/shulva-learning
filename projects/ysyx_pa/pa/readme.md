@@ -102,7 +102,7 @@ some cli tools:
 - include in missing semester
 #### [Compiling and Running NEMU](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 - please not the warning of "no such file or directory" and install correspondent tools
-#### [Development] Tracing(https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
+#### [Development Tracing](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 #### [Local Commit](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 #### [Writing Report](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
 #### [Submission](https://ysyx.oscc.cc/docs/ics-pa/0.6.html)
@@ -135,3 +135,26 @@ some cli tools:
 - 简要介绍了将计算机与程序看作状态机的思想,介绍了其的优点
 - homework:从状态机视角理解程序运行
 (0,x,x)->(1,0,x)->(2,0,0)->(3,0,1)->(4,1,1)->(2,1,1)->(3,1,2)->(4,3,2)->...->(2,4851,98)->(3,4851,99)->(4,4950,99)->(2,4950,99)->(3,4950,100)->(4,5050,100)->(5,5050,100)
+### [RTFSC](https://ysyx.oscc.cc/docs/ics-pa/1.3.html)
+- 为了方便叙述, 我们将在NEMU中模拟的计算机称为"客户(guest)计算机", 在NEMU中运行的程序称为"客户程序".
+#### [框架代码初探](https://ysyx.oscc.cc/docs/ics-pa/1.3.html#%E6%A1%86%E6%9E%B6%E4%BB%A3%E7%A0%81%E5%88%9D%E6%8E%A2)
+- 简要介绍了代码文件的架构
+- [NEMU API](https://ysyx.oscc.cc/docs/ics-pa/nemu-isa-api.html)
+- think:一个程序从哪里开始执行呢?
+#### [配置系统和项目构建](https://ysyx.oscc.cc/docs/ics-pa/1.3.html#%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F%E5%92%8C%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA)
+- 简单介绍了NEMU系统配置的文件和过程以及Makefile编译链接的文件和过程
+- 目前我们只需要关心配置系统生成的如下文件:
+- nemu/include/generated/autoconf.h, 阅读C代码时使用
+- nemu/include/config/auto.conf, 阅读Makefile时使用
+- 在menuconfig中选中TARGET_AM时, nemu/src/monitor/sdb目录下的所有文件都不会参与编译.
+- Makefile的编译规则在nemu/scripts/build.mk中定义
+- 我们可以键入make -nB, 它会让make程序以"只输出命令但不执行"的方式强制构建目标.
+- [make](https://www.gnu.org/software/make/manual/make.html#Overview)
+#### [准备第一个客户程序](https://ysyx.oscc.cc/docs/ics-pa/1.3.html#%E5%87%86%E5%A4%87%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AE%A2%E6%88%B7%E7%A8%8B%E5%BA%8F)
+- 简要介绍了客户程序运行前的一系列准备工作
+- think:kconfig生成的宏与条件编译
+- think:为什么全部都是函数?
+- think:参数的处理过程
+- [Disk image](https://en.wikipedia.org/wiki/Disk_image)
+- homework:实现x86的寄存器结构体
+- think: reg\_test()是如何测试你的实现的?
