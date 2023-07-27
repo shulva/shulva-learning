@@ -1699,9 +1699,238 @@
 
   <subsection|\<#8BFB\>\<#5199\>\<#6587\>\<#4EF6\>>
 
+  <subsubsection|Path()\<#51FD\>\<#6570\>>
+
   \;
 
   win\<#548C\>macos\<#4E0A\>\<#662F\>\<#4E0D\>\<#533A\>\<#5206\>\<#6587\>\<#4EF6\>\<#540D\>\<#5927\>\<#5C0F\>\<#5199\>\<#7684\>\<#FF0C\>linux\<#533A\>\<#5206\>\<#3002\>
+
+  windows\<#4F7F\>\<#7528\>\\\<#6765\>\<#5206\>\<#9694\>\<#8DEF\>\<#5F84\>\<#FF0C\>Linux\<#548C\>macos\<#5219\>\<#4F7F\>\<#7528\>/\<#3002\>
+
+  \<#7528\>pathlib\<#6A21\>\<#5757\>\<#4E2D\>\<#7684\>Path()\<#51FD\>\<#6570\>\<#53EF\>\<#4EE5\>\<#6709\>\<#6548\>\<#5730\>\<#8FD4\>\<#56DE\>\<#5BF9\>\<#5E94\>\<#7684\>\<#64CD\>\<#4F5C\>\<#7CFB\>\<#7EDF\>\<#7684\>\<#8DEF\>\<#5F84\>\<#FF0C\>\<#5305\>\<#62EC\>\<#5BF9\>\<#5E94\>\<#7684\>\<#5206\>\<#9694\>\<#7B26\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path('spam', 'bacon', 'eggs')
+
+    \ WindowsPath('spam/bacon/eggs')
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> str(Path('spam', 'bacon', 'eggs'))
+
+    \ 'spam\\\\bacon\\\\eggs'
+
+    \ 
+
+    \ \<#4F7F\>\<#7528\> from pathlib import
+    Path\<#53EF\>\<#4EE5\>\<#907F\>\<#514D\>\<#6BCF\>\<#6B21\>\<#4F7F\>\<#7528\>Path()\<#51FD\>\<#6570\>\<#65F6\>\<#90FD\>\<#8F93\>\<#5165\>pathlib.Path,
+
+    \ \<#4ECE\>\<#800C\>\<#76F4\>\<#63A5\>\<#4F7F\>\<#7528\>Path()
+
+    \ \<#5982\>\<#679C\>\<#662F\>Linux\<#7CFB\>\<#7EDF\>\<#5219\>\<#7ED3\>\<#679C\>\<#662F\>spam/bacon/eggs
+
+    \ 
+
+    \ Path()\<#51FD\>\<#6570\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#8FDE\>\<#63A5\>\<#6587\>\<#4EF6\>\<#540D\>\<#4ECE\>\<#800C\>\<#4EA7\>\<#751F\>\<#8DEF\>\<#5F84\>\<#3002\>
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> myFiles = ['accounts.txt', 'details.csv',
+    'invite.docx']
+
+    \ \<gtr\>\<gtr\>\<gtr\> for filename in myFiles:
+
+    \ print(Path(r'C:\\Users\\Al', filename))
+
+    \ C:\\Users\\Al\\accounts.txt
+
+    \ C:\\Users\\Al\\details.csv
+
+    \ C:\\Users\\Al\\invite.docx
+
+    \ 
+  </python>
+
+  <subsubsection|\<#4F7F\>\<#7528\>/\<#8FD0\>\<#7B97\>\<#7B26\>\<#8FDE\>\<#63A5\>\<#8DEF\>\<#5F84\>>
+
+  \;
+
+  \<#5C06\>/\<#8FD0\>\<#7B97\>\<#7B26\>\<#548C\>Path\<#5BF9\>\<#8C61\>\<#4E00\>\<#8D77\>\<#4F7F\>\<#7528\>\<#FF0C\>\<#8FDE\>\<#63A5\>\<#8DEF\>\<#5F84\>\<#65E2\>\<#5BB9\>\<#6613\>\<#53C8\>\<#5B89\>\<#5168\>\<#FF0C\>\<#56E0\>\<#4E3A\>\<#7528\>Path\<#53EF\>\<#4EE5\>\<#65E0\>\<#89C6\>\<#64CD\>\<#4F5C\>\<#7CFB\>\<#7EDF\>\<#4EA7\>\<#751F\>\<#7684\>\<#5206\>\<#9694\>\<#7B26\>\<#7684\>\<#533A\>\<#522B\>\<#3002\>/\<#8FD0\>\<#7B97\>\<#7B26\>\<#8FD0\>\<#7B97\>\<#8DEF\>\<#5F84\>\<#65F6\>\<#FF0C\>\<#53C2\>\<#4E0E\>\<#8FD0\>\<#7B97\>\<#7684\>\<#503C\>\<#5FC5\>\<#987B\>\<#6709\>\<#4E00\>\<#4E2A\>\<#662F\>Path\<#5BF9\>\<#8C61\>\<#3002\>
+
+  <\python>
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path('spam') / 'bacon' / 'eggs'
+
+    \ WindowsPath('spam/bacon/eggs')
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path('spam') / Path('bacon/eggs')
+
+    \ WindowsPath('spam/bacon/eggs')
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path('spam') / Path('bacon', 'eggs')
+
+    \ WindowsPath('spam/bacon/eggs')
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> homeFolder = Path('C:/Users/Al')
+
+    \ \<gtr\>\<gtr\>\<gtr\> subFolder = Path('spam')
+
+    \ \<gtr\>\<gtr\>\<gtr\> homeFolder / subFolder
+
+    \ WindowsPath('C:/Users/Al/spam')
+
+    \ \<gtr\>\<gtr\>\<gtr\> str(homeFolder / subFolder)
+
+    \ 'C:\\\\Users\\\\Al\\\\spam'
+  </python>
+
+  \;
+
+  <subsubsection|\<#5F53\>\<#524D\>\<#5DE5\>\<#4F5C\>\<#76EE\>\<#5F55\>>
+
+  \;
+
+  \<#5229\>\<#7528\>Path.cwd()\<#51FD\>\<#6570\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#53D6\>\<#5F97\>\<#5F53\>\<#524D\>\<#5DE5\>\<#4F5C\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  \<#4F7F\>\<#7528\>os.chdir()\<#53EF\>\<#4EE5\>\<#6539\>\<#53D8\>\<#5F53\>\<#524D\>\<#5DE5\>\<#4F5C\>\<#76EE\>\<#5F55\>\<#3002\>
+
+  \;
+
+  <\python>
+    \;
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> import os
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path.cwd()
+
+    \ WindowsPath('C:/Users/Al/AppData/Local/Programs/Python/Python37')'
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.chdir('C:\\\\Windows\\\\System32')
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path.cwd()
+
+    \ WindowsPath('C:/Windows/System32')
+  </python>
+
+  \;
+
+  <subsubsection|\<#4E3B\>\<#76EE\>\<#5F55\>>
+
+  \;
+
+  \<#4F7F\>\<#7528\>Path.home()\<#53EF\>\<#4EE5\>\<#83B7\>\<#53D6\>\<#6B64\>\<#64CD\>\<#4F5C\>\<#7CFB\>\<#7EDF\>\<#7684\>\<#4E3B\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>
+
+  <subsubsection|\<#7EDD\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#4E0E\>\<#76F8\>\<#5BF9\>\<#8DEF\>\<#5F84\>>
+
+  \;
+
+  \<#7EDD\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#603B\>\<#662F\>\<#4ECE\>\<#6839\>\<#6587\>\<#4EF6\>\<#5939\>\<#5F00\>\<#59CB\>\<#3002\>
+
+  \<#76F8\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#5219\>\<#662F\>\<#76F8\>\<#5BF9\>\<#4E8E\>\<#5F53\>\<#524D\>\<#7684\>\<#5DE5\>\<#4F5C\>\<#76EE\>\<#5F55\>\<#3002\>
+
+  <subsubsection|\<#7528\>os.makedirs()\<#521B\>\<#5EFA\>\<#65B0\>\<#6587\>\<#4EF6\>\<#5939\>>
+
+  \;
+
+  <\python>
+    <python|> \<gtr\>\<gtr\>\<gtr\> import os
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.makedirs('C:\\\\delicious\\\\walnut\\\\waffles')
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path(r'C:\\Users\\Al\\spam').mkdir()
+  </python>
+
+  \;
+
+  \<#5176\>\<#4F1A\>\<#521B\>\<#5EFA\>\<#8DEF\>\<#5F84\>\<#4E0A\>\<#7684\>\<#6240\>\<#6709\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>
+
+  Path()\<#65B9\>\<#6CD5\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#521B\>\<#5EFA\>\<#6587\>\<#4EF6\>\<#5939\>\<#FF0C\>\<#4F46\>\<#5176\>\<#4E0D\>\<#4F1A\>\<#521B\>\<#5EFA\>\<#8DEF\>\<#5F84\>\<#4E0A\>\<#7684\>\<#6240\>\<#6709\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>mkdir()\<#4E00\>\<#6B21\>\<#53EA\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>
+
+  \;
+
+  <subsubsection|\<#5904\>\<#7406\>\<#7EDD\>\<#5BF9\>\<#548C\>\<#76F8\>\<#5BF9\>\<#8DEF\>\<#5F84\>>
+
+  \;
+
+  Path\<#5BF9\>\<#8C61\>\<#7684\>is_absolute()\<#65B9\>\<#6CD5\>\<#53EF\>\<#4EE5\>\<#68C0\>\<#6D4B\>\<#8DEF\>\<#5F84\>\<#662F\>\<#5426\>\<#662F\>\<#7EDD\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> Path.cwd().is_absolute()
+
+    \ True
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path('spam/bacon/eggs').is_absolute()
+
+    \ False
+
+    \ 
+
+    \ \<#4F7F\>\<#7528\>cwd()\<#548C\>\<#81EA\>\<#5DF1\>\<#6307\>\<#5B9A\>\<#7684\>\<#76F8\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#7EC4\>\<#5408\>
+
+    \ \<gtr\>\<gtr\>\<gtr\> Path.cwd() / Path('my/relative/path')
+
+    \ WindowsPath('C:/Users/Al/AppData/Local/Programs/Python/Python37/my/relative/
+
+    \ path')
+  </python>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> os.path.abspath('.')#abspath\<#8FD4\>\<#56DE\>\<#53C2\>\<#6570\>\<#7684\>\<#7EDD\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>
+
+    \ 'C:\\\\Users\\\\Al\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python37'
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.path.abspath('.\\\\Scripts')
+
+    \ 'C:\\\\Users\\\\Al\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python37\\\\Scripts'
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.path.isabs('.')#\<#5224\>\<#65AD\>\<#662F\>\<#5426\>\<#662F\>\<#7EDD\>\<#5BF9\>\<#8DEF\>\<#5F84\>
+
+    \ False
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.path.isabs(os.path.abspath('.'))
+
+    \ True
+
+    \ 
+
+    \ #os.path.relpath(path, start) \<#8FD4\>\<#56DE\>\<#4ECE\>start\<#8DEF\>\<#5F84\>\<#5230\>path\<#7684\>\<#7684\>\<#76F8\>\<#5BF9\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>
+
+    \ \<#5982\>\<#679C\>\<#6CA1\>\<#6709\>\<#63D0\>\<#4F9B\>\<#5F00\>\<#59CB\>\<#8DEF\>\<#5F84\>\<#FF0C\>\<#5219\>\<#9ED8\>\<#8BA4\>cwd\<#4E3A\>\<#5F00\>\<#59CB\>\<#8DEF\>\<#5F84\>
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.path.relpath('C:\\\\Windows', 'C:\\\\')
+
+    \ 'Windows'
+
+    \ \<gtr\>\<gtr\>\<gtr\> os.path.relpath('C:\\\\Windows',
+    'C:\\\\spam\\\\eggs')
+
+    \ '..\\\\..\\\\Windows'
+  </python>
+
+  \;
+
+  <subsubsection|\<#53D6\>\<#5F97\>\<#6587\>\<#4EF6\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5404\>\<#4E2A\>\<#90E8\>\<#5206\>>
 </body>
 
 <\initial>
@@ -1750,7 +1979,7 @@
     <associate|auto-41|<tuple|1|9>>
     <associate|auto-42|<tuple|1.6.2|9>>
     <associate|auto-43|<tuple|1.6.3|9>>
-    <associate|auto-44|<tuple|1.6.4|10>>
+    <associate|auto-44|<tuple|1.6.4|9>>
     <associate|auto-45|<tuple|1.6.5|10>>
     <associate|auto-46|<tuple|2|10>>
     <associate|auto-47|<tuple|1.6.6|10>>
@@ -1784,7 +2013,15 @@
     <associate|auto-72|<tuple|2.1.16|16>>
     <associate|auto-73|<tuple|2.2|16>>
     <associate|auto-74|<tuple|2.3|16>>
+    <associate|auto-75|<tuple|2.3.1|?>>
+    <associate|auto-76|<tuple|2.3.2|?>>
+    <associate|auto-77|<tuple|2.3.3|?>>
+    <associate|auto-78|<tuple|2.3.4|?>>
+    <associate|auto-79|<tuple|2.3.5|?>>
     <associate|auto-8|<tuple|1.2.3|3>>
+    <associate|auto-80|<tuple|2.3.6|?>>
+    <associate|auto-81|<tuple|2.3.7|?>>
+    <associate|auto-82|<tuple|2.3.8|?>>
     <associate|auto-9|<tuple|1.2.4|3>>
     <associate|footnote-1|<tuple|1|11>>
     <associate|footnr-1|<tuple|1|11>>
