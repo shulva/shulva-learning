@@ -350,6 +350,38 @@
     <with|par-left|2tab|2.3.15<space|2spc>\<#7528\>pprint.pformat()\<#51FD\>\<#6570\>\<#4FDD\>\<#5B58\>\<#53D8\>\<#91CF\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-89>>
+
+    <with|par-left|1tab|2.4<space|2spc>\<#7EC4\>\<#7EC7\>\<#6587\>\<#4EF6\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-90>>
+
+    <with|par-left|2tab|2.4.1<space|2spc>\<#590D\>\<#5236\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-91>>
+
+    <with|par-left|2tab|2.4.2<space|2spc>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#79FB\>\<#52A8\>\<#4E0E\>\<#91CD\>\<#547D\>\<#540D\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-92>>
+
+    <with|par-left|2tab|2.4.3<space|2spc>\<#6C38\>\<#4E45\>\<#5220\>\<#9664\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-93>>
+
+    <with|par-left|2tab|2.4.4<space|2spc>\<#904D\>\<#5386\>\<#76EE\>\<#5F55\>\<#6811\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-94>>
+
+    <with|par-left|2tab|2.4.5<space|2spc>\<#7528\>zipfile\<#6A21\>\<#5757\>\<#5904\>\<#7406\>\<#538B\>\<#7F29\>\<#6587\>\<#4EF6\>\V\<#8BFB\>\<#53D6\>zip\<#6587\>\<#4EF6\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-95>>
+
+    <with|par-left|2tab|2.4.6<space|2spc>\<#4ECE\>zip\<#6587\>\<#4EF6\>\<#4E2D\>\<#89E3\>\<#538B\>\<#7F29\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-96>>
+
+    <with|par-left|2tab|2.4.7<space|2spc>\<#521B\>\<#5EFA\>\<#548C\>\<#6DFB\>\<#52A0\>\<#5230\>zip\<#6587\>\<#4EF6\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-97>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -1375,7 +1407,7 @@
   re.escape(pattern)\<#662F\>\<#4E00\>\<#4E2A\>\<#53EF\>\<#4EE5\>\<#5BF9\>\<#5B57\>\<#7B26\>\<#4E32\>\<#4E2D\>\<#6240\>\<#6709\>\<#53EF\>\<#80FD\>\<#88AB\>\<#89E3\>\<#91CA\>\<#4E3A\>\<#6B63\>\<#5219\>\<#8FD0\>\<#7B97\>\<#7B26\>\<#7684\>\<#5B57\>\<#7B26\>\<#8FDB\>\<#884C\>\<#8F6C\>\<#4E49\>\<#7684\>\<#5E94\>\<#7528\>\<#51FD\>\<#6570\>\<#3002\>
 
   \<#7C7B\>\<#4F3C\>\<#4E8E\>. ^ $ * + ? { } [ ] \\ \| (
-  )\<#7684\>\<#7279\>\<#6B8A\>\<#7B26\>\<#53F7\>\<#FF0C\>\<#5728\>\<#5339\>\<#914D\>\<#5176\>\<#672C\>\<#8EAB\>\<#65F6\>\<#9700\>\<#8981\>\<#5728\>\<#5176\>\<#524D\>\<#9762\>\<#52A0\>\<#4E0A\>\\\<#3002\>\<#4E0D\>\<#60F3\>\<#4E00\>\<#4E2A\>\<#4E2A\>\<#5904\>\<#7406\>\<#5C31\>\<#7528\>escape\<#51FD\>\<#6570\>\<#3002\>
+  )\<#7684\>\<#7279\>\<#6B8A\>\<#7B26\>\<#53F7\>\<#FF0C\>\<#5728\>\<#5339\>\<#914D\>\<#5176\>\<#672C\>\<#8EAB\>\<#65F6\>\<#9700\>\<#8981\>\<#5728\>\<#5176\>\<#524D\>\<#9762\>\<#52A0\>\<#4E0A\>\\\<#3002\>\<#4E0D\>\<#60F3\>\<#4E00\>\<#4E2A\>\<#4E2A\>\<#5904\>\<#7406\>\<#5C31\>\<#7528\>escape\<#51FD\>\<#6570\>\<#3002\>re.escape(regex)\<#5373\>\<#53EF\>\<#8FD4\>\<#56DE\>\<#5BF9\>\<#5E94\>\<#597D\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
 
   <subsubsection|\<#4F7F\>\<#7528\>\|\<#7B26\>\<#53F7\>>
 
@@ -2204,9 +2236,9 @@
     \ \<gtr\>\<gtr\>\<gtr\> notExistsDir =
     Path('C:/This/Folder/Does/Not/Exist')
 
-    \ \<gtr\>\<gtr\>\<gtr\> calcFile = Path('C:/Windows
+    \ \<gtr\>\<gtr\>\<gtr\> calcFile = Path('C:/Windows/System32/calc.exe')
 
-    \ /System32/calc.exe')
+    \ 
 
     \ \<gtr\>\<gtr\>\<gtr\> winDir.exists()
 
@@ -2276,13 +2308,15 @@
   \;
 
   <\python>
-    \<gtr\>\<gtr\>\<gtr\> helloFile = open('/Users/your_home_folder/hello.txt')
+    \ \<gtr\>\<gtr\>\<gtr\> helloFile = open('/Users/your_home_folder/hello.txt')
 
-    \<gtr\>\<gtr\>\<gtr\> helloContent = helloFile.read()
+    \ \<gtr\>\<gtr\>\<gtr\> helloContent = helloFile.read()
 
-    \<gtr\>\<gtr\>\<gtr\> helloContent
+    \ \<gtr\>\<gtr\>\<gtr\> helloContent
 
     \ 'Hello, world!'
+
+    \ 
 
     \ \<gtr\>\<gtr\>\<gtr\> sonnetFile = open(Path.home() / 'sonnet29.txt')
 
@@ -2432,6 +2466,305 @@
 
     \ 'Zophie'
   </python>
+
+  \;
+
+  <subsection|\<#7EC4\>\<#7EC7\>\<#6587\>\<#4EF6\>>
+
+  <subsubsection|\<#590D\>\<#5236\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>>
+
+  \;
+
+  \<#8C03\>\<#7528\>shutil.copy(source,destination)\<#FF0C\>\<#5176\>\<#4F1A\>\<#5C06\>\<#8DEF\>\<#5F84\>source\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#590D\>\<#5236\>\<#5230\>\<#8DEF\>\<#5F84\>destination\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#3002\>\<#5982\>\<#679C\>destination\<#662F\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#540D\>\<#FF0C\>\<#90A3\>\<#4E48\>\<#5176\>\<#4F1A\>\<#88AB\>\<#4F5C\>\<#4E3A\>\<#88AB\>\<#590D\>\<#5236\>\<#6587\>\<#4EF6\>\<#7684\>\<#65B0\>\<#540D\>\<#5B57\>\<#3002\>
+
+  \<#8BE5\>\<#51FD\>\<#6570\>\<#4F1A\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#8868\>\<#793A\>\<#88AB\>\<#590D\>\<#5236\>\<#6587\>\<#4EF6\>\<#7684\>\<#8DEF\>\<#5F84\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import shutil, os
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> p = Path.home()
+
+    \ \<gtr\>\<gtr\>\<gtr\> shutil.copy(p / 'spam.txt', p / 'some_folder')#
+    dest\<#4E3A\>\<#6587\>\<#4EF6\>\<#5939\>
+
+    \ 'C:\\\\Users\\\\Al\\\\some_folder\\\\spam.txt'
+
+    \ \<gtr\>\<gtr\>\<gtr\> shutil.copy(p / 'eggs.txt', p /
+    'some_folder/eggs2.txt') # dest\<#4E3A\>\<#6587\>\<#4EF6\>
+
+    \ WindowsPath('C:/Users/Al/some_folder/eggs2.txt')
+  </python>
+
+  \;
+
+  shutil.copytree()\<#5219\>\<#4F1A\>\<#590D\>\<#5236\>\<#6574\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#5939\>\<#4EE5\>\<#53CA\>\<#5B83\>\<#5305\>\<#542B\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#548C\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  shutil .copytree(source, destination)\<#5C06\>source\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#590D\>\<#5236\>\<#5230\>\<#8DEF\>\<#5F84\>destination\<#5904\>\<#3002\>
+
+  \<#8BE5\>\<#51FD\>\<#6570\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#4E3A\>\<#65B0\>\<#590D\>\<#5236\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#8DEF\>\<#5F84\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import shutil, os
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> p = Path.home()
+
+    \ \<gtr\>\<gtr\>\<gtr\> shutil.copytree(p / 'spam', p / 'spam_backup')
+
+    \ WindowsPath('C:/Users/Al/spam_backup')
+  </python>
+
+  <subsubsection|\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#79FB\>\<#52A8\>\<#4E0E\>\<#91CD\>\<#547D\>\<#540D\>>
+
+  \;
+
+  \<#8C03\>\<#7528\>shutil.move(source,destination)\<#FF0C\>\<#5C06\>\<#8DEF\>\<#5F84\>source\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#79FB\>\<#52A8\>\<#5230\>\<#8DEF\>\<#5F84\>destination\<#FF0C\>\<#5E76\>\<#8FD4\>\<#56DE\>\<#65B0\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>\<#6784\>\<#6210\>\<#76EE\>\<#7684\>\<#5730\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5404\>\<#7EA7\>\<#6587\>\<#4EF6\>\<#5939\>\<#5FC5\>\<#987B\>\<#5B58\>\<#5728\>\<#3002\>
+
+  \<#5982\>\<#679C\>dest\<#4E3A\>\<#6587\>\<#4EF6\>\<#5939\>\<#FF0C\>\<#5219\>\<#6587\>\<#4EF6\>\<#79FB\>\<#52A8\>\<#5230\>dest\<#4E2D\>\<#3002\>\<#5176\>\<#5C06\>\<#8986\>\<#76D6\>dest\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#7684\>\<#540C\>\<#540D\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  \<#5982\>\<#679C\>dest\<#4E3A\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#5219\>\<#5C06\>\<#6587\>\<#4EF6\>\<#79FB\>\<#52A8\>\<#5230\>\<#6307\>\<#5B9A\>\<#8DEF\>\<#5F84\>\<#540E\>\<#6539\>\<#540D\>\<#4E3A\>dest\<#6307\>\<#5B9A\>\<#7684\>\<#6587\>\<#4EF6\>\<#540D\>\<#3002\>
+
+  <\python-code>
+    \ \<gtr\>\<gtr\>\<gtr\> import shutil
+
+    \ \<gtr\>\<gtr\>\<gtr\> shutil.move('C:\\\\bacon.txt', 'C:\\\\eggs')
+
+    \ 'C:\\\\eggs\\\\bacon.txt'
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> shutil.move('C:\\\\bacon.txt',
+    'C:\\\\eggs\\\\new_bacon.txt')
+
+    \ 'C:\\\\eggs\\\\new_bacon.txt'
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> shutil.move('C:\\\\bacon.txt',
+    'C:\\\\eggs')#\<#5982\>\<#679C\>\<#6307\>\<#5B9A\>\<#7684\>eggs\<#6587\>\<#4EF6\>\<#5939\>\<#4E0D\>\<#5B58\>\<#5728\>
+
+    \ 'C:\\\\eggs' #\<#5176\>\<#4F1A\>\<#5728\>C\<#4E0B\>\<#53D8\>\<#6210\>\<#540D\>\<#4E3A\>eggs\<#7684\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#8981\>\<#6CE8\>\<#610F\>\<#4E0D\>\<#72AF\>\<#8FD9\>\<#6837\>\<#7684\>\<#9519\>\<#8BEF\>
+  </python-code>
+
+  \;
+
+  <subsubsection|\<#6C38\>\<#4E45\>\<#5220\>\<#9664\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>>
+
+  \;
+
+  \<#8C03\>\<#7528\>os.unlink(path)\<#5C06\>\<#5220\>\<#9664\>path\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  \<#8C03\>\<#7528\>os.rmdir(path)\<#5C06\>\<#5220\>\<#9664\>path\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>\<#8BE5\>\<#6587\>\<#4EF6\>\<#5939\>\<#5FC5\>\<#987B\>\<#4E3A\>\<#7A7A\>\<#3002\>
+
+  \<#8C03\>\<#7528\>shutil.rmtree(path)\<#5C06\>\<#5220\>\<#9664\>path\<#5904\>\<#7684\>\<#6587\>\<#4EF6\>\<#5939\>\<#FF0C\>\<#5176\>\<#5305\>\<#542B\>\<#7684\>\<#6240\>\<#6709\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>\<#90FD\>\<#4F1A\>\<#88AB\>\<#5220\>\<#9664\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ import os
+
+    \ from pathlib import Path
+
+    \ for filename in Path.home().glob('*.rxt'):
+
+    \ \ \ \ #os.unlink(filename)
+
+    \ \ \ \ print(filename)
+  </python>
+
+  \;
+
+  \<#4F60\>\<#53EF\>\<#4EE5\>\<#7528\>send2trash\<#6A21\>\<#5757\>\<#8FDB\>\<#884C\>\<#5B89\>\<#5168\>\<#5220\>\<#9664\>\<#3002\>s2t\<#4F1A\>\<#5C06\>\<#5220\>\<#9664\>\<#7684\>\<#6587\>\<#4EF6\>\<#653E\>\<#5165\>\<#56DE\>\<#6536\>\<#7AD9\>\<#FF0C\>\<#4E0A\>\<#8FF0\>\<#7684\>\<#5219\>\<#4F1A\>\<#6C38\>\<#4E45\>\<#5220\>\<#9664\>\<#3002\>
+
+  <subsubsection|\<#904D\>\<#5386\>\<#76EE\>\<#5F55\>\<#6811\>>
+
+  \;
+
+  \<#5982\>\<#679C\>\<#4F60\>\<#5E0C\>\<#671B\>\<#904D\>\<#5386\>\<#76EE\>\<#5F55\>\<#6811\>\<#FF0C\>\<#5E76\>\<#5904\>\<#7406\>\<#9047\>\<#5230\>\<#7684\>\<#6BCF\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#FF0C\>os.walk()\<#51FD\>\<#6570\>\<#4FBF\>\<#662F\>\<#4E0D\>\<#4E8C\>\<#4E4B\>\<#9009\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ import os
+
+    \ for folderName, subfolders, filenames in os.walk('C:\\\\delicious'):
+
+    \ \ \ \ print('The current folder is ' + folderName)
+
+    \ \ \ \ for subfolder in subfolders:
+
+    \ \ \ \ \ \ \ \ print('SUBFOLDER OF ' + folderName + ': ' + subfolder)
+
+    \ \ \ \ for filename in filenames:
+
+    \ \ \ \ \ \ \ \ print('FILE INSIDE ' + folderName + ': '+ filename)
+
+    \ \ \ \ print('')
+
+    \ \ \ \ 
+
+    \ \ \ \ The current folder is C:\\delicious
+
+    \ \ \ \ SUBFOLDER OF C:\\delicious: cats\ 
+
+    \ \ \ \ SUBFOLDER OF C:\\delicious: walnut
+
+    \ \ \ \ FILE INSIDE C:\\delicious: spam.txt
+  </python>
+
+  \;
+
+  \;
+
+  os.walk()\<#51FD\>\<#6570\>\<#88AB\>\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#503C\>\<#FF0C\>\<#5373\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#8DEF\>\<#5F84\>\<#3002\>
+
+  os.walk()\<#5728\>\<#5FAA\>\<#73AF\>\<#7684\>\<#6BCF\>\<#6B21\>\<#8FED\>\<#4EE3\>\<#4E2D\>\<#8FD4\>\<#56DE\>\<#4EE5\>\<#4E0B\>\<#4E09\>\<#4E2A\>\<#503C\>\<#FF1A\>
+
+  \;
+
+  \;
+
+  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#540D\>\<#79F0\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\VfolderName\<#3002\>
+
+  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#5B50\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\Vsubfolders\<#3002\>
+
+  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#6587\>\<#4EF6\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\Vfilenames\<#3002\>
+
+  \;
+
+  \<#7A0B\>\<#5E8F\>\<#7684\>\<#5F53\>\<#524D\>\<#76EE\>\<#5F55\>\<#4E0D\>\<#4F1A\>\<#56E0\>\<#4E3A\>os.walk()\<#800C\>\<#6539\>\<#53D8\>\<#3002\>
+
+  <subsubsection|\<#7528\>zipfile\<#6A21\>\<#5757\>\<#5904\>\<#7406\>\<#538B\>\<#7F29\>\<#6587\>\<#4EF6\>\V\<#8BFB\>\<#53D6\>zip\<#6587\>\<#4EF6\>>
+
+  \;
+
+  \<#8981\>\<#8BFB\>\<#53D6\>ZIP\<#6587\>\<#4EF6\>\<#7684\>\<#5185\>\<#5BB9\>\<#FF0C\>\<#9996\>\<#5148\>\<#5FC5\>\<#987B\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>ZipFile\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \<#521B\>\<#5EFA\>\<#65F6\>\<#4F60\>\<#9700\>\<#8981\>\<#8C03\>\<#7528\>zipfile.ZipFile()\<#51FD\>\<#6570\>\<#FF0C\>\<#5411\>\<#5176\>\<#4F20\>\<#9012\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#8868\>\<#793A\>zip\<#6587\>\<#4EF6\>\<#7684\>\<#6587\>\<#4EF6\>\<#540D\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import zipfile, os
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> p = Path.home()
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip = zipfile.ZipFile(p / 'example.zip')
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.namelist()
+
+    \ ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
+
+    \ \<gtr\>\<gtr\>\<gtr\> spamInfo = exampleZip.getinfo('spam.txt')
+
+    \ \<gtr\>\<gtr\>\<gtr\> spamInfo.file_size
+
+    \ 13908
+
+    \ \<gtr\>\<gtr\>\<gtr\> spamInfo.compress_size
+
+    \ 3828
+
+    \ \<#F075\> \<gtr\>\<gtr\>\<gtr\> f'Compressed file is
+    {round(spamInfo.file_size / spamInfo
+
+    \ .compress_size, 2)}x smaller!'
+
+    \ )
+
+    \ 'Compressed file is 3.63x smaller!'
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.close()
+  </python>
+
+  \;
+
+  Zipfile\<#5BF9\>\<#8C61\>\<#6709\>\<#4E00\>\<#4E2A\>namelist()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#5B83\>\<#8FD4\>\<#56DE\>Zip\<#6587\>\<#4EF6\>\<#4E2D\>\<#5305\>\<#542B\>\<#7684\>\<#6240\>\<#6709\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\<#3002\>
+
+  \<#8FD9\>\<#4E9B\>\<#5B57\>\<#7B26\>\<#4E32\>\<#53EF\>\<#4EE5\>\<#4F20\>\<#9012\>\<#7ED9\>ZipFile\<#5BF9\>\<#8C61\>\<#7684\>getinfo()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#5173\>\<#4E8E\>\<#7279\>\<#5B9A\>\<#6587\>\<#4EF6\>\<#7684\>ZipInfo\<#5BF9\>\<#8C61\>\<#3002\>
+
+  ZipInfo\<#5BF9\>\<#8C61\>\<#6709\>\<#4E00\>\<#4E9B\>\<#81EA\>\<#5DF1\>\<#7684\>\<#5C5E\>\<#6027\>\<#FF0C\>\<#5982\>\<#4E0A\>\<#9762\>\<#7684\>compress_size\<#548C\>file_size\<#3002\>\<#5206\>\<#522B\>\<#8868\>\<#793A\>\<#538B\>\<#7F29\>\<#540E\>\<#5927\>\<#5C0F\>\<#548C\>\<#539F\>\<#6587\>\<#4EF6\>\<#5927\>\<#5C0F\>\<#3002\>
+
+  <subsubsection|\<#4ECE\>zip\<#6587\>\<#4EF6\>\<#4E2D\>\<#89E3\>\<#538B\>\<#7F29\>>
+
+  \;
+
+  ZipFile\<#5BF9\>\<#8C61\>\<#7684\>extractall()\<#65B9\>\<#6CD5\>\<#4ECE\>ZIP\<#6587\>\<#4EF6\>\<#4E2D\>\<#89E3\>\<#538B\>\<#7F29\>\<#6240\>\<#6709\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import zipfile, os
+
+    \ \<gtr\>\<gtr\>\<gtr\> from pathlib import Path
+
+    \ \<gtr\>\<gtr\>\<gtr\> p = Path.home()
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip = zipfile.ZipFile(p / 'example.zip')
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.extractall()
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.close()
+
+    \ 
+
+    \ # ZipFile\<#5BF9\>\<#8C61\>\<#7684\>extract()\<#65B9\>\<#6CD5\>\<#89E3\>\<#538B\>\<#7F29\>\<#5355\>\<#4E2A\>\<#6587\>\<#4EF6\>
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.extract('spam.txt')
+
+    \ 'C:\\\\spam.txt'
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.extract('spam.txt',
+    'C:\\\\some\\\\new\\\\folders')
+
+    \ 'C:\\\\some\\\\new\\\\folders\\\\spam.txt'
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleZip.close()
+
+    \ # \<#4F20\>\<#9012\>\<#7ED9\>extract()\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5FC5\>\<#987B\>\<#5339\>\<#914D\>namelist()\<#8FD4\>\<#56DE\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5217\>\<#8868\>\<#4E2D\>\<#7684\>\<#4E00\>\<#4E2A\>\<#3002\>
+
+    \ # \<#82E5\>\<#5411\>\<#5176\>\<#4F20\>\<#9012\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#FF0C\>\<#5219\>\<#5176\>\<#4F1A\>\<#5C06\>\<#6587\>\<#4EF6\>\<#89E3\>\<#538B\>\<#7F29\>\<#5230\>\<#6307\>\<#5B9A\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>\<#4E0D\>\<#5B58\>\<#5728\>\<#5219\>\<#521B\>\<#5EFA\>\<#6587\>\<#4EF6\>\<#5939\>\<#3002\>
+
+    \ 
+  </python>
+
+  <subsubsection|\<#521B\>\<#5EFA\>\<#548C\>\<#6DFB\>\<#52A0\>\<#5230\>zip\<#6587\>\<#4EF6\>>
+
+  \;
+
+  \<#8981\>\<#521B\>\<#5EFA\>\<#81EA\>\<#5DF1\>\<#7684\>zip\<#6587\>\<#4EF6\>\<#FF0C\>\<#5219\>\<#9700\>\<#8981\>\<#4EE5\>\<#5199\>\<#6A21\>\<#5F0F\>\<#6253\>\<#5F00\>ZipFile\<#5BF9\>\<#8C61\>\<#FF0C\>\<#5373\>\<#4F20\>\<#5165\>'w'\<#4F5C\>\<#4E3A\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#3002\>
+
+  \<#5982\>\<#679C\>\<#5411\>write()\<#65B9\>\<#6CD5\>\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#8DEF\>\<#5F84\>\<#FF0C\>\<#90A3\>\<#4E48\>\<#6B64\>\<#8DEF\>\<#5F84\>\<#7684\>\<#6587\>\<#4EF6\>\<#4FBF\>\<#4F1A\>\<#88AB\>\<#538B\>\<#7F29\>\<#3002\>write()\<#7684\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#51B3\>\<#5B9A\>\<#4E86\>\<#8BA1\>\<#7B97\>\<#673A\>\<#4EE5\>\<#4EC0\>\<#4E48\>\<#7B97\>\<#6CD5\>\<#6765\>\<#538B\>\<#7F29\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import zipfile
+
+    \ \<gtr\>\<gtr\>\<gtr\> newZip = zipfile.ZipFile('new.zip', 'w')
+
+    \ \<gtr\>\<gtr\>\<gtr\> newZip.write('spam.txt',
+    compress_type=zipfile.ZIP_DEFLATED)
+
+    \ \<gtr\>\<gtr\>\<gtr\> newZip.close()
+  </python>
+
+  \;
+
+  \<#5176\>\<#5C06\>\<#521B\>\<#5EFA\>\<#65B0\>\<#7684\>\<#538B\>\<#7F29\>\<#6587\>\<#4EF6\>new.zip\<#3002\>\<#5982\>\<#679C\>\<#60F3\>\<#8981\>\<#6DFB\>\<#52A0\>\<#800C\>\<#4E0D\>\<#662F\>\<#8986\>\<#5199\>\<#539F\>\<#6709\>\<#7684\>zip\<#6587\>\<#4EF6\>\<#FF0C\>\<#5219\>\<#9700\>\<#8981\>\<#5C06\>'a'\<#4F5C\>\<#4E3A\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#FF0C\>\<#4EE5\>\<#6DFB\>\<#52A0\>\<#6A21\>\<#5F0F\>\<#6253\>\<#5F00\>zip\<#6587\>\<#4EF6\>\<#3002\>
+
+  \;
+
+  \;
 </body>
 
 <\initial>
@@ -2449,7 +2782,7 @@
     <associate|auto-13|<tuple|1.3.2|4>>
     <associate|auto-14|<tuple|1.3.3|4>>
     <associate|auto-15|<tuple|1.3.4|4>>
-    <associate|auto-16|<tuple|1.4|4>>
+    <associate|auto-16|<tuple|1.4|5>>
     <associate|auto-17|<tuple|1.4.1|5>>
     <associate|auto-18|<tuple|1.4.2|5>>
     <associate|auto-19|<tuple|1.4.3|5>>
@@ -2457,7 +2790,7 @@
     <associate|auto-20|<tuple|1.4.4|5>>
     <associate|auto-21|<tuple|1.4.5|5>>
     <associate|auto-22|<tuple|1.4.6|5>>
-    <associate|auto-23|<tuple|1.4.7|5>>
+    <associate|auto-23|<tuple|1.4.7|6>>
     <associate|auto-24|<tuple|1.4.8|6>>
     <associate|auto-25|<tuple|1.4.9|6>>
     <associate|auto-26|<tuple|1.4.10|6>>
@@ -2512,11 +2845,11 @@
     <associate|auto-70|<tuple|2.1.14|16>>
     <associate|auto-71|<tuple|2.1.15|16>>
     <associate|auto-72|<tuple|2.1.16|16>>
-    <associate|auto-73|<tuple|2.2|16>>
+    <associate|auto-73|<tuple|2.2|17>>
     <associate|auto-74|<tuple|2.3|17>>
     <associate|auto-75|<tuple|2.3.1|17>>
     <associate|auto-76|<tuple|2.3.2|17>>
-    <associate|auto-77|<tuple|2.3.3|17>>
+    <associate|auto-77|<tuple|2.3.3|18>>
     <associate|auto-78|<tuple|2.3.4|18>>
     <associate|auto-79|<tuple|2.3.5|18>>
     <associate|auto-8|<tuple|1.2.3|3>>
@@ -2527,10 +2860,18 @@
     <associate|auto-84|<tuple|2.3.10|21>>
     <associate|auto-85|<tuple|2.3.11|21>>
     <associate|auto-86|<tuple|2.3.12|21>>
-    <associate|auto-87|<tuple|2.3.13|21>>
+    <associate|auto-87|<tuple|2.3.13|22>>
     <associate|auto-88|<tuple|2.3.14|22>>
     <associate|auto-89|<tuple|2.3.15|23>>
-    <associate|auto-9|<tuple|1.2.4|3>>
+    <associate|auto-9|<tuple|1.2.4|4>>
+    <associate|auto-90|<tuple|2.4|23>>
+    <associate|auto-91|<tuple|2.4.1|23>>
+    <associate|auto-92|<tuple|2.4.2|24>>
+    <associate|auto-93|<tuple|2.4.3|24>>
+    <associate|auto-94|<tuple|2.4.4|24>>
+    <associate|auto-95|<tuple|2.4.5|25>>
+    <associate|auto-96|<tuple|2.4.6|25>>
+    <associate|auto-97|<tuple|2.4.7|26>>
     <associate|footnote-1|<tuple|1|12>>
     <associate|footnr-1|<tuple|1|12>>
   </collection>
@@ -2892,6 +3233,38 @@
       <with|par-left|<quote|2tab>|2.3.15<space|2spc>\<#7528\>pprint.pformat()\<#51FD\>\<#6570\>\<#4FDD\>\<#5B58\>\<#53D8\>\<#91CF\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-89>>
+
+      <with|par-left|<quote|1tab>|2.4<space|2spc>\<#7EC4\>\<#7EC7\>\<#6587\>\<#4EF6\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-90>>
+
+      <with|par-left|<quote|2tab>|2.4.1<space|2spc>\<#590D\>\<#5236\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-91>>
+
+      <with|par-left|<quote|2tab>|2.4.2<space|2spc>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#79FB\>\<#52A8\>\<#4E0E\>\<#91CD\>\<#547D\>\<#540D\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-92>>
+
+      <with|par-left|<quote|2tab>|2.4.3<space|2spc>\<#6C38\>\<#4E45\>\<#5220\>\<#9664\>\<#6587\>\<#4EF6\>\<#548C\>\<#6587\>\<#4EF6\>\<#5939\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-93>>
+
+      <with|par-left|<quote|2tab>|2.4.4<space|2spc>\<#904D\>\<#5386\>\<#76EE\>\<#5F55\>\<#6811\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-94>>
+
+      <with|par-left|<quote|2tab>|2.4.5<space|2spc>\<#7528\>zipfile\<#6A21\>\<#5757\>\<#5904\>\<#7406\>\<#538B\>\<#7F29\>\<#6587\>\<#4EF6\>\V\<#8BFB\>\<#53D6\>zip\<#6587\>\<#4EF6\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-95>>
+
+      <with|par-left|<quote|2tab>|2.4.6<space|2spc>\<#4ECE\>zip\<#6587\>\<#4EF6\>\<#4E2D\>\<#89E3\>\<#538B\>\<#7F29\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-96>>
+
+      <with|par-left|<quote|2tab>|2.4.7<space|2spc>\<#521B\>\<#5EFA\>\<#548C\>\<#6DFB\>\<#52A0\>\<#5230\>zip\<#6587\>\<#4EF6\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-97>>
     </associate>
   </collection>
 </auxiliary>
