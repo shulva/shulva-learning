@@ -2285,7 +2285,11 @@
     \ 'Hello, world!'
   </python>
 
-  <subsubsection|open(),read(),write()>
+  <subsubsection|\<#6253\>\<#5F00\>\<#FF0C\>\<#521B\>\<#5EFA\>\<#FF0C\>\<#8BFB\>\<#5199\>\<#6587\>\<#4EF6\>>
+
+  \;
+
+  open\<#53EF\>\<#4EE5\>\<#7528\>\<#6765\>\<#76F4\>\<#63A5\>\<#521B\>\<#5EFA\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#53EA\>\<#8981\>\<#6587\>\<#4EF6\>\<#540D\>\<#4E0D\>\<#5B58\>\<#5728\>\<#4E8E\>\<#76EE\>\<#5F55\>\<#4E2D\>\<#5373\>\<#53EF\>\<#3002\>\<#9700\>\<#8981\>\<#5728\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#4E0A\>\<#4F7F\>\<#7528\>'w'\<#3002\>
 
   \;
 
@@ -2587,7 +2591,7 @@
 
   \;
 
-  \<#5982\>\<#679C\>\<#4F60\>\<#5E0C\>\<#671B\>\<#904D\>\<#5386\>\<#76EE\>\<#5F55\>\<#6811\>\<#FF0C\>\<#5E76\>\<#5904\>\<#7406\>\<#9047\>\<#5230\>\<#7684\>\<#6BCF\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#FF0C\>os.walk()\<#51FD\>\<#6570\>\<#4FBF\>\<#662F\>\<#4E0D\>\<#4E8C\>\<#4E4B\>\<#9009\>\<#3002\>
+  \<#5982\>\<#679C\>\<#4F60\>\<#5E0C\>\<#671B\>\<#904D\>\<#5386\>\<#76EE\>\<#5F55\>\<#6811\>\<#FF0C\>\<#5E76\>\<#5904\>\<#7406\>\<#9047\>\<#5230\>\<#7684\>\<#6BCF\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#FF0C\>os.walk()\<#51FD\>\<#6570\>\<#4FBF\>\<#662F\>\<#4E0D\>\<#4E8C\>\<#4E4B\>\<#9009\>\<#3002\>\<#5176\>\<#6309\>\<#6811\>\<#5F62\>\<#7ED3\>\<#6784\>\<#5411\>\<#4E0B\>\<#904D\>\<#5386\>\<#FF0C\>\<#6BCF\>\<#6B21\>\<#8FED\>\<#4EE3\>\<#66F4\>\<#6362\>\<#5E95\>\<#4E0B\>\<#7684\>\<#4E09\>\<#4E2A\>\<#53D8\>\<#91CF\>\<#3002\>
 
   \;
 
@@ -2617,25 +2621,43 @@
     \ \ \ \ SUBFOLDER OF C:\\delicious: walnut
 
     \ \ \ \ FILE INSIDE C:\\delicious: spam.txt
-  </python>
 
-  \;
+    \ \ \ \ 
+
+    \ \ \ \ The current folder is C:\\delicious\\cats
+
+    \ \ \ \ FILE INSIDE C:\\delicious\\cats: catnames.txt
+
+    \ \ \ \ FILE INSIDE C:\\delicious\\cats: zophie.jpg
+
+    \ \ \ \ The current folder is C:\\delicious\\walnut
+
+    \ \ \ \ SUBFOLDER OF C:\\delicious\\walnut: waffles
+
+    \ \ \ \ 
+
+    \ \ \ \ The current folder is C:\\delicious\\walnut\\waffles
+
+    \ \ \ \ FILE INSIDE C:\\delicious\\walnut\\waffles: butter.txt.
+
+    \ \ \ \ 
+  </python>
 
   \;
 
   os.walk()\<#51FD\>\<#6570\>\<#88AB\>\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#503C\>\<#FF0C\>\<#5373\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#8DEF\>\<#5F84\>\<#3002\>
 
+  os.walk()\<#8FD4\>\<#56DE\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\<#FF0C\>\<#5C06\>\<#5176\>\<#4FDD\>\<#5B58\>\<#5728\>subfolder\<#548C\>filename\<#53D8\>\<#91CF\>\<#4E2D\>\<#3002\>
+
   os.walk()\<#5728\>\<#5FAA\>\<#73AF\>\<#7684\>\<#6BCF\>\<#6B21\>\<#8FED\>\<#4EE3\>\<#4E2D\>\<#8FD4\>\<#56DE\>\<#4EE5\>\<#4E0B\>\<#4E09\>\<#4E2A\>\<#503C\>\<#FF1A\>
 
   \;
 
-  \;
+  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#8DEF\>\<#5F84\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\VfolderName\<#3002\>
 
-  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#540D\>\<#79F0\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\VfolderName\<#3002\>
+  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#5B50\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#540D\>\<#79F0\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\Vsubfolders\<#3002\>
 
-  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#5B50\>\<#6587\>\<#4EF6\>\<#5939\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\Vsubfolders\<#3002\>
-
-  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#6587\>\<#4EF6\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\Vfilenames\<#3002\>
+  \<#5F53\>\<#524D\>\<#6587\>\<#4EF6\>\<#5939\>\<#4E2D\>\<#6587\>\<#4EF6\>\<#7684\>\<#540D\>\<#79F0\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#5217\>\<#8868\>\Vfilenames\<#3002\>
 
   \;
 
@@ -2845,11 +2867,11 @@
     <associate|auto-70|<tuple|2.1.14|16>>
     <associate|auto-71|<tuple|2.1.15|16>>
     <associate|auto-72|<tuple|2.1.16|16>>
-    <associate|auto-73|<tuple|2.2|17>>
+    <associate|auto-73|<tuple|2.2|16>>
     <associate|auto-74|<tuple|2.3|17>>
     <associate|auto-75|<tuple|2.3.1|17>>
     <associate|auto-76|<tuple|2.3.2|17>>
-    <associate|auto-77|<tuple|2.3.3|18>>
+    <associate|auto-77|<tuple|2.3.3|17>>
     <associate|auto-78|<tuple|2.3.4|18>>
     <associate|auto-79|<tuple|2.3.5|18>>
     <associate|auto-8|<tuple|1.2.3|3>>
@@ -2860,7 +2882,7 @@
     <associate|auto-84|<tuple|2.3.10|21>>
     <associate|auto-85|<tuple|2.3.11|21>>
     <associate|auto-86|<tuple|2.3.12|21>>
-    <associate|auto-87|<tuple|2.3.13|22>>
+    <associate|auto-87|<tuple|2.3.13|21>>
     <associate|auto-88|<tuple|2.3.14|22>>
     <associate|auto-89|<tuple|2.3.15|23>>
     <associate|auto-9|<tuple|1.2.4|4>>
@@ -3222,7 +3244,7 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-86>>
 
-      <with|par-left|<quote|2tab>|2.3.13<space|2spc>open(),read(),write()
+      <with|par-left|<quote|2tab>|2.3.13<space|2spc>\<#6253\>\<#5F00\>\<#FF0C\>\<#521B\>\<#5EFA\>\<#FF0C\>\<#8BFB\>\<#5199\>\<#6587\>\<#4EF6\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-87>>
 
