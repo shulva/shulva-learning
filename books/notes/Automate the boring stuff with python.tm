@@ -339,7 +339,7 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-86>>
 
-    <with|par-left|2tab|2.3.13<space|2spc>open(),read(),write()
+    <with|par-left|2tab|2.3.13<space|2spc>\<#6253\>\<#5F00\>\<#FF0C\>\<#521B\>\<#5EFA\>\<#FF0C\>\<#8BFB\>\<#5199\>\<#6587\>\<#4EF6\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-87>>
 
@@ -382,6 +382,34 @@
     <with|par-left|2tab|2.4.7<space|2spc>\<#521B\>\<#5EFA\>\<#548C\>\<#6DFB\>\<#52A0\>\<#5230\>zip\<#6587\>\<#4EF6\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-97>>
+
+    <with|par-left|1tab|2.5<space|2spc>\<#8C03\>\<#8BD5\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-98>>
+
+    <with|par-left|2tab|2.5.1<space|2spc>\<#629B\>\<#51FA\>\<#5F02\>\<#5E38\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-99>>
+
+    <with|par-left|2tab|2.5.2<space|2spc>\<#53D6\>\<#5F97\>\<#56DE\>\<#6EAF\>\<#5B57\>\<#7B26\>\<#4E32\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-100>>
+
+    <with|par-left|2tab|2.5.3<space|2spc>\<#65AD\>\<#8A00\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-101>>
+
+    <with|par-left|2tab|2.5.4<space|2spc>\<#65E5\>\<#5FD7\>-logging\<#6A21\>\<#5757\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-102>>
+
+    <with|par-left|2tab|2.5.5<space|2spc>\<#4E0D\>\<#8981\>\<#4F7F\>\<#7528\>print()\<#8C03\>\<#8BD5\>\V\<#65E5\>\<#5FD7\>\<#7EA7\>\<#522B\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-103>>
+
+    <with|par-left|2tab|2.5.6<space|2spc>\<#7981\>\<#7528\>\<#65E5\>\<#5FD7\>\<#53CA\>\<#5C06\>\<#65E5\>\<#5FD7\>\<#8BB0\>\<#5F55\>\<#5230\>\<#6587\>\<#4EF6\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-104>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -2784,6 +2812,293 @@
 
   \<#5176\>\<#5C06\>\<#521B\>\<#5EFA\>\<#65B0\>\<#7684\>\<#538B\>\<#7F29\>\<#6587\>\<#4EF6\>new.zip\<#3002\>\<#5982\>\<#679C\>\<#60F3\>\<#8981\>\<#6DFB\>\<#52A0\>\<#800C\>\<#4E0D\>\<#662F\>\<#8986\>\<#5199\>\<#539F\>\<#6709\>\<#7684\>zip\<#6587\>\<#4EF6\>\<#FF0C\>\<#5219\>\<#9700\>\<#8981\>\<#5C06\>'a'\<#4F5C\>\<#4E3A\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#FF0C\>\<#4EE5\>\<#6DFB\>\<#52A0\>\<#6A21\>\<#5F0F\>\<#6253\>\<#5F00\>zip\<#6587\>\<#4EF6\>\<#3002\>
 
+  <subsection|\<#8C03\>\<#8BD5\>>
+
+  \;
+
+  <subsubsection|\<#629B\>\<#51FA\>\<#5F02\>\<#5E38\>>
+
+  \;
+
+  \<#5F53\>python\<#8BD5\>\<#56FE\>\<#6267\>\<#884C\>\<#65E0\>\<#6548\>\<#4EE3\>\<#7801\>\<#65F6\>\<#FF0C\>\<#4FBF\>\<#4F1A\>\<#629B\>\<#51FA\>\<#5F02\>\<#5E38\>\<#3002\>
+
+  \<#6211\>\<#4EEC\>\<#4F7F\>\<#7528\>try\<#548C\>except\<#8BED\>\<#53E5\>\<#6765\>\<#5904\>\<#7406\>python\<#7684\>\<#5F02\>\<#5E38\>\<#3002\>
+
+  \;
+
+  \<#629B\>\<#51FA\>\<#5F02\>\<#5E38\>\<#4F7F\>\<#7528\>rasie()\<#8BED\>\<#53E5\>\<#3002\>\<#5728\>\<#4EE3\>\<#7801\>\<#4E2D\>\<#FF0C\>raise()\<#5305\>\<#542B\>\<#4EE5\>\<#4E0B\>\<#90E8\>\<#5206\>\<#FF1A\>
+
+  <\itemize-dot>
+    <item>raise \<#5173\>\<#952E\>\<#5B57\>
+
+    <item>\<#4F20\>\<#9012\>\<#7ED9\>Exception()\<#51FD\>\<#6570\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5305\>\<#542B\>\<#6709\>\<#6548\>\<#7684\>\<#9519\>\<#8BEF\>\<#4FE1\>\<#606F\>
+
+    <item>\<#5BF9\>Exception\<#51FD\>\<#6570\>\<#7684\>\<#8C03\>\<#7528\>
+  </itemize-dot>
+
+  \;
+
+  <\python>
+    def boxPrint(symbol, width, height):
+
+    \ \ \ \ if len(symbol) != 1:
+
+    \ \<#F075\> \ \ \ \ raise Exception('Symbol must be a single character
+    string.')
+
+    \ 
+
+    \ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3,
+    3)):
+
+    \ \ \ \ try:
+
+    \ \ \ \ \ \ \ \ boxPrint(sym, w, h)
+
+    \ \<#F078\> \ except Exception as err:
+
+    \ \<#F079\> \ print('An exception happened: ' + str(err))
+  </python>
+
+  \;
+
+  \<#4E00\>\<#65E6\>\<#8F93\>\<#5165\>\<#6761\>\<#4EF6\>\<#4E0D\>\<#6EE1\>\<#8DB3\>\<#FF0C\>\<#53C2\>\<#6570\>\<#4E0D\>\<#5BF9\>\<#FF0C\>try-except\<#5C31\>\<#4F1A\>\<#5904\>\<#7406\>\<#65E0\>\<#6548\>\<#7684\>\<#53C2\>\<#6570\>\<#3002\>
+
+  \;
+
+  \<#8FD9\>\<#4E2A\>\<#7A0B\>\<#5E8F\>\<#4F7F\>\<#7528\>\<#4E86\>except\<#8BED\>\<#53E5\>\<#7684\>except
+  Exception as err \<#5F62\>\<#5F0F\>\<#3002\>
+
+  \<#5982\>\<#679C\>boxPrint()\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>Exception\<#5BF9\>\<#8C61\>\<#FF0C\>\<#90A3\>\<#4E48\>\<#8FD9\>\<#6761\>except\<#8BED\>\<#53E5\>\<#4FBF\>\<#4F1A\>\<#5C06\>\<#5176\>\<#4FDD\>\<#5B58\>\<#5728\>err\<#53D8\>\<#91CF\>\<#4E2D\>\<#3002\>Exception\<#5BF9\>\<#8C61\>\<#53EF\>\<#4EE5\>\<#4F20\>\<#9012\>\<#7ED9\>str()\<#4EE5\>\<#5C06\>\<#5B83\>\<#8F6C\>\<#6362\>\<#4E3A\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  \;
+
+  \<#4F7F\>\<#7528\>try-except\<#8BED\>\<#53E5\>\<#53EF\>\<#4EE5\>\<#66F4\>\<#4F18\>\<#96C5\>\<#7684\>\<#5904\>\<#7406\>\<#9519\>\<#8BEF\>\<#FF0C\>\<#800C\>\<#4E0D\>\<#662F\>\<#8BA9\>\<#6574\>\<#4E2A\>\<#7A0B\>\<#5E8F\>\<#5D29\>\<#6E83\>\<#3002\>
+
+  <subsubsection|\<#53D6\>\<#5F97\>\<#56DE\>\<#6EAF\>\<#5B57\>\<#7B26\>\<#4E32\>>
+
+  \;
+
+  \<#5982\>\<#679C\>Python\<#9047\>\<#5230\>\<#9519\>\<#8BEF\>\<#FF0C\>\<#5B83\>\<#5C31\>\<#4F1A\>\<#4EA7\>\<#751F\>\<#4E00\>\<#4E9B\>\<#9519\>\<#8BEF\>\<#4FE1\>\<#606F\>\<#FF0C\>\<#79F0\>\<#4E3A\>Traceback\<#3002\>
+
+  Traceback\<#5305\>\<#542B\>\<#4E86\>\<#9519\>\<#8BEF\>\<#4FE1\>\<#606F\>\<#FF0C\>\<#9519\>\<#8BEF\>\<#4EE3\>\<#7801\>\<#884C\>\<#53F7\>\<#4EE5\>\<#53CA\>\<#5BFC\>\<#81F4\>\<#9519\>\<#8BEF\>\<#7684\>\<#51FD\>\<#6570\>\<#8C03\>\<#7528\>\<#5E8F\>\<#5217\>\<#3002\>\<#8FD9\>\<#4E2A\>\<#5E8F\>\<#5217\>\<#79F0\>\<#4E3A\>\<#8C03\>\<#7528\>\<#6808\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ def spam():
+
+    \ \ \ \ bacon()
+
+    \ def bacon():
+
+    \ \ \ \ raise Exception('This is the error message.')
+
+    \ spam()
+
+    \ 
+
+    \ Traceback (most recent call last):
+
+    \ \ File "errorExample.py", line 7, in \<less\>module\<gtr\>
+
+    \ \ \ \ spam()
+
+    \ \ File "errorExample.py", line 2, in spam
+
+    \ \ \ \ bacon()
+
+    \ \ File "errorExample.py", line 5, in bacon
+
+    \ \ \ \ raise Exception('This is the error message.')
+
+    \ Exception: This is the error message.
+  </python>
+
+  \;
+
+  \<#53EA\>\<#8981\>\<#629B\>\<#51FA\>\<#7684\>\<#5F02\>\<#5E38\>\<#6CA1\>\<#6709\>\<#5904\>\<#7406\>\<#FF0C\>python\<#5C31\>\<#4F1A\>\<#663E\>\<#793A\>\<#56DE\>\<#6EAF\>\<#3002\>\<#4F60\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#8C03\>\<#7528\>traceback.format_exc()\<#5F97\>\<#5230\>\<#5176\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#5F62\>\<#5F0F\>\<#3002\>
+
+  <subsubsection|\<#65AD\>\<#8A00\>>
+
+  \;
+
+  \<#65AD\>\<#8A00\>\<#662F\>\<#5065\>\<#5168\>\<#6027\>\<#68C0\>\<#67E5\>\<#FF0C\>\<#7528\>\<#4E8E\>\<#786E\>\<#4FDD\>\<#4EE3\>\<#7801\>\<#4E2D\>\<#6CA1\>\<#6709\>\<#660E\>\<#663E\>\<#9519\>\<#8BEF\>\<#7684\>\<#4E8B\>\<#60C5\>\<#3002\>\<#6709\>\<#4E86\>\<#65AD\>\<#8A00\>\<#540E\>\<#8BF7\>\<#4E0D\>\<#8981\>\<#518D\>\<#7528\>if-print\<#6765\>\<#663E\>\<#793A\>\<#9519\>\<#8BEF\>\<#4E86\>\<#3002\>
+
+  assert\<#7684\>\<#903B\>\<#8F91\>\<#662F\>\<#FF1A\>\<#6211\>\<#65AD\>\<#8A00\>\<#6761\>\<#4EF6\>\<#6210\>\<#7ACB\>\<#3002\>\<#82E5\>\<#4E0D\>\<#6210\>\<#7ACB\>\<#FF0C\>\<#5219\>\<#8BF4\>\<#660E\>\<#67D0\>\<#4E2A\>\<#5730\>\<#65B9\>\<#6709\>bug\<#FF0C\>\<#8BF7\>\<#7ACB\>\<#5373\>\<#505C\>\<#6B62\>\<#7A0B\>\<#5E8F\>\<#3002\>
+
+  \;
+
+  <python|assert 'red' in stoplight.values(), 'Neither light is red! ' +
+  str(stoplight)>
+
+  \;
+
+  \<#6709\>\<#4E86\>\<#8FD9\>\<#4E2A\>\<#65AD\>\<#8A00\>\<#FF0C\>\<#7A0B\>\<#5E8F\>\<#5C31\>\<#4F1A\>\<#5D29\>\<#6E83\>\<#FF0C\>\<#5E76\>\<#63D0\>\<#4F9B\>\<#8FD9\>\<#6837\>\<#7684\>\<#4FE1\>\<#606F\>\<#FF1A\>
+
+  <\python>
+    \ \ Traceback (most recent call last):
+
+    \ \ File "carSim.py", line 14, in \<less\>module\<gtr\>
+
+    \ \ \ \ switchLights(market_2nd)
+
+    \ \ File "carSim.py", line 13, in switchLights
+
+    \ \ \ \ assert 'red' in stoplight.values(), 'Neither light is red! ' +\ 
+
+    str(stoplight)
+
+    \ \<#F075\> AssertionError: Neither light is red! {'ns': 'yellow', 'ew':
+    'green'}
+  </python>
+
+  \;
+
+  \<#867D\>\<#7136\>\<#7A0B\>\<#5E8F\>\<#5D29\>\<#6E83\>\<#5E76\>\<#4E0D\>\<#5982\>\<#4F60\>\<#6240\>\<#613F\>\<#FF0C\>\<#4F46\>\<#4ED6\>\<#9A6C\>\<#4E0A\>\<#6307\>\<#51FA\>\<#4E86\>\<#5065\>\<#5168\>\<#6027\>\<#68C0\>\<#67E5\>\<#5931\>\<#8D25\>\<#3002\>
+
+  \<#5728\>\<#7A0B\>\<#5E8F\>\<#4E2D\>\<#5C3D\>\<#65E9\>\<#5931\>\<#8D25\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#7701\>\<#53BB\>\<#5C06\>\<#6765\>\<#7684\>\<#5927\>\<#90E8\>\<#5206\>\<#8C03\>\<#5F0F\>\<#5DE5\>\<#4F5C\>\<#3002\>
+
+  <subsubsection|\<#65E5\>\<#5FD7\>-logging\<#6A21\>\<#5757\>>
+
+  \;
+
+  \<#8981\>\<#542F\>\<#7528\>Logging\<#6A21\>\<#5757\>\<#FF0C\>\<#8BF7\>\<#5C06\>\<#4E0B\>\<#9762\>\<#4EE3\>\<#7801\>\<#590D\>\<#5236\>\<#5230\>\<#7A0B\>\<#5E8F\>\<#9876\>\<#90E8\>\<#3002\>
+
+  <\python>
+    \;
+
+    \ import logging
+
+    \ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -
+    \ %(levelname)
+
+    \ s - \ %(message)s')
+  </python>
+
+  \;
+
+  \<#5F53\>python\<#8BB0\>\<#5F55\>\<#4E00\>\<#4E2A\>\<#4E8B\>\<#4EF6\>\<#7684\>\<#65E5\>\<#5FD7\>\<#65F6\>\<#FF0C\>\<#5B83\>\<#4F1A\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>LogRecord\<#5BF9\>\<#8C61\>\<#5DF2\>\<#4FDD\>\<#5B58\>\<#5173\>\<#4E8E\>\<#8BE5\>\<#4E8B\>\<#4EF6\>\<#7684\>\<#4FE1\>\<#606F\>\<#3002\>
+
+  logging\<#6A21\>\<#5757\>\<#7684\>\<#51FD\>\<#6570\>\<#8BA9\>\<#4F60\>\<#6307\>\<#5B9A\>\<#60F3\>\<#770B\>\<#7684\>\<#7684\>LogRecord\<#5BF9\>\<#8C61\>\<#7684\>\<#7EC6\>\<#8282\>\<#4EE5\>\<#53CA\>\<#7EC6\>\<#8282\>\<#7684\>\<#5C55\>\<#793A\>\<#65B9\>\<#5F0F\>\<#3002\>
+
+  \;
+
+  \<#6211\>\<#4EEC\>\<#5728\>\<#8F93\>\<#51FA\>\<#65E5\>\<#5FD7\>\<#6D88\>\<#606F\>\<#65F6\>\<#FF0C\>\<#4F7F\>\<#7528\>\<#4E86\>logging.debug()\<#51FD\>\<#6570\>\<#3002\>\<#8FD9\>\<#4E2A\>debug()\<#5C06\>\<#8C03\>\<#7528\>basicConifg()\<#4EE5\>\<#8F93\>\<#51FA\>\<#4E00\>\<#884C\>\<#4FE1\>\<#606F\>\<#FF0C\>\<#8FD9\>\<#884C\>\<#4FE1\>\<#606F\>\<#7684\>\<#683C\>\<#5F0F\>\<#662F\>\<#6211\>\<#4EEC\>\<#5728\>basicConfig()\<#51FD\>\<#6570\>\<#4E2D\>\<#6307\>\<#5B9A\>\<#597D\>\<#7684\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ 2019-05-23 16:20:12,664 - DEBUG - Start of program
+
+    \ 2019-05-23 16:20:12,664 - DEBUG - Start of factorial(5)
+
+    \ 2019-05-23 16:20:12,665 - DEBUG - i is 0, total is 0
+
+    \ 2019-05-23 16:20:12,668 - DEBUG - i is 1, total is 0
+
+    \ 2019-05-23 16:20:12,670 - DEBUG - i is 2, total is 0
+
+    \ 2019-05-23 16:20:12,673 - DEBUG - i is 3, total is 0
+
+    \ 2019-05-23 16:20:12,675 - DEBUG - i is 4, total is 0
+
+    \ 2019-05-23 16:20:12,678 - DEBUG - i is 5, total is 0
+
+    \ 2019-05-23 16:20:12,680 - DEBUG - End of factorial(5)
+
+    \ 0
+
+    \ 2019-05-23 16:20:12,684 - DEBUG - End of program
+  </python>
+
+  \;
+
+  <subsubsection|\<#4E0D\>\<#8981\>\<#4F7F\>\<#7528\>print()\<#8C03\>\<#8BD5\>\V\<#65E5\>\<#5FD7\>\<#7EA7\>\<#522B\>>
+
+  \;
+
+  \<#5220\>\<#9664\>\<#4EE3\>\<#7801\>\<#4E2D\>\<#6563\>\<#843D\>\<#7684\>Print\<#5F88\>\<#9EBB\>\<#70E6\>\<#7684\>\<#3002\>\<#65E5\>\<#5FD7\>\<#6D88\>\<#606F\>\<#662F\>\<#7ED9\>\<#7A0B\>\<#5E8F\>\<#5458\>\<#770B\>\<#7684\>\<#FF0C\>\<#800C\>\<#4E0D\>\<#662F\>\<#7ED9\>\<#7528\>\<#6237\>\<#7684\>\<#3002\>
+
+  \<#65E5\>\<#5FD7\>\<#7EA7\>\<#522B\>\<#63D0\>\<#4F9B\>\<#4E86\>\<#4E00\>\<#79CD\>\<#65B9\>\<#5F0F\>:\<#6309\>\<#91CD\>\<#8981\>\<#6027\>\<#5BF9\>\<#65E5\>\<#5FD7\>\<#8FDB\>\<#884C\>\<#5206\>\<#7C7B\>\<#3002\>
+
+  \;
+
+  \;
+
+  <\with|par-mode|center>
+    <block*|<tformat|<table|<row|<cell|\<#7EA7\>\<#522B\>>|<cell|\<#65E5\>\<#5FD7\>\<#51FD\>\<#6570\>>|<cell|\<#63CF\>\<#8FF0\>>>|<row|<cell|DEBUG>|<cell|logging.debug()>|<cell|\<#6700\>\<#4F4E\>\<#7EA7\>\<#FF0C\>\<#7528\>\<#4E8E\>\<#8C03\>\<#5F0F\>\<#5C0F\>\<#7EC6\>\<#8282\>\<#FF0C\>debug\<#65F6\>\<#624D\>\<#4F1A\>\<#7528\>>>|<row|<cell|INFO>|<cell|logging.info()>|<cell|\<#7528\>\<#4E8E\>\<#8BB0\>\<#5F55\>\<#7A0B\>\<#5E8F\>\<#4E2D\>\<#4E00\>\<#822C\>\<#4E8B\>\<#4EF6\>\<#7684\>\<#4FE1\>\<#606F\>\<#FF0C\>\<#6216\>\<#786E\>\<#8BA4\>\<#4E00\>\<#5207\>\<#6B63\>\<#5E38\>>>|<row|<cell|WARNING>|<cell|logging.warning()>|<cell|\<#7528\>\<#4E8E\>\<#8868\>\<#793A\>\<#53EF\>\<#80FD\>\<#7684\>\<#95EE\>\<#9898\>\<#FF0C\>\<#5176\>\<#5F53\>\<#524D\>\<#4E0D\>\<#4F1A\>\<#963B\>\<#6B62\>\<#7A0B\>\<#5E8F\>\<#FF0C\>\<#4F46\>\<#672A\>\<#6765\>\<#53EF\>\<#80FD\>\<#4F1A\>>>|<row|<cell|ERROR>|logging.error()|<cell|\<#7528\>\<#4E8E\>\<#8BB0\>\<#5F55\>\<#9519\>\<#8BEF\>\<#FF0C\>\<#4ED6\>\<#5BFC\>\<#81F4\>\<#7A0B\>\<#5E8F\>\<#505A\>\<#67D0\>\<#4E8B\>\<#5931\>\<#8D25\>>>|<row|<cell|CRITICAL>|logging.critical()|<cell|\<#6700\>\<#9AD8\>\<#7EA7\>\<#522B\>\<#FF0C\>\<#5B83\>\<#5BFC\>\<#81F4\>\<#7A0B\>\<#5E8F\>\<#8FD0\>\<#884C\>\<#5931\>\<#8D25\>>>>>>
+  </with>
+
+  \;
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import logging
+
+    \ \<gtr\>\<gtr\>\<gtr\> logging.basicConfig(level=logging.DEBUG, format='
+    %(asctime)s - \ 
+
+    %(levelname)s - \ %(message)s')
+
+    \;
+
+    \ \<gtr\>\<gtr\>\<gtr\> logging.debug('Some debugging details.')
+
+    \ 2019-05-18 19:04:26,901 - DEBUG - Some debugging details.
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> logging.info('The logging module is working.')
+
+    \ 2019-05-18 19:04:35,569 - INFO - The logging module is working.
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> logging.warning('An error message is about to be
+    logged.')
+
+    \ 2019-05-18 19:04:56,843 - WARNING - An error message is about to be
+    logged.
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> logging.error('An error has occurred.')
+
+    \ 2019-05-18 19:05:07,737 - ERROR - An error has occurred.
+
+    \ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> logging.critical('The program is unable to
+    recover!')
+
+    \ 2019-05-18 19:05:45,794 - CRITICAL - The program is unable to recover!
+  </python>
+
+  \;
+
+  \<#5982\>\<#679C\>\<#4F60\>\<#53EA\>\<#5BF9\>ERROR\<#53CA\>\<#5176\>\<#4EE5\>\<#4E0A\>\<#611F\>\<#5174\>\<#8DA3\>\<#FF0C\>\<#5219\>\<#53EF\>\<#4EE5\>\<#5C06\>basicConfig()\<#7684\>level\<#53C2\>\<#6570\>\<#8BBE\>\<#7F6E\>\<#4E3A\>logging.ERROR\<#3002\>\<#8FD9\>\<#5C06\>\<#53EA\>\<#663E\>\<#793A\>ERROR\<#548C\>CRITICAL\<#4FE1\>\<#606F\>\<#FF0C\>\<#8DF3\>\<#8FC7\>\<#4F4E\>\<#7EA7\>\<#522B\>\<#7684\>\<#4E09\>\<#4E2A\>\<#4FE1\>\<#606F\>\<#3002\>
+
+  <subsubsection|\<#7981\>\<#7528\>\<#65E5\>\<#5FD7\>\<#53CA\>\<#5C06\>\<#65E5\>\<#5FD7\>\<#8BB0\>\<#5F55\>\<#5230\>\<#6587\>\<#4EF6\>>
+
+  \;
+
+  \<#4F7F\>\<#7528\>logging.disable()\<#5373\>\<#53EF\>\<#7981\>\<#7528\>\<#3002\>\<#53EA\>\<#8981\>\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#65E5\>\<#5FD7\>\<#7EA7\>\<#522B\>\<#FF0C\>\<#5176\>\<#5C31\>\<#4F1A\>\<#7981\>\<#6B62\>\<#8BE5\>\<#7EA7\>\<#522B\>\<#53CA\>\<#66F4\>\<#4F4E\>\<#7EA7\>\<#522B\>\<#7684\>\<#6240\>\<#6709\>\<#65E5\>\<#5FD7\>\<#3002\>\<#60F3\>\<#8981\>\<#7981\>\<#7528\>\<#6240\>\<#6709\>\<#65E5\>\<#5FD7\>\<#5219\>\<#76F4\>\<#63A5\>\<#4F7F\>\<#7528\>logging.disable(logging.CRITICAL)\<#5373\>\<#53EF\>\<#3002\>
+
+  \;
+
+  \<#5C06\>\<#65E5\>\<#5FD7\>\<#5199\>\<#5165\>\<#6587\>\<#672C\>\<#6587\>\<#4EF6\>\<#53EA\>\<#9700\>\<#5728\>logging.basicConfig\<#4E2D\>\<#6DFB\>\<#52A0\>filename\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#5373\>\<#53EF\>\<#3002\>
+
+  <\python>
+    logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG,
+    format=' %(asctime)s - \ %(levelname)s - \ %(message)s')
+  </python>
+
+  \<#5176\>\<#4F1A\>\<#5C06\>\<#65E5\>\<#5FD7\>\<#4FDD\>\<#5B58\>\<#5728\>myProgramLog.txt\<#4E2D\>\<#3002\>
+
+  \;
+
   \;
 
   \;
@@ -2797,8 +3112,13 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|2>>
+    <associate|auto-1|<tuple|1|3>>
     <associate|auto-10|<tuple|1.2.5|4>>
+    <associate|auto-100|<tuple|2.5.2|27>>
+    <associate|auto-101|<tuple|2.5.3|27>>
+    <associate|auto-102|<tuple|2.5.4|28>>
+    <associate|auto-103|<tuple|2.5.5|28>>
+    <associate|auto-104|<tuple|2.5.6|29>>
     <associate|auto-11|<tuple|1.3|4>>
     <associate|auto-12|<tuple|1.3.1|4>>
     <associate|auto-13|<tuple|1.3.2|4>>
@@ -2808,10 +3128,10 @@
     <associate|auto-17|<tuple|1.4.1|5>>
     <associate|auto-18|<tuple|1.4.2|5>>
     <associate|auto-19|<tuple|1.4.3|5>>
-    <associate|auto-2|<tuple|1.1|2>>
+    <associate|auto-2|<tuple|1.1|3>>
     <associate|auto-20|<tuple|1.4.4|5>>
     <associate|auto-21|<tuple|1.4.5|5>>
-    <associate|auto-22|<tuple|1.4.6|5>>
+    <associate|auto-22|<tuple|1.4.6|6>>
     <associate|auto-23|<tuple|1.4.7|6>>
     <associate|auto-24|<tuple|1.4.8|6>>
     <associate|auto-25|<tuple|1.4.9|6>>
@@ -2819,70 +3139,70 @@
     <associate|auto-27|<tuple|1.4.11|6>>
     <associate|auto-28|<tuple|1.4.12|6>>
     <associate|auto-29|<tuple|1.4.13|7>>
-    <associate|auto-3|<tuple|1.1.1|2>>
-    <associate|auto-30|<tuple|1.4.14|7>>
-    <associate|auto-31|<tuple|1.4.15|7>>
+    <associate|auto-3|<tuple|1.1.1|3>>
+    <associate|auto-30|<tuple|1.4.14|8>>
+    <associate|auto-31|<tuple|1.4.15|8>>
     <associate|auto-32|<tuple|1.5|8>>
     <associate|auto-33|<tuple|1.5.1|8>>
     <associate|auto-34|<tuple|1.5.2|8>>
     <associate|auto-35|<tuple|1.5.3|8>>
-    <associate|auto-36|<tuple|1.5.4|8>>
+    <associate|auto-36|<tuple|1.5.4|9>>
     <associate|auto-37|<tuple|1.5.5|9>>
     <associate|auto-38|<tuple|1.5.6|9>>
-    <associate|auto-39|<tuple|1.6|9>>
+    <associate|auto-39|<tuple|1.6|10>>
     <associate|auto-4|<tuple|1.1.2|3>>
-    <associate|auto-40|<tuple|1.6.1|9>>
-    <associate|auto-41|<tuple|1|9>>
+    <associate|auto-40|<tuple|1.6.1|10>>
+    <associate|auto-41|<tuple|1|10>>
     <associate|auto-42|<tuple|1.6.2|10>>
     <associate|auto-43|<tuple|1.6.3|10>>
     <associate|auto-44|<tuple|1.6.4|10>>
     <associate|auto-45|<tuple|1.6.5|10>>
-    <associate|auto-46|<tuple|2|10>>
-    <associate|auto-47|<tuple|1.6.6|10>>
-    <associate|auto-48|<tuple|1.6.7|10>>
+    <associate|auto-46|<tuple|2|11>>
+    <associate|auto-47|<tuple|1.6.6|11>>
+    <associate|auto-48|<tuple|1.6.7|11>>
     <associate|auto-49|<tuple|1.6.8|11>>
     <associate|auto-5|<tuple|1.2|3>>
     <associate|auto-50|<tuple|1.6.9|11>>
-    <associate|auto-51|<tuple|1.6.10|11>>
+    <associate|auto-51|<tuple|1.6.10|12>>
     <associate|auto-52|<tuple|1.6.11|12>>
     <associate|auto-53|<tuple|1.6.12|12>>
     <associate|auto-54|<tuple|2|12>>
     <associate|auto-55|<tuple|2.1|12>>
     <associate|auto-56|<tuple|2.1.1|12>>
-    <associate|auto-57|<tuple|2.1.2|12>>
+    <associate|auto-57|<tuple|2.1.2|13>>
     <associate|auto-58|<tuple|2.1.3|13>>
     <associate|auto-59|<tuple|2.1.4|13>>
     <associate|auto-6|<tuple|1.2.1|3>>
-    <associate|auto-60|<tuple|2.1.5|13>>
+    <associate|auto-60|<tuple|2.1.5|14>>
     <associate|auto-61|<tuple|2.1.6|14>>
     <associate|auto-62|<tuple|2.1.7|14>>
     <associate|auto-63|<tuple|2.1.8|14>>
-    <associate|auto-64|<tuple|2.1.9|14>>
+    <associate|auto-64|<tuple|2.1.9|15>>
     <associate|auto-65|<tuple|2.1.10|15>>
     <associate|auto-66|<tuple|3|15>>
     <associate|auto-67|<tuple|2.1.11|15>>
     <associate|auto-68|<tuple|2.1.12|15>>
-    <associate|auto-69|<tuple|2.1.13|15>>
+    <associate|auto-69|<tuple|2.1.13|16>>
     <associate|auto-7|<tuple|1.2.2|3>>
     <associate|auto-70|<tuple|2.1.14|16>>
     <associate|auto-71|<tuple|2.1.15|16>>
     <associate|auto-72|<tuple|2.1.16|16>>
-    <associate|auto-73|<tuple|2.2|16>>
+    <associate|auto-73|<tuple|2.2|17>>
     <associate|auto-74|<tuple|2.3|17>>
     <associate|auto-75|<tuple|2.3.1|17>>
     <associate|auto-76|<tuple|2.3.2|17>>
-    <associate|auto-77|<tuple|2.3.3|17>>
+    <associate|auto-77|<tuple|2.3.3|18>>
     <associate|auto-78|<tuple|2.3.4|18>>
     <associate|auto-79|<tuple|2.3.5|18>>
-    <associate|auto-8|<tuple|1.2.3|3>>
+    <associate|auto-8|<tuple|1.2.3|4>>
     <associate|auto-80|<tuple|2.3.6|18>>
     <associate|auto-81|<tuple|2.3.7|18>>
     <associate|auto-82|<tuple|2.3.8|19>>
-    <associate|auto-83|<tuple|2.3.9|20>>
+    <associate|auto-83|<tuple|2.3.9|21>>
     <associate|auto-84|<tuple|2.3.10|21>>
     <associate|auto-85|<tuple|2.3.11|21>>
     <associate|auto-86|<tuple|2.3.12|21>>
-    <associate|auto-87|<tuple|2.3.13|21>>
+    <associate|auto-87|<tuple|2.3.13|22>>
     <associate|auto-88|<tuple|2.3.14|22>>
     <associate|auto-89|<tuple|2.3.15|23>>
     <associate|auto-9|<tuple|1.2.4|4>>
@@ -2892,8 +3212,10 @@
     <associate|auto-93|<tuple|2.4.3|24>>
     <associate|auto-94|<tuple|2.4.4|24>>
     <associate|auto-95|<tuple|2.4.5|25>>
-    <associate|auto-96|<tuple|2.4.6|25>>
+    <associate|auto-96|<tuple|2.4.6|26>>
     <associate|auto-97|<tuple|2.4.7|26>>
+    <associate|auto-98|<tuple|2.5|26>>
+    <associate|auto-99|<tuple|2.5.1|26>>
     <associate|footnote-1|<tuple|1|12>>
     <associate|footnr-1|<tuple|1|12>>
   </collection>
@@ -3287,6 +3609,34 @@
       <with|par-left|<quote|2tab>|2.4.7<space|2spc>\<#521B\>\<#5EFA\>\<#548C\>\<#6DFB\>\<#52A0\>\<#5230\>zip\<#6587\>\<#4EF6\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-97>>
+
+      <with|par-left|<quote|1tab>|2.5<space|2spc>\<#8C03\>\<#8BD5\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-98>>
+
+      <with|par-left|<quote|2tab>|2.5.1<space|2spc>\<#629B\>\<#51FA\>\<#5F02\>\<#5E38\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-99>>
+
+      <with|par-left|<quote|2tab>|2.5.2<space|2spc>\<#53D6\>\<#5F97\>\<#56DE\>\<#6EAF\>\<#5B57\>\<#7B26\>\<#4E32\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-100>>
+
+      <with|par-left|<quote|2tab>|2.5.3<space|2spc>\<#65AD\>\<#8A00\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-101>>
+
+      <with|par-left|<quote|2tab>|2.5.4<space|2spc>\<#65E5\>\<#5FD7\>-logging\<#6A21\>\<#5757\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-102>>
+
+      <with|par-left|<quote|2tab>|2.5.5<space|2spc>\<#4E0D\>\<#8981\>\<#4F7F\>\<#7528\>print()\<#8C03\>\<#8BD5\>\V\<#65E5\>\<#5FD7\>\<#7EA7\>\<#522B\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-103>>
+
+      <with|par-left|<quote|2tab>|2.5.6<space|2spc>\<#7981\>\<#7528\>\<#65E5\>\<#5FD7\>\<#53CA\>\<#5C06\>\<#65E5\>\<#5FD7\>\<#8BB0\>\<#5F55\>\<#5230\>\<#6587\>\<#4EF6\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-104>>
     </associate>
   </collection>
 </auxiliary>
