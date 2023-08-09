@@ -167,7 +167,7 @@ some cli tools:
 - homework:理解框架代码
 - GDB还自带一个叫TUI的简单界面. 在一个高度较高的窗口中运行GDB后, 输入layout split就可以切换到TUI, 这样你就可以同时从源代码和指令的角度来观察程序的行为了. 
 - [gdb command](http://www.gdbtutorial.com/gdb_commands)
-- homework:为NEMU编译时添加GDB调试信息
+- homework:为NEMU编译时添加GDB.调试信息会增加一个编译选项:(CFLAGS_BUILD += $(if $(CONFIG_CC_DEBUG),-Og -ggdb3,))
 - homework:优美地退出
 #### [就是这么简单](https://ysyx.oscc.cc/docs/ics-pa/1.3.html#%E5%B0%B1%E6%98%AF%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95)
 - 存储器是个在nemu/src/memory/paddr.c中定义的大数组
