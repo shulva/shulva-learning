@@ -409,7 +409,31 @@
 
     <with|par-left|2tab|2.5.6<space|2spc>\<#7981\>\<#7528\>\<#65E5\>\<#5FD7\>\<#53CA\>\<#5C06\>\<#65E5\>\<#5FD7\>\<#8BB0\>\<#5F55\>\<#5230\>\<#6587\>\<#4EF6\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-104>>
+    <no-break><pageref|auto-105>>
+
+    <with|par-left|1tab|2.6<space|2spc>\<#4ECE\>web\<#6293\>\<#53D6\>\<#4FE1\>\<#606F\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-106>>
+
+    <with|par-left|2tab|2.6.1<space|2spc>webbrowser.open()
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-107>>
+
+    <with|par-left|2tab|2.6.2<space|2spc>\<#7528\>requests.get()\<#51FD\>\<#6570\>\<#4E0B\>\<#8F7D\>\<#4E00\>\<#4E2A\>\<#7F51\>\<#9875\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-108>>
+
+    <with|par-left|2tab|2.6.3<space|2spc>\<#5C06\>\<#4E0B\>\<#8F7D\>\<#7684\>\<#6587\>\<#4EF6\>\<#4FDD\>\<#5B58\>\<#5230\>\<#786C\>\<#76D8\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-109>>
+
+    <with|par-left|2tab|2.6.4<space|2spc>HTML
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-110>>
+
+    <with|par-left|2tab|2.6.5<space|2spc>\<#7528\>selenium\<#6A21\>\<#5757\>\<#63A7\>\<#5236\>\<#6D4F\>\<#89C8\>\<#5668\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-112>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -3302,6 +3326,8 @@
   \<#4E0E\>Requests\<#548C\>Beautiful Soup\<#76F8\>\<#6BD4\>\<#FF0C\>Selenium
   \<#5141\>\<#8BB8\>\<#4F60\>\<#7528\>\<#9AD8\>\<#7EA7\>\<#5F97\>\<#591A\>\<#7684\>\<#65B9\>\<#5F0F\>\<#4E0E\>\<#7F51\>\<#9875\>\<#4EA4\>\<#4E92\>\<#3002\>\<#4F46\>\<#56E0\>\<#4E3A\>\<#5B83\>\<#542F\>\<#52A8\>\<#4E86\>Web\<#6D4F\>\<#89C8\>\<#5668\>\<#FF0C\>\<#5047\>\<#5982\>\<#4F60\>\<#53EA\>\<#662F\>\<#60F3\>\<#4ECE\>\<#7F51\>\<#7EDC\>\<#4E0A\>\<#4E0B\>\<#8F7D\>\<#4E00\>\<#4E9B\>\<#6587\>\<#4EF6\>\<#FF0C\>\<#4F1A\>\<#6709\>\<#70B9\>\<#6162\>\<#FF0C\>\<#5E76\>\<#4E14\>\<#96BE\>\<#4EE5\>\<#5728\>\<#540E\>\<#53F0\>\<#8FD0\>\<#884C\>\<#3002\>
 
+  \<#6BCF\>\<#4E2A\>\<#6D4F\>\<#89C8\>\<#5668\>\<#542F\>\<#52A8\>\<#9700\>\<#8981\>\<#5B89\>\<#88C5\>\<#5404\>\<#81EA\>\<#76F8\>\<#5173\>\<#7684\>selenium\<#7684\>driver\<#3002\>
+
   \;
 
   <\python>
@@ -3333,13 +3359,18 @@
 
   find_elements_*\<#65B9\>\<#6CD5\>\<#8FD4\>\<#56DE\>WebElement_*\<#5BF9\>\<#8C61\>\<#7684\>\<#5217\>\<#8868\>\<#FF0C\>\<#5305\>\<#542B\>\<#9875\>\<#9762\>\<#4E2D\>\<#6240\>\<#6709\>\<#5339\>\<#914D\>\<#7684\>\<#5143\>\<#7D20\>\<#3002\>
 
+  \<#8C03\>\<#7528\>By\<#5143\>\<#7D20\>\<#9700\>\<#8981\>\<#5148\>from
+  selenium.webdriver.common.by import By\<#3002\>
+
   \;
 
-  <\big-table|<block|<tformat|<table|<row|<cell|\<#65B9\>\<#6CD5\>\<#540D\>>|<cell|\<#8FD4\>\<#56DE\>\<#7684\>WebElement\<#5BF9\>\<#8C61\>/\<#5217\>\<#8868\>>>|<row|<cell|browser.find_element(s)_by_class_name(name)>|<cell|\<#4F7F\>\<#7528\>CSS\<#7C7B\>name\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)_by_css_selector(selector)>|<cell|\<#5339\>\<#914D\>CSS
-  selector \<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)_by_id(id)>|<cell|\<#5339\>\<#914D\>id\<#5C5E\>\<#6027\>\<#503C\>\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)_by_link_text(text)>|<cell|\<#5B8C\>\<#5168\>\<#5339\>\<#914D\>\<#63D0\>\<#4F9B\>\<#7684\>text\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)_by_partial_link_text(text)>|<cell|\<#5305\>\<#542B\>\<#63D0\>\<#4F9B\>\<#7684\>text\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)_by_name(name)>|<cell|\<#5339\>\<#914D\>name\<#5C5E\>\<#6027\>\<#503C\>\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)_by_tag_name(name)>|<cell|\<#5339\>\<#914D\>\<#6807\>\<#7B7E\>name\<#7684\>\<#5143\>\<#7D20\>
-  (\<#5927\>\<#5C0F\>\<#5199\>\<#65E0\>\<#5173\>)>>>>>>
+  <\big-table|<block|<tformat|<table|<row|<cell|\<#65B9\>\<#6CD5\>\<#540D\>>|<cell|\<#8FD4\>\<#56DE\>\<#7684\>WebElement\<#5BF9\>\<#8C61\>/\<#5217\>\<#8868\>>>|<row|<cell|browser.find_element(s)(By.CLASS_NAME,name)>|<cell|\<#4F7F\>\<#7528\>CSS\<#7C7B\>name\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)(By.CSS_SELECTOR,selector)>|<cell|\<#5339\>\<#914D\>CSS
+  selector \<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)(By.ID,id)>|<cell|\<#5339\>\<#914D\>id\<#5C5E\>\<#6027\>\<#503C\>\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)(By.LINK_TEXT,text)>|<cell|\<#5B8C\>\<#5168\>\<#5339\>\<#914D\>\<#63D0\>\<#4F9B\>\<#7684\>text\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)(By.PARTITAL_LINK_TEXT,text)>|<cell|\<#5305\>\<#542B\>\<#63D0\>\<#4F9B\>\<#7684\>text\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)(By.NAME,name)>|<cell|\<#5339\>\<#914D\>name\<#5C5E\>\<#6027\>\<#503C\>\<#7684\>\<#5143\>\<#7D20\>>>|<row|<cell|browser.find_element(s)(By.TAG_NAME,tag_name)>|<cell|\<#5339\>\<#914D\>\<#6807\>\<#7B7E\>name\<#7684\>\<#5143\>\<#7D20\>
+  (\<#5927\>\<#5C0F\>\<#5199\>\<#65E0\>\<#5173\>)>>|<row|<cell|browser.find_element(s)(By.XPATH,xpath)>|<cell|\<#6839\>\<#636E\>xpath\<#8FDB\>\<#884C\>\<#5B9A\>\<#4F4D\>\<#FF0C\>\<#6709\>\<#7528\>>>>>>>
     selenium\<#7684\> WebDriver \<#65B9\>\<#6CD5\>
   </big-table>
+
+  \;
 
   \;
 
@@ -3359,7 +3390,7 @@
 
   <\python>
     <with|font-series|bold|>\<gtr\>\<gtr\>\<gtr\> elem =
-    browser.find_element_by_class_name('bookcover')\ 
+    browser.find_element(By.CLASS_NAME,'bookcover')\ 
 
     \<gtr\>\<gtr\>\<gtr\> print('Found \<less\>%s\<gtr\> element with that
     class name!' % (elem.tag_name))
@@ -3375,8 +3406,8 @@
   \;
 
   <\python>
-    \<gtr\>\<gtr\>\<gtr\> linkElem = browser.find_element_by_link_text('Read
-    It Online')\ 
+    \<gtr\>\<gtr\>\<gtr\> linkElem = browser.find_element(s)(By.LINK_TEXT,'Read
+    It Online')
 
     \<gtr\>\<gtr\>\<gtr\> type(linkElem)\ 
 
@@ -3398,11 +3429,11 @@
 
     \<gtr\>\<gtr\>\<gtr\> browser.get('http://gmail.com')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> emailElem = browser.find_element_by_id('Email')\ 
+    \<gtr\>\<gtr\>\<gtr\> emailElem = browser.find_element(By.ID,'Email')
 
     \<gtr\>\<gtr\>\<gtr\> emailElem.send_keys('not_my_real_email@gmail.com')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> passwordElem = browser.find_element_by_id('Passwd')\ 
+    \<gtr\>\<gtr\>\<gtr\> passwordElem = browser.find_element(By.ID,'Passwd')
 
     \<gtr\>\<gtr\>\<gtr\> passwordElem.send_keys('12345')\ 
 
@@ -3451,7 +3482,7 @@
 
     \<gtr\>\<gtr\>\<gtr\> browser.get('http://nostarch.com')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> htmlElem = browser.find_element_by_tag_name('html')\ 
+    \<gtr\>\<gtr\>\<gtr\> htmlElem = browser.find_element(s)(By.TAG_NAME,'html')
 
     \<gtr\>\<gtr\>\<gtr\> htmlElem.send_keys(Keys.END) \ 
 
@@ -3489,19 +3520,19 @@
     <associate|auto-101|<tuple|2.5.3|27>>
     <associate|auto-102|<tuple|2.5.4|28>>
     <associate|auto-103|<tuple|2.5.5|28>>
-    <associate|auto-104|<tuple|4|29>>
-    <associate|auto-105|<tuple|2.5.6|?>>
-    <associate|auto-106|<tuple|2.6|?>>
-    <associate|auto-107|<tuple|2.6.1|?>>
-    <associate|auto-108|<tuple|2.6.2|?>>
-    <associate|auto-109|<tuple|2.6.3|?>>
+    <associate|auto-104|<tuple|4|28>>
+    <associate|auto-105|<tuple|2.5.6|29>>
+    <associate|auto-106|<tuple|2.6|29>>
+    <associate|auto-107|<tuple|2.6.1|29>>
+    <associate|auto-108|<tuple|2.6.2|29>>
+    <associate|auto-109|<tuple|2.6.3|29>>
     <associate|auto-11|<tuple|1.3|4>>
-    <associate|auto-110|<tuple|2.6.4|?>>
-    <associate|auto-111|<tuple|5|?>>
-    <associate|auto-112|<tuple|2.6.5|?>>
-    <associate|auto-113|<tuple|6|?>>
-    <associate|auto-114|<tuple|7|?>>
-    <associate|auto-115|<tuple|8|?>>
+    <associate|auto-110|<tuple|2.6.4|30>>
+    <associate|auto-111|<tuple|5|30>>
+    <associate|auto-112|<tuple|2.6.5|31>>
+    <associate|auto-113|<tuple|6|31>>
+    <associate|auto-114|<tuple|7|32>>
+    <associate|auto-115|<tuple|8|32>>
     <associate|auto-12|<tuple|1.3.1|4>>
     <associate|auto-13|<tuple|1.3.2|4>>
     <associate|auto-14|<tuple|1.3.3|4>>
@@ -3512,14 +3543,14 @@
     <associate|auto-19|<tuple|1.4.3|5>>
     <associate|auto-2|<tuple|1.1|3>>
     <associate|auto-20|<tuple|1.4.4|5>>
-    <associate|auto-21|<tuple|1.4.5|5>>
+    <associate|auto-21|<tuple|1.4.5|6>>
     <associate|auto-22|<tuple|1.4.6|6>>
     <associate|auto-23|<tuple|1.4.7|6>>
     <associate|auto-24|<tuple|1.4.8|6>>
     <associate|auto-25|<tuple|1.4.9|6>>
     <associate|auto-26|<tuple|1.4.10|6>>
     <associate|auto-27|<tuple|1.4.11|6>>
-    <associate|auto-28|<tuple|1.4.12|6>>
+    <associate|auto-28|<tuple|1.4.12|7>>
     <associate|auto-29|<tuple|1.4.13|7>>
     <associate|auto-3|<tuple|1.1.1|3>>
     <associate|auto-30|<tuple|1.4.14|8>>
@@ -3613,6 +3644,26 @@
       <tuple|normal|<\surround|<hidden-binding|<tuple>|3>|>
         \\d\V\\S
       </surround>|<pageref|auto-66>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|4>|>
+        \<#65E5\>\<#5FD7\>\<#7B49\>\<#7EA7\>
+      </surround>|<pageref|auto-104>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|5>|>
+        CSS\<#9009\>\<#62E9\>\<#5668\>
+      </surround>|<pageref|auto-111>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|6>|>
+        selenium\<#7684\> WebDriver \<#65B9\>\<#6CD5\>
+      </surround>|<pageref|auto-113>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|7>|>
+        WebElement \<#7684\>\<#5C5E\>\<#6027\>\<#548C\>\<#65B9\>\<#6CD5\>
+      </surround>|<pageref|auto-114>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|8>|>
+        selenium.webdriver.common.keys \<#6A21\>\<#5757\>\<#4E2D\>\<#5E38\>\<#7528\>\<#7684\>\<#53D8\>\<#91CF\>
+      </surround>|<pageref|auto-115>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Part
@@ -4018,7 +4069,31 @@
 
       <with|par-left|<quote|2tab>|2.5.6<space|2spc>\<#7981\>\<#7528\>\<#65E5\>\<#5FD7\>\<#53CA\>\<#5C06\>\<#65E5\>\<#5FD7\>\<#8BB0\>\<#5F55\>\<#5230\>\<#6587\>\<#4EF6\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-104>>
+      <no-break><pageref|auto-105>>
+
+      <with|par-left|<quote|1tab>|2.6<space|2spc>\<#4ECE\>web\<#6293\>\<#53D6\>\<#4FE1\>\<#606F\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-106>>
+
+      <with|par-left|<quote|2tab>|2.6.1<space|2spc>webbrowser.open()
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-107>>
+
+      <with|par-left|<quote|2tab>|2.6.2<space|2spc>\<#7528\>requests.get()\<#51FD\>\<#6570\>\<#4E0B\>\<#8F7D\>\<#4E00\>\<#4E2A\>\<#7F51\>\<#9875\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-108>>
+
+      <with|par-left|<quote|2tab>|2.6.3<space|2spc>\<#5C06\>\<#4E0B\>\<#8F7D\>\<#7684\>\<#6587\>\<#4EF6\>\<#4FDD\>\<#5B58\>\<#5230\>\<#786C\>\<#76D8\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-109>>
+
+      <with|par-left|<quote|2tab>|2.6.4<space|2spc>HTML
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-110>>
+
+      <with|par-left|<quote|2tab>|2.6.5<space|2spc>\<#7528\>selenium\<#6A21\>\<#5757\>\<#63A7\>\<#5236\>\<#6D4F\>\<#89C8\>\<#5668\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-112>>
     </associate>
   </collection>
 </auxiliary>
