@@ -2867,7 +2867,7 @@
 
     \ \ \ \ if len(symbol) != 1:
 
-    \ \<#F075\> \ \ \ \ raise Exception('Symbol must be a single character
+    \ \<#F075\> \ \ \ \ \ raise Exception('Symbol must be a single character
     string.')
 
     \ 
@@ -2881,7 +2881,7 @@
 
     \ \<#F078\> \ except Exception as err:
 
-    \ \<#F079\> \ print('An exception happened: ' + str(err))
+    \ \<#F079\> \ \ \ \ \ print('An exception happened: ' + str(err))
   </python>
 
   \;
@@ -3184,7 +3184,7 @@
   Beautiful Soup \<#662F\>\<#4E00\>\<#4E2A\>\<#6A21\>\<#5757\>\<#FF0C\>\<#7528\>\<#4E8E\>\<#4ECE\>HTML\<#9875\>\<#9762\>\<#4E2D\>\<#63D0\>\<#53D6\>\<#4FE1\>\<#606F\>\<#3002\>\<#7528\>\<#4E8E\>\<#8FD9\>\<#4E2A\>\<#76EE\>\<#7684\>\<#65F6\>\<#FF0C\>
   \<#5B83\>\<#6BD4\>\<#6B63\>\<#5219\>\<#8868\>\<#8FBE\>\<#5F0F\>\<#597D\>\<#5F88\>\<#591A\>\<#3002\>
 
-  BeautifulSoup()\<#51FD\>\<#6570\>\<#9700\>\<#8981\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5176\>\<#4E2D\>\<#5305\>\<#542B\>\<#5C06\>\<#8981\>\<#89E3\>\<#6790\>\<#7684\>HTML\<#6587\>\<#4EF6\>\<#3002\>bs4.BeautifulSoup()\<#51FD\>\<#6570\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>BeautifulSoup\<#5BF9\>\<#8C61\>\<#3002\>
+  BeautifulSoup()\<#51FD\>\<#6570\>\<#9700\>\<#8981\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5176\>\<#4E2D\>\<#5305\>\<#542B\>\<#5C06\>\<#8981\>\<#89E3\>\<#6790\>\<#7684\>HTML\<#6587\>\<#4EF6\>\<#3002\>bs4.BeautifulSoup()\<#51FD\>\<#6570\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>BeautifulSoup\<#5BF9\>\<#8C61\>\<#3002\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#7528\>\<#6765\>\<#544A\>\<#8BC9\>\<#5176\>\<#4F7F\>\<#7528\>\<#54EA\>\<#4E00\>\<#4E2A\>\<#89E3\>\<#6790\>\<#5668\>\<#6765\>\<#5206\>\<#6790\>HTML\<#3002\>
 
   \;
 
@@ -3195,7 +3195,7 @@
 
     \<gtr\>\<gtr\>\<gtr\> res.raise_for_status()\ 
 
-    \<gtr\>\<gtr\>\<gtr\> noStarchSoup = bs4.BeautifulSoup(res.text)\ 
+    \<gtr\>\<gtr\>\<gtr\> noStarchSoup = bs4.BeautifulSoup(res.text,`html.parser')\ 
 
     \<gtr\>\<gtr\>\<gtr\> type(noStarchSoup)\ 
 
@@ -3205,7 +3205,7 @@
 
     \<gtr\>\<gtr\>\<gtr\> exampleFile = open('example.html')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> exampleSoup = bs4.BeautifulSoup(exampleFile)\ 
+    \<gtr\>\<gtr\>\<gtr\> exampleSoup = bs4.BeautifulSoup(exampleFile,`html.parser')\ 
 
     \<gtr\>\<gtr\>\<gtr\> type(exampleSoup)\ 
 
