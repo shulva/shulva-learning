@@ -434,6 +434,42 @@
     <with|par-left|2tab|2.6.5<space|2spc>\<#7528\>selenium\<#6A21\>\<#5757\>\<#63A7\>\<#5236\>\<#6D4F\>\<#89C8\>\<#5668\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-112>>
+
+    <with|par-left|1tab|2.7<space|2spc>\<#5904\>\<#7406\>excel\<#7535\>\<#5B50\>\<#8868\>\<#683C\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-116>>
+
+    <with|par-left|2tab|2.7.1<space|2spc>\<#4ECE\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#5DE5\>\<#4F5C\>\<#8868\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-117>>
+
+    <with|par-left|2tab|2.7.2<space|2spc>\<#4ECE\>\<#8868\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#5355\>\<#5143\>\<#683C\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-118>>
+
+    <with|par-left|2tab|2.7.3<space|2spc>\<#5217\>\<#5B57\>\<#6BCD\>\<#4E0E\>\<#6570\>\<#5B57\>\<#7684\>\<#8F6C\>\<#6362\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-119>>
+
+    <with|par-left|2tab|2.7.4<space|2spc>\<#4ECE\>\<#8868\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#884C\>\<#548C\>\<#5217\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-120>>
+
+    <with|par-left|2tab|2.7.5<space|2spc>\<#5199\>\<#5165\>\<#548C\>\<#521B\>\<#5EFA\>excel\<#6587\>\<#6863\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-121>>
+
+    <with|par-left|2tab|2.7.6<space|2spc>\<#8BBE\>\<#7F6E\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#5B57\>\<#4F53\>\<#98CE\>\<#683C\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-122>>
+
+    <with|par-left|2tab|2.7.7<space|2spc>\<#516C\>\<#5F0F\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-124>>
+
+    <with|par-left|2tab|2.7.8<space|2spc>\<#8C03\>\<#6574\>\<#884C\>\<#548C\>\<#5217\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-125>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -3504,6 +3540,487 @@
   browser.refresh()\<#70B9\>\<#51FB\>\P\<#5237\>\<#65B0\>\Q\<#6309\>\<#94AE\>\<#3002\>\ 
 
   browser.quit()\<#70B9\>\<#51FB\>\P\<#5173\>\<#95ED\>\<#7A97\>\<#53E3\>\Q\<#6309\>\<#94AE\>\<#3002\>
+
+  <subsection|\<#5904\>\<#7406\>excel\<#7535\>\<#5B50\>\<#8868\>\<#683C\>>
+
+  \;
+
+  \<#8BF7\>\<#5148\>\<#5B89\>\<#88C5\>openpyxl\<#6A21\>\<#5757\>\<#3002\>
+
+  \;
+
+  \<#5728\>\<#5BFC\>\<#5165\>openpyxl\<#6A21\>\<#5757\>\<#540E\>\<#FF0C\>\<#5C31\>\<#53EF\>\<#4EE5\>\<#4F7F\>\<#7528\>openpyxl.load_workbook()\<#51FD\>\<#6570\>\<#3002\>
+
+  openpyxl.load_workbook()\<#51FD\>\<#6570\>\<#63A5\>\<#53D7\>\<#6587\>\<#4EF6\>\<#540D\>\<#FF0C\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>workbook
+  \<#6570\>\<#636E\>\<#7C7B\>\<#578B\>\<#7684\>\<#503C\>\<#3002\>
+
+  \<#8FD9\>\<#4E2A\>workbook \<#5BF9\>\<#8C61\>\<#4EE3\>\<#8868\>\<#8FD9\>\<#4E2A\>Excel\<#6587\>\<#4EF6\>\<#FF0C\>\<#6709\>\<#70B9\>\<#7C7B\>\<#4F3C\>File\<#5BF9\>\<#8C61\>\<#4EE3\>\<#8868\>\<#4E00\>\<#4E2A\>\<#6253\>\<#5F00\>\<#7684\>\<#6587\>\<#672C\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  \;
+
+  <subsubsection|\<#4ECE\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#5DE5\>\<#4F5C\>\<#8868\>>
+
+  \;
+
+  \<#8C03\>\<#7528\>get_sheet_names()\<#65B9\>\<#6CD5\>\<#53EF\>\<#4EE5\>\<#53D6\>\<#5F97\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#4E2D\>\<#6240\>\<#6709\>\<#8868\>\<#540D\>\<#7684\>\<#5217\>\<#8868\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('example.xlsx')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+
+    ['Sheet1', 'Sheet2', 'Sheet3']\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet3')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet\ 
+
+    \<less\>Worksheet "Sheet3"\<gtr\>\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.title\ 
+
+    'Sheet3'\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> anotherSheet = wb.get_active_sheet()\ 
+
+    \<gtr\>\<gtr\>\<gtr\> anotherSheet\ 
+
+    \<less\>Worksheet "Sheet1"\<gtr\>\ 
+  </python>
+
+  \;
+
+  \<#6700\>\<#540E\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#8C03\>\<#7528\>Workbook\<#5BF9\>\<#8C61\>\<#7684\>get_active_sheet()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#53D6\>\<#5F97\>
+  \<#5DE5\>\<#4F5C\>\<#7C3F\>\<#7684\>\<#6D3B\>\<#52A8\>\<#8868\>\<#3002\>\<#6D3B\>\<#52A8\>\<#8868\>\<#662F\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#5728\>Excel\<#4E2D\>\<#6253\>\<#5F00\>\<#65F6\>\<#51FA\>\<#73B0\>\<#7684\>\<#5DE5\>\<#4F5C\>\<#8868\>\<#3002\>
+
+  <subsubsection|\<#4ECE\>\<#8868\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#5355\>\<#5143\>\<#683C\>>
+
+  \;
+
+  \<#6709\>\<#4E86\>Worksheet\<#5BF9\>\<#8C61\>\<#540E\>\<#FF0C\>\<#5C31\>\<#53EF\>\<#4EE5\>\<#6309\>\<#540D\>\<#5B57\>\<#8BBF\>\<#95EE\>Cell\<#5355\>\<#5143\>\<#683C\>\<#5BF9\>\<#8C61\>\<#3002\>
+
+  <\python>
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('example.xlsx')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet1')\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'].value\ 
+
+    datetime.datetime(2015, 4, 5, 13, 34, 2)\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> c = sheet['B1']\ 
+
+    \<gtr\>\<gtr\>\<gtr\> c.value\ 
+
+    'Apples'\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> 'Row ' + str(c.row) + ', Column ' + c.column + ' is
+    ' + c.value\ 
+
+    'Row 1, Column B is Apples'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> 'Cell ' + c.coordinate + ' is ' + c.value\ 
+
+    'Cell B1 is Apples'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['C1'].value\ 
+
+    73\ 
+  </python>
+
+  \;
+
+  Cell\<#5BF9\>\<#8C61\>\<#6709\>\<#4E00\>\<#4E2A\>value\<#5C5E\>\<#6027\>\<#FF0C\>\<#4E0D\>\<#51FA\>\<#610F\>\<#5916\>\<#FF0C\>\<#5B83\>\<#5305\>\<#542B\>\<#8FD9\>\<#4E2A\>\<#5355\>\<#5143\>\<#683C\>\<#4E2D\>\<#4FDD\>\<#5B58\>\<#7684\>\<#503C\>\<#3002\>
+
+  Cell\<#5BF9\>\<#8C61\>\<#4E5F\>\<#6709\>row\<#3001\>column\<#548C\>coordinate
+  \<#5C5E\>\<#6027\>\<#FF0C\>\<#63D0\>\<#4F9B\>\<#8BE5\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#4F4D\>\<#7F6E\>\<#4FE1\>\<#606F\>\<#3002\>
+
+  \<#5B57\>\<#6BCD\>\<#6307\>\<#5B9A\>\<#5217\>\<#FF0C\>\<#6570\>\<#5B57\>\<#6307\>\<#5B9A\>\<#884C\>\<#3002\>
+
+  \;
+
+  \<#5728\>\<#8C03\>\<#7528\>\<#8868\>\<#7684\>cell()\<#65B9\>\<#6CD5\>\<#65F6\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#4F20\>\<#5165\>\<#6574\>\<#6570\>\<#4F5C\>\<#4E3A\>row
+  \<#548C\>column \<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#3002\>
+
+  \<#4E5F\>\<#53EF\>\<#4EE5\>\<#5F97\>\<#5230\>\<#4E00\>\<#4E2A\>\<#5355\>\<#5143\>\<#683C\>\<#3002\>\<#7B2C\>\<#4E00\>\<#884C\>\<#6216\>\<#7B2C\>\<#4E00\>\<#5217\>\<#7684\>\<#6574\>\<#6570\>\<#662F\>1\<#FF0C\>\<#4E0D\>\<#662F\>0\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> sheet.cell(row=1, column=2)\ 
+
+    \<less\>Cell Sheet1.B1\<gtr\>\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.cell(row=1, column=2).value\ 
+
+    'Apples'\ 
+  </python>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>Worksheet \<#5BF9\>\<#8C61\>\<#7684\>
+  get_highest_row()\<#548C\> get_highest_column()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#786E\>\<#5B9A\>\<#8868\>\<#7684\>\<#5927\>\<#5C0F\>\<#3002\>
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet1')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.get_highest_row()\ 
+
+    7\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.get_highest_column()\ 
+
+    3\ 
+  </python>
+
+  <subsubsection|\<#5217\>\<#5B57\>\<#6BCD\>\<#4E0E\>\<#6570\>\<#5B57\>\<#7684\>\<#8F6C\>\<#6362\>>
+
+  \;
+
+  \<#8981\>\<#4ECE\>\<#5B57\>\<#6BCD\>\<#8F6C\>\<#6362\>\<#5230\>\<#6570\>\<#5B57\>\<#FF0C\>\<#5C31\>\<#8C03\>\<#7528\>
+  openpyxl.cell.column_index_from_string()\<#51FD\>\<#6570\>\<#3002\>
+  \<#8981\>\<#4ECE\>\<#6570\>\<#5B57\>\<#8F6C\>\<#6362\>\<#5230\>\<#5B57\>\<#6BCD\>\<#FF0C\>\<#5C31\>\<#8C03\>\<#7528\>openpyxl.cell.get_column_letter()\<#51FD\>\<#6570\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> from openpyxl.utils import get_column_letter,
+    column_index_from_string
+
+    \<gtr\>\<gtr\>\<gtr\> get_column_letter(27)\ 
+
+    'AA'
+
+    \<gtr\>\<gtr\>\<gtr\> get_column_letter(2)\ 
+
+    'B'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> get_column_letter(1)\ 
+
+    'A'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> column_index_from_string('AA')\ 
+
+    27\ 
+  </python>
+
+  <subsubsection|\<#4ECE\>\<#8868\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#884C\>\<#548C\>\<#5217\>>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#5C06\>Worksheet \<#5BF9\>\<#8C61\>\<#5207\>\<#7247\>\<#FF0C\>\<#53D6\>\<#5F97\>\<#7535\>\<#5B50\>\<#8868\>\<#683C\>\<#4E2D\>\<#4E00\>\<#884C\>\<#3001\>\<#4E00\>\<#5217\>\<#6216\>\<#4E00\>\<#4E2A\>\<#77E9\>\<#5F62\>\<#533A\>\<#57DF\>\<#4E2D\>\<#7684\>\<#6240\>\<#6709\>
+  Cell \<#5BF9\>\<#8C61\>\<#3002\>\<#7136\>\<#540E\>\<#53EF\>\<#4EE5\>\<#5FAA\>\<#73AF\>\<#904D\>\<#5386\>\<#8FD9\>\<#4E2A\>\<#5207\>\<#7247\>\<#4E2D\>\<#7684\>\<#6240\>\<#6709\>\<#5355\>\<#5143\>\<#683C\>\<#3002\>
+
+  \;
+
+  <\python>
+    \;
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('example.xlsx')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet1')\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> tuple(sheet['A1':'C3'])\ 
+
+    ((\<less\>Cell Sheet1.A1\<gtr\>, \<less\>Cell Sheet1.B1\<gtr\>,
+    \<less\>Cell Sheet1.C1\<gtr\>), (\<less\>Cell Sheet1.A2\<gtr\>,\ 
+
+    \<less\>Cell Sheet1.B2\<gtr\>, \<less\>Cell Sheet1.C2\<gtr\>),
+    (\<less\>Cell Sheet1.A3\<gtr\>, \<less\>Cell Sheet1.B3\<gtr\>,\ 
+
+    \<less\>Cell Sheet1.C3\<gtr\>))\ 
+
+    \;
+
+    for rowOfCellObjects in sheet['A1':'C3']: \<#F08D\> \ \ \ \ \ \ \ \ 
+
+    \ \ \ \ for cellObj in rowOfCellObjects:\ 
+
+    \ \ \ \ \ \ \ \ print(cellObj.coordinate, cellObj.value)\ 
+
+    \ \ \ \ print('--- END OF ROW ---')\ 
+
+    \ \ \ \ 
+
+    A1 2015-04-05 13:34:02\ 
+
+    B1 Apples\ 
+
+    C1 73 --- END OF ROW ---\ 
+  </python>
+
+  \;
+
+  \<#6211\>\<#4EEC\>\<#6307\>\<#660E\>\<#9700\>\<#8981\>\<#4ECE\>A1\<#5230\>C3\<#7684\>\<#77E9\>\<#5F62\>\<#533A\>\<#57DF\>\<#4E2D\>\<#7684\>Cell\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \<#8981\>\<#6253\>\<#5370\>\<#51FA\>\<#8FD9\>\<#4E2A\>\<#533A\>\<#57DF\>\<#4E2D\>\<#6240\>\<#6709\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#503C\>\<#FF0C\>\<#6211\>\<#4EEC\>\<#4F7F\>\<#7528\>\<#4E24\>\<#4E2A\>for\<#5FAA\>\<#73AF\>\<#3002\>
+
+  \<#5916\>\<#5C42\>for\<#5FAA\>\<#73AF\>\<#904D\>\<#5386\>\<#8FD9\>\<#4E2A\>\<#5207\>\<#7247\>\<#4E2D\>\<#7684\>\<#6BCF\>\<#4E00\>\<#884C\>\<#3002\>
+
+  \<#7136\>\<#540E\>\<#9488\>\<#5BF9\>\<#6BCF\>\<#4E00\>\<#884C\>\<#FF0C\>\<#5185\>\<#5C42\>for\<#5FAA\>\<#73AF\>\<#904D\>\<#5386\>\<#8BE5\>\<#884C\>\<#4E2D\>\<#7684\>\<#6BCF\>\<#4E2A\>\<#5355\>\<#5143\>\<#683C\>\<#3002\>
+
+  \;
+
+  \<#8981\>\<#8BBF\>\<#95EE\>\<#7279\>\<#5B9A\>\<#884C\>\<#6216\>\<#5217\>\<#7684\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#503C\>\<#FF0C\>\<#4E5F\>\<#53EF\>\<#4EE5\>\<#5229\>\<#7528\>Worksheet\<#5BF9\>\<#8C61\>\<#7684\>rows
+  \<#548C\>columns \<#5C5E\>\<#6027\>\<#3002\>
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> sheet.columns[1]\ 
+
+    (\<less\>Cell Sheet1.B1\<gtr\>, \<less\>Cell Sheet1.B2\<gtr\>,
+    \<less\>Cell Sheet1.B3\<gtr\>, \<less\>Cell Sheet1.B4\<gtr\>,\ 
+
+    \<less\>Cell Sheet1.B5\<gtr\>, \<less\>Cell Sheet1.B6\<gtr\>,
+    \<less\>Cell Sheet1.B7\<gtr\>)\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> for cellObj in sheet.columns[1]:\ 
+
+    \ \ \ \ \ \ \ \ print(cellObj.value)\ 
+  </python>
+
+  <subsubsection|\<#5199\>\<#5165\>\<#548C\>\<#521B\>\<#5EFA\>excel\<#6587\>\<#6863\>>
+
+  \;
+
+  \<#5229\>\<#7528\>create_sheet()\<#4EE5\>\<#53CA\>remove_sheet()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#5728\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#4E2D\>\<#6DFB\>\<#52A0\>\<#6216\>\<#5220\>\<#9664\>\<#5DE5\>\<#4F5C\>\<#8868\>\<#3002\>
+
+  \<#8C03\>\<#7528\>openxyl.Workbook()\<#65B9\>\<#6CD5\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>\<#65B0\>\<#7684\>\<#7A7A\>Workbook\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.Workbook()\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+
+    ['Sheet']\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> wb.create_sheet()\ 
+
+    \<less\>Worksheet "Sheet1"\<gtr\>\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+
+    ['Sheet', 'Sheet1']\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> wb.create_sheet(index=0, title='First Sheet')\ 
+
+    \<less\>Worksheet "First Sheet"\<gtr\>\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+
+    ['First Sheet', 'Sheet', 'Sheet1']\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> wb.remove_sheet(wb.get_sheet_by_name('Sheet1'))\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+
+    ['First Sheet', 'Sheet']
+
+    \;
+
+    wb.save('excel.xslx')
+  </python>
+
+  \;
+
+  \;
+
+  \<#5728\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#4E2D\>\<#6DFB\>\<#52A0\>\<#6216\>\<#5220\>\<#9664\>\<#5DE5\>\<#4F5C\>\<#8868\>\<#4E4B\>\<#540E\>\<#FF0C\>\<#8BB0\>\<#5F97\>\<#8C03\>\<#7528\>save()\<#65B9\>\<#6CD5\>\<#6765\>\<#4FDD\>\<#5B58\>\<#53D8\>\<#66F4\>\<#3002\>
+
+  \;
+
+  \<#5C06\>\<#503C\>\<#5199\>\<#5165\>\<#5355\>\<#5143\>\<#683C\>\<#FF0C\>\<#5F88\>\<#50CF\>\<#5C06\>\<#503C\>\<#5199\>\<#5165\>\<#5B57\>\<#5178\>\<#4E2D\>\<#7684\>\<#952E\>\<#3002\>
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'] = 'Hello world!'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'].value\ 
+
+    'Hello world!'\ 
+  </python>
+
+  <subsubsection|\<#8BBE\>\<#7F6E\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#5B57\>\<#4F53\>\<#98CE\>\<#683C\>>
+
+  \;
+
+  \<#4E3A\>\<#4E86\>\<#5B9A\>\<#4E49\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#5B57\>\<#4F53\>\<#98CE\>\<#683C\>\<#FF0C\>\<#9700\>\<#8981\>\<#4ECE\>openpyxl.styles
+  \<#6A21\>\<#5757\>\<#5BFC\>\<#5165\> Font()\<#51FD\>\<#6570\>\<#3002\>
+
+  <python|from openpyxl.styles import Font>
+
+  \<#8FD9\>\<#8BA9\>\<#4F60\>\<#80FD\>\<#8F93\>\<#5165\>Font()\<#FF0C\>\<#4EE3\>\<#66FF\>
+  openpyxl.styles.Font()\<#3002\>
+
+  <\big-table|<block|<tformat|<table|<row|<cell|\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>>|<cell|\<#6570\>\<#636E\>\<#7C7B\>\<#578B\>>|<cell|\<#63CF\>\<#8FF0\>>>|<row|<cell|name>|<cell|\<#5B57\>\<#7B26\>\<#4E32\>>|<cell|\<#5B57\>\<#4F53\>\<#540D\>\<#79F0\>\<#FF0C\>\<#8BF8\>\<#5982\>'Calibri'
+  \<#6216\>'Times New Roman'>>|<row|<cell|size>|<cell|\<#6574\>\<#578B\>>|<cell|\<#5927\>\<#5C0F\>\<#70B9\>\<#6570\>>>|<row|<cell|bold>|<cell|\<#5E03\>\<#5C14\>\<#578B\>>|<cell|True
+  \<#8868\>\<#793A\>\<#7C97\>\<#4F53\>>>|<row|<cell|italic>|<cell|\<#5E03\>\<#5C14\>\<#578B\>>|<cell|True
+  \<#8868\>\<#793A\>\<#659C\>\<#4F53\>>>>>>>
+    Font style \<#5C5E\>\<#6027\>\<#7684\>\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>
+  </big-table>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> fontObj1 = Font(name='Times New Roman', bold=True)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'].font = fontObj1
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'] = 'Bold Times New Roman'
+  </python>
+
+  <subsubsection|\<#516C\>\<#5F0F\>>
+
+  \;
+
+  <python|\<gtr\>\<gtr\>\<gtr\> sheet['B9'] = '=SUM(B1:B8)' >
+
+  \<#4F46\>\<#662F\>\<#FF0C\>\<#5982\>\<#679C\>\<#4F60\>\<#5E0C\>\<#671B\>\<#5728\>\<#8868\>\<#683C\>\<#4E2D\>\<#770B\>\<#5230\>\<#8BE5\>\<#516C\>\<#5F0F\>\<#7684\>\<#8BA1\>\<#7B97\>\<#7ED3\>\<#679C\>\<#FF0C\>\<#800C\>\<#4E0D\>\<#662F\>\<#539F\>\<#6765\>\<#7684\>\<#516C\>\<#5F0F\>\<#3002\>
+
+  \<#90A3\>\<#5C31\>\<#5FC5\>\<#987B\>\<#5C06\>load_workbook()\<#7684\>data_only\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#8BBE\>\<#7F6E\>\<#4E3A\>True\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> wbDataOnly = openpyxl.load_workbook('writeFormula.xlsx',
+    data_only=True)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wbDataOnly.get_active_sheet()\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A3'].value\ 
+
+    500\ 
+  </python>
+
+  \;
+
+  <subsubsection|\<#8C03\>\<#6574\>\<#884C\>\<#548C\>\<#5217\>>
+
+  \;
+
+  Worksheet \<#5BF9\>\<#8C61\>\<#6709\>row_dimensions\<#548C\>column_dimensions
+  \<#5C5E\>\<#6027\>\<#FF0C\>\<#63A7\>\<#5236\>\<#884C\>\<#9AD8\>\<#548C\>\<#5217\>\<#5BBD\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.Workbook()\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_active_sheet()\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'] = 'Tall row'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['B2'] = 'Wide column'\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.row_dimensions[1].height = 70\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.column_dimensions['B'].width = 20\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.save('dimensions.xlsx')\ 
+  </python>
+
+  \;
+
+  \;
+
+  \<#5229\>\<#7528\> merge_cells()\<#5DE5\>\<#4F5C\>\<#8868\>\<#65B9\>\<#6CD5\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#4E00\>\<#4E2A\>\<#77E9\>\<#5F62\>\<#533A\>\<#57DF\>\<#4E2D\>\<#7684\>\<#5355\>\<#5143\>\<#683C\>\<#5408\>\<#5E76\>\<#4E3A\>\<#4E00\>\<#4E2A\>\<#5355\>\<#5143\>\<#683C\>\<#3002\>
+
+  \;
+
+  \;
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.Workbook()\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_active_sheet()\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.merge_cells('A1:D3')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['A1'] = 'Twelve cells merged together.'
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.merge_cells('C5:D5')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet['C5'] = 'Two merged cells.'\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> wb.save('merged.xlsx')\ 
+
+    \;
+
+    \<#8981\>\<#62C6\>\<#5206\>\<#5355\>\<#5143\>\<#683C\>\<#FF0C\>\<#5C31\>\<#8C03\>\<#7528\>
+    unmerge_cells()\<#5DE5\>\<#4F5C\>\<#8868\>\<#65B9\>\<#6CD5\>\<#3002\>
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('merged.xlsx')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_active_sheet()\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.unmerge_cells('A1:D3')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> sheet.unmerge_cells('C5:D5')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> wb.save('merged.xlsx')\ 
+  </python>
 </body>
 
 <\initial>
@@ -3533,16 +4050,26 @@
     <associate|auto-113|<tuple|6|31>>
     <associate|auto-114|<tuple|7|32>>
     <associate|auto-115|<tuple|8|32>>
+    <associate|auto-116|<tuple|2.7|33>>
+    <associate|auto-117|<tuple|2.7.1|33>>
+    <associate|auto-118|<tuple|2.7.2|33>>
+    <associate|auto-119|<tuple|2.7.3|34>>
     <associate|auto-12|<tuple|1.3.1|4>>
+    <associate|auto-120|<tuple|2.7.4|34>>
+    <associate|auto-121|<tuple|2.7.5|35>>
+    <associate|auto-122|<tuple|2.7.6|36>>
+    <associate|auto-123|<tuple|9|36>>
+    <associate|auto-124|<tuple|2.7.7|36>>
+    <associate|auto-125|<tuple|2.7.8|36>>
     <associate|auto-13|<tuple|1.3.2|4>>
     <associate|auto-14|<tuple|1.3.3|4>>
-    <associate|auto-15|<tuple|1.3.4|4>>
+    <associate|auto-15|<tuple|1.3.4|5>>
     <associate|auto-16|<tuple|1.4|5>>
     <associate|auto-17|<tuple|1.4.1|5>>
     <associate|auto-18|<tuple|1.4.2|5>>
     <associate|auto-19|<tuple|1.4.3|5>>
     <associate|auto-2|<tuple|1.1|3>>
-    <associate|auto-20|<tuple|1.4.4|5>>
+    <associate|auto-20|<tuple|1.4.4|6>>
     <associate|auto-21|<tuple|1.4.5|6>>
     <associate|auto-22|<tuple|1.4.6|6>>
     <associate|auto-23|<tuple|1.4.7|6>>
@@ -3664,6 +4191,10 @@
       <tuple|normal|<\surround|<hidden-binding|<tuple>|8>|>
         selenium.webdriver.common.keys \<#6A21\>\<#5757\>\<#4E2D\>\<#5E38\>\<#7528\>\<#7684\>\<#53D8\>\<#91CF\>
       </surround>|<pageref|auto-115>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|9>|>
+        Font style \<#5C5E\>\<#6027\>\<#7684\>\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>
+      </surround>|<pageref|auto-123>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Part
@@ -4094,6 +4625,42 @@
       <with|par-left|<quote|2tab>|2.6.5<space|2spc>\<#7528\>selenium\<#6A21\>\<#5757\>\<#63A7\>\<#5236\>\<#6D4F\>\<#89C8\>\<#5668\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-112>>
+
+      <with|par-left|<quote|1tab>|2.7<space|2spc>\<#5904\>\<#7406\>excel\<#7535\>\<#5B50\>\<#8868\>\<#683C\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-116>>
+
+      <with|par-left|<quote|2tab>|2.7.1<space|2spc>\<#4ECE\>\<#5DE5\>\<#4F5C\>\<#7C3F\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#5DE5\>\<#4F5C\>\<#8868\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-117>>
+
+      <with|par-left|<quote|2tab>|2.7.2<space|2spc>\<#4ECE\>\<#8868\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#5355\>\<#5143\>\<#683C\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-118>>
+
+      <with|par-left|<quote|2tab>|2.7.3<space|2spc>\<#5217\>\<#5B57\>\<#6BCD\>\<#4E0E\>\<#6570\>\<#5B57\>\<#7684\>\<#8F6C\>\<#6362\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-119>>
+
+      <with|par-left|<quote|2tab>|2.7.4<space|2spc>\<#4ECE\>\<#8868\>\<#4E2D\>\<#53D6\>\<#5F97\>\<#884C\>\<#548C\>\<#5217\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-120>>
+
+      <with|par-left|<quote|2tab>|2.7.5<space|2spc>\<#5199\>\<#5165\>\<#548C\>\<#521B\>\<#5EFA\>excel\<#6587\>\<#6863\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-121>>
+
+      <with|par-left|<quote|2tab>|2.7.6<space|2spc>\<#8BBE\>\<#7F6E\>\<#5355\>\<#5143\>\<#683C\>\<#7684\>\<#5B57\>\<#4F53\>\<#98CE\>\<#683C\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-122>>
+
+      <with|par-left|<quote|2tab>|2.7.7<space|2spc>\<#516C\>\<#5F0F\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-124>>
+
+      <with|par-left|<quote|2tab>|2.7.8<space|2spc>\<#8C03\>\<#6574\>\<#884C\>\<#548C\>\<#5217\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-125>>
     </associate>
   </collection>
 </auxiliary>
