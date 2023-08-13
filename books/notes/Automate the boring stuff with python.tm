@@ -3571,13 +3571,13 @@
 
     \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('example.xlsx')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+    \<gtr\>\<gtr\>\<gtr\> wb.sheetnames\ 
 
     ['Sheet1', 'Sheet2', 'Sheet3']\ 
 
     \;
 
-    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet3')\ 
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb['Sheet3']\ 
 
     \<gtr\>\<gtr\>\<gtr\> sheet\ 
 
@@ -3612,13 +3612,15 @@
   <\python>
     \;
 
+    \;
+
     \<gtr\>\<gtr\>\<gtr\> import openpyxl\ 
 
     \;
 
     \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('example.xlsx')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet1')\ 
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb['Sheet1']\ 
 
     \;
 
@@ -3684,13 +3686,13 @@
   get_highest_row()\<#548C\> get_highest_column()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#786E\>\<#5B9A\>\<#8868\>\<#7684\>\<#5927\>\<#5C0F\>\<#3002\>
 
   <\python>
-    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet1')\ 
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb['Sheet1']\ 
 
-    \<gtr\>\<gtr\>\<gtr\> sheet.get_highest_row()\ 
+    \<gtr\>\<gtr\>\<gtr\> sheet.max_row
 
     7\ 
 
-    \<gtr\>\<gtr\>\<gtr\> sheet.get_highest_column()\ 
+    \<gtr\>\<gtr\>\<gtr\> sheet.max_column
 
     3\ 
   </python>
@@ -3746,7 +3748,7 @@
 
     \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.load_workbook('example.xlsx')\ 
 
-    \<gtr\>\<gtr\>\<gtr\> sheet = wb.get_sheet_by_name('Sheet1')\ 
+    \<gtr\>\<gtr\>\<gtr\> sheet = wb['Sheet1']
 
     \;
 
@@ -3825,7 +3827,7 @@
 
     \<gtr\>\<gtr\>\<gtr\> wb = openpyxl.Workbook()\ 
 
-    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+    \<gtr\>\<gtr\>\<gtr\> wb.sheetnames\ 
 
     ['Sheet']\ 
 
@@ -3835,7 +3837,7 @@
 
     \<less\>Worksheet "Sheet1"\<gtr\>\ 
 
-    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+    \<gtr\>\<gtr\>\<gtr\> wb.sheetnames\ 
 
     ['Sheet', 'Sheet1']\ 
 
@@ -3845,7 +3847,7 @@
 
     \<less\>Worksheet "First Sheet"\<gtr\>\ 
 
-    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+    \<gtr\>\<gtr\>\<gtr\> wb.sheetnames\ 
 
     ['First Sheet', 'Sheet', 'Sheet1']\ 
 
@@ -3853,7 +3855,7 @@
 
     \<gtr\>\<gtr\>\<gtr\> wb.remove_sheet(wb.get_sheet_by_name('Sheet1'))\ 
 
-    \<gtr\>\<gtr\>\<gtr\> wb.get_sheet_names()\ 
+    \<gtr\>\<gtr\>\<gtr\> wb.sheetnames\ 
 
     ['First Sheet', 'Sheet']
 
