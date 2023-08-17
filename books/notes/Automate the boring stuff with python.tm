@@ -4046,6 +4046,20 @@
 
     \<gtr\>\<gtr\>\<gtr\> wb.save('merged.xlsx')\ 
   </python>
+
+  <subsection|\<#5904\>\<#7406\>google sheets>
+
+  \;
+
+  \<#6682\>\<#65F6\>\<#6CA1\>\<#6709\>\<#7528\>
+
+  <subsection|\<#5904\>\<#7406\>word\<#6587\>\<#6863\>\<#548C\>pdf\<#6587\>\<#4EF6\>>
+
+  \;
+
+  \<#6682\>\<#65F6\>\<#6CA1\>\<#6709\>\<#7528\>
+
+  <subsection|\<#5904\>\<#7406\>csv\<#6587\>\<#4EF6\>\<#548C\>json\<#6570\>\<#636E\>>
 </body>
 
 <\initial>
@@ -4072,20 +4086,23 @@
     <associate|auto-110|<tuple|2.6.4|30>>
     <associate|auto-111|<tuple|5|30>>
     <associate|auto-112|<tuple|2.6.5|31>>
-    <associate|auto-113|<tuple|6|31>>
+    <associate|auto-113|<tuple|6|32>>
     <associate|auto-114|<tuple|7|32>>
-    <associate|auto-115|<tuple|8|32>>
+    <associate|auto-115|<tuple|8|33>>
     <associate|auto-116|<tuple|2.7|33>>
     <associate|auto-117|<tuple|2.7.1|33>>
-    <associate|auto-118|<tuple|2.7.2|33>>
+    <associate|auto-118|<tuple|2.7.2|34>>
     <associate|auto-119|<tuple|2.7.3|34>>
     <associate|auto-12|<tuple|1.3.1|4>>
-    <associate|auto-120|<tuple|2.7.4|34>>
+    <associate|auto-120|<tuple|2.7.4|35>>
     <associate|auto-121|<tuple|2.7.5|35>>
     <associate|auto-122|<tuple|2.7.6|36>>
     <associate|auto-123|<tuple|9|36>>
     <associate|auto-124|<tuple|2.7.7|36>>
-    <associate|auto-125|<tuple|2.7.8|36>>
+    <associate|auto-125|<tuple|2.7.8|37>>
+    <associate|auto-126|<tuple|2.8|?>>
+    <associate|auto-127|<tuple|2.9|?>>
+    <associate|auto-128|<tuple|2.10|?>>
     <associate|auto-13|<tuple|1.3.2|4>>
     <associate|auto-14|<tuple|1.3.3|4>>
     <associate|auto-15|<tuple|1.3.4|5>>
