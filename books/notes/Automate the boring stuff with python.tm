@@ -470,6 +470,42 @@
     <with|par-left|2tab|2.7.8<space|2spc>\<#8C03\>\<#6574\>\<#884C\>\<#548C\>\<#5217\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-125>>
+
+    <with|par-left|1tab|2.8<space|2spc>\<#5904\>\<#7406\>google sheets
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-126>>
+
+    <with|par-left|1tab|2.9<space|2spc>\<#5904\>\<#7406\>word\<#6587\>\<#6863\>\<#548C\>pdf\<#6587\>\<#4EF6\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-127>>
+
+    <with|par-left|1tab|2.10<space|2spc>\<#5904\>\<#7406\>CSV\<#6587\>\<#4EF6\>\<#548C\>json\<#6570\>\<#636E\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-128>>
+
+    <with|par-left|2tab|2.10.1<space|2spc>CSV\<#6A21\>\<#5757\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-129>>
+
+    <with|par-left|2tab|2.10.2<space|2spc>reader\<#5BF9\>\<#8C61\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-130>>
+
+    <with|par-left|2tab|2.10.3<space|2spc>writer\<#5BF9\>\<#8C61\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-131>>
+
+    <with|par-left|2tab|2.10.4<space|2spc>delimeter\<#548C\>lineminator\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-132>>
+
+    <with|par-left|2tab|2.10.5<space|2spc>DictReader\<#548C\>DictWriter
+    CSV\<#5BF9\>\<#8C61\> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-133>>
+
+    <with|par-left|2tab|2.10.6<space|2spc>json\<#6A21\>\<#5757\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-134>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -4059,7 +4095,310 @@
 
   \<#6682\>\<#65F6\>\<#6CA1\>\<#6709\>\<#7528\>
 
-  <subsection|\<#5904\>\<#7406\>csv\<#6587\>\<#4EF6\>\<#548C\>json\<#6570\>\<#636E\>>
+  <subsection|\<#5904\>\<#7406\>CSV\<#6587\>\<#4EF6\>\<#548C\>json\<#6570\>\<#636E\>>
+
+  <subsubsection|CSV\<#6A21\>\<#5757\>>
+
+  \;
+
+  CSV \<#8868\>\<#793A\>\PComma-Separated
+  Values\<#FF08\>\<#9017\>\<#53F7\>\<#5206\>\<#9694\>\<#7684\>\<#503C\>\<#FF09\>\Q\<#FF0C\>CSV
+  \<#6587\>\<#4EF6\>\<#662F\>\<#7B80\>\<#5316\>\<#7684\>\<#7535\>\<#5B50\>\<#8868\>\<#683C\>\<#FF0C\>\<#4FDD\>\<#5B58\>\<#4E3A\>\<#7EAF\>\<#6587\>\<#672C\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  CSV\<#6587\>\<#4EF6\>\<#4E5F\>\<#6709\>\<#81EA\>\<#5DF1\>\<#7684\>\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>\<#FF0C\>\<#5141\>\<#8BB8\>\<#9017\>\<#53F7\>\<#548C\>\<#5176\>\<#4ED6\>\<#5B57\>\<#7B26\>\<#4F5C\>\<#4E3A\>\<#503C\>\<#7684\>\<#4E00\>\<#90E8\>\<#5206\>\<#3002\>split()\<#65B9\>\<#6CD5\>\<#4E0D\>\<#80FD\>\<#5904\>\<#7406\>\<#8FD9\>\<#4E9B\>\<#8F6C\>\<#4E49\>\<#5B57\>\<#7B26\>\<#3002\>\<#56E0\>\<#4E3A\>\<#8FD9\>\<#4E9B\>\<#6F5C\>\<#5728\>\<#7684\>\<#7F3A\>\<#9677\>\<#FF0C\>\<#6240\>\<#4EE5\>\<#603B\>\<#662F\>\<#5E94\>\<#8BE5\>\<#4F7F\>\<#7528\>csv\<#6A21\>\<#5757\>\<#6765\>\<#8BFB\>\<#5199\>CSV\<#6587\>\<#4EF6\>\<#3002\>
+
+  <subsubsection|reader\<#5BF9\>\<#8C61\>>
+
+  \;
+
+  \<#8981\>\<#7528\>csv\<#6A21\>\<#5757\>\<#4ECE\>CSV\<#6587\>\<#4EF6\>\<#4E2D\>\<#8BFB\>\<#53D6\>\<#6570\>\<#636E\>\<#FF0C\>\<#9700\>\<#8981\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>Reader\<#5BF9\>\<#8C61\>\<#3002\>Reader\<#5BF9\>\<#8C61\>\<#8BA9\>\<#4F60\>\<#8FED\>\<#4EE3\>\<#904D\>\<#5386\>CSV\<#6587\>\<#4EF6\>\<#4E2D\>\<#7684\>\<#6BCF\>\<#4E00\>\<#884C\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import csv\ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleFile = open('example.csv')\ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleReader = csv.reader(exampleFile)\ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleData = list(exampleReader)\ 
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleData\ 
+
+    [['4/5/2015 13:34', 'Apples', '73'], ['4/5/2015 3:41', 'Cherries', '85'],\ 
+
+    ['4/6/2015 12:46', 'Pears', '14'], ['4/8/2015 8:59', 'Oranges', '52']
+  </python>
+
+  \;
+
+  \<#8981\>\<#7528\>csv\<#6A21\>\<#5757\>\<#8BFB\>\<#53D6\>CSV\<#6587\>\<#4EF6\>\<#FF0C\>\<#9996\>\<#5148\>\<#7528\>open()\<#51FD\>\<#6570\>\<#6253\>\<#5F00\>\<#5B83\>\<#FF0C\>\<#5C31\>\<#50CF\>\<#6253\>\<#5F00\>\<#4EFB\>\<#4F55\>\<#5176\>\<#4ED6\>\<#6587\>\<#672C\>\<#6587\>\<#4EF6\>\<#4E00\>\<#6837\>\<#3002\>\<#4E4B\>\<#540E\>\<#5C06\>\<#5B83\>\<#4F20\>\<#9012\>\<#7ED9\>csv.reader()\<#51FD\>\<#6570\>\<#5373\>\<#53EF\>\<#3002\>
+
+  \<#8981\>\<#8BBF\>\<#95EE\>Reader\<#5BF9\>\<#8C61\>\<#4E2D\>\<#7684\>\<#503C\>\<#6700\>\<#76F4\>\<#63A5\>\<#7684\>\<#65B9\>\<#6CD5\>\<#5C31\>\<#662F\>\<#5C06\>\<#5B83\>\<#8F6C\>\<#6362\>\<#6210\>\<#4E00\>\<#4E2A\>\<#666E\>\<#901A\>Python\<#5217\>\<#8868\>\<#FF0C\>\<#5C06\>\<#5B83\>\<#4F20\>\<#9012\>\<#7ED9\>list()\<#3002\>
+
+  \<#4E4B\>\<#540E\>\<#76F4\>\<#63A5\>\<#50CF\>\<#4E8C\>\<#7EF4\>\<#6570\>\<#7EC4\>\<#4E00\>\<#6837\>\<#8BBF\>\<#95EE\>list\<#4E2D\>\<#7684\>\<#5143\>\<#7D20\>\<#5373\>\<#53EF\>\<#3002\>
+
+  \;
+
+  \<#5BF9\>\<#4E8E\>\<#5927\>\<#578B\>\<#7684\>CSV\<#6587\>\<#4EF6\>\<#FF0C\>\<#4F60\>\<#9700\>\<#8981\>\<#5728\>\<#4E00\>\<#4E2A\>for\<#5FAA\>\<#73AF\>\<#4E2D\>\<#4F7F\>\<#7528\>Reader\<#5BF9\>\<#8C61\>\<#3002\>\<#8FD9\>\<#6837\>\<#907F\>\<#514D\>\<#5C06\>\<#6574\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#4E00\>\<#6B21\>\<#6027\>\<#88C5\>\<#5165\>\<#5185\>\<#5B58\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import csv\ 
+
+    \<gtr\>\<gtr\>\<gtr\> exampleFile = open('example.csv')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> exampleReader = csv.reader(exampleFile)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> for row in exampleReader:\ 
+
+    print('Row #' + str(exampleReader.line_num) + ' ' + str(row))
+
+    \;
+
+    Row #1 ['4/5/2015 13:34', 'Apples', '73']\ 
+
+    Row #2 ['4/5/2015 3:41', 'Cherries', '85']\ 
+
+    Row #3 ['4/6/2015 12:46', 'Pears', '14']\ 
+  </python>
+
+  \;
+
+  \<#8981\>\<#53D6\>\<#5F97\>\<#884C\>\<#53F7\>\<#FF0C\>\<#5C31\>\<#4F7F\>\<#7528\>Reader
+  \<#5BF9\>\<#8C61\>\<#7684\>line_num\<#53D8\>\<#91CF\>\<#FF0C\>\<#5B83\>\<#5305\>\<#542B\>\<#4E86\>\<#5F53\>\<#524D\>\<#884C\>\<#7684\>\<#7F16\>\<#53F7\>\<#3002\>
+  Reader \<#5BF9\>\<#8C61\>\<#53EA\>\<#80FD\>\<#5FAA\>\<#73AF\>\<#904D\>\<#5386\>\<#4E00\>\<#6B21\>\<#3002\>\<#8981\>\<#518D\>\<#6B21\>\<#8BFB\>\<#53D6\>
+  CSV \<#6587\>\<#4EF6\>\<#5FC5\>\<#987B\>\<#8C03\>\<#7528\>
+  csv.reader\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>\<#5BF9\>\<#8C61\>\<#3002\>
+
+  <subsubsection|writer\<#5BF9\>\<#8C61\>>
+
+  \;
+
+  Writer\<#5BF9\>\<#8C61\>\<#8BA9\>\<#4F60\>\<#5C06\>\<#6570\>\<#636E\>\<#5199\>\<#5165\>CSV\<#6587\>\<#4EF6\>\<#3002\>\<#8981\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>writer\<#5BF9\>\<#8C61\>\<#FF0C\>\<#5C31\>\<#4F7F\>\<#7528\>csv.writer()\<#51FD\>\<#6570\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import csv\ 
+
+    \<gtr\>\<gtr\>\<gtr\> outputFile = open('output.csv', 'w', newline='')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> outputWriter = csv.writer(outputFile)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> outputWriter.writerow(['spam', 'eggs', 'bacon',
+    'ham'])\ 
+
+    21\ 
+
+    \<gtr\>\<gtr\>\<gtr\> outputWriter.writerow(['Hello, world!', 'eggs',
+    'bacon', 'ham'])\ 
+
+    32\ 
+
+    \<gtr\>\<gtr\>\<gtr\> outputWriter.writerow([1, 2, 3.141592, 4])\ 
+
+    16\ 
+
+    \<gtr\>\<gtr\>\<gtr\> outputFile.close()
+  </python>
+
+  \;
+
+  \<#9996\>\<#5148\>\<#8C03\>\<#7528\>open()\<#5E76\>\<#4F20\>\<#5165\>'w'\<#FF0C\>\<#4EE5\>\<#5199\>\<#6A21\>\<#5F0F\>\<#6253\>\<#5F00\>\<#4E00\>\<#4E2A\>\<#6587\>\<#4EF6\>\<#3002\>
+
+  \<#7136\>\<#540E\>\<#5C06\>\<#5B83\>\<#4F20\>\<#9012\>\<#7ED9\>csv.writer()\<#FF0C\>\<#521B\>\<#5EFA\>\<#4E00\>\<#4E2A\>Writer\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \<#5728\>Windows \<#4E0A\>\<#9700\>\<#8981\>\<#4E3A\>open()\<#51FD\>\<#6570\>\<#7684\>newline\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#7A7A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  Writer \<#5BF9\>\<#8C61\>\<#7684\>writerow()\<#65B9\>\<#6CD5\>\<#63A5\>\<#53D7\>\<#4E00\>\<#4E2A\>\<#5217\>\<#8868\>\<#53C2\>\<#6570\>\<#3002\>\<#5217\>\<#8868\>\<#4E2D\>\<#7684\>\<#6BCF\>\<#4E2A\>\<#8BCD\>\<#653E\>\<#5728\>\<#8F93\>\<#51FA\>\<#7684\>CSV\<#6587\>\<#4EF6\>\<#4E2D\>\<#7684\>\<#4E00\>\<#4E2A\>\<#5355\>\<#5143\>\<#683C\>\<#4E2D\>\<#3002\>writerow()\<#51FD\>\<#6570\>\<#7684\>\<#8FD4\>\<#56DE\>\<#503C\>\<#FF0C\>\<#662F\>\<#5199\>\<#5165\>\<#6587\>\<#4EF6\>\<#4E2D\>\<#8FD9\>\<#4E00\>\<#884C\>\<#7684\>\<#5B57\>\<#7B26\>\<#6570\>\<#FF08\>\<#5305\>\<#62EC\>\<#6362\>\<#884C\>\<#5B57\>\<#7B26\>\<#FF09\>\<#3002\>
+
+  <subsubsection|delimeter\<#548C\>lineminator\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>>
+
+  \;
+
+  \<#5047\>\<#5B9A\>\<#4F60\>\<#5E0C\>\<#671B\>\<#7528\>\<#5236\>\<#8868\>\<#7B26\>\<#4EE3\>\<#66FF\>\<#9017\>\<#53F7\>\<#6765\>\<#5206\>\<#9694\>\<#5355\>\<#5143\>\<#683C\>\<#FF0C\>\<#5E76\>\<#5E0C\>\<#671B\>\<#6709\>\<#4E24\>\<#500D\>\<#884C\>\<#8DDD\>\<#3002\>\<#53EF\>\<#4EE5\>\<#5728\>\<#4EA4\>\<#4E92\>\<#5F0F\>\<#73AF\>\<#5883\>\<#4E2D\>\<#8F93\>\<#5165\>\<#4E0B\>\<#9762\>\<#8FD9\>\<#6837\>\<#7684\>\<#4EE3\>\<#7801\>\<#FF1A\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import csv\ 
+
+    \<gtr\>\<gtr\>\<gtr\> csvFile = open('example.tsv', 'w', newline='')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> csvWriter = csv.writer(csvFile, delimiter='\\t',
+    lineterminator='\\n\\n')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> csvWriter.writerow(['apples', 'oranges', 'grapes'])\ 
+
+    24\ 
+
+    \<gtr\>\<gtr\>\<gtr\> csvWriter.writerow(['eggs', 'bacon', 'ham'])\ 
+
+    17\ 
+
+    \<gtr\>\<gtr\>\<gtr\> csvWriter.writerow(['spam', 'spam', 'spam', 'spam',
+    'spam', 'spam'])\ 
+
+    32\ 
+
+    \<gtr\>\<gtr\>\<gtr\> csvFile.close()
+  </python>
+
+  \;
+
+  \<#8FD9\>\<#6539\>\<#53D8\>\<#4E86\>\<#6587\>\<#4EF6\>\<#4E2D\>\<#7684\>\<#5206\>\<#9694\>\<#7B26\>\<#548C\>\<#884C\>\<#7EC8\>\<#6B62\>\<#5B57\>\<#7B26\>\<#3002\>\<#9ED8\>\<#8BA4\>\<#60C5\>\<#51B5\>\<#4E0B\>\<#FF0C\>\<#884C\>\<#7EC8\>\<#6B62\>\<#5B57\>\<#7B26\>\<#662F\>\<#6362\>\<#884C\>\<#7B26\>\<#3002\>
+
+  \<#4F20\>\<#5165\>delimeter='\\t'\<#548C\>
+  lineterminator='\\n\\n'\<#4F1A\>\<#5C06\>\<#5355\>\<#5143\>\<#683C\>\<#4E4B\>\<#95F4\>\<#7684\>\<#5B57\>\<#7B26\>\<#6539\>\<#53D8\>\<#4E3A\>\<#5236\>\<#8868\>\<#7B26\>\<#FF0C\>\<#5C06\>\<#884C\>\<#4E4B\>\<#95F4\>\<#7684\>\<#5B57\>\<#7B26\>\<#6539\>\<#53D8\>\<#4E3A\>\<#4E24\>\<#4E2A\>\<#6362\>\<#884C\>\<#7B26\>\<#3002\>
+
+  <subsubsection|DictReader\<#548C\>DictWriter CSV\<#5BF9\>\<#8C61\>>
+
+  \;
+
+  \<#5BF9\>\<#4E8E\>\<#5305\>\<#542B\>\<#6807\>\<#9898\>\<#884C\>\<#7684\>CSV\<#6587\>\<#4EF6\>\<#4E00\>\<#822C\>\<#4F1A\>\<#4F7F\>\<#7528\>\<#8FD9\>\<#4E24\>\<#4E2A\>\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \<#4E24\>\<#8005\>\<#4F7F\>\<#7528\>\<#5B57\>\<#5178\>\<#5BF9\>CSV\<#6587\>\<#4EF6\>\<#8FDB\>\<#884C\>\<#8BFB\>\<#5199\>\<#FF0C\>\<#4E14\>\<#4ED6\>\<#4EEC\>\<#4F7F\>\<#7528\>CSV\<#6587\>\<#4EF6\>\<#7684\>\<#7B2C\>\<#4E00\>\<#884C\>\<#4F5C\>\<#4E3A\>\<#5B57\>\<#5178\>\<#7684\>\<#952E\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import csv
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleFile = open('exampleWithHeader.csv')
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleDictReader = csv.DictReader(exampleFile)
+
+    \ \<gtr\>\<gtr\>\<gtr\> for row in exampleDictReader:
+
+    \ ... \ \ \ \ 
+
+    \ print(row['Timestamp'], row['Fruit'], row['Quantity'])
+
+    \ ...
+
+    \ 4/5/2015 13:34 Apples 73
+
+    \ 4/5/2015 3:41 Cherries 85
+  </python>
+
+  \;
+
+  \<#4F7F\>\<#7528\>\<#8FD9\>\<#4E24\>\<#4E2A\>\<#5BF9\>\<#8C61\>\<#610F\>\<#5473\>\<#8FD9\>\<#4F60\>\<#5728\>\<#5904\>\<#7406\>\<#65F6\>\<#65E0\>\<#9700\>\<#4F7F\>\<#7528\>\<#989D\>\<#5916\>\<#4EE3\>\<#7801\>\<#8DF3\>\<#8FC7\>\<#7B2C\>\<#4E00\>\<#884C\>\<#7684\>\<#4FE1\>\<#606F\>\<#3002\>
+
+  \<#5982\>\<#679C\>\<#5904\>\<#7406\>\<#7684\>csv\<#6587\>\<#4EF6\>\<#6CA1\>\<#6709\>\<#7B2C\>\<#4E00\>\<#884C\>\<#7684\>\<#6807\>\<#9898\>\<#FF0C\>\<#5219\>\<#9700\>\<#8981\>\<#5728\>DictReader()\<#51FD\>\<#6570\>\<#4E2D\>\<#52A0\>\<#5165\>\<#7B2C\>\<#4E8C\>\<#4E2A\>\<#53C2\>\<#6570\>\<#FF0C\>\<#5176\>\<#4E2D\>\<#5305\>\<#542B\>\<#9884\>\<#7F6E\>\<#7684\>\<#5217\>\<#6807\>\<#9898\>\<#540D\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import csv
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleFile = open('example.csv')
+
+    \ \<gtr\>\<gtr\>\<gtr\> exampleDictReader = csv.DictReader(exampleFile,
+    ['time', 'name',\ 
+
+    'amount'])
+
+    \ \<gtr\>\<gtr\>\<gtr\> for row in exampleDictReader:
+
+    \ ... \ \ \ \ 
+
+    \ print(row['time'], row['name'], row['amount'])
+
+    \ ...
+
+    \ 4/5/2015 13:34 Apples 73
+
+    \ 4/5/2015 3:41 Cherries 85
+  </python>
+
+  \;
+
+  DictWriter\<#5BF9\>\<#8C61\>\<#4F7F\>\<#7528\>\<#5B57\>\<#5178\>\<#6765\>\<#521B\>\<#5EFA\>CSV\<#6587\>\<#4EF6\>\<#3002\>
+
+  \<#5982\>\<#679C\>\<#4F60\>\<#60F3\>\<#8981\>\<#6587\>\<#4EF6\>\<#5305\>\<#542B\>\<#4E00\>\<#4E2A\>\<#6807\>\<#9898\>\<#884C\>\<#FF0C\>\<#90A3\>\<#5C31\>\<#8C03\>\<#7528\>writeheader()\<#6765\>\<#5199\>\<#5165\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ \<gtr\>\<gtr\>\<gtr\> import csv
+
+    \ \<gtr\>\<gtr\>\<gtr\> outputFile = open('output.csv', 'w', newline='')
+
+    \ \<gtr\>\<gtr\>\<gtr\> outputDictWriter = csv.DictWriter(outputFile,
+    ['Name', 'Pet', 'Phone'])
+
+    \ \<gtr\>\<gtr\>\<gtr\> outputDictWriter.writeheader()
+
+    \ \<gtr\>\<gtr\>\<gtr\> outputDictWriter.writerow({'Name': 'Alice',
+    'Pet': 'cat', 'Phone': '555
+
+    1234'})
+  </python>
+
+  \;
+
+  \<#4EFB\>\<#4F55\>\<#7F3A\>\<#5931\>\<#7684\>\<#952E\>\<#5728\>CSV\<#6587\>\<#4EF6\>\<#4E2D\>\<#90FD\>\<#4F1A\>\<#662F\>\<#7A7A\>\<#7684\>\<#3002\>
+
+  <subsubsection|json\<#6A21\>\<#5757\>>
+
+  \;
+
+  Python\<#7684\>json\<#6A21\>\<#5757\>\<#6709\>json.loads()\<#548C\>json.dumps()\<#51FD\>\<#6570\>\<#3002\>
+
+  JSON\<#4E0D\>\<#80FD\>\<#5B58\>\<#50A8\>\<#6BCF\>\<#4E00\>\<#79CD\>Python\<#503C\>\<#3002\>\<#5B83\>\<#53EA\>\<#80FD\>\<#5305\>\<#542B\>\<#4EE5\>\<#4E0B\>\<#6570\>\<#636E\>\<#7C7B\>\<#578B\>\<#7684\>\<#503C\>\<#FF1A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3001\>\<#6574\>\<#578B\>\<#3001\>\<#6D6E\>\<#70B9\>\<#578B\>\<#3001\>\<#5E03\>\<#5C14\>\<#578B\>\<#3001\>\<#5217\>\<#8868\>\<#3001\>\<#5B57\>\<#5178\>\<#548C\>NoneType\<#3002\>
+
+  \;
+
+  \<#8981\>\<#5C06\>\<#5305\>\<#542B\>JSON\<#6570\>\<#636E\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#8F6C\>\<#6362\>\<#4E3A\>Python\<#7684\>\<#503C\>\<#FF0C\>\<#5C31\>\<#5C06\>\<#5B83\>\<#4F20\>\<#9012\>\<#7ED9\>json.loads()\<#51FD\>\<#6570\>\<#3002\>
+
+  \<#8FD9\>\<#4E2A\>\<#540D\>\<#5B57\>\<#7684\>\<#610F\>\<#601D\>\<#662F\>\Pload
+  string\Q\<#3002\>
+
+  \<#8BF7\>\<#6CE8\>\<#610F\>\<#FF0C\>JSON\<#5B57\>\<#7B26\>\<#4E32\>\<#603B\>\<#662F\>\<#7528\>\<#53CC\>\<#5F15\>\<#53F7\>\<#3002\>\<#5B83\>\<#5C06\>\<#8BE5\>\<#6570\>\<#636E\>\<#8FD4\>\<#56DE\>\<#4E3A\>\<#4E00\>\<#4E2A\>Python\<#5B57\>\<#5178\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> stringOfJsonData = '{"name": "Zophie", "isCat":
+    true, "miceCaught": 0,\ 
+
+    "felineIQ": null}'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> import json\ 
+
+    \<gtr\>\<gtr\>\<gtr\> jsonDataAsPythonValue =
+    json.loads(stringOfJsonData)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> jsonDataAsPythonValue\ 
+
+    {'isCat': True, 'miceCaught': 0, 'name': 'Zophie', 'felineIQ': None}\ 
+  </python>
+
+  \;
+
+  json.dumps()\<#51FD\>\<#6570\>\<#FF08\>\<#5B83\>\<#8868\>\<#793A\>\Pdump
+  string\Q\<#FF09\>\<#5C06\>\<#4E00\>\<#4E2A\>Python\<#503C\>\<#8F6C\>\<#6362\>\<#6210\>JSON\<#683C\>\<#5F0F\>\<#7684\>\<#6570\>\<#636E\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> pythonValue = {'isCat': True, 'miceCaught': 0,
+    'name': 'Zophie',\ 
+
+    'felineIQ': None}\ 
+
+    \<gtr\>\<gtr\>\<gtr\> import json\ 
+
+    \<gtr\>\<gtr\>\<gtr\> stringOfJsonData = json.dumps(pythonValue)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> stringOfJsonData\ 
+
+    '{"isCat": true, "felineIQ": null, "miceCaught": 0, "name": "Zophie" }'\ 
+  </python>
 </body>
 
 <\initial>
@@ -4073,38 +4412,44 @@
     <associate|auto-1|<tuple|1|3>>
     <associate|auto-10|<tuple|1.2.5|4>>
     <associate|auto-100|<tuple|2.5.2|27>>
-    <associate|auto-101|<tuple|2.5.3|27>>
+    <associate|auto-101|<tuple|2.5.3|28>>
     <associate|auto-102|<tuple|2.5.4|28>>
-    <associate|auto-103|<tuple|2.5.5|28>>
-    <associate|auto-104|<tuple|4|28>>
+    <associate|auto-103|<tuple|2.5.5|29>>
+    <associate|auto-104|<tuple|4|29>>
     <associate|auto-105|<tuple|2.5.6|29>>
-    <associate|auto-106|<tuple|2.6|29>>
-    <associate|auto-107|<tuple|2.6.1|29>>
-    <associate|auto-108|<tuple|2.6.2|29>>
-    <associate|auto-109|<tuple|2.6.3|29>>
+    <associate|auto-106|<tuple|2.6|30>>
+    <associate|auto-107|<tuple|2.6.1|30>>
+    <associate|auto-108|<tuple|2.6.2|30>>
+    <associate|auto-109|<tuple|2.6.3|30>>
     <associate|auto-11|<tuple|1.3|4>>
     <associate|auto-110|<tuple|2.6.4|30>>
-    <associate|auto-111|<tuple|5|30>>
-    <associate|auto-112|<tuple|2.6.5|31>>
+    <associate|auto-111|<tuple|5|31>>
+    <associate|auto-112|<tuple|2.6.5|32>>
     <associate|auto-113|<tuple|6|32>>
     <associate|auto-114|<tuple|7|32>>
     <associate|auto-115|<tuple|8|33>>
-    <associate|auto-116|<tuple|2.7|33>>
-    <associate|auto-117|<tuple|2.7.1|33>>
+    <associate|auto-116|<tuple|2.7|34>>
+    <associate|auto-117|<tuple|2.7.1|34>>
     <associate|auto-118|<tuple|2.7.2|34>>
-    <associate|auto-119|<tuple|2.7.3|34>>
+    <associate|auto-119|<tuple|2.7.3|35>>
     <associate|auto-12|<tuple|1.3.1|4>>
     <associate|auto-120|<tuple|2.7.4|35>>
-    <associate|auto-121|<tuple|2.7.5|35>>
-    <associate|auto-122|<tuple|2.7.6|36>>
-    <associate|auto-123|<tuple|9|36>>
-    <associate|auto-124|<tuple|2.7.7|36>>
+    <associate|auto-121|<tuple|2.7.5|36>>
+    <associate|auto-122|<tuple|2.7.6|37>>
+    <associate|auto-123|<tuple|9|37>>
+    <associate|auto-124|<tuple|2.7.7|37>>
     <associate|auto-125|<tuple|2.7.8|37>>
-    <associate|auto-126|<tuple|2.8|?>>
-    <associate|auto-127|<tuple|2.9|?>>
-    <associate|auto-128|<tuple|2.10|?>>
-    <associate|auto-13|<tuple|1.3.2|4>>
-    <associate|auto-14|<tuple|1.3.3|4>>
+    <associate|auto-126|<tuple|2.8|38>>
+    <associate|auto-127|<tuple|2.9|38>>
+    <associate|auto-128|<tuple|2.10|38>>
+    <associate|auto-129|<tuple|2.10.1|38>>
+    <associate|auto-13|<tuple|1.3.2|5>>
+    <associate|auto-130|<tuple|2.10.2|38>>
+    <associate|auto-131|<tuple|2.10.3|39>>
+    <associate|auto-132|<tuple|2.10.4|39>>
+    <associate|auto-133|<tuple|2.10.5|40>>
+    <associate|auto-134|<tuple|2.10.6|40>>
+    <associate|auto-14|<tuple|1.3.3|5>>
     <associate|auto-15|<tuple|1.3.4|5>>
     <associate|auto-16|<tuple|1.4|5>>
     <associate|auto-17|<tuple|1.4.1|5>>
@@ -4117,87 +4462,87 @@
     <associate|auto-23|<tuple|1.4.7|6>>
     <associate|auto-24|<tuple|1.4.8|6>>
     <associate|auto-25|<tuple|1.4.9|6>>
-    <associate|auto-26|<tuple|1.4.10|6>>
-    <associate|auto-27|<tuple|1.4.11|6>>
+    <associate|auto-26|<tuple|1.4.10|7>>
+    <associate|auto-27|<tuple|1.4.11|7>>
     <associate|auto-28|<tuple|1.4.12|7>>
-    <associate|auto-29|<tuple|1.4.13|7>>
+    <associate|auto-29|<tuple|1.4.13|8>>
     <associate|auto-3|<tuple|1.1.1|3>>
     <associate|auto-30|<tuple|1.4.14|8>>
     <associate|auto-31|<tuple|1.4.15|8>>
     <associate|auto-32|<tuple|1.5|8>>
     <associate|auto-33|<tuple|1.5.1|8>>
     <associate|auto-34|<tuple|1.5.2|8>>
-    <associate|auto-35|<tuple|1.5.3|8>>
+    <associate|auto-35|<tuple|1.5.3|9>>
     <associate|auto-36|<tuple|1.5.4|9>>
-    <associate|auto-37|<tuple|1.5.5|9>>
-    <associate|auto-38|<tuple|1.5.6|9>>
+    <associate|auto-37|<tuple|1.5.5|10>>
+    <associate|auto-38|<tuple|1.5.6|10>>
     <associate|auto-39|<tuple|1.6|10>>
     <associate|auto-4|<tuple|1.1.2|3>>
     <associate|auto-40|<tuple|1.6.1|10>>
     <associate|auto-41|<tuple|1|10>>
     <associate|auto-42|<tuple|1.6.2|10>>
     <associate|auto-43|<tuple|1.6.3|10>>
-    <associate|auto-44|<tuple|1.6.4|10>>
-    <associate|auto-45|<tuple|1.6.5|10>>
+    <associate|auto-44|<tuple|1.6.4|11>>
+    <associate|auto-45|<tuple|1.6.5|11>>
     <associate|auto-46|<tuple|2|11>>
     <associate|auto-47|<tuple|1.6.6|11>>
     <associate|auto-48|<tuple|1.6.7|11>>
     <associate|auto-49|<tuple|1.6.8|11>>
     <associate|auto-5|<tuple|1.2|3>>
-    <associate|auto-50|<tuple|1.6.9|11>>
+    <associate|auto-50|<tuple|1.6.9|12>>
     <associate|auto-51|<tuple|1.6.10|12>>
     <associate|auto-52|<tuple|1.6.11|12>>
     <associate|auto-53|<tuple|1.6.12|12>>
-    <associate|auto-54|<tuple|2|12>>
-    <associate|auto-55|<tuple|2.1|12>>
-    <associate|auto-56|<tuple|2.1.1|12>>
+    <associate|auto-54|<tuple|2|13>>
+    <associate|auto-55|<tuple|2.1|13>>
+    <associate|auto-56|<tuple|2.1.1|13>>
     <associate|auto-57|<tuple|2.1.2|13>>
     <associate|auto-58|<tuple|2.1.3|13>>
-    <associate|auto-59|<tuple|2.1.4|13>>
-    <associate|auto-6|<tuple|1.2.1|3>>
+    <associate|auto-59|<tuple|2.1.4|14>>
+    <associate|auto-6|<tuple|1.2.1|4>>
     <associate|auto-60|<tuple|2.1.5|14>>
     <associate|auto-61|<tuple|2.1.6|14>>
     <associate|auto-62|<tuple|2.1.7|14>>
-    <associate|auto-63|<tuple|2.1.8|14>>
+    <associate|auto-63|<tuple|2.1.8|15>>
     <associate|auto-64|<tuple|2.1.9|15>>
     <associate|auto-65|<tuple|2.1.10|15>>
     <associate|auto-66|<tuple|3|15>>
     <associate|auto-67|<tuple|2.1.11|15>>
-    <associate|auto-68|<tuple|2.1.12|15>>
+    <associate|auto-68|<tuple|2.1.12|16>>
     <associate|auto-69|<tuple|2.1.13|16>>
-    <associate|auto-7|<tuple|1.2.2|3>>
+    <associate|auto-7|<tuple|1.2.2|4>>
     <associate|auto-70|<tuple|2.1.14|16>>
     <associate|auto-71|<tuple|2.1.15|16>>
-    <associate|auto-72|<tuple|2.1.16|16>>
+    <associate|auto-72|<tuple|2.1.16|17>>
     <associate|auto-73|<tuple|2.2|17>>
     <associate|auto-74|<tuple|2.3|17>>
     <associate|auto-75|<tuple|2.3.1|17>>
-    <associate|auto-76|<tuple|2.3.2|17>>
+    <associate|auto-76|<tuple|2.3.2|18>>
     <associate|auto-77|<tuple|2.3.3|18>>
     <associate|auto-78|<tuple|2.3.4|18>>
-    <associate|auto-79|<tuple|2.3.5|18>>
+    <associate|auto-79|<tuple|2.3.5|19>>
     <associate|auto-8|<tuple|1.2.3|4>>
-    <associate|auto-80|<tuple|2.3.6|18>>
-    <associate|auto-81|<tuple|2.3.7|18>>
+    <associate|auto-80|<tuple|2.3.6|19>>
+    <associate|auto-81|<tuple|2.3.7|19>>
     <associate|auto-82|<tuple|2.3.8|19>>
     <associate|auto-83|<tuple|2.3.9|21>>
     <associate|auto-84|<tuple|2.3.10|21>>
-    <associate|auto-85|<tuple|2.3.11|21>>
-    <associate|auto-86|<tuple|2.3.12|21>>
+    <associate|auto-85|<tuple|2.3.11|22>>
+    <associate|auto-86|<tuple|2.3.12|22>>
     <associate|auto-87|<tuple|2.3.13|22>>
-    <associate|auto-88|<tuple|2.3.14|22>>
+    <associate|auto-88|<tuple|2.3.14|23>>
     <associate|auto-89|<tuple|2.3.15|23>>
     <associate|auto-9|<tuple|1.2.4|4>>
-    <associate|auto-90|<tuple|2.4|23>>
-    <associate|auto-91|<tuple|2.4.1|23>>
+    <associate|auto-90|<tuple|2.4|24>>
+    <associate|auto-91|<tuple|2.4.1|24>>
     <associate|auto-92|<tuple|2.4.2|24>>
-    <associate|auto-93|<tuple|2.4.3|24>>
-    <associate|auto-94|<tuple|2.4.4|24>>
-    <associate|auto-95|<tuple|2.4.5|25>>
+    <associate|auto-93|<tuple|2.4.3|25>>
+    <associate|auto-94|<tuple|2.4.4|25>>
+    <associate|auto-95|<tuple|2.4.5|26>>
     <associate|auto-96|<tuple|2.4.6|26>>
     <associate|auto-97|<tuple|2.4.7|26>>
-    <associate|auto-98|<tuple|2.5|26>>
-    <associate|auto-99|<tuple|2.5.1|26>>
+    <associate|auto-98|<tuple|2.5|27>>
+    <associate|auto-99|<tuple|2.5.1|27>>
     <associate|footnote-1|<tuple|1|12>>
     <associate|footnr-1|<tuple|1|12>>
   </collection>
@@ -4703,6 +5048,42 @@
       <with|par-left|<quote|2tab>|2.7.8<space|2spc>\<#8C03\>\<#6574\>\<#884C\>\<#548C\>\<#5217\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-125>>
+
+      <with|par-left|<quote|1tab>|2.8<space|2spc>\<#5904\>\<#7406\>google
+      sheets <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-126>>
+
+      <with|par-left|<quote|1tab>|2.9<space|2spc>\<#5904\>\<#7406\>word\<#6587\>\<#6863\>\<#548C\>pdf\<#6587\>\<#4EF6\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-127>>
+
+      <with|par-left|<quote|1tab>|2.10<space|2spc>\<#5904\>\<#7406\>CSV\<#6587\>\<#4EF6\>\<#548C\>json\<#6570\>\<#636E\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-128>>
+
+      <with|par-left|<quote|2tab>|2.10.1<space|2spc>CSV\<#6A21\>\<#5757\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-129>>
+
+      <with|par-left|<quote|2tab>|2.10.2<space|2spc>reader\<#5BF9\>\<#8C61\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-130>>
+
+      <with|par-left|<quote|2tab>|2.10.3<space|2spc>writer\<#5BF9\>\<#8C61\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-131>>
+
+      <with|par-left|<quote|2tab>|2.10.4<space|2spc>delimeter\<#548C\>lineminator\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-132>>
+
+      <with|par-left|<quote|2tab>|2.10.5<space|2spc>DictReader\<#548C\>DictWriter
+      CSV\<#5BF9\>\<#8C61\> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-133>>
+
+      <with|par-left|<quote|2tab>|2.10.6<space|2spc>json\<#6A21\>\<#5757\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-134>>
     </associate>
   </collection>
 </auxiliary>
