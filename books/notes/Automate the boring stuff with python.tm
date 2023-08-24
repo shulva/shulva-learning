@@ -506,6 +506,34 @@
     <with|par-left|2tab|2.10.6<space|2spc>json\<#6A21\>\<#5757\>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-134>>
+
+    <with|par-left|1tab|2.11<space|2spc>\<#4FDD\>\<#6301\>\<#65F6\>\<#95F4\>\<#3001\>\<#8BA1\>\<#5212\>\<#4EFB\>\<#52A1\>\<#3001\>\<#542F\>\<#52A8\>\<#7A0B\>\<#5E8F\>\<#53CA\>\<#591A\>\<#7EBF\>\<#7A0B\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-135>>
+
+    <with|par-left|2tab|2.11.1<space|2spc>time\<#6A21\>\<#5757\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-136>>
+
+    <with|par-left|2tab|2.11.2<space|2spc>datetime\<#6A21\>\<#5757\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-137>>
+
+    <with|par-left|2tab|2.11.3<space|2spc>\<#5C06\>datetime\<#5BF9\>\<#8C61\>\<#8F6C\>\<#6362\>\<#4E3A\>\<#5B57\>\<#7B26\>\<#4E32\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-138>>
+
+    <with|par-left|2tab|2.11.4<space|2spc>\<#591A\>\<#7EBF\>\<#7A0B\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-140>>
+
+    <with|par-left|2tab|2.11.5<space|2spc>\<#4ECE\>python\<#542F\>\<#52A8\>\<#5176\>\<#4ED6\>\<#7A0B\>\<#5E8F\>\<#3002\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-141>>
+
+    <with|par-left|2tab|2.11.6<space|2spc>\<#7528\>\<#9ED8\>\<#8BA4\>\<#7A0B\>\<#5E8F\>\<#6253\>\<#5F00\>\<#6587\>\<#4EF6\>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-142>>
   </table-of-contents>
 
   <section|Part 1 python\<#7F16\>\<#7A0B\>\<#57FA\>\<#7840\>>
@@ -4399,6 +4427,388 @@
 
     '{"isCat": true, "felineIQ": null, "miceCaught": 0, "name": "Zophie" }'\ 
   </python>
+
+  <subsection|\<#4FDD\>\<#6301\>\<#65F6\>\<#95F4\>\<#3001\>\<#8BA1\>\<#5212\>\<#4EFB\>\<#52A1\>\<#3001\>\<#542F\>\<#52A8\>\<#7A0B\>\<#5E8F\>\<#53CA\>\<#591A\>\<#7EBF\>\<#7A0B\>>
+
+  <subsubsection|time\<#6A21\>\<#5757\>>
+
+  \;
+
+  Unix \<#7EAA\>\<#5143\>\<#662F\>\<#7F16\>\<#7A0B\>\<#4E2D\>\<#7ECF\>\<#5E38\>\<#53C2\>\<#8003\>\<#7684\>\<#65F6\>\<#95F4\>\<#FF1A\>1970
+  \<#5E74\> 1 \<#6708\> 1 \<#65E5\> 0 \<#70B9\>\<#FF0C\>\<#5373\>\<#534F\>\<#8C03\>\<#4E16\>\<#754C\>\<#65F6\>
+  \<#FF08\>UTC\<#FF09\>\<#3002\>
+
+  time.time()\<#51FD\>\<#6570\>\<#8FD4\>\<#56DE\>\<#81EA\>\<#90A3\>\<#4E00\>\<#523B\>\<#4EE5\>\<#6765\>\<#7684\>\<#79D2\>\<#6570\>\<#FF0C\>\<#662F\>\<#4E00\>\<#4E2A\>\<#6D6E\>\<#70B9\>\<#6570\>\<#3002\>\<#8FD9\>\<#4E2A\>\<#6570\>\<#5B57\>\<#79F0\>\<#4E3A\>
+  UNIX \<#7EAA\>\<#5143\>\<#65F6\>\<#95F4\>\<#6233\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import time\ 
+
+    \<gtr\>\<gtr\>\<gtr\> time.time()\ 
+
+    1425063955.068649\ 
+  </python>
+
+  \;
+
+  \<#5982\>\<#679C\>\<#9700\>\<#8981\>\<#8BA9\>\<#7A0B\>\<#5E8F\>\<#6682\>\<#505C\>\<#4E00\>\<#4E0B\>\<#FF0C\>\<#5C31\>\<#8C03\>\<#7528\>time.sleep()\<#51FD\>\<#6570\>\<#FF0C\>\<#5E76\>\<#4F20\>\<#5165\>\<#5E0C\>\<#671B\>\<#7A0B\>\<#5E8F\>\<#6682\>\<#505C\>\<#7684\>\<#79D2\>\<#6570\>\<#3002\>
+
+  round()\<#51FD\>\<#6570\>\<#53EF\>\<#4EE5\>\<#5904\>\<#7406\>\<#6D6E\>\<#70B9\>\<#6570\>\<#7684\>\<#5C0F\>\<#6570\>\<#70B9\>\<#540E\>\<#591A\>\<#5C11\>\<#4F4D\>\<#4FDD\>\<#7559\>\<#7684\>\<#95EE\>\<#9898\>\<#FF0C\>\<#662F\>\<#56DB\>\<#820D\>\<#4E94\>\<#5165\>\<#7684\>\<#673A\>\<#5236\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import time\ 
+
+    \<gtr\>\<gtr\>\<gtr\> now = time.time()\ 
+
+    \<gtr\>\<gtr\>\<gtr\> now\ 
+
+    1425064108.017826\ 
+
+    \<gtr\>\<gtr\>\<gtr\> round(now, 2)\ 
+
+    1425064108.02\ 
+
+    \<gtr\>\<gtr\>\<gtr\> round(now, 4)\ 
+
+    1425064108.0178\ 
+
+    \<gtr\>\<gtr\>\<gtr\> round(now)\ 
+
+    1425064108\ 
+  </python>
+
+  <subsubsection|datetime\<#6A21\>\<#5757\>>
+
+  \;
+
+  datetime\<#503C\>\<#8868\>\<#793A\>\<#4E00\>\<#4E2A\>\<#7279\>\<#5B9A\>\<#7684\>\<#65F6\>\<#523B\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import datetime\ 
+
+    \<gtr\>\<gtr\>\<gtr\> datetime.datetime.now()\ 
+
+    datetime.datetime(2015, 2, 27, 11, 10, 49, 55, 53)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> dt = datetime.datetime(2015, 10, 21, 16, 29, 0)\ 
+
+    \;
+
+    \<gtr\>\<gtr\>\<gtr\> dt.year, dt.month, dt.day\ 
+
+    (2015, 10, 21)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> dt.hour, dt.minute, dt.second\ 
+
+    (16, 29, 0)
+  </python>
+
+  \;
+
+  Unix \<#7EAA\>\<#5143\>\<#65F6\>\<#95F4\>\<#6233\>\<#53EF\>\<#4EE5\>\<#901A\>\<#8FC7\>datetime.datetime.fromtimestamp()\<#FF0C\>\<#8F6C\>\<#6362\>\<#4E3A\>datetime\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> datetime.datetime.fromtimestamp(1000000)\ 
+
+    datetime.datetime(1970, 1, 12, 5, 46, 40)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> datetime.datetime.fromtimestamp(time.time())\ 
+
+    datetime.datetime(2015, 2, 27, 11, 13, 0, 604980)\ 
+  </python>
+
+  \;
+
+  datetime\<#5BF9\>\<#8C61\>\<#53EF\>\<#4EE5\>\<#7528\>\<#6BD4\>\<#8F83\>\<#64CD\>\<#4F5C\>\<#7B26\>\<#8FDB\>\<#884C\>\<#6BD4\>\<#8F83\>\<#FF0C\>\<#5F04\>\<#6E05\>\<#695A\>\<#65F6\>\<#95F4\>\<#524D\>\<#540E\>\<#5173\>\<#7CFB\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> halloween2015 = datetime.datetime(2015, 10, 31, 0,
+    0, 0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> newyears2016 = datetime.datetime(2016, 1, 1, 0, 0,
+    0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> oct31_2015 = datetime.datetime(2015, 10, 31, 0, 0,
+    0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> halloween2015 == oct31_2015\ 
+
+    True\ 
+
+    \<gtr\>\<gtr\>\<gtr\> halloween2015 \<gtr\> newyears2016\ 
+
+    False\ 
+  </python>
+
+  \;
+
+  datetime\<#6A21\>\<#5757\>\<#8FD8\>\<#63D0\>\<#4F9B\>\<#4E86\>timedelta\<#6570\>\<#636E\>\<#7C7B\>\<#578B\>\<#FF0C\>\<#5B83\>\<#8868\>\<#793A\>\<#4E00\>\<#6BB5\>\<#65F6\>\<#95F4\>\<#FF0C\>\<#800C\>\<#4E0D\>\<#662F\>\<#4E00\>\<#4E2A\>\<#65F6\>\<#523B\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> delta = datetime.timedelta(days=11, hours=10,
+    minutes=9, seconds=8)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> delta.days, delta.seconds, delta.microseconds\ 
+
+    (11, 36548, 0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> delta.total_seconds()\ 
+
+    986948.0\ 
+
+    \<gtr\>\<gtr\>\<gtr\> str(delta)\ 
+
+    '11 days, 10:09:08'\ 
+  </python>
+
+  \;
+
+  \<#8981\>\<#521B\>\<#5EFA\>timedelta\<#5BF9\>\<#8C61\>\<#FF0C\>\<#5C31\>\<#7528\>datetime.timedelta()\<#51FD\>\<#6570\>\<#3002\>datetime.timedelta()\<#51FD\>\<#6570\>\<#63A5\>\<#53D7\>\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>weeks\<#3001\>days\<#3001\>hours\<#3001\>minutes\<#3001\>seconds\<#3001\>milliseconds\<#548C\>microseconds\<#3002\>
+  \<#6CA1\>\<#6709\>month\<#548C\>year\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#FF0C\>\<#56E0\>\<#4E3A\>\P\<#6708\>\Q\<#548C\>\P\<#5E74\>\Q\<#662F\>\<#53EF\>\<#53D8\>\<#7684\>\<#65F6\>\<#95F4\>\<#FF0C\>\<#4F9D\>\<#8D56\>\<#4E8E\>\<#7279\>\<#5B9A\>\<#6708\>\<#4EFD\>\<#6216\>\<#5E74\>\<#4EFD\>\<#3002\>
+
+  \;
+
+  \<#5229\>\<#7528\>+\<#548C\>-\<#8FD0\>\<#7B97\>\<#7B26\>\<#FF0C\>timedelta\<#5BF9\>\<#8C61\>\<#4E0E\>datetime\<#5BF9\>\<#8C61\>\<#6216\>\<#5176\>\<#4ED6\>timedelta\<#5BF9\>\<#8C61\>\<#76F8\>\<#52A0\>\<#6216\>\<#76F8\>\<#51CF\>\<#3002\>\<#5229\>\<#7528\>*\<#548C\>/\<#8FD0\>\<#7B97\>\<#7B26\>\<#FF0C\>timedelta\<#5BF9\>\<#8C61\>\<#53EF\>\<#4EE5\>\<#4E58\>\<#4EE5\>\<#6216\>\<#9664\>\<#4EE5\>\<#6574\>\<#6570\>\<#6216\>\<#6D6E\>\<#70B9\>\<#6570\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> oct21st = datetime.datetime(2015, 10, 21, 16, 29,
+    0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> aboutThirtyYears = datetime.timedelta(days=365 *
+    30)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> oct21st\ 
+
+    datetime.datetime(2015, 10, 21, 16, 29) \ 
+
+    \<gtr\>\<gtr\>\<gtr\> oct21st - (2 * aboutThirtyYears)\ 
+
+    datetime.datetime(1955, 11, 5, 16, 29)\ 
+  </python>
+
+  <subsubsection|\<#5C06\>datetime\<#5BF9\>\<#8C61\>\<#8F6C\>\<#6362\>\<#4E3A\>\<#5B57\>\<#7B26\>\<#4E32\>>
+
+  \;
+
+  \<#5229\>\<#7528\>strftime()\<#65B9\>\<#6CD5\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#5C06\>datetime\<#5BF9\>\<#8C61\>\<#663E\>\<#793A\>\<#4E3A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#3002\>
+
+  strftime()\<#65B9\>\<#6CD5\>\<#4F7F\>\<#7528\>\<#7684\>\<#6307\>\<#4EE4\>\<#7C7B\>\<#4F3C\>\<#4E8E\>Python\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#683C\>\<#5F0F\>\<#5316\>\<#3002\>
+
+  <\big-table|<block|<tformat|<table|<row|<cell|strftime
+  \<#6307\>\<#4EE4\>>|<cell|\<#542B\>\<#4E49\>>>|<row|<cell|%Y>|<cell|\<#5E26\>\<#4E16\>\<#7EAA\>\<#7684\>\<#5E74\>\<#4EFD\>\<#FF0C\>\<#4F8B\>\<#5982\>'2014'>>|<row|<cell|%y>|<cell|\<#4E0D\>\<#5E26\>\<#4E16\>\<#7EAA\>\<#7684\>\<#5E74\>\<#4EFD\>\<#FF0C\>'00'\<#81F3\>'99'\<#FF08\>1970\<#81F3\>2069\<#FF09\>>>|<row|<cell|%m>|<cell|\<#6570\>\<#5B57\>\<#8868\>\<#793A\>\<#7684\>\<#6708\>\<#4EFD\>,
+  '01'\<#81F3\>'12'>>|<row|<cell|%B>|<cell|\<#5B8C\>\<#6574\>\<#7684\>\<#6708\>\<#4EFD\>\<#FF0C\>\<#4F8B\>\<#5982\>'November'>>|<row|<cell|%b>|<cell|\<#7B80\>\<#5199\>\<#7684\>\<#6708\>\<#4EFD\>\<#FF0C\>\<#4F8B\>\<#5982\>'Nov'>>|<row|<cell|%d>|<cell|\<#4E00\>\<#6708\>\<#4E2D\>\<#7684\>\<#7B2C\>\<#51E0\>\<#5929\>\<#FF0C\>'01'\<#81F3\>'31'>>|<row|<cell|%j>|<cell|\<#4E00\>\<#5E74\>\<#4E2D\>\<#7684\>\<#7B2C\>\<#51E0\>\<#5929\>\<#FF0C\>'001'\<#81F3\>'366'>>|<row|<cell|%w>|<cell|\<#4E00\>\<#5468\>\<#4E2D\>\<#7684\>\<#7B2C\>\<#51E0\>\<#5929\>\<#FF0C\>'0'\<#FF08\>\<#5468\>\<#65E5\>\<#FF09\>\<#81F3\>'6'\<#FF08\>\<#5468\>\<#516D\>\<#FF09\>>>|<row|<cell|%A>|<cell|\<#5B8C\>\<#6574\>\<#7684\>\<#5468\>\<#51E0\>\<#FF0C\>\<#4F8B\>\<#5982\>'Monday'>>|<row|<cell|%a>|<cell|\<#7B80\>\<#5199\>\<#7684\>\<#5468\>\<#51E0\>\<#FF0C\>\<#4F8B\>\<#5982\>'Mon'>>|<row|<cell|%H>|<cell|\<#5C0F\>\<#65F6\>\<#FF08\>24\<#5C0F\>\<#65F6\>\<#65F6\>\<#949F\>\<#FF09\>\<#FF0C\>'00'\<#81F3\>'23'>>|<row|<cell|%I>|<cell|\<#5C0F\>\<#65F6\>\<#FF08\>12\<#5C0F\>\<#65F6\>\<#65F6\>\<#949F\>\<#FF09\>\<#FF0C\>'01'\<#81F3\>'12'>>|<row|<cell|%M>|<cell|\<#5206\>\<#FF0C\>'00'\<#81F3\>'59'>>|<row|<cell|%S>|<cell|\<#79D2\>\<#FF0C\>'00'\<#81F3\>'59'>>|<row|<cell|%p>|<cell|'AM'\<#6216\>'PM'>>|<row|<cell|%%>|<cell|\<#5C31\>\<#662F\>'%'\<#5B57\>\<#7B26\>>>>>>>
+    \;
+  </big-table>
+
+  \<#5411\>strftime()\<#4F20\>\<#5165\>\<#4E00\>\<#4E2A\>\<#5B9A\>\<#5236\>\<#7684\>\<#683C\>\<#5F0F\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#5176\>\<#4E2D\>\<#5305\>\<#542B\>\<#683C\>\<#5F0F\>\<#5316\>\<#6307\>\<#5B9A\>\<#FF08\>\<#4EE5\>\<#53CA\>\<#4EFB\>\<#4F55\>\<#9700\>\<#8981\>
+  \<#7684\>\<#659C\>\<#7EBF\>\<#3001\>\<#5192\>\<#53F7\>\<#7B49\>\<#FF09\>\<#FF0C\>strftime()\<#5C06\>\<#8FD4\>\<#56DE\>\<#4E00\>\<#4E2A\>\<#683C\>\<#5F0F\>\<#5316\>\<#7684\>\<#5B57\>\<#7B26\>\<#4E32\>\<#FF0C\>\<#8868\>\<#793A\>datetime\<#5BF9\>\<#8C61\>\<#7684\>\<#4FE1\>\<#606F\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> oct21st = datetime.datetime(2015, 10, 21, 16, 29,
+    0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> oct21st.strftime('%Y/%m/%d %H:%M:%S')\ 
+
+    '2015/10/21 16:29:00'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> oct21st.strftime('%I:%M %p')\ 
+
+    '04:29 PM'\ 
+
+    \<gtr\>\<gtr\>\<gtr\> oct21st.strftime("%B of '%y")\ 
+
+    "October of '15"\ 
+  </python>
+
+  \;
+
+  \<#5982\>\<#679C\>\<#6709\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#7B26\>\<#4E32\>\<#7684\>\<#65E5\>\<#671F\>\<#4FE1\>\<#606F\>\<#FF0C\>\<#5982\>'2015/10/21
+  16:29:00'\<#6216\>'October 21, 2015'\<#FF0C\>\<#9700\>\<#8981\>\<#5C06\>\<#5B83\>\<#8F6C\>\<#6362\>\<#4E3A\>datetime\<#5BF9\>\<#8C61\>\<#FF0C\>\<#5C31\>\<#7528\>datetime.datetime.strftime()\<#51FD\>\<#6570\>\<#3002\>\<#611F\>\<#89C9\>\<#6CA1\>\<#5565\>\<#7528\>\<#FF0C\>\<#592A\>\<#7E41\>\<#7410\>\<#4E86\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> datetime.datetime.strptime('October 21, 2015', '%B
+    %d, %Y')\ 
+
+    datetime.datetime(2015, 10, 21, 0, 0)\ 
+
+    \<gtr\>\<gtr\>\<gtr\> datetime.datetime.strptime('2015/10/21 16:29:00',
+    '%Y/%m/%d %H:%M:%S')\ 
+
+    datetime.datetime(2015, 10, 21, 16, 29)\ 
+  </python>
+
+  <subsubsection|\<#591A\>\<#7EBF\>\<#7A0B\>>
+
+  \;
+
+  \<#8981\>\<#5F97\>\<#5230\>\<#5355\>\<#72EC\>\<#7684\>\<#7EBF\>\<#7A0B\>\<#FF0C\>\<#9996\>\<#5148\>\<#8981\>\<#8C03\>\<#7528\>threading.Thread()\<#51FD\>\<#6570\>\<#FF0C\>\<#751F\>\<#6210\>\<#4E00\>\<#4E2A\>Thread\<#5BF9\>\<#8C61\>\<#3002\>
+
+  \;
+
+  <\python>
+    import threading, time\ 
+
+    print('Start of program.')\ 
+
+    \;
+
+    def takeANap():\ 
+
+    \ \ \ \ time.sleep(5)\ 
+
+    \ \ \ \ print('Wake up!')\ 
+
+    \ \ \ \ 
+
+    threadObj = threading.Thread(target=takeANap)\ 
+
+    threadObj.start()\ 
+
+    print('End of program.')
+  </python>
+
+  \;
+
+  \<#5982\>\<#679C\>\<#60F3\>\<#5728\>\<#65B0\>\<#7EBF\>\<#7A0B\>\<#4E2D\>\<#8FD0\>\<#884C\>\<#7684\>\<#76EE\>\<#6807\>\<#51FD\>\<#6570\>\<#6709\>\<#53C2\>\<#6570\>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#76EE\>\<#6807\>\<#51FD\>\<#6570\>\<#7684\>\<#53C2\>\<#6570\>\<#4F20\>\<#5165\>threading.Thread()\<#3002\>
+
+  \<#5E38\>\<#89C4\>\<#53C2\>\<#6570\>\<#53EF\>\<#4EE5\>\<#4F5C\>\<#4E3A\>\<#4E00\>\<#4E2A\>\<#5217\>\<#8868\>\<#FF0C\>\<#4F20\>\<#9012\>\<#7ED9\>threading.Thread()\<#4E2D\>\<#7684\>args\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#3002\>\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#53EF\>\<#4EE5\>\<#4F5C\>\<#4E3A\>\<#4E00\>\<#4E2A\>\<#5B57\>\<#5178\>\<#FF0C\>\<#4F20\>\<#9012\>\<#7ED9\>threading.Thread()\<#4E2D\>\<#7684\>kwargs\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import threading\ 
+
+    \<gtr\>\<gtr\>\<gtr\> threadObj = threading.Thread(target=print,
+    args=['Cats', 'Dogs', 'Frogs'],\ 
+
+    kwargs={'sep': ' & '}) # print('Cats', 'Dogs', 'Frogs', sep=' & ')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> threadObj.start()\ 
+
+    Cats & Dogs & Frogs\ 
+  </python>
+
+  \;
+
+  \<#4E0B\>\<#9762\>\<#521B\>\<#5EFA\>\<#65B0\>\<#7EBF\>\<#7A0B\>\<#8C03\>\<#7528\>print()\<#7684\>\<#65B9\>\<#6CD5\>\<#662F\>\<#4E0D\>\<#6B63\>\<#786E\>\<#7684\>\<#FF1A\>
+
+  <\python>
+    threadObj = threading.Thread(target=print('Cats', 'Dogs', 'Frogs', sep='
+    & '))\ 
+  </python>
+
+  \<#5176\>\<#4F1A\>\<#5C06\>print()\<#51FD\>\<#6570\>\<#7684\>\<#8FD4\>\<#56DE\>\<#503C\>\<#7528\>\<#4F5C\>target\<#51FD\>\<#6570\>\<#7684\>\<#503C\>\<#3002\>
+
+  <subsubsection|\<#4ECE\>python\<#542F\>\<#52A8\>\<#5176\>\<#4ED6\>\<#7A0B\>\<#5E8F\>\<#3002\>>
+
+  \;
+
+  \<#5229\>\<#7528\>\<#5185\>\<#5EFA\>\<#7684\>subprocess\<#6A21\>\<#5757\>\<#4E2D\>\<#7684\>Popen()\<#51FD\>\<#6570\>\<#FF0C\>Python\<#7A0B\>\<#5E8F\>\<#53EF\>\<#4EE5\>\<#542F\>\<#52A8\>\<#8BA1\>\<#7B97\>\<#673A\>\<#4E2D\>\<#7684\>\<#5176\>\<#4ED6\>\<#7A0B\>\<#5E8F\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import subprocess\ 
+
+    \<gtr\>\<gtr\>\<gtr\> subprocess.Popen('C:\\\\Windows\\\\System32\\\\calc.exe')\ 
+
+    \<less\>subprocess.Popen object at 0x0000000003055A58\<gtr\>\ 
+  </python>
+
+  \;
+
+  \<#8FD4\>\<#56DE\>\<#503C\>\<#662F\>\<#4E00\>\<#4E2A\>Popen\<#5BF9\>\<#8C61\>\<#FF0C\>\<#5B83\>\<#6709\>\<#4E24\>\<#4E2A\>\<#6709\>\<#7528\>\<#7684\>\<#65B9\>\<#6CD5\>\<#FF1A\>poll()\<#548C\>wait()\<#3002\>
+
+  \;
+
+  \<#53EF\>\<#4EE5\>\<#8BA4\>\<#4E3A\>poll()\<#65B9\>\<#6CD5\>\<#662F\>\<#95EE\>\<#4F60\>\<#7684\>\<#670B\>\<#53CB\>\<#FF0C\>\<#5979\>\<#662F\>\<#5426\>\<#6267\>\<#884C\>\<#5B8C\>\<#6BD5\>\<#4F60\>\<#7ED9\>\<#5979\>\<#7684\>\<#4EE3\>\<#7801\>\<#3002\>\<#5982\>\<#679C\>\<#8FD9\>\<#4E2A\>
+  \<#8FDB\>\<#7A0B\>\<#5728\>poll()\<#8C03\>\<#7528\>\<#65F6\>\<#4ECD\>\<#5728\>\<#8FD0\>\<#884C\>\<#FF0C\>poll()\<#65B9\>\<#6CD5\>\<#5C31\>\<#8FD4\>\<#56DE\>None\<#3002\>
+
+  \<#5982\>\<#679C\>\<#8BE5\>\<#7A0B\>\<#5E8F\>\<#5DF2\>\<#7ECF\>\<#7EC8\>\<#6B62\>\<#FF0C\>\<#5B83\>\<#4F1A\>\<#8FD4\>\<#56DE\>\<#8BE5\>\<#8FDB\>\<#7A0B\>\<#7684\>\<#6574\>\<#6570\>\<#9000\>\<#51FA\>\<#4EE3\>\<#7801\>\<#3002\>\<#9000\>\<#51FA\>\<#4EE3\>\<#7801\>\<#7528\>\<#4E8E\>\<#8BF4\>\<#660E\>\<#8FDB\>\<#7A0B\>\<#662F\>\<#65E0\>\<#9519\>\<#7EC8\>\<#6B62\>\<#FF08\>\<#9000\>\<#51FA\>\<#4EE3\>\<#7801\>\<#4E3A\>
+  0\<#FF09\>\<#FF0C\>\<#8FD8\>\<#662F\>\<#4E00\>\<#4E2A\>\<#9519\>\<#8BEF\>\<#5BFC\>\<#81F4\>\<#8FDB\>\<#7A0B\>\<#7EC8\>\<#6B62\>\<#FF08\>\<#9000\>\<#51FA\>\<#4EE3\>\<#7801\>\<#975E\>\<#96F6\>\<#FF0C\>\<#901A\>\<#5E38\>\<#4E3A\>
+  1\<#FF0C\>\<#4F46\>\<#53EF\>\<#80FD\>\<#6839\>\<#636E\>\<#7A0B\>\<#5E8F\>\<#800C\>\<#4E0D\>\<#540C\>\<#FF09\>
+
+  \;
+
+  wait()\<#65B9\>\<#6CD5\>\<#5C31\>\<#50CF\>\<#662F\>\<#7B49\>\<#7740\>\<#4F60\>\<#7684\>\<#670B\>\<#53CB\>\<#6267\>\<#884C\>\<#5B8C\>\<#5979\>\<#7684\>\<#4EE3\>\<#7801\>\<#FF0C\>\<#7136\>\<#540E\>\<#4F60\>\<#7EE7\>\<#7EED\>\<#6267\>\<#884C\>\<#4F60\>\<#7684\>\<#4EE3\>\<#7801\>\<#3002\>
+  wait()\<#65B9\>\<#6CD5\>\<#5C06\>\<#963B\>\<#585E\>\<#FF0C\>\<#76F4\>\<#5230\>\<#542F\>\<#52A8\>\<#7684\>\<#8FDB\>\<#7A0B\>\<#7EC8\>\<#6B62\>\<#3002\>\<#5982\>\<#679C\>\<#4F60\>\<#5E0C\>\<#671B\>\<#4F60\>\<#7684\>\<#7A0B\>\<#5E8F\>\<#6682\>\<#505C\>\<#FF0C\>\<#76F4\>\<#5230\>\<#7528\>\<#6237\>\<#5B8C\>\<#6210\>\<#6216\>\<#5176\>\<#4ED6\>\<#7A0B\>\<#5E8F\>\<#542F\>\<#52A8\>\<#FF0C\>\<#8FD9\>\<#975E\>\<#5E38\>\<#6709\>\<#7528\>\<#3002\>wait()\<#7684\>\<#8FD4\>\<#56DE\>\<#503C\>\<#662F\>\<#8FDB\>\<#7A0B\>\<#7684\>\<#6574\>\<#6570\>\<#9000\>\<#51FA\>\<#4EE3\>\<#7801\>\<#3002\>
+
+  \;
+
+  <\python>
+    \ 
+
+    \<gtr\>\<gtr\>\<gtr\> calcProc = subprocess.Popen('c:\\\\Windows\\\\System32\\\\calc.exe')\ 
+
+    \<gtr\>\<gtr\>\<gtr\> calcProc.poll() == None\ 
+
+    True\ 
+
+    \<gtr\>\<gtr\>\<gtr\> calcProc.wait() # \<#5DF2\>\<#5173\>\<#95ED\>
+
+    0\ 
+
+    \<gtr\>\<gtr\>\<gtr\> calcProc.poll()\ 
+
+    0\ 
+  </python>
+
+  \;
+
+  \<#7528\>Popen()\<#521B\>\<#5EFA\>\<#8FDB\>\<#7A0B\>\<#65F6\>\<#53EF\>\<#4EE5\>\<#5411\>\<#8FDB\>\<#7A0B\>\<#4F20\>\<#9012\>\<#547D\>\<#4EE4\>\<#884C\>\<#53C2\>\<#6570\>\<#3002\>\<#8981\>\<#505A\>\<#5230\>\<#8FD9\>\<#4E00\>\<#70B9\>\<#FF0C\>\<#9700\>\<#8981\>\<#5411\>Popen()
+  \<#4F20\>\<#9012\>\<#4E00\>\<#4E2A\>\<#5217\>\<#8868\>\<#4F5C\>\<#4E3A\>\<#552F\>\<#4E00\>\<#7684\>\<#53C2\>\<#6570\>\<#3002\>
+
+  \<#5B9E\>\<#9645\>\<#4E0A\>\<#FF0C\>\<#8FD9\>\<#4E2A\>\<#5217\>\<#8868\>\<#5C06\>\<#4F5C\>\<#4E3A\>\<#88AB\>\<#542F\>\<#52A8\>\<#7A0B\>\<#5E8F\>\<#7684\>sys.argv\<#7684\>\<#503C\>\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> subprocess.Popen(['C:\\\\Windows\\\\notepad.exe',
+    'C:\\\\hello.txt'])\ 
+
+    \<less\>subprocess.Popen object at 0x00000000032DCEB8\<gtr\>
+  </python>
+
+  \;
+
+  \<#8FD9\>\<#4E0D\>\<#4EC5\>\<#4F1A\>\<#542F\>\<#52A8\>\<#8BB0\>\<#4E8B\>\<#672C\>\<#5E94\>\<#7528\>\<#7A0B\>\<#5E8F\>\<#FF0C\>\<#4E5F\>\<#4F1A\>\<#8BA9\>\<#5B83\>\<#7ACB\>\<#5373\>\<#6253\>\<#5F00\>C:\\hello.txt\<#3002\>
+
+  \<#8FD0\>\<#884C\>\<#5176\>\<#4ED6\>python\<#811A\>\<#672C\>\<#5C31\>\<#53EF\>\<#4EE5\>\<#76F4\>\<#63A5\>\<#8C03\>\<#7528\>python.exe\<#FF0C\>\<#7136\>\<#540E\>\<#5C06\>\<#8981\>\<#542F\>\<#52A8\>\<#7684\>python\<#811A\>\<#672C\>\<#8DEF\>\<#5F84\>\<#5F53\>\<#4F5C\>\<#53C2\>\<#6570\>\<#4F20\>\<#5165\>\<#5373\>\<#53EF\>\<#3002\>
+
+  <subsubsection|\<#7528\>\<#9ED8\>\<#8BA4\>\<#7A0B\>\<#5E8F\>\<#6253\>\<#5F00\>\<#6587\>\<#4EF6\>>
+
+  \;
+
+  \<#6839\>\<#636E\>\<#64CD\>\<#4F5C\>\<#7CFB\>\<#7EDF\>\<#FF0C\>\<#5411\>Popen()\<#4F20\>\<#5165\>'start'\<#3001\>'open'\<#6216\>'see'\<#5373\>\<#53EF\>(\<#5BF9\>\<#5E94\>win,mac\<#548C\>linux)\<#3002\>
+
+  \;
+
+  <\python>
+    \<gtr\>\<gtr\>\<gtr\> import subprocess\ 
+
+    \<gtr\>\<gtr\>\<gtr\> subprocess.Popen(['start', 'hello.txt'],
+    shell=True)
+  </python>
+
+  \<#6211\>\<#4EEC\>\<#4E5F\>\<#4F20\>\<#5165\>\<#4E86\>shell=True\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>\<#FF0C\>\<#8FD9\>\<#53EA\>\<#5728\>Windows\<#4E0A\>\<#9700\>\<#8981\>\<#3002\>
 </body>
 
 <\initial>
@@ -4416,7 +4826,7 @@
     <associate|auto-102|<tuple|2.5.4|28>>
     <associate|auto-103|<tuple|2.5.5|29>>
     <associate|auto-104|<tuple|4|29>>
-    <associate|auto-105|<tuple|2.5.6|29>>
+    <associate|auto-105|<tuple|2.5.6|30>>
     <associate|auto-106|<tuple|2.6|30>>
     <associate|auto-107|<tuple|2.6.1|30>>
     <associate|auto-108|<tuple|2.6.2|30>>
@@ -4426,13 +4836,13 @@
     <associate|auto-111|<tuple|5|31>>
     <associate|auto-112|<tuple|2.6.5|32>>
     <associate|auto-113|<tuple|6|32>>
-    <associate|auto-114|<tuple|7|32>>
+    <associate|auto-114|<tuple|7|33>>
     <associate|auto-115|<tuple|8|33>>
     <associate|auto-116|<tuple|2.7|34>>
     <associate|auto-117|<tuple|2.7.1|34>>
     <associate|auto-118|<tuple|2.7.2|34>>
     <associate|auto-119|<tuple|2.7.3|35>>
-    <associate|auto-12|<tuple|1.3.1|4>>
+    <associate|auto-12|<tuple|1.3.1|5>>
     <associate|auto-120|<tuple|2.7.4|35>>
     <associate|auto-121|<tuple|2.7.5|36>>
     <associate|auto-122|<tuple|2.7.6|37>>
@@ -4448,20 +4858,28 @@
     <associate|auto-131|<tuple|2.10.3|39>>
     <associate|auto-132|<tuple|2.10.4|39>>
     <associate|auto-133|<tuple|2.10.5|40>>
-    <associate|auto-134|<tuple|2.10.6|40>>
+    <associate|auto-134|<tuple|2.10.6|41>>
+    <associate|auto-135|<tuple|2.11|41>>
+    <associate|auto-136|<tuple|2.11.1|41>>
+    <associate|auto-137|<tuple|2.11.2|41>>
+    <associate|auto-138|<tuple|2.11.3|42>>
+    <associate|auto-139|<tuple|10|43>>
     <associate|auto-14|<tuple|1.3.3|5>>
+    <associate|auto-140|<tuple|2.11.4|43>>
+    <associate|auto-141|<tuple|2.11.5|44>>
+    <associate|auto-142|<tuple|2.11.6|44>>
     <associate|auto-15|<tuple|1.3.4|5>>
     <associate|auto-16|<tuple|1.4|5>>
     <associate|auto-17|<tuple|1.4.1|5>>
     <associate|auto-18|<tuple|1.4.2|5>>
-    <associate|auto-19|<tuple|1.4.3|5>>
+    <associate|auto-19|<tuple|1.4.3|6>>
     <associate|auto-2|<tuple|1.1|3>>
     <associate|auto-20|<tuple|1.4.4|6>>
     <associate|auto-21|<tuple|1.4.5|6>>
     <associate|auto-22|<tuple|1.4.6|6>>
     <associate|auto-23|<tuple|1.4.7|6>>
     <associate|auto-24|<tuple|1.4.8|6>>
-    <associate|auto-25|<tuple|1.4.9|6>>
+    <associate|auto-25|<tuple|1.4.9|7>>
     <associate|auto-26|<tuple|1.4.10|7>>
     <associate|auto-27|<tuple|1.4.11|7>>
     <associate|auto-28|<tuple|1.4.12|7>>
@@ -4471,7 +4889,7 @@
     <associate|auto-31|<tuple|1.4.15|8>>
     <associate|auto-32|<tuple|1.5|8>>
     <associate|auto-33|<tuple|1.5.1|8>>
-    <associate|auto-34|<tuple|1.5.2|8>>
+    <associate|auto-34|<tuple|1.5.2|9>>
     <associate|auto-35|<tuple|1.5.3|9>>
     <associate|auto-36|<tuple|1.5.4|9>>
     <associate|auto-37|<tuple|1.5.5|10>>
@@ -4488,7 +4906,7 @@
     <associate|auto-47|<tuple|1.6.6|11>>
     <associate|auto-48|<tuple|1.6.7|11>>
     <associate|auto-49|<tuple|1.6.8|11>>
-    <associate|auto-5|<tuple|1.2|3>>
+    <associate|auto-5|<tuple|1.2|4>>
     <associate|auto-50|<tuple|1.6.9|12>>
     <associate|auto-51|<tuple|1.6.10|12>>
     <associate|auto-52|<tuple|1.6.11|12>>
@@ -4497,34 +4915,34 @@
     <associate|auto-55|<tuple|2.1|13>>
     <associate|auto-56|<tuple|2.1.1|13>>
     <associate|auto-57|<tuple|2.1.2|13>>
-    <associate|auto-58|<tuple|2.1.3|13>>
+    <associate|auto-58|<tuple|2.1.3|14>>
     <associate|auto-59|<tuple|2.1.4|14>>
     <associate|auto-6|<tuple|1.2.1|4>>
     <associate|auto-60|<tuple|2.1.5|14>>
     <associate|auto-61|<tuple|2.1.6|14>>
-    <associate|auto-62|<tuple|2.1.7|14>>
+    <associate|auto-62|<tuple|2.1.7|15>>
     <associate|auto-63|<tuple|2.1.8|15>>
     <associate|auto-64|<tuple|2.1.9|15>>
     <associate|auto-65|<tuple|2.1.10|15>>
     <associate|auto-66|<tuple|3|15>>
-    <associate|auto-67|<tuple|2.1.11|15>>
+    <associate|auto-67|<tuple|2.1.11|16>>
     <associate|auto-68|<tuple|2.1.12|16>>
     <associate|auto-69|<tuple|2.1.13|16>>
     <associate|auto-7|<tuple|1.2.2|4>>
     <associate|auto-70|<tuple|2.1.14|16>>
-    <associate|auto-71|<tuple|2.1.15|16>>
+    <associate|auto-71|<tuple|2.1.15|17>>
     <associate|auto-72|<tuple|2.1.16|17>>
     <associate|auto-73|<tuple|2.2|17>>
     <associate|auto-74|<tuple|2.3|17>>
     <associate|auto-75|<tuple|2.3.1|17>>
     <associate|auto-76|<tuple|2.3.2|18>>
     <associate|auto-77|<tuple|2.3.3|18>>
-    <associate|auto-78|<tuple|2.3.4|18>>
+    <associate|auto-78|<tuple|2.3.4|19>>
     <associate|auto-79|<tuple|2.3.5|19>>
     <associate|auto-8|<tuple|1.2.3|4>>
     <associate|auto-80|<tuple|2.3.6|19>>
     <associate|auto-81|<tuple|2.3.7|19>>
-    <associate|auto-82|<tuple|2.3.8|19>>
+    <associate|auto-82|<tuple|2.3.8|20>>
     <associate|auto-83|<tuple|2.3.9|21>>
     <associate|auto-84|<tuple|2.3.10|21>>
     <associate|auto-85|<tuple|2.3.11|22>>
@@ -4540,7 +4958,7 @@
     <associate|auto-94|<tuple|2.4.4|25>>
     <associate|auto-95|<tuple|2.4.5|26>>
     <associate|auto-96|<tuple|2.4.6|26>>
-    <associate|auto-97|<tuple|2.4.7|26>>
+    <associate|auto-97|<tuple|2.4.7|27>>
     <associate|auto-98|<tuple|2.5|27>>
     <associate|auto-99|<tuple|2.5.1|27>>
     <associate|footnote-1|<tuple|1|12>>
@@ -4582,6 +5000,10 @@
       <tuple|normal|<\surround|<hidden-binding|<tuple>|9>|>
         Font style \<#5C5E\>\<#6027\>\<#7684\>\<#5173\>\<#952E\>\<#5B57\>\<#53C2\>\<#6570\>
       </surround>|<pageref|auto-123>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|10>|>
+        \;
+      </surround>|<pageref|auto-139>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Part
@@ -5084,6 +5506,34 @@
       <with|par-left|<quote|2tab>|2.10.6<space|2spc>json\<#6A21\>\<#5757\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-134>>
+
+      <with|par-left|<quote|1tab>|2.11<space|2spc>\<#4FDD\>\<#6301\>\<#65F6\>\<#95F4\>\<#3001\>\<#8BA1\>\<#5212\>\<#4EFB\>\<#52A1\>\<#3001\>\<#542F\>\<#52A8\>\<#7A0B\>\<#5E8F\>\<#53CA\>\<#591A\>\<#7EBF\>\<#7A0B\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-135>>
+
+      <with|par-left|<quote|2tab>|2.11.1<space|2spc>time\<#6A21\>\<#5757\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-136>>
+
+      <with|par-left|<quote|2tab>|2.11.2<space|2spc>datetime\<#6A21\>\<#5757\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-137>>
+
+      <with|par-left|<quote|2tab>|2.11.3<space|2spc>\<#5C06\>datetime\<#5BF9\>\<#8C61\>\<#8F6C\>\<#6362\>\<#4E3A\>\<#5B57\>\<#7B26\>\<#4E32\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-138>>
+
+      <with|par-left|<quote|2tab>|2.11.4<space|2spc>\<#591A\>\<#7EBF\>\<#7A0B\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-140>>
+
+      <with|par-left|<quote|2tab>|2.11.5<space|2spc>\<#4ECE\>python\<#542F\>\<#52A8\>\<#5176\>\<#4ED6\>\<#7A0B\>\<#5E8F\>\<#3002\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-141>>
+
+      <with|par-left|<quote|2tab>|2.11.6<space|2spc>\<#7528\>\<#9ED8\>\<#8BA4\>\<#7A0B\>\<#5E8F\>\<#6253\>\<#5F00\>\<#6587\>\<#4EF6\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-142>>
     </associate>
   </collection>
 </auxiliary>
