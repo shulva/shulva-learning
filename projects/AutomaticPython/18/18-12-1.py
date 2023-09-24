@@ -1,6 +1,8 @@
 import openpyxl
 import random
 import smtplib
+from email.header import Header
+from email.message import EmailMessage
 # pdf-568
 
 mail_list = openpyxl.load_workbook("mail.xlsx")
@@ -14,13 +16,26 @@ for i in range(max_row):
     mails.append(sheet['A'+str(i+1)].value)
     chores.append(sheet['B'+str(i+1)].value)
 
-smtp = smtplib.SMTP('smtp.qq.com', 587)
-smtp.ehlo()
-smtp.starttls()
+mails = list(set(mails))
+mails.remove(None)
+
+message = EmailMessage()
+
+message['Subject'] = 'Python 邮件自动工作'
+message['From'] = "1329068252@qq.com"         #utf-8 会被加密，从而不符合qq邮箱的From Header要求
+message['To'] = Header("worker", 'utf-8')     # 接收者
 
 for i in range(len(mails)):
-    if mails[i] is not None:
-        smtp.login(str(mails[i]), input())
-        random_chore = random.choice(chores)
-        smtp.sendmail(mails[i], str(random.choice(mails)), random_chore)
-        chores.remove(random_chore)
+    smtp = smtplib.SMTP('smtp.qq.com', 587)
+    smtp.ehlo()
+    smtp.starttls()
+    smtp.login('1329068252@qq.com', 'yikypytdaarejcig')
+    smtp.ehlo()
+
+    random_chore = random.choice(chores)
+    message.set_content(str(random_chore))
+
+    smtp.sendmail('1329068252@qq.com', str(random.choice(mails)), message.as_string())
+    chores.remove(random_chore)
+
+    smtp.quit()

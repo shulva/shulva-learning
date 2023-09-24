@@ -9,23 +9,58 @@
 
   <subsection|\<#8BFE\>\<#540E\>\<#4E60\>\<#9898\>>
 
-  1-2-2\<#FF1A\>
+  1.2-2(Exercises)\<#FF1A\>
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|\<#5373\>>|<cell|8n<rsup|2>\<less\>64nlog<rsub|2><around*|(|n|)>>|<cell|>>|<row|<cell|>|<cell|n\<less\>8log<rsub|2><around*|(|n|)>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>>>>
+    <tformat|<table|<row|<cell|\<#5373\>>|<cell|8n<rsup|2>\<less\>64nlog<rsub|2><around*|(|n|)>>|<cell|>>|<row|<cell|>|<cell|n\<less\>8log<rsub|2><around*|(|n|)>>|<cell|\<#4E66\>\<#4E2D\>lg<around*|(|n|)>=log<rsub|2><around*|(|n|)>>>|<row|<cell|>|<cell|>|<cell|>>>>
   </eqnarray*>
 
   <\with|par-mode|center>
     n\<#5C5E\>\<#4E8E\>\<#81EA\>\<#7136\>\<#6570\>\<#FF0C\>\<#6545\>n\<less\>43\<#65F6\>\<#7B49\>\<#5F0F\>\<#6210\>\<#7ACB\>
   </with>
 
-  \<#601D\>\<#8003\>\<#9898\>1-1\<#FF1A\>
+  \<#601D\>\<#8003\>\<#9898\>1-1(Problems)\<#FF1A\>
+
+  \<#6211\>\<#4EEC\>\<#5148\>\<#5F97\>\<#51FA\>n\<#884C\>\<#7684\>\<#6570\>\<#636E\>\<#FF0C\>\<#5176\>\<#4ED6\>\<#4EE5\>\<#6B64\>\<#7C7B\>\<#63A8\>\<#5373\>\<#53EF\>\<#3002\>
+
+  <\big-table|<block|<tformat|<table|<row|<cell|>|<cell|1\<#79D2\>>|<cell|1\<#5206\>>|<cell|1\<#5C0F\>\<#65F6\>>|<cell|1\<#5929\>>|<cell|1\<#6708\>>|<cell|1\<#5E74\>>|<cell|1\<#4E16\>\<#754C\>>>|<row|<cell|<math|lg<around*|(|n|)>>>|<cell|<math|10<rsup|301030>>>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|<math|<sqrt|n>>>|<cell|<math|10<rsup|12>>>|<cell|>|<cell|>|<cell|>|<cell|<math|6.9\<times\>10<rsup|24>>>|<cell|>|<cell|>>|<row|<cell|<math|n>>|<cell|<math|10<rsup|6>>>|<cell|<math|6\<times\>10<rsup|7>>>|<cell|<math|3.6\<times\>10<rsup|9>>>|<cell|<math|8.6\<times\>10<rsup|10>>>|<cell|<math|2.6\<times\>10<rsup|12>>>|<cell|<math|3.2\<times\>10<rsup|13>>>|<cell|<math|3.2\<times\>10<rsup|15>>>>|<row|<cell|<math|n
+  lg<around*|(|n|)>>>|<cell|<math|6.27\<times\>10<rsup|5>>>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|<math|n<rsup|2>>>|<cell|<math|10<rsup|3>>>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|<math|n<rsup|3>>>|<cell|<math|10<rsup|2>>>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|<math|2<rsup|n>>>|<cell|19>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|<math|n!>>|<cell|9>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>>>>>
+    problem 1-1
+  </big-table>
 
   \;
 
   <section|\<#7B97\>\<#6CD5\>\<#57FA\>\<#7840\>>
 
+  <subsection|\<#8BFE\>\<#540E\>\<#4E60\>\<#9898\>>
+
+  2.1-4:
+
+  <\python-code>
+    search(array,v) //array = a1..an
+
+    \ \ \ \ for(int i=1,i\<less\>n+1,i++)
+
+    \ \ \ \ \ \ \ \ if(v == array[i])
+
+    \ \ \ \ \ \ \ \ \ \ \ \ return i
+
+    \ \ \ \ return NIL
+  </python-code>
+
+  loop invariant \<#5FAA\>\<#73AF\>\<#4E0D\>\<#53D8\>\<#91CF\>\<#8BC1\>\<#660E\>:
+
+  <space|2em>initialisation: \<#5FAA\>\<#73AF\>\<#5F00\>\<#59CB\>\<#65F6\>\<#FF0C\>
+
+  \;
+
+  <\python>
+    \;
+  </python>
+
   <section|\<#51FD\>\<#6570\>\<#7684\>\<#589E\>\<#957F\>>
+
+  <subsection|\<#8BFE\>\<#540E\>\<#4E60\>\<#9898\>>
 
   3.3-4\<#FF1A\>
 
@@ -62,8 +97,11 @@
   <\collection>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|1.1|1>>
-    <associate|auto-3|<tuple|2|1>>
-    <associate|auto-4|<tuple|3|1>>
+    <associate|auto-3|<tuple|1|1>>
+    <associate|auto-4|<tuple|2|1>>
+    <associate|auto-5|<tuple|2.1|?>>
+    <associate|auto-6|<tuple|3|?>>
+    <associate|auto-7|<tuple|3.1|?>>
   </collection>
 </references>
 
