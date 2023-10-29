@@ -68,3 +68,55 @@
 2023-09-25 11:38:14,475 - DEBUG - untagged_responses[BYE] 0 += ["b'LOGOUT received'"]
 2023-09-25 11:38:14,475 - DEBUG - BYE response: b'LOGOUT received'
 2023-09-25 11:38:14,476 - DEBUG - Logged out, connection closed
+2023-10-22 21:37:04,852 - DEBUG - Connected to host imap.qq.com over SSL/TLS
+2023-10-22 21:37:04,852 - DEBUG - > b'IBBL1 LOGIN **REDACTED**
+2023-10-22 21:37:05,089 - DEBUG - < b'IBBL1 OK Success login ok'
+2023-10-22 21:37:05,089 - DEBUG - 	matched b'(?P<tag>IBBL\\d+) (?P<type>[A-Z]+) (?P<data>.*)' => (b'IBBL1', b'OK', b'Success login ok')
+2023-10-22 21:37:05,090 - DEBUG - Logged in as 1329068252@qq.com
+2023-10-22 21:37:05,090 - DEBUG - > b'IBBL2 SELECT "INBOX"'
+2023-10-22 21:37:05,244 - DEBUG - < b'* 1719 EXISTS'
+2023-10-22 21:37:05,244 - DEBUG - 	matched b'\\* (?P<data>\\d+) (?P<type>[A-Z-]+)( (?P<data2>.*))?' => (b'1719', b'EXISTS', None, None)
+2023-10-22 21:37:05,244 - DEBUG - untagged_responses[EXISTS] 0 += ["b'1719'"]
+2023-10-22 21:37:05,244 - DEBUG - < b'* 0 RECENT'
+2023-10-22 21:37:05,244 - DEBUG - 	matched b'\\* (?P<data>\\d+) (?P<type>[A-Z-]+)( (?P<data2>.*))?' => (b'0', b'RECENT', None, None)
+2023-10-22 21:37:05,244 - DEBUG - untagged_responses[RECENT] 0 += ["b'0'"]
+2023-10-22 21:37:05,244 - DEBUG - < b'* OK [UNSEEN 804]'
+2023-10-22 21:37:05,244 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'OK', b' [UNSEEN 804]', b'[UNSEEN 804]')
+2023-10-22 21:37:05,244 - DEBUG - untagged_responses[OK] 0 += ["b'[UNSEEN 804]'"]
+2023-10-22 21:37:05,244 - DEBUG - 	matched b'\\[(?P<type>[A-Z-]+)( (?P<data>.*))?\\]' => (b'UNSEEN', b' 804', b'804')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[UNSEEN] 0 += ["b'804'"]
+2023-10-22 21:37:05,245 - DEBUG - < b'* OK [UIDVALIDITY 1695129771] UID validity status'
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'OK', b' [UIDVALIDITY 1695129771] UID validity status', b'[UIDVALIDITY 1695129771] UID validity status')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[OK] 1 += ["b'[UIDVALIDITY 1695129771] UID validity status'"]
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\[(?P<type>[A-Z-]+)( (?P<data>.*))?\\]' => (b'UIDVALIDITY', b' 1695129771', b'1695129771')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[UIDVALIDITY] 0 += ["b'1695129771'"]
+2023-10-22 21:37:05,245 - DEBUG - < b'* OK [UIDNEXT 1774] Predicted next UID'
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'OK', b' [UIDNEXT 1774] Predicted next UID', b'[UIDNEXT 1774] Predicted next UID')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[OK] 2 += ["b'[UIDNEXT 1774] Predicted next UID'"]
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\[(?P<type>[A-Z-]+)( (?P<data>.*))?\\]' => (b'UIDNEXT', b' 1774', b'1774')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[UIDNEXT] 0 += ["b'1774'"]
+2023-10-22 21:37:05,245 - DEBUG - < b'* FLAGS (\\Answered \\Flagged \\Deleted \\Draft \\Seen)'
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'FLAGS', b' (\\Answered \\Flagged \\Deleted \\Draft \\Seen)', b'(\\Answered \\Flagged \\Deleted \\Draft \\Seen)')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[FLAGS] 0 += ["b'(\\Answered \\Flagged \\Deleted \\Draft \\Seen)'"]
+2023-10-22 21:37:05,245 - DEBUG - < b'* OK [PERMANENTFLAGS (\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)] Permanent flags'
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'OK', b' [PERMANENTFLAGS (\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)] Permanent flags', b'[PERMANENTFLAGS (\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)] Permanent flags')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[OK] 3 += ["b'[PERMANENTFLAGS (\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)] Permanent flags'"]
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\[(?P<type>[A-Z-]+)( (?P<data>.*))?\\]' => (b'PERMANENTFLAGS', b' (\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)', b'(\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)')
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[PERMANENTFLAGS] 0 += ["b'(\\* \\Answered \\Flagged \\Deleted \\Draft \\Seen)'"]
+2023-10-22 21:37:05,245 - DEBUG - < b'IBBL2 OK [READ-WRITE] SELECT complete'
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'(?P<tag>IBBL\\d+) (?P<type>[A-Z]+) (?P<data>.*)' => (b'IBBL2', b'OK', b'[READ-WRITE] SELECT complete')
+2023-10-22 21:37:05,245 - DEBUG - 	matched b'\\[(?P<type>[A-Z-]+)( (?P<data>.*))?\\]' => (b'READ-WRITE', None, None)
+2023-10-22 21:37:05,245 - DEBUG - untagged_responses[READ-WRITE] 0 += ["b''"]
+2023-10-22 21:37:05,245 - DEBUG - > b'IBBL3 UID SEARCH SINCE 22-Oct-2023'
+2023-10-22 21:37:05,356 - DEBUG - < b'* SEARCH'
+2023-10-22 21:37:05,356 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'SEARCH', None, None)
+2023-10-22 21:37:05,356 - DEBUG - untagged_responses[SEARCH] 0 += ["b''"]
+2023-10-22 21:37:05,357 - DEBUG - < b'IBBL3 OK UID SEARCH completed'
+2023-10-22 21:37:05,357 - DEBUG - 	matched b'(?P<tag>IBBL\\d+) (?P<type>[A-Z]+) (?P<data>.*)' => (b'IBBL3', b'OK', b'UID SEARCH completed')
+2023-10-22 21:37:05,357 - DEBUG - untagged_responses[SEARCH] => [b'']
+2023-10-22 21:37:05,357 - DEBUG - > b'IBBL4 LOGOUT'
+2023-10-22 21:37:05,392 - DEBUG - < b'* BYE LOGOUT received'
+2023-10-22 21:37:05,392 - DEBUG - 	matched b'\\* (?P<type>[A-Z-]+)( (?P<data>.*))?' => (b'BYE', b' LOGOUT received', b'LOGOUT received')
+2023-10-22 21:37:05,392 - DEBUG - untagged_responses[BYE] 0 += ["b'LOGOUT received'"]
+2023-10-22 21:37:05,392 - DEBUG - BYE response: b'LOGOUT received'
+2023-10-22 21:37:05,392 - DEBUG - Logged out, connection closed
