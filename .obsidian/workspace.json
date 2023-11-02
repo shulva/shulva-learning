@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "af60beffeab77a4d",
+        "id": "7961cdf6bad9b302",
         "type": "tabs",
         "children": [
           {
-            "id": "e1e161d360f4d421",
+            "id": "7836b88819279bee",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#algorithm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -147,10 +147,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e1e161d360f4d421",
+  "active": "7836b88819279bee",
   "lastOpenFiles": [
-    "mooc/hias-algorithm/1_lecture19_red_black_tree_I.pdf",
+    "books/notes/java遗传算法编程.tm~",
+    "books/notes/assembly/assembly.md",
     "wiki.md",
+    "mooc/hias-algorithm/1_lecture19_red_black_tree_I.pdf",
     "readme.md"
   ]
 }
