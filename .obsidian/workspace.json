@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7961cdf6bad9b302",
+        "id": "2319273b50f487f4",
         "type": "tabs",
         "children": [
           {
-            "id": "7836b88819279bee",
+            "id": "38a8abbfcb347819",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki.md",
+                "file": "wiki/wiki.md",
                 "mode": "preview",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki.md",
+                "file": "wiki/wiki.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki.md",
+                "file": "wiki/wiki.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki.md"
+                "file": "wiki/wiki.md"
               }
             }
           }
@@ -147,8 +146,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7836b88819279bee",
+  "active": "38a8abbfcb347819",
   "lastOpenFiles": [
+    "wiki/wiki.md",
+    "books/notes/TexmacsNotes.pdf",
+    "未命名",
     "books/notes/java遗传算法编程.tm~",
     "books/notes/assembly/assembly.md",
     "wiki.md",
