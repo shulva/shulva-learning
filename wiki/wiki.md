@@ -4,8 +4,11 @@
 ## Obsidian
 [由此开始 - Obsidian 中文帮助 - Obsidian Publish](https://publish.obsidian.md/help-zh/%E7%94%B1%E6%AD%A4%E5%BC%80%E5%A7%8B)
 ## typst
-[Typst: Compose papers faster](https://typst.app/)
-考察考察这个东西
+[Tutorial – Typst Documentation](https://typst.app/docs/tutorial/)
+https://typst.app/app/
+[Typst 中文社区](https://typst.cn/#/)
+对中文的italic支持不好，停止考察
+感觉没有解决什么texmacs中我不满意的部分
 ## Texmacs
 [TexmacsNotes](TexmacsNotes.pdf)
 ### pdf-design
