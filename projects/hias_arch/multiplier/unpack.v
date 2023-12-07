@@ -31,7 +31,7 @@ module unpack (
   assign fraction_a = input_a[22:0];
   assign fraction_b = input_b[22:0];
 
-  assign exponent_sum = exponent_a + exponent_b - 127;  // sub the bias:127 in ieee
+  assign exponent_sum = exponent_a + exponent_b + 1 - 128;  // sub the bias:127 in ieee
 
 endmodule
 

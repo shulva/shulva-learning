@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c3d6467df9f503b9",
+        "id": "340225f665aa3f3f",
         "type": "tabs",
         "children": [
           {
-            "id": "68ceeb31369f5b84",
+            "id": "75634e7185b34649",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -129,7 +129,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -146,10 +147,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "68ceeb31369f5b84",
+  "active": "75634e7185b34649",
   "lastOpenFiles": [
-    "books/notes/TexmacsNotes.pdf",
+    "rh-project.md",
+    "rh-mooc.md",
     "wiki/wiki.md",
+    "books/notes/TexmacsNotes.pdf",
     "未命名",
     "books/notes/java遗传算法编程.tm~",
     "books/notes/assembly/assembly.md",

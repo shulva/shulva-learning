@@ -33,7 +33,7 @@ module test_bench_tb;
     end
   end
 
-  test_bench t1 (
+  wallace t1 (
       .clk(clk),
       .rst(rst),
       .input_a(a),
