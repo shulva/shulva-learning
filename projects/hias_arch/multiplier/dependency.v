@@ -1,4 +1,3 @@
-
 module half_adder (
     input  a,
     input  b,
@@ -12,7 +11,7 @@ endmodule
 module full_adder (
     input  a,
     input  b,
-    output cin,
+    input  cin,
     output s0,
     output c0
 );

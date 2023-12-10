@@ -1,5 +1,3 @@
-`default_nettype none
-;
 module unpack (
     input [31:0] input_a,
     input [31:0] input_b,

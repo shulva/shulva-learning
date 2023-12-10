@@ -3,9 +3,12 @@
 module test_bench_tb;
   reg clk;
   reg rst;
-  reg [31:0] a;
-  reg [31:0] b;
-  wire [31:0] c;
+  reg [23:0] a;
+  reg [23:0] b;
+  reg [23:0] c;
+  wire [47:8] d;
+  wire [47:8] f;
+  wire [7:0] g;
 
   initial begin
     rst <= 1'b1;
@@ -33,11 +36,5 @@ module test_bench_tb;
     end
   end
 
-  wallace t1 (
-      .clk(clk),
-      .rst(rst),
-      .input_a(a),
-      .input_b(b),
-      .output_z(c)
-  );
+  wallace_tree_24x24 t1 (a,b,d,f,g);
 endmodule
