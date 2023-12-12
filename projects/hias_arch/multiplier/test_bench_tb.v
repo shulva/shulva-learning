@@ -1,14 +1,14 @@
 `timescale 1ns / 100ps
-
 module test_bench_tb;
   reg clk;
   reg rst;
   reg [23:0] a;
   reg [23:0] b;
   reg [23:0] c;
-  wire [47:8] d;
-  wire [47:8] f;
   wire [7:0] g;
+
+  wire [25:0] pp [12:0];
+  wire [23:0] final;
 
   initial begin
     rst <= 1'b1;
@@ -27,14 +27,14 @@ module test_bench_tb;
 
   initial begin
     clk <= 1'b0;
-    a   <= 1'b1;
-    b   <= 3'b011;
+    a   <= 136;
+    b   <= 136;
+
     while (1) begin
       #5 clk <= ~clk;
-      #5 a <= ~a;
-      #5 b <= ~b;
     end
   end
 
-  wallace_tree_24x24 t1 (a,b,d,f,g);
+  booth_24x24 t1 (1'b0,1'b0,a,b,pp[0],pp[1],pp[2],pp[3],pp[4],pp[5],pp[6],pp[7],pp[8],pp[9],pp[10],pp[11],pp[12]);
+  wallace_tree_24x24 t2(clk,rst,pp[0],pp[1],pp[2],pp[3],pp[4],pp[5],pp[6],pp[7],pp[8],pp[9],pp[10],pp[11],pp[12],final[23:0]);
 endmodule
