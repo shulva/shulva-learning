@@ -21,8 +21,8 @@ module booth_24x24
 );
 
 // sign bit extend, for unsigned operator extended by 0, for signed operator extended by orignal sign bit
-wire [1:0] sig_exta = ~imulta_sign ? 2'b00 : {2{imulta[15]}};
-wire [1:0] sig_extb = ~imultb_sign ? 2'b00 : {2{imultb[15]}};
+wire [1:0] sig_exta = ~imulta_sign ? 2'b00 : {2{imulta[23]}};
+wire [1:0] sig_extb = ~imultb_sign ? 2'b00 : {2{imultb[23]}};
 
 // generate -x, -2x, 2x for Booth encoding
 wire [25:0] x     =  {sig_exta, imulta};
