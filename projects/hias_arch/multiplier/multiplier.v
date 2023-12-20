@@ -42,7 +42,8 @@ module multiplier (
   wire [23:0] frac_b = {~b_expo_is_00,input_b[22:0]};
   wire sign = input_a[31]^input_b[31];
 
-// frac * frac ------------------------------------------------------
+// unpack ------------------------------------------------------
+
   booth_24x24 booth(1'b0,1'b0,frac_a,frac_b,
     partial_product[0],partial_product[1],partial_product[2],partial_product[3],partial_product[4],
     partial_product[5],partial_product[6],partial_product[7],partial_product[8],partial_product[9],
@@ -61,6 +62,7 @@ module multiplier (
   assign partial_product_extend[10] = {{22{partial_product[10][25]}},partial_product[10]}<<20;
   assign partial_product_extend[11] = {{22{partial_product[11][25]}},partial_product[11]}<<22;
   assign partial_product_extend[12] = {{22{partial_product[12][25]}},partial_product[12]}<<24;
+  
 
   wallace_tree_24 wallace(clk,rst,partial_product_extend[0],partial_product_extend[1],partial_product_extend[2],partial_product_extend[3],
     partial_product_extend[4],partial_product_extend[5],partial_product_extend[6],partial_product_extend[7],partial_product_extend[8],
@@ -83,6 +85,7 @@ module multiplier (
       temp_frac = temp_sum[45:23];
     end
   end
+//normalize ---------------------------------------------------------
 
   always @(*) begin
     if(temp_sum[47] & temp_sum[23]) begin
@@ -92,6 +95,8 @@ module multiplier (
       temp_frac = temp_frac+1;
     end
   end
+
+// round ---------------------------------------------------------------
 
   assign output_z[31] = sign;
   assign output_z[30:23] = temp_exp[7:0];

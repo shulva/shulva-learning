@@ -49,6 +49,8 @@ generate
   end
 endgenerate
 
+
+
 assign partial_product1 = pp[0];
 assign partial_product2 = pp[1];
 assign partial_product3 = pp[2];

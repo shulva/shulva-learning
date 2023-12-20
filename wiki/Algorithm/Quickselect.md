@@ -1,0 +1,1 @@
+[lecture05_2023-09-27](../../mooc/hias-algorithm/lecture05_2023-09-27.pdf#page=13)
