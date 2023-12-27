@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4660893f5b507a8f",
+        "id": "9d4f08b3c6a9b326",
         "type": "tabs",
         "children": [
           {
-            "id": "b9eaab659b86196d",
+            "id": "56ae8f7a46377c21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Algorithm/Red-Black Trees.md",
+                "file": "wiki/Tools/Typst.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/Algorithm/Red-Black Trees.md",
+                "file": "wiki/Tools/Typst.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/Algorithm/Red-Black Trees.md",
+                "file": "wiki/Tools/Typst.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/Algorithm/Red-Black Trees.md"
+                "file": "wiki/Tools/Typst.md"
               }
             }
           }
@@ -147,42 +147,43 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b9eaab659b86196d",
+  "active": "56ae8f7a46377c21",
   "lastOpenFiles": [
-    "mooc/hias-algorithm/lecture20_red_black_tree_II.pdf",
-    "wiki/Algorithm/Red-Black Trees.md",
-    "wiki/Algorithm/Dynamic Programming.md",
-    "mooc/hias-algorithm/lecture23_B_tree_II.pdf",
-    "wiki/Algorithm/B Trees.md",
+    "wiki/Tools/Obisidian.md",
     "wiki/Tools/Typst.md",
+    "mooc/hias-algorithm/lecture31_2023-10-26-elementary-graph-algorithms.pdf",
+    "wiki/Algorithm/Graph.md",
+    "wiki/Algorithm/Dynamic Programming.md",
+    "wiki/Algorithm/Heap sort.md",
+    "mooc/hias-algorithm/problem.pdf",
     "wiki/Algorithm/Asymptotic notations.md",
+    "wiki/Algorithm/Amortized Analysis.md",
+    "wiki/Algorithm/Breadth-first Search.md",
+    "wiki/Algorithm/Depth-first Search.md",
+    "mooc/hias-algorithm/期末考试复习题.pdf",
+    "mooc/hias-algorithm/~$末考试复习题.docx",
+    "mooc/hias-algorithm/期末考试复习题.docx",
+    "mooc/hias-algorithm/期末考试复习题~C320D.tmp",
     "wiki/Algorithm/Recurrences.md",
-    "wiki/Algorithm/Binary Search Trees.md",
-    "mooc/hias-algorithm/lecture06_2023-09-28.pdf",
-    "mooc/hias-algorithm/lecture20_2023-10-11-exercise-and-solution.pdf",
-    "mooc/hias-algorithm/~$lecture20_2023-10-11-exercise-and-solution.pptx",
-    "mooc/hias-algorithm/lecture20_2023-10-11-exercise-and-solution~1FBED.tmp",
+    "wiki/Algorithm/Linear Programming.md",
+    "mooc/hias-algorithm/lecture34_2023-11-07-Linear-Programming.pdf",
+    "mooc/hias-algorithm/lecture35_2023-11-08-Linear-Programming.pdf",
+    "wiki/Algorithm/All-Pairs Shortest Paths.md",
+    "mooc/hias-algorithm/lecture36_2023-11-15-maximum-flow.pdf",
+    "wiki/Algorithm/Single-Source  Shortest Paths.md",
+    "wiki/Algorithm/Minimum  Spanning Tree.md",
+    "wiki/Algorithm/Strongly Connected  Components.md",
+    "wiki/Algorithm/Topological Sort.md",
+    "mooc/hias-algorithm/lecture30_2023-10-25-amortized-analysis.pdf",
     "wiki/Algorithm/Hash.md",
+    "wiki/Algorithm/Greedy Algorithms.md",
+    "wiki/Algorithm/Red-Black Trees.md",
+    "wiki/Algorithm/B Trees.md",
+    "wiki/Algorithm/Binary Search Trees.md",
     "wiki/Algorithm/Comparison  Sort Algorithms.md",
-    "mooc/hias-algorithm/lecture05_2023-09-27.pdf",
     "wiki/Algorithm/Quickselect.md",
     "wiki/Algorithm/Selection sort.md",
     "wiki/Algorithm/Selection.md",
-    "wiki/Algorithm/Insertion sort.md",
-    "wiki/Algorithm/Merge sort.md",
-    "wiki/Algorithm/Loop invariant.md",
-    "wiki/Algorithm/Priority queue.md",
-    "wiki/Algorithm/Quicksort.md",
-    "wiki/Algorithm/Coutning sort.md",
-    "wiki/Algorithm/Heap sort.md",
-    "wiki/Algorithm/Radix sort.md",
-    "mooc/hias-algorithm/lecture03_2023-09-20.pdf",
-    "mooc/hias-algorithm/lecture01_2023-09-13.pdf",
-    "wiki/未命名.md",
-    "wiki/Algorithm/introduction_to_algorithms/chapter4.md",
-    "wiki/wiki.md",
-    "wiki/Tools/Obisidian.md",
-    "wiki/Tools/Texmacs.md",
-    "books/TexmacsNotes.pdf"
+    "wiki/Algorithm/Insertion sort.md"
   ]
 }

@@ -1,0 +1,1 @@
+[lecture30_2023-10-25-amortized-analysis](../../mooc/hias-algorithm/lecture30_2023-10-25-amortized-analysis.pdf#page=14)
