@@ -1,1 +1,0 @@
-[lecture32_2023-11-01-single-source-shortest-path](../../mooc/hias-algorithm/lecture32_2023-11-01-single-source-shortest-path.pdf#page=57)

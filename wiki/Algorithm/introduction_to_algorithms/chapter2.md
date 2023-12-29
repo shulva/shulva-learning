@@ -1,1 +1,0 @@
-[Loop invariant](../Loop%20invariant.md)

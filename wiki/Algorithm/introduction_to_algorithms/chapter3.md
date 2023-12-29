@@ -1,1 +1,0 @@
-[asymptotic notations](../asymptotic%20notations.md)

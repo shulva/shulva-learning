@@ -1,2 +1,0 @@
-[lecture34_2023-11-07-Linear-Programming](../../mooc/hias-algorithm/lecture34_2023-11-07-Linear-Programming.pdf)
-[lecture35_2023-11-08-Linear-Programming](../../mooc/hias-algorithm/lecture35_2023-11-08-Linear-Programming.pdf#page=35)
