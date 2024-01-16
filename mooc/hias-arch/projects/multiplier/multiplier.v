@@ -27,7 +27,7 @@ module multiplier (
   wire s_is_inf=a_is_inf|b_is_inf;
   wire s_is_nan=a_is_nan|(a_is_inf&b_is_0)|b_is_nan|(b_is_inf&a_is_0);
 
-  wire [8:0] exp = {1'b0,input_a[30:23]}+{1'b0,input_b[30:23]}-128+1;
+  wire [8:0] exp = {1'b0,input_a[30:23]}+{1'b0,input_b[30:23]}+128-1;
 
   wire [25:0] partial_product [12:0];
   wire [47:0] partial_product_extend [12:0];
