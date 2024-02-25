@@ -102,4 +102,5 @@ module multiplier (
   assign output_z[30:23] = temp_exp[7:0];
   assign output_z[22:0] = temp_frac;
 
+
 endmodule
