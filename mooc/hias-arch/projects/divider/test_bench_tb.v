@@ -11,7 +11,6 @@ module test_bench_tb;
   wire [31:0] e;
   wire g;
 
-
   wire [25:0] pp [12:0];
   wire [23:0] final;
   wire out;
@@ -34,8 +33,8 @@ module test_bench_tb;
 
   initial begin
     clk <= 1'b0;
-    d   <= 32'h40ae0000;
-    f   <= 32'hbec00000;
+    d   <= 32'h42e88000;
+    f   <= 32'h41780000;
 
     while (1) begin
       #5 clk <= ~clk;
