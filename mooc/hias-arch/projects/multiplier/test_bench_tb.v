@@ -27,8 +27,8 @@ module test_bench_tb;
 
   initial begin
     clk <= 1'b0;
-    d   <= 32'h00800000;
-    f   <= 32'h3f000000;
+    d   <= 32'h7f7fffff;
+    f   <= 32'h7f7fffff;
 
     while (1) begin
       #5 clk <= ~clk;
