@@ -2,9 +2,13 @@ module divider(
     input [31:0] input_a,
     input [31:0] input_b,
     input start,
-    output [31:0] output_z,
     input clk,
-    input rst
+    input rst,
+    input enable,
+
+    output [31:0] output_z,
+    output busy,
+    output stall
 );
 
   wire a_expo_is_ff= &input_a[30:23]; //exp=ff
@@ -35,7 +39,7 @@ module divider(
   wire [23:0] temp_frac_a = a_expo_is_00?{input_a[22:0],1'b0}:{1'b1,input_a[22:0]};
   wire [23:0] temp_frac_b = b_expo_is_00?{input_b[22:0],1'b0}:{1'b1,input_b[22:0]};
 
-  wire [23:0] frac_a,frac_b;
+  wire [23:0] frac_a,frac_b,frac;
   wire [4:0] move_exp_a,move_exp_b;
 
   shift shift_a(temp_frac_a,frac_a,move_exp_a);
@@ -45,43 +49,77 @@ module divider(
 
   wire [9:0] new_exp = exp - move_exp_a + move_exp_b;
 
+  reg r1_sign,r1_a_expo_is_00,r1_a_expo_is_ff,r1_a_frac_is_00,r1_b_expo_is_00,r1_b_expo_is_ff,r1_b_frac_is_00;
+  reg r2_sign,r2_a_expo_is_00,r2_a_expo_is_ff,r2_a_frac_is_00,r2_b_expo_is_00,r2_b_expo_is_ff,r2_b_frac_is_00;
+  reg r3_sign,r3_a_expo_is_00,r3_a_expo_is_ff,r3_a_frac_is_00,r3_b_expo_is_00,r3_b_expo_is_ff,r3_b_frac_is_00;
+  reg [9:0] r1_exp,r2_exp,r3_exp;
 
-// -------------------------
-  reg [25:0] reg_x;
-  reg [23:0] reg_a;
-  reg [23:0] reg_b;
-  reg [2:0] count;
-  reg start_test = 1'b1;
+  always @(negedge rst or posedge clk or negedge stall)
+    if (rst == 0) begin
+      r1_sign <= 0;
+      r1_a_expo_is_00 <=0;
+      r1_a_expo_is_ff <=0;
+      r1_a_frac_is_00 <=0;
+      r1_b_expo_is_00 <=0;
+      r1_b_expo_is_ff <=0;
+      r1_b_frac_is_00 <=0;
+      r1_exp <=0;
+     /* 
+      r2_sign <= 0;
+      r2_a_expo_is_00 <=0;
+      r2_a_expo_is_ff <=0;
+      r2_a_expo_is_ff <=0;
+      r2_b_expo_is_00 <=0;
+      r2_b_expo_is_ff <=0;
+      r2_b_frac_is_00 <=0;
+      r2_exp <=0;
 
-  wire [49:0] axi = reg_x*reg_a;
-  wire [49:0] bxi = reg_x*reg_b;
-
-  wire [25:0] b_2m = ~bxi[48:23] +1'b1;
-  wire [51:0] x52 = reg_x*b_2m;
-  
-  wire  [7:0] x0 = rom(frac_b[22:19]);
-  
-
-  wire [23:0] frac;
-  assign frac = axi[48:25] + |axi[24:0]; // 24位，没有round的空间了，想要可以在final之前再加
-
-  always @ (posedge clk) begin
-    if (start_test) begin
-      reg_a <= frac_a;
-      reg_b <= frac_b;
-      reg_x <= {2'b1,x0,16'b0};
-      count <= 0;
-      start_test<= 1'b0;
+      r3_sign <= 0;
+      r3_a_expo_is_00 <=0;
+      r3_a_expo_is_ff <=0;
+      r3_a_expo_is_ff <=0;
+      r3_b_expo_is_00 <=0;
+      r3_b_expo_is_ff <=0;
+      r3_b_frac_is_00 <=0;
+      r3_exp <=0;
+      */
     end
-    else begin
-      reg_x <= x52[50:25];
-      count <= count + 3'b1;
+    else if (enable & !stall) begin
+
+      r1_sign <= sign;
+      r1_a_expo_is_00 <=a_expo_is_00;
+      r1_a_expo_is_ff <=a_expo_is_ff;
+      r1_a_frac_is_00 <=a_frac_is_00;
+      r1_b_expo_is_00 <=b_expo_is_00;
+      r1_b_expo_is_ff <=b_expo_is_ff;
+      r1_b_frac_is_00 <=b_frac_is_00;
+      r1_exp <= new_exp;
+    /*  
+      r2_sign <= r1_sign;
+      r2_a_expo_is_00 <=r1_a_expo_is_00;
+      r2_a_expo_is_ff <=r1_a_expo_is_ff;
+      r2_a_expo_is_ff <=r1_a_frac_is_00;
+      r2_b_expo_is_00 <=r1_b_expo_is_00;
+      r2_b_expo_is_ff <=r1_b_expo_is_ff;
+      r2_b_frac_is_00 <=r1_b_frac_is_00;
+      r2_exp <=r1_exp;
+
+      r3_sign <= r2_sign;
+      r3_a_expo_is_00 <=r2_a_expo_is_00;
+      r3_a_expo_is_ff <=r2_a_expo_is_ff;
+      r3_a_expo_is_ff <=r2_a_frac_is_00;
+      r3_b_expo_is_00 <=r2_b_expo_is_00;
+      r3_b_expo_is_ff <=r2_b_expo_is_ff;
+      r3_b_frac_is_00 <=r2_b_frac_is_00;
+      r3_exp <=r2_exp;
+      */
     end
-  end
+
+
+  newton_24 frac_div_1(clk,enable,rst,start,frac_a,frac_b,busy,stall,frac);
 
   wire [23:0] frac_1 = frac[23]?frac:{frac[22:0],1'b0}; // a-f24/b-f24 --> 1.xxxx or 0.1xxxxx
-  wire [9:0] new_exp_end = frac[23]?new_exp:new_exp-1;
-
+  wire [9:0] new_exp_end = frac[23]?r1_exp:r1_exp-1;
 
   reg [9:0] exp_end;
   reg [23:0] frac_end;
@@ -114,9 +152,9 @@ module divider(
   end
 // normalize ------------------------------------------------------------
 
-  assign output_z[31] = sign;
-  assign output_z[30:23] = exp_end[7:0];
-  assign output_z[22:0] = frac_end[22:0];
+  wire overflow = (exp_end > 255);
+  assign output_z = final(overflow,r1_a_expo_is_00,r1_a_expo_is_ff,r1_a_frac_is_00,
+    r1_b_expo_is_00,r1_b_expo_is_ff,r1_b_frac_is_00,r1_sign,exp_end[7:0],frac_end[22:0]);
 
 // final -----------------------
 // The divideByZero exception shall be signaled if and only if an exact infinite result is defined for an 
@@ -124,8 +162,6 @@ module divider(
 // to the operation:
 // For division, when the divisor is zero and the dividend is a finite non-zero number, the sign of the
 // infinity is the exclusive OR of the operands’ signs
-
-  wire overflow = (exp_end > 255);
 
   function [31:0] final;
     input overflow;
@@ -168,21 +204,6 @@ module divider(
       7'b0_0_0_x_0_0_x: final = {sign,exp,frac}; // normal / normal
 
       default: final = {sign,8'hff,qnan_frac};
-    endcase
-  endfunction
-
-// rom -------------------------
-  function [7:0] rom;
-    input [3:0] b;
-    case (b)
-      4'h0: rom = 8'hff; 4'h1: rom = 8'hdf;
-      4'h2: rom = 8'hc3; 4'h3: rom = 8'haa;
-      4'h4: rom = 8'h93; 4'h5: rom = 8'h7f;
-      4'h6: rom = 8'h6d; 4'h7: rom = 8'h5c;
-      4'h8: rom = 8'h4d; 4'h9: rom = 8'h3f;
-      4'ha: rom = 8'h33; 4'hb: rom = 8'h27;
-      4'hc: rom = 8'h1c; 4'hd: rom = 8'h12;
-      4'he: rom = 8'h08; 4'hf: rom = 8'h00;
     endcase
   endfunction
 
