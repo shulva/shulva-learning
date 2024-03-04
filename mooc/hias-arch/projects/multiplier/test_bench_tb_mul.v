@@ -1,5 +1,5 @@
 `timescale 1ns / 100ps
-module test_bench_tb;
+module test_bench_tb_mul;
   reg clk;
   reg clrn;
   reg start;
@@ -11,6 +11,7 @@ module test_bench_tb;
   reg [31:0] e;
   wire [31:0] f;
   wire exception;
+  wire done;
 
   initial begin
     clrn <= 1'b0;
@@ -31,7 +32,7 @@ module test_bench_tb;
 
   initial begin
     $dumpfile("wave.vcd");  //生成的vcd文件名称
-    $dumpvars(0, test_bench_tb);  //tb模块名称
+    $dumpvars(0, test_bench_tb_mul);  //tb模块名称
   end
 
   initial begin
@@ -55,6 +56,6 @@ module test_bench_tb;
 
   end
  
-  multiplier m(clk,start,clrn,d,e,f,exception);
+  multiplier m(clk,start,clrn,d,e,f,exception,done);
 
 endmodule

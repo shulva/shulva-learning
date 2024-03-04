@@ -5,7 +5,8 @@ module multiplier (
     input [31:0] input_a,
     input [31:0] input_b,
     output [31:0] output_z,
-    output exception
+    output exception,
+    output done
 );
 
   assign exception= 0 ;// no error

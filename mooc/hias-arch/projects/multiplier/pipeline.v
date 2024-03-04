@@ -228,7 +228,7 @@ module float_add_normalize(
   wire overflow = (temp_exp >10'h0ff) ;
 
   assign q = final(overflow,s_is_nan,s_is_inf,sign,temp_exp,temp_frac);
- 
+
 // end -----------------------------------------------------------------
 
   function [31:0] final;

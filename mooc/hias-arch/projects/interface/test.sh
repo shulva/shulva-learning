@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "开始编译"
-iverilog -o wave multiplier.v wallace_tree.v dependency.v booth_24x24.v test_bench_tb_mul.v pipeline.v
+iverilog -o wave interface.v ../divider/*.v ../multiplier/*.v test_bench_tb_interface.v
 echo "编译完成"
 vvp -n wave -lxt2
 echo "生成波形文件"
