@@ -36,6 +36,7 @@ module pipeline_float_mul(
   assign qnan_frac = (a_is_nan)?{1'b1,input_a[21:0]}:{1'b1,input_b[21:0]}; //qNan
   assign exp = {2'b0,input_a[30:23]}+{2'b0,input_b[30:23]}- 127 + a_expo_is_00 +b_expo_is_00;
 
+
   assign s_is_inf=a_is_inf|b_is_inf;
   assign s_is_nan=a_is_nan|(a_is_inf&b_is_0)|b_is_nan|(b_is_inf&a_is_0);
 
@@ -155,6 +156,7 @@ module reg_add_normalize(
 endmodule
 
 module float_add_normalize(
+  input clk,
   input sign,
   input [9:0] exp,
   input s_is_nan,
@@ -228,6 +230,7 @@ module float_add_normalize(
   wire overflow = (temp_exp >10'h0ff) ;
 
   assign q = final(overflow,s_is_nan,s_is_inf,sign,temp_exp,temp_frac);
+
 
 // end -----------------------------------------------------------------
 

@@ -13,6 +13,10 @@ module test_bench_tb_interface;
   wire [31:0] f;
   wire busy;
   wire stall;
+  wire done;
+
+  wire [4:0] rob_out,save_out;
+  reg [3:0] ctrl;
 
   initial begin
     rst <= 1'b0;
@@ -39,6 +43,7 @@ module test_bench_tb_interface;
 
   initial begin
     # 15
+    ctrl <= 4'b0011;
     d   <= 32'hc396d200;
     e   <= 32'hc0100000;// q = 43061000
 
@@ -49,11 +54,14 @@ module test_bench_tb_interface;
 */
   end
 
-  always @(*)  begin
-    if (stall == 0) begin
+  always @(posedge clk)  begin
+    if (done == 1) begin
+      ctrl <= 4'b0010;
       d   <= 32'h40ae0000;
       e   <= 32'hbec00000;// q = c1680000
     end
   end
+
+  commonAlu alu(clk,rst,start,d,e,ctrl,5'b00011,5'b00011,done,save_out,rob_out,f);
 
 endmodule

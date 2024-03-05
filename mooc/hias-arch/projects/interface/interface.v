@@ -15,13 +15,15 @@ module commonAlu (
 
 
   wire [31:0] result_div,result_mul;
-  wire [31:0] input_a_div,input_b_div,input_a_mul,input_b_mul;
+  reg [31:0] input_a_div,input_b_div,input_a_mul,input_b_mul;
 
   wire busy_div;
   wire exception_mul;
 
-  divider div(input_a,input_b,data_ready,clk,rst,data_ready,result_div,busy_div,done);
-  multiplier mul(clk,data_ready,rst,input_a,input_b,result_mul,exception_mul);
+  wire done_div,done_mul;
+
+  divider div(input_a_div,input_b_div,data_ready,clk,rst,data_ready,result_div,busy_div,done_div);
+  multiplier mul(clk,data_ready,rst,input_a_mul,input_b_mul,result_mul,exception_mul,done_mul);
 
   always @(*) begin
     save_no_out <= save_no_in;
@@ -29,15 +31,17 @@ module commonAlu (
   end
 
   always @(*) begin
-    if (ctrl == 4'b0010)//乘法
+    if (ctrl == 4'b0010) begin//乘法
       input_a_mul <= x;
       input_b_mul <= y;
       result <=result_mul;
+      done <= done_mul;
     end
-    else if (ctrl == 4'b0011) //除法
+    else if (ctrl == 4'b0011) begin //除法
       input_a_div <= x;
       input_b_div <= y;
       result <=result_div;
+      done <= !done_div;
     end
   end
 
