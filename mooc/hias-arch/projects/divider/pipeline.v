@@ -6,8 +6,7 @@ module newton_24(
   input [23:0] a,
   input [23:0] b,
 
-  output reg busy,
-  output stall, //通过stall暂停流水线的输入
+  output reg busy,//通过busy暂停流水线的输入
   output [23:0] q
 );
 
@@ -22,8 +21,7 @@ module newton_24(
   wire [25:0] b_2m = ~bxi[48:23] +1'b1;
   wire [51:0] x52 = reg_x*b_2m;
 
-  assign stall = start & (count==0) | busy;
-
+  // assign stall = start & (count==0) | busy;
 
   always @ (posedge clk or negedge rst) begin
     if (rst == 0) begin
@@ -45,7 +43,7 @@ module newton_24(
         if (count != 0)
           count <= count + 5'b1;
 
-        if (count == 5'h0f)
+        if (count == 5'h10)
           busy <= 0; // ok for next
 
         if (count == 5'h10)
@@ -57,7 +55,6 @@ module newton_24(
       end
     end
   end
-
 
   wire [49:0] axi = reg_x*reg_a;
   //这之间可以考虑流水

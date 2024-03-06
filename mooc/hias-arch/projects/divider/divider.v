@@ -7,8 +7,7 @@ module divider(
     input enable,
 
     output [31:0] output_z,
-    output busy,
-    output stall
+    output busy
 );
 
   wire a_expo_is_ff= &input_a[30:23]; //exp=ff
@@ -50,11 +49,11 @@ module divider(
   wire [9:0] new_exp = exp - move_exp_a + move_exp_b;
 
   reg r1_sign,r1_a_expo_is_00,r1_a_expo_is_ff,r1_a_frac_is_00,r1_b_expo_is_00,r1_b_expo_is_ff,r1_b_frac_is_00;
-  reg r2_sign,r2_a_expo_is_00,r2_a_expo_is_ff,r2_a_frac_is_00,r2_b_expo_is_00,r2_b_expo_is_ff,r2_b_frac_is_00;
-  reg r3_sign,r3_a_expo_is_00,r3_a_expo_is_ff,r3_a_frac_is_00,r3_b_expo_is_00,r3_b_expo_is_ff,r3_b_frac_is_00;
+  // reg r2_sign,r2_a_expo_is_00,r2_a_expo_is_ff,r2_a_frac_is_00,r2_b_expo_is_00,r2_b_expo_is_ff,r2_b_frac_is_00;
+  // reg r3_sign,r3_a_expo_is_00,r3_a_expo_is_ff,r3_a_frac_is_00,r3_b_expo_is_00,r3_b_expo_is_ff,r3_b_frac_is_00;
   reg [9:0] r1_exp,r2_exp,r3_exp;
 
-  always @(negedge rst or posedge clk or negedge stall)
+  always @(negedge rst) begin
     if (rst == 0) begin
       r1_sign <= 0;
       r1_a_expo_is_00 <=0;
@@ -84,7 +83,10 @@ module divider(
       r3_exp <=0;
       */
     end
-    else if (enable & !stall) begin
+  end
+
+  always @(posedge clk or negedge busy) begin
+    if (enable & !busy) begin
 
       r1_sign <= sign;
       r1_a_expo_is_00 <=a_expo_is_00;
@@ -114,9 +116,9 @@ module divider(
       r3_exp <=r2_exp;
       */
     end
+  end
 
-
-  newton_24 frac_div_1(clk,enable,rst,start,frac_a,frac_b,busy,stall,frac);
+  newton_24 frac_div_1(clk,enable,rst,start,frac_a,frac_b,busy,frac);
 
   wire [23:0] frac_1 = frac[23]?frac:{frac[22:0],1'b0}; // a-f24/b-f24 --> 1.xxxx or 0.1xxxxx
   wire [9:0] new_exp_end = frac[23]?r1_exp:r1_exp-1;

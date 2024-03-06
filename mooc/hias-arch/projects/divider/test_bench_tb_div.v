@@ -18,10 +18,7 @@ module test_bench_tb_div;
     rst <= 1'b0;
     #10 rst <= 1'b1;
 
-    start <= 1'b1;
     clk <= 1'b0;
-
-    enable <= 1'b1;
 
     while (1) begin
       #5 clk <= ~clk;
@@ -39,6 +36,8 @@ module test_bench_tb_div;
 
   initial begin
     # 15
+    enable <= 1'b1;
+    start <= 1'b1;
     d   <= 32'hc396d200;
     e   <= 32'hc0100000;// q = 43061000
 
@@ -50,12 +49,12 @@ module test_bench_tb_div;
   end
 
   always @(*)  begin
-    if (stall == 0) begin
+    if (busy == 0) begin
       d   <= 32'h40ae0000;
       e   <= 32'hbec00000;// q = c1680000
     end
   end
 
-  divider di(d,e,start,clk,rst,enable,f,busy,stall);
+  divider di(d,e,start,clk,rst,enable,f,busy);
 
 endmodule

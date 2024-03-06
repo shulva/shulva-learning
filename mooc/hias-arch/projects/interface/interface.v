@@ -27,7 +27,7 @@ module commonAlu (
 
   always @(*) begin
     save_no_out <= save_no_in;
-    rd_rob_out <= save_no_out;
+    rd_rob_out <= rd_rob_in;
   end
 
   always @(*) begin

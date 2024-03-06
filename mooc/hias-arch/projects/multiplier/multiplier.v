@@ -48,10 +48,12 @@ module multiplier (
 
   float_add_normalize normalize(clk,r2_sign,r2_exp,r2_s_is_nan,r2_s_is_inf,r2_qnan_frac,r2_temp_sum,output_z);
 
-  always @(posedge clk or negedge clrn) begin
+  always @(negedge clrn) begin
     if (clrn == 0)
       count <= 1;
+  end
 
+  always @(posedge clk) begin
     if (count != 0)
       count <= count + 5'b1;
 
