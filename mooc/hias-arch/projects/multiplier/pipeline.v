@@ -212,10 +212,7 @@ module float_add_normalize(
         end
       end
     end
-  end
-//normalize ---------------------------------------------------------
 
-  always @(*) begin 
     if(temp_sum[47] & temp_sum[23]) begin
       temp_frac = temp_frac+1;
     end
@@ -223,9 +220,8 @@ module float_add_normalize(
       temp_frac = temp_frac+1;
     end
   end
+//normalize and roundTiesToAway ---------------------------------------------------------
 
-// roundTiesToAway ---------------------------------------------------------------
-//
 
   wire overflow = (temp_exp >10'h0ff) ;
 

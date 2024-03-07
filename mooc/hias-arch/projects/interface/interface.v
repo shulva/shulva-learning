@@ -22,7 +22,7 @@ module commonAlu (
 
   wire done_div,done_mul;
 
-  divider div(input_a_div,input_b_div,data_ready,clk,rst,data_ready,result_div,busy_div,done_div);
+  divider div(input_a_div,input_b_div,data_ready,clk,rst,data_ready,result_div,busy_div);
   multiplier mul(clk,data_ready,rst,input_a_mul,input_b_mul,result_mul,exception_mul,done_mul);
 
   always @(*) begin
@@ -41,7 +41,7 @@ module commonAlu (
       input_a_div <= x;
       input_b_div <= y;
       result <=result_div;
-      done <= !done_div;
+      done <= !busy_div;
     end
   end
 
