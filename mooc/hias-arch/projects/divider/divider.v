@@ -53,7 +53,7 @@ module divider(
   // reg r3_sign,r3_a_expo_is_00,r3_a_expo_is_ff,r3_a_frac_is_00,r3_b_expo_is_00,r3_b_expo_is_ff,r3_b_frac_is_00;
   reg [9:0] r1_exp,r2_exp,r3_exp;
 
-  always @(negedge rst) begin
+  always @(negedge rst or posedge clk or negedge busy) begin
     if (rst == 0) begin
       r1_sign <= 0;
       r1_a_expo_is_00 <=0;
@@ -83,10 +83,7 @@ module divider(
       r3_exp <=0;
       */
     end
-  end
-
-  always @(posedge clk or negedge busy) begin
-    if (enable & !busy) begin
+    else  if (enable & !busy) begin
 
       r1_sign <= sign;
       r1_a_expo_is_00 <=a_expo_is_00;
@@ -160,10 +157,10 @@ module divider(
 
 // final -----------------------
 // The divideByZero exception shall be signaled if and only if an exact infinite result is defined for an 
-// operation on finite operands. The default result of divideByZero shall be an âˆž correctly signed according
+// operation on finite operands. The default result of divideByZero shall be an âˆ? correctly signed according
 // to the operation:
 // For division, when the divisor is zero and the dividend is a finite non-zero number, the sign of the
-// infinity is the exclusive OR of the operandsâ€™ signs
+// infinity is the exclusive OR of the operandsâ€? signs
 
   function [31:0] final;
     input overflow;
