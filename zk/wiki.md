@@ -8,11 +8,4 @@
 对于pdf和ppt的注释与思考应当写在文件中还是写在wiki文件中还有待商榷。
 
 正在做笔记和已经做完笔记的pdf书籍应当规约在一个文件夹中，鉴于书的pdf大小一般较大，就不放入git仓库中了，但是文件夹与wiki文件的位置要定死，可以考虑使用.gitignore，迁移使用网络或移动硬盘就行。
-# Algorithm
-# Architecture
-# Tools
-- [[Obisidian]]
-- [[Typst]]
-- [[Texmacs]]
-- [[Pdf-design]]
 

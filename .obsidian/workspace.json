@@ -4,25 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "9d4f08b3c6a9b326",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "56ae8f7a46377c21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/Tools/Vim/Best Practice.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "21547630b27cc336"
-          }
-        ]
-      },
-      {
         "id": "7ff9fe684a030006",
         "type": "tabs",
         "children": [
@@ -32,12 +13,11 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/Tools/Vim/Best Practice.md",
-                "mode": "preview",
+                "file": "readme.md",
+                "mode": "source",
                 "source": false
               }
-            },
-            "group": "21547630b27cc336"
+            }
           }
         ]
       }
@@ -105,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/Tools/Vim/Best Practice.md",
+                "file": "readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/Tools/Vim/Best Practice.md",
+                "file": "readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/Tools/Vim/Best Practice.md"
+                "file": "readme.md"
               }
             }
           }
@@ -167,23 +147,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "56ae8f7a46377c21",
+  "active": "82793a7175cf10f3",
   "lastOpenFiles": [
-    "wiki/Tools/Vim/Practical Vim.md",
-    "wiki/Tools/Vim/基本操作.md",
-    "wiki/Tools/Vim/Best Practice.md",
+    "zk/wiki.md",
+    "zk/Vim/基本操作.md",
+    "zk/Vim/Best Practice.md",
+    "zk/Vim/Practical Vim.md",
+    "zk/1.md",
+    "zk/Pdf-design.md",
+    "wiki/Tools/Vim.md",
+    "wiki/Tools/Typst.md",
+    "wiki/Tools/Obisidian.md",
+    "wiki/Tools/Texmacs.md",
+    "TexmacsNotes.pdf.md",
+    "zk",
     "pdf/books/Vim.pdf",
     "wiki/Tools/Vim/f{char} -- 查找字符.md",
     "wiki/Tools/Vim/可重复及回退操作.md",
     "wiki/Tools/Vim/复合命令.md",
     "wiki/Tools/Vim/查找.md",
-    "wiki/Tools/Vim.md",
-    "wiki/Tools/Vim",
-    "wiki/Tools/Obisidian.md",
-    "wiki/Tools/Texmacs.md",
-    "wiki/Tools/Pdf-design.md",
-    "wiki/wiki.md",
-    "wiki/Tools/Typst.md",
+    "zk/Vim",
     "pdf/6.null/missing semester en.pdf",
     "mooc/readme.md",
     "readme.md",
@@ -201,8 +184,6 @@
     "mooc/hias-algorithm/期末考试复习题.docx",
     "mooc/hias-algorithm/期末考试复习题~C320D.tmp",
     "wiki/Algorithm/Recurrences.md",
-    "wiki/Algorithm/Linear Programming.md",
-    "mooc/hias-algorithm/lecture34_2023-11-07-Linear-Programming.pdf",
-    "wiki/Algorithm/All-Pairs Shortest Paths.md"
+    "wiki/Algorithm/Linear Programming.md"
   ]
 }
