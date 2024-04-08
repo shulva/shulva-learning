@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7ff9fe684a030006",
+        "id": "2ed3fe12578a52f0",
         "type": "tabs",
         "children": [
           {
-            "id": "82793a7175cf10f3",
+            "id": "f8287a19973f7792",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "zk/references/Practical Vim.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "zk/references/Practical Vim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
+                "file": "zk/references/Practical Vim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "zk/references/Practical Vim.md"
               }
             }
           }
@@ -147,43 +147,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "82793a7175cf10f3",
+  "active": "aabcd512d6b73859",
   "lastOpenFiles": [
-    "zk/wiki.md",
-    "zk/Vim/基本操作.md",
-    "zk/Vim/Best Practice.md",
-    "zk/Vim/Practical Vim.md",
-    "zk/1.md",
-    "zk/Pdf-design.md",
+    "zk/zk/基本操作.md",
+    "zk/zk/Best Practice.md",
+    "zk/zk/1-b.md",
+    "zk/zk/1-a.md",
+    "zk/zk/1.md",
+    "files/books/Vim.pdf",
+    "zk/zk/wiki.md",
+    "mooc/digital/杭高院图像处理2024/期末作业/作业要求.docx",
+    "mooc/digital/杭高院图像处理2024/期中作业/作业要求.docx",
+    "mooc/digital/杭高院图像处理2024/作业2/作业要求.docx",
+    "mooc/digital/杭高院图像处理2024/作业2/westconcordorthophoto.png",
+    "mooc/digital/杭高院图像处理2024/作业2/Fig0941(a)(wood_dowels).tif",
+    "mooc/digital/杭高院图像处理2024/作业1/作业要求.docx",
+    "mooc/digital/杭高院图像处理2024/作业1/pout.tif",
+    "mooc/digital/杭高院图像处理2024/期末作业",
+    "mooc/digital/杭高院图像处理2024/期中作业",
+    "mooc/digital/杭高院图像处理2024/作业2",
+    "zk/references/Practical Vim.md",
+    "files/images/2020-08-13_folgezettel-sequence.png",
+    "readme.md",
+    "files/images/complete-zettel.png",
+    "zk/未命名.md",
     "wiki/Tools/Vim.md",
     "wiki/Tools/Typst.md",
     "wiki/Tools/Obisidian.md",
     "wiki/Tools/Texmacs.md",
     "TexmacsNotes.pdf.md",
-    "zk",
-    "pdf/books/Vim.pdf",
     "wiki/Tools/Vim/f{char} -- 查找字符.md",
     "wiki/Tools/Vim/可重复及回退操作.md",
     "wiki/Tools/Vim/复合命令.md",
     "wiki/Tools/Vim/查找.md",
-    "zk/Vim",
-    "pdf/6.null/missing semester en.pdf",
     "mooc/readme.md",
-    "readme.md",
-    "mooc/hias-algorithm/lecture31_2023-10-26-elementary-graph-algorithms.pdf",
     "wiki/Algorithm/Graph.md",
     "wiki/Algorithm/Dynamic Programming.md",
     "wiki/Algorithm/Heap sort.md",
-    "mooc/hias-algorithm/problem.pdf",
     "wiki/Algorithm/Asymptotic notations.md",
     "wiki/Algorithm/Amortized Analysis.md",
-    "wiki/Algorithm/Breadth-first Search.md",
-    "wiki/Algorithm/Depth-first Search.md",
-    "mooc/hias-algorithm/期末考试复习题.pdf",
-    "mooc/hias-algorithm/~$末考试复习题.docx",
-    "mooc/hias-algorithm/期末考试复习题.docx",
-    "mooc/hias-algorithm/期末考试复习题~C320D.tmp",
-    "wiki/Algorithm/Recurrences.md",
-    "wiki/Algorithm/Linear Programming.md"
+    "wiki/Algorithm/Breadth-first Search.md"
   ]
 }
