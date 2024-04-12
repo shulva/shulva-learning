@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f8287a19973f7792",
+            "id": "8674a010dc836ae0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zk/references/Practical Vim.md",
-                "mode": "source",
+                "file": "zk/zk/1-b-1.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/references/Practical Vim.md",
+                "file": "zk/zk/1-b-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zk/references/Practical Vim.md",
+                "file": "zk/zk/1-b-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zk/references/Practical Vim.md"
+                "file": "zk/zk/1-b-1.md"
               }
             }
           }
@@ -147,16 +147,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f8287a19973f7792",
+  "active": "8674a010dc836ae0",
   "lastOpenFiles": [
-    "zk/references/Best Practice.md",
-    "zk/references/基本操作.md",
+    "zk/zk/1-b.md",
+    "zk/zk/1-b-1.md",
+    "zk/zk/1.md",
+    "zk/zk/1-a.md",
     "zk/references/Practical Vim.md",
     "files/books/Vim.pdf",
-    "zk/zk/1-b.md",
-    "zk/zk/1.md",
+    "zk/references/Best Practice.md",
+    "zk/references/基本操作.md",
     "mooc/digital/杭高院图像处理2024/作业2/westconcordorthophoto.png",
-    "zk/zk/1-a.md",
     "zk/zk/wiki.md",
     "mooc/digital/杭高院图像处理2024/期末作业/作业要求.docx",
     "mooc/digital/杭高院图像处理2024/期中作业/作业要求.docx",

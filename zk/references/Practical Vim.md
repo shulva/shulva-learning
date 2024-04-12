@@ -4,7 +4,6 @@
 
 [一箭双雕](../../files/books/Vim.pdf#page=44)
  很多 Vim 命令可以看作为两个或多个其他命令的组合
- 
 [可重复执行的操作及如何回退](../../files/books/Vim.pdf#page=49)
 
 [dot 范式](../../files/books/Vim.pdf#page=54)
