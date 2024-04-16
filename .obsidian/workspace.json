@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zk/zk/1-b-1.md",
+                "file": "zk/references/Practical Vim.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/zk/1-b-1.md",
+                "file": "zk/references/Practical Vim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zk/zk/1-b-1.md",
+                "file": "zk/references/Practical Vim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zk/zk/1-b-1.md"
+                "file": "zk/references/Practical Vim.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "8674a010dc836ae0",
   "lastOpenFiles": [
-    "zk/zk/1-b.md",
     "zk/zk/1-b-1.md",
     "zk/zk/1.md",
     "zk/zk/1-a.md",
+    "zk/zk/1-b.md",
     "zk/references/Practical Vim.md",
     "files/books/Vim.pdf",
     "zk/references/Best Practice.md",
