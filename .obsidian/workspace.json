@@ -11,28 +11,13 @@
             "id": "88cd42177fc45561",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "zk/zk/2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27ed3ea3039d9709",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "zk/references/Practical Vim.md",
-                "mode": "source",
-                "source": false
+                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/references/Practical Vim.md",
+                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zk/references/Practical Vim.md",
+                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zk/references/Practical Vim.md"
+                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf"
               }
             }
           }
@@ -160,30 +145,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "27ed3ea3039d9709",
+  "active": "88cd42177fc45561",
   "lastOpenFiles": [
-    "files/files/books/Vim.pdf",
+    "files/papers/2.1_Zen_2_The_AMD_7nm_Energy-Efficient_High-Performance_x86-64_Microprocessor_Core.pdf",
+    "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf",
+    "files/papers/Bertsch 等 - 2023 - Unlimiformer Long-Range Transf(1).pdf",
+    "files/papers/shao2019-micro.pdf",
+    "files/papers/read.md",
+    "files/papers/PipeLayer_A_Pipelined_ReRAM-Based_Accelerator_for_Deep_Learning.pdf",
+    "files/papers/ISCA2021-NNbaton.pdf",
+    "files/papers/hypar.pdf",
+    "files/papers/Heterogeneous_memory_architectures_A_HW_SW_approach_for_mixing_die-stacked_and_off-package_memories.pdf",
+    "files/papers/ham2013-mem.pdf",
+    "files/papers/Centaur.pdf",
+    "files/papers/attention is all you need.pdf",
+    "readme.md",
     "zk/references/Practical Vim.md",
+    "files/books/readme.md",
+    "files/未命名.md",
+    "zk/zk/1-b-1.md",
     "zk/zk/2.md",
     "zk/zk/1.md",
-    "zk/zk/1-b-1.md",
     "zk/zk/1-b.md",
     "zk/zk/1-a.md",
-    "files/books/Vim.pdf",
     "zk/references/Best Practice.md",
     "zk/references/基本操作.md",
     "mooc/digital/杭高院图像处理2024/作业2/westconcordorthophoto.png",
     "zk/zk/wiki.md",
-    "mooc/digital/杭高院图像处理2024/期末作业/作业要求.docx",
-    "mooc/digital/杭高院图像处理2024/期中作业/作业要求.docx",
-    "mooc/digital/杭高院图像处理2024/作业2/作业要求.docx",
-    "mooc/digital/杭高院图像处理2024/作业2/Fig0941(a)(wood_dowels).tif",
-    "mooc/digital/杭高院图像处理2024/作业1/作业要求.docx",
-    "mooc/digital/杭高院图像处理2024/作业1/pout.tif",
-    "mooc/digital/杭高院图像处理2024/期末作业",
-    "mooc/digital/杭高院图像处理2024/期中作业",
     "files/images/2020-08-13_folgezettel-sequence.png",
-    "readme.md",
     "files/images/complete-zettel.png",
     "zk/未命名.md",
     "wiki/Tools/Vim.md",
@@ -196,9 +185,6 @@
     "wiki/Tools/Vim/复合命令.md",
     "wiki/Tools/Vim/查找.md",
     "mooc/readme.md",
-    "wiki/Algorithm/Graph.md",
-    "wiki/Algorithm/Dynamic Programming.md",
-    "wiki/Algorithm/Heap sort.md",
-    "wiki/Algorithm/Asymptotic notations.md"
+    "wiki/Algorithm/Graph.md"
   ]
 }
