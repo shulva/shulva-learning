@@ -2,6 +2,7 @@
 /books/
 /.idea/
 /files/
+/.obsidian/
 *.com
 
 *.7z

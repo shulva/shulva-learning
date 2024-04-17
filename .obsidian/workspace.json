@@ -13,7 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf"
+                "file": "files/manuals/NCB-PCI_Express_Base_6.0.pdf"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf",
+                "file": "files/manuals/NCB-PCI_Express_Base_6.0.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf",
+                "file": "files/manuals/NCB-PCI_Express_Base_6.0.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf"
+                "file": "files/manuals/NCB-PCI_Express_Base_6.0.pdf"
               }
             }
           }
@@ -147,8 +147,8 @@
   },
   "active": "88cd42177fc45561",
   "lastOpenFiles": [
-    "files/papers/2.1_Zen_2_The_AMD_7nm_Energy-Efficient_High-Performance_x86-64_Microprocessor_Core.pdf",
     "files/papers/An_efficient_memory_controller_for_3D_heterogeneous_integration_platform.pdf",
+    "files/papers/2.1_Zen_2_The_AMD_7nm_Energy-Efficient_High-Performance_x86-64_Microprocessor_Core.pdf",
     "files/papers/Bertsch 等 - 2023 - Unlimiformer Long-Range Transf(1).pdf",
     "files/papers/shao2019-micro.pdf",
     "files/papers/read.md",
