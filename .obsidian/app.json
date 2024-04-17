@@ -4,5 +4,6 @@
   "showLineNumber": true,
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "showInlineTitle": false
 }
