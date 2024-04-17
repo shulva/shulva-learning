@@ -13,8 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zk/references/Practical Vim.md",
-                "mode": "preview",
+                "file": "zk/zk/2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da52917a37a9fc8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zk/zk/2.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zk/references/Practical Vim.md",
+                "file": "zk/zk/2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zk/references/Practical Vim.md",
+                "file": "zk/zk/2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zk/references/Practical Vim.md"
+                "file": "zk/zk/2.md"
               }
             }
           }
@@ -149,6 +161,14 @@
   },
   "active": "8674a010dc836ae0",
   "lastOpenFiles": [
+    "zk/zk/1-b-1.md",
+    "zk/zk/1-b.md",
+    "zk/zk/1-a.md",
+    "zk/zk/1.md",
+    "zk/references/Practical Vim.md",
+    "zk/zk/2.md",
+    "zk/zk/2-a.md",
+    "files/books/Vim.pdf",
     "files/slides/nand2tetris/lecture4/chapter 4 lecture.pdf",
     "files/slides/nand2tetris/lecture4/Project 4.pdf",
     "files/slides/nand2tetris/lecture3/chapter 3 lecture.pdf",
@@ -158,8 +178,6 @@
     "files/slides/nand2tetris/lecture1/chipset.pdf",
     "files/slides/nand2tetris/lecture1/chapter 1 lecture.pdf",
     "files/slides/nand2tetris/lecture1/Project 1.pdf",
-    "files/slides/nand2tetris/lecture1/Hardware Simulator Tutorial.ppsx",
-    "files/slides/nand2tetris/lecture1/Hardware Simulator Tutorial.pdf",
     "files/slides/rh-project.md",
     "files/slides/rh-mooc.md",
     "files/papers/read.md",
@@ -172,12 +190,6 @@
     "files-1/images/complete-zettel.png",
     "files-1/images/2020-08-13_folgezettel-sequence.png",
     "files-1/books/readme.md",
-    "zk/zk/2.md",
-    "zk/zk/1-b-1.md",
-    "zk/zk/1.md",
-    "zk/zk/1-a.md",
-    "zk/zk/1-b.md",
-    "zk/references/Practical Vim.md",
     "zk/references/Best Practice.md",
     "zk/references/基本操作.md",
     "mooc/digital/杭高院图像处理2024/作业2/westconcordorthophoto.png",
