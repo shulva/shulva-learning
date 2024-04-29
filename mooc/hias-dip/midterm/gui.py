@@ -52,6 +52,8 @@ class main_window(QMainWindow):
         self.slider2.valueChanged.connect(self.slider2_change_value)
 
         self.combobox = self.window.findChild(QComboBox, "comboBox")
+        
+
 
     @Slot()
     def bt1_click(self):  # 打开/更换图片
