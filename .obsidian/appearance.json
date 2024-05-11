@@ -2,5 +2,6 @@
   "accentColor": "#4c49e4",
   "theme": "moonstone",
   "baseFontSize": 20,
-  "cssTheme": "shulva"
+  "cssTheme": "shulva",
+  "baseFontSizeAction": false
 }
