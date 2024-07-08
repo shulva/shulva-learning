@@ -1,9 +1,11 @@
 # 目录
-[Vim-查找](2-a-1%20(Vim%20操作).md#Vim-查找) d
-[Vim复合命令](2-a-1%20(Vim%20操作).md#Vim复合命令)
-[Vim中可重复的操作及如何回退](2-a-1%20(Vim%20操作).md#Vim中可重复的操作及如何回退)
-[Vim可视模式基本操作](2-a-1%20(Vim%20操作).md#Vim可视模式基本操作)
-[Vim-操作符命令{motion}](2-a-1%20(Vim%20操作).md#Vim-操作符命令{motion})
+
+> [!Abstract]
+> [Vim-查找](2-a-1%20(Vim%20操作).md#Vim-查找) 
+> [Vim复合命令](2-a-1%20(Vim%20操作).md#Vim复合命令)
+> [Vim中可重复的操作及如何回退](2-a-1%20(Vim%20操作).md#Vim中可重复的操作及如何回退)
+> [Vim可视模式基本操作](2-a-1%20(Vim%20操作).md#Vim可视模式基本操作)
+> [Vim-操作符命令{motion}](2-a-1%20(Vim%20操作).md#Vim-操作符命令{motion})
 
 # Vim-查找
 #vim #updating #table

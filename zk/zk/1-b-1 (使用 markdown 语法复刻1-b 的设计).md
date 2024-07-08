@@ -20,6 +20,7 @@
 > [!NOTE]
 > 
 > 使用 callout 语法进行背景色的对比，有多种颜色及形式可选
+> [Callouts - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Callouts)
 
 表格可以使用 obsidian 右键自带的插入表格，较为方便
 
