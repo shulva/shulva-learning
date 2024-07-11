@@ -17,6 +17,10 @@ This is the most important source *[csdiy.wiki](https://csdiy.wiki/)*
 - [cmu-18-447](https://course.ece.cmu.edu/~ece447/s15/doku.php)
 - [(UC Berkeley CS267)Applications of Parallel Computers](https://sites.google.com/lbl.gov/cs267-spr2022?pli=1)
 - [plct risc-v OS](https://www.bilibili.com/video/BV1Q5411w7z5?p=1&vd_source=0db98bb4efd84607a32ed6386f61994e)
+- [risc-v compiler](https://www.bilibili.com/video/BV1gY4y1E7Ue/?spm_id_from=333.999.0.0&vd_source=0db98bb4efd84607a32ed6386f61994e)
+- [llvm part1](https://www.bilibili.com/video/BV1TJ411v7ys/?vd_source=0db98bb4efd84607a32ed6386f61994e)
+- [llvm part2](https://space.bilibili.com/296494084/favlist?fid=1246068184&ftype=create)
+- [llvm part3](https://www.bilibili.com/video/BV14b4y1X7uX/?spm_id_from=333.337.search-card.all.click&vd_source=0db98bb4efd84607a32ed6386f61994e)
 - [cmu 15440](https://www.bilibili.com/video/BV1NX4y1v7Jv/?buvid=XX18A3A13B4422285892C39C872A1C4882E7D&is_story_h5=false&mid=8xH6L%2FwbLx0CDYB4pzypgw%3D%3D&p=1&plat_id=116&share_from=ugc&share_medium=android_hd&share_plat=android&share_session_id=d25e7869-a170-4596-9da8-615fe838ac73&share_source=COPY&share_tag=s_i&timestamp=1690905968&unique_k=o7R3w1D&up_id=2349914&vd_source=0db98bb4efd84607a32ed6386f61994e)
 - [机器学习基石](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/)
 
