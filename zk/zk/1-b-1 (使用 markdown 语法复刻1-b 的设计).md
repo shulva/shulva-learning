@@ -52,9 +52,10 @@ $$
 > \label 经常出 multiply defined 的错误，重新命名 eq 即可
 > 行号使用 \tag 解决即可
 
-# References
-[Markdown 语法手册 - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/25240)
-[markdown语法 | obsidian文档咖啡豆版](https://obsidian.vip/zh/markdown/)
-[Markdown 数学公式指导手册 | Freeopen](https://freeopen.github.io/mathjax/)
+> [!info]  References
+> [Markdown 语法手册 - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/25240)
+> [markdown语法 | obsidian文档咖啡豆版](https://obsidian.vip/zh/markdown/)
+> [Markdown 数学公式指导手册 | Freeopen](https://freeopen.github.io/mathjax/)
+> [Callouts - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Callouts)
 
  [^1]: 使用`[^锚点文字]`来定义脚注，在之后的任意位置使用`[^锚点文字]:`来描述脚注内容
