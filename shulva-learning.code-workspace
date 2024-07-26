@@ -1,14 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "impulseFs",
-			"uri": "impulseFs:/"
-		},
-		{
 			"path": "."
-		},
-		{
-			"path": "../cs-self-learning"
 		}
 	]
 }
