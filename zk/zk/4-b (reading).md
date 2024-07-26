@@ -1,4 +1,4 @@
-> [!Todo] reading
+> [!Todo] article
 >[系统设计黄金法则：简单之美](https://blog.sciencenet.cn/blog-414166-562616.html) 
 > [如何有效地报告Bug (greenend.org.uk)](https://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)
 > 
@@ -8,3 +8,5 @@
 > [Lessons Learned from 30 Years of MINIX](https://cacm.acm.org/research/lessons-learned-from-30-years-of-minix/)
 
 
+> [!Todo] book online
+> [ Linux 101](https://101.ustclug.org/)
