@@ -23,6 +23,7 @@
 
 > [!Example]
 > 
+> 
 > ```bash
 >  #!/bin/bash 
 >  echo "Starting program at $(date)" 

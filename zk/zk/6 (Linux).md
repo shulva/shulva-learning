@@ -4,3 +4,4 @@
 > [!Todo] tutorial online
 > [ Linux 101](https://101.ustclug.org/)
 > [Linux入门教程](https://ysyx.oscc.cc/docs/ics-pa/linux.html)
+> [Linux 新手的 26 个命令](https://linux.cn/article-6160-1.html)

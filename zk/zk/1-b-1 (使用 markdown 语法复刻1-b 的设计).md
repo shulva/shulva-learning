@@ -17,6 +17,9 @@
 
 `<u>下划线<u>` <u>下划线<u>
 
+- [ ] Checkbox off
+- [x] Checkbox on
+
 > [!NOTE]
 > 
 > 使用 callout 语法进行背景色的对比，有多种颜色及形式可选
@@ -53,6 +56,7 @@ $$
 > 行号使用 \tag 解决即可
 
 > [!info]  References
+> [Markdown 基本语法 | Markdown 官方教程](https://markdown.com.cn/basic-syntax/)
 > [Markdown 语法手册 - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/25240)
 > [markdown语法 | obsidian文档咖啡豆版](https://obsidian.vip/zh/markdown/)
 > [Markdown 数学公式指导手册 | Freeopen](https://freeopen.github.io/mathjax/)

@@ -3,5 +3,7 @@
   "theme": "moonstone",
   "baseFontSize": 20,
   "cssTheme": "shulva",
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "textFontFamily": "Source Han Serif CN",
+  "interfaceFontFamily": "Source Han Serif CN"
 }
