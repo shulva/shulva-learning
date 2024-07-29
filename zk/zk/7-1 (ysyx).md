@@ -28,15 +28,16 @@
 > [!info] 实验选做内容：[Linux入门教程](https://ysyx.oscc.cc/docs/ics-pa/linux.html#%E6%8E%A2%E7%B4%A2%E5%91%BD%E4%BB%A4%E8%A1%8C)
 > 
 > ###### 消失的cd
-> >`cd`没有manpage, 这是为什么? 如果你思考后仍然感到困惑, 试着到互联网上寻找答案.
+> > cd没有manpage, 这是为什么? 如果你思考后仍然感到困惑, 试着到互联网上寻找答案.
 > 
 > 确实不知道原因。所以...RTFM and STFW
-> man cd 会导向 bulit-in的 manpage,有[这个](https://superuser.com/questions/1487103/running-whatis-cd-always-returns-nothing-appropriate-on-ubuntu-18-04)解释,但到底为什么会这样？
+> Macos上的man cd 会导向 bulit-in的 manpage,这里有一个[解释](https://superuser.com/questions/1487103/running-whatis-cd-always-returns-nothing-appropriate-on-ubuntu-18-04),但到底为什么会这样？
 > 详见 [Why is cd not a program? ](https://unix.stackexchange.com/questions/38808/why-is-cd-not-a-program)and [Shell builtin](https://en.wikipedia.org/wiki/Shell_builtin)and 
 > [What is the difference between a builtin command and one that is not? ](https://unix.stackexchange.com/questions/11454/what-is-the-difference-between-a-builtin-command-and-one-that-is-not)
 > 
 >
-> > [!warning]
+> > [!warning] My answer
 > > 
 > > [While some builtin commands may exist in	more than one shell, their operation may be different	under each shell which supports them.](https://man.freebsd.org/cgi/man.cgi?builtin#DESCRIPTION)
 > > 也许是因为各个shell中built-in command的差异，所以这些built-in command没有一个统一的manpage?
+> > [这里](https://unix.stackexchange.com/questions/167004/why-dont-shell-builtins-have-proper-man-pages)的讨论和我的观点有相似之处。
