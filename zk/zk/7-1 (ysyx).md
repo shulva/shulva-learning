@@ -8,6 +8,20 @@
 > 
 > ###### 阅读"提问的智慧"和"别像弱智一样提问", 编写读后感
 > 读后感：[如何科学地提问-读后感](codetest/typst/report.pdf#page=1&selection=0,0,0,7)
+> 一种推荐的提问方式如下:
+> ```
+> 我在xxx的时候遇到了xxx的错误. 这个错误可以通过以下步骤重现: (描述具体的现象)
+> 1. 我的系统版本是xxx, 相关的工具版本是xxx
+> 2. 我做了xxx (必要的时候贴个图)
+> 3. 然后xxx (必要的时候贴个图)
+> ...
+> 为了排查这个错误, 我进行了以下尝试: (说明我很希望可以解决问题, 真的没办法才提问的)
+> 1. 我做了xxx, 出现了xxx的结果 (必要的时候贴个图)
+> 2. 我还做了xxx, 出现了xxx的结果 (必要的时候贴个图)
+> ...
+> 最后问题还没有解决, 请问我还需要做哪些事情?
+> ```
+> >
 > ###### STFW, RTFM, RTFSC
 > STFW: Search The Fuck Web
 > RTFM: [Read The Fuck Manual](https://en.wikipedia.org/wiki/RTFM)
@@ -41,3 +55,22 @@
 > > [While some builtin commands may exist in	more than one shell, their operation may be different	under each shell which supports them.](https://man.freebsd.org/cgi/man.cgi?builtin#DESCRIPTION)
 > > 也许是因为各个shell中built-in command的差异，所以这些built-in command没有一个统一的manpage?
 > > [这里](https://unix.stackexchange.com/questions/167004/why-dont-shell-builtins-have-proper-man-pages)的讨论和我的观点有相似之处。
+
+> [!Question] 实验必做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
+> 
+> ###### Write a "Hello World" program under GNU/Linux
+> ###### Write a Makefile to compile the "Hello World" program
+> ###### Learn to use GDB
+> 
+
+
+> [!info] 实验选做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
+> 
+> ###### Things behind scrolling
+> > why the original terminal can not be scrolled? 
+> > How does `tmux` make the terminals scrollable? 
+> > And last, do you know how to implement a scroll bar?
+>
+> [Terminal vs Terminal emulator](https://unix.stackexchange.com/questions/254359/terminal-vs-terminal-emulator)
+> 假设original terminal指的是VGA text mode？
+> 算了，这个思考题本身质量不高，很多问题中的定义较为模糊，我认为可以不回答

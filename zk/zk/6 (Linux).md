@@ -1,3 +1,7 @@
+# Linux
+
+[Why GNU/Linux and How to](https://ysyx.oscc.cc/docs/ics-pa/0.5.html#why-gnu-linux-and-how-to)
+
 > [!Todo] book online
 > [鳥哥私房菜](https://linux.vbird.org/linux_basic/centos7/)
 
