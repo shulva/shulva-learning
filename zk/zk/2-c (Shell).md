@@ -1,6 +1,8 @@
 # Shell
 #shell
 
+是否与[6-a (Linux command)](6-a%20(Linux%20command).md)有重合情况？
+
 > [!Abstract] 目录
 > 
 

@@ -2,12 +2,35 @@
 
 ## **预学习阶段**
 
+> [!warning]
+> 
+> ###### 一生一芯的代码跟踪日志位于另一个分支
+> 如果你参加"一生一芯", 请通过`git log tracer-ysyx`查看代码跟踪日志.
+>
+> ###### git commit 注意事项
+> [manually commit after trace](https://ysyx.oscc.cc/docs/ics-pa/0.6.html#local-commit)
+
+
 ### PA0
 
 > [!Question] 实验必做内容：[如何科学地提问](https://ysyx.oscc.cc/docs/2306/preliminary/0.1.html#%E5%A6%82%E4%BD%95%E7%A7%91%E5%AD%A6%E5%9C%B0%E6%8F%90%E9%97%AE)
 > 
 > ###### 阅读"提问的智慧"和"别像弱智一样提问", 编写读后感
 > 读后感：[如何科学地提问-读后感](codetest/typst/report.pdf#page=1&selection=0,0,0,7)
+> 一种推荐的提问方式如下:
+> ```
+> 我在xxx的时候遇到了xxx的错误. 这个错误可以通过以下步骤重现: (描述具体的现象)
+> 1. 我的系统版本是xxx, 相关的工具版本是xxx
+> 2. 我做了xxx (必要的时候贴个图)
+> 3. 然后xxx (必要的时候贴个图)
+> ...
+> 为了排查这个错误, 我进行了以下尝试: (说明我很希望可以解决问题, 真的没办法才提问的)
+> 1. 我做了xxx, 出现了xxx的结果 (必要的时候贴个图)
+> 2. 我还做了xxx, 出现了xxx的结果 (必要的时候贴个图)
+> ...
+> 最后问题还没有解决, 请问我还需要做哪些事情?
+> ```
+> >
 > ###### STFW, RTFM, RTFSC
 > STFW: Search The Fuck Web
 > RTFM: [Read The Fuck Manual](https://en.wikipedia.org/wiki/RTFM)
@@ -41,3 +64,30 @@
 > > [While some builtin commands may exist in	more than one shell, their operation may be different	under each shell which supports them.](https://man.freebsd.org/cgi/man.cgi?builtin#DESCRIPTION)
 > > 也许是因为各个shell中built-in command的差异，所以这些built-in command没有一个统一的manpage?
 > > [这里](https://unix.stackexchange.com/questions/167004/why-dont-shell-builtins-have-proper-man-pages)的讨论和我的观点有相似之处。
+
+> [!Question] 实验必做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
+> 
+> ###### Write a "Hello World" program under GNU/Linux
+> [hello.c](../../codetest/c&Makefile/hello.c)
+> ###### Write a Makefile to compile the "Hello World" program
+> [Makefile](../../codetest/c&Makefile/Makefile)
+> ###### Learn to use GDB
+> [retry_gdb](../../codetest/c&Makefile/retry.sh)
+> [2-f (gdb)](2-f%20(gdb).md)
+
+> [!info] 实验选做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
+> 
+> ###### Things behind scrolling
+> > why the original terminal can not be scrolled? 
+> > How does `tmux` make the terminals scrollable? 
+> > And last, do you know how to implement a scroll bar?
+>
+> [Terminal vs Terminal emulator](https://unix.stackexchange.com/questions/254359/terminal-vs-terminal-emulator)
+> 假设original terminal指的是VGA text mode？
+> 算了，这个思考题本身质量不高，很多问题中的定义较为模糊，我认为可以不回答
+
+> [!info] 实验选做内容：[Getting Source Code for PAs](https://ysyx.oscc.cc/docs/ics-pa/0.6.html#compiling-and-running-nemu)
+> 
+> ###### What happened?
+> > But do you have any idea about what happened when a bunch of information is output to the screen during `make` is executed?
+>
