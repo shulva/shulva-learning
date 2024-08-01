@@ -2,6 +2,15 @@
 
 ## **预学习阶段**
 
+> [!warning]
+> 
+> ###### 一生一芯的代码跟踪日志位于另一个分支
+> 如果你参加"一生一芯", 请通过`git log tracer-ysyx`查看代码跟踪日志.
+>
+> ###### git commit 注意事项
+> [manually commit after trace](https://ysyx.oscc.cc/docs/ics-pa/0.6.html#local-commit)
+
+
 ### PA0
 
 > [!Question] 实验必做内容：[如何科学地提问](https://ysyx.oscc.cc/docs/2306/preliminary/0.1.html#%E5%A6%82%E4%BD%95%E7%A7%91%E5%AD%A6%E5%9C%B0%E6%8F%90%E9%97%AE)
@@ -59,10 +68,12 @@
 > [!Question] 实验必做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
 > 
 > ###### Write a "Hello World" program under GNU/Linux
+> [hello.c](../../codetest/c&Makefile/hello.c)
 > ###### Write a Makefile to compile the "Hello World" program
+> [Makefile](../../codetest/c&Makefile/Makefile)
 > ###### Learn to use GDB
-> 
-
+> [retry_gdb](../../codetest/c&Makefile/retry.sh)
+> [2-f (gdb)](2-f%20(gdb).md)
 
 > [!info] 实验选做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
 > 
@@ -74,3 +85,9 @@
 > [Terminal vs Terminal emulator](https://unix.stackexchange.com/questions/254359/terminal-vs-terminal-emulator)
 > 假设original terminal指的是VGA text mode？
 > 算了，这个思考题本身质量不高，很多问题中的定义较为模糊，我认为可以不回答
+
+> [!info] 实验选做内容：[Getting Source Code for PAs](https://ysyx.oscc.cc/docs/ics-pa/0.6.html#compiling-and-running-nemu)
+> 
+> ###### What happened?
+> > But do you have any idea about what happened when a bunch of information is output to the screen during `make` is executed?
+>

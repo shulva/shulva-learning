@@ -1,6 +1,6 @@
 # Linux Command
 
-[Standard streams 标准输入输出](https://en.wikipedia.org/wiki/Standard_streams)
+[the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)
 
 > [!example]
 > [统计代码行数](https://ysyx.oscc.cc/docs/ics-pa/linux.html#%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81%E8%A1%8C%E6%95%B0)

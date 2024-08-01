@@ -6,6 +6,10 @@
 > [How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
 > [Stop-Ask-Questions-The-Stupid-Ways](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
 > [Lessons Learned from 30 Years of MINIX](https://cacm.acm.org/research/lessons-learned-from-30-years-of-minix/)
+   [Why is it bad to log in as root?](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root)
+> [开源世界旅行手册](https://i.linuxtoy.org/docs/guide/index.html)
+> [What is Academic Integrity?](https://integrity.mit.edu/)
+> [Writing Code Integrity](https://integrity.mit.edu/handbook/writing-code)
 
 > [!NOTE] Wiki
 > [Unix philosophy - Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)
