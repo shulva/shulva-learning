@@ -10,7 +10,6 @@
 > ###### git commit 注意事项
 > [manually commit after trace](https://ysyx.oscc.cc/docs/ics-pa/0.6.html#local-commit)
 
-
 ### PA0
 
 > [!Question] 实验必做内容：[如何科学地提问](https://ysyx.oscc.cc/docs/2306/preliminary/0.1.html#%E5%A6%82%E4%BD%95%E7%A7%91%E5%AD%A6%E5%9C%B0%E6%8F%90%E9%97%AE)
@@ -90,4 +89,6 @@
 > 
 > ###### What happened?
 > > But do you have any idea about what happened when a bunch of information is output to the screen during `make` is executed?
+> 
+> make executes commands in the makefile to update one or more target *names*, where *name* is typically a program.
 >
