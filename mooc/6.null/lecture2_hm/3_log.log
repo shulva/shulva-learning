@@ -1,2 +1,1 @@
-something went wrong
-The error was using magic numbers
+./3-debug.sh: line 6: ./3.sh: Permission denied

@@ -21,9 +21,11 @@
 |   \$$   |  现在这个脚本的PID   |
 | !!<br>  |   完整的上一条命令    |
 |   $_    | 上一条命令的最后一个参数  |
+|         |               |
 
 > [!info] Link
 > [Special Characters (tldp.org)](https://tldp.org/LDP/abs/html/special-chars.html)
+> [指令结果作为参数使用](files/slides/6.null/missing%20semester%20en.pdf#page=12&selection=65,0,126,1)
 
 > [!Example]
 > 
@@ -46,4 +48,16 @@
 > ```
 
 
-## Shell中的字符串
+### Shell中的字符串
+Strings in bash can be defined with ' and " delimiters, but they are not equivalent. 
+Strings delimited with ' are literal strings and will not substitute variable values whereas " delimited strings will.
+> [!Example]
+> 
+> 
+> ```
+> foo=bar 
+> echo "$foo"
+> # prints bar 
+> echo '$foo'
+> # prints $foo
+> ```
