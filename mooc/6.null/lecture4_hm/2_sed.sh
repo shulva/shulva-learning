@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/bash
 
 #-v : 显示不包含匹配文本的所有行
 
@@ -11,14 +11,8 @@ cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]"|  grep -v \'s$ | grep -e 
 echo "How many of those two-letter combinations are there? "
 cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]"|  grep -v \'s$ | grep -e ".*a.*a.*a.*"| sed -E "s/.*(\w{2})/\1/" | sort | uniq | wc -l
 
-for i in {a..z};do
- for j in {a..z};do
-    echo  "$i$j" >>2_combinations.txt
- done
-done
-
 echo "challenge: which combinations do not occur?"
-diff -y <(cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]"|  grep -v \'s$ | grep -e ".*a.*a.*a.*"| sed -E "s/.*(\w{2})/\1/" | sort | uniq ) <(cat 2_combinations.txt)
+diff <(cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]"|  grep -v \'s$ | grep -e ".*a.*a.*a.*"| sed -E "s/.*(\w{2})/\1/" | sort | uniq ) <(cat 2_combinations.txt) | grep -e ">.*" | awk '{print $2}' | paste -sd,
 
 
 
