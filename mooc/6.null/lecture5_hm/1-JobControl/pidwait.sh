@@ -1,3 +1,4 @@
+#!/bin/bash
 # kill -0 does not send a signal but will give a nonzero exit status if the process does not exist
 pidwait()
 {
