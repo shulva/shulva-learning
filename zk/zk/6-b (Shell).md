@@ -1,7 +1,7 @@
 # Shell
 #shell
 
-是否与[6-a (Linux command)](6-a%20(Linux%20command).md)有重合情况？
+是否与[6-a (Linux Tools)](6-a%20(Linux%20Tools).md)有重合情况？
 
 [shell 是如何知晓文件需要使用 sh 来解析的](https://en.wikipedia.org/wiki/Shebang_(Unix))
 

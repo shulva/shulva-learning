@@ -1,4 +1,4 @@
-# Linux Command
+# Linux Tools
 
 > [!note] tutorial 
 > [the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)
@@ -13,8 +13,10 @@
 > ###### grep & rg
 > [grep(1) - Linux manual page](https://www.man7.org/linux/man-pages/man1/grep.1.html)
 > [ ripgrep ](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#quick-examples-comparing-tools)
-
-
+> ###### ssh
+> [SSH 配置](files/slides/6.null/missing%20semester%20en.pdf#page=47&selection=154,0,154,15)
+> [SSH 配置2](files/slides/6.null/missing%20semester%20en.pdf#page=52&selection=195,0,195,15)
+> [ssh port forwarding](https://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot)
 
 > [!example]
 > [统计代码行数](https://ysyx.oscc.cc/docs/ics-pa/linux.html#%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81%E8%A1%8C%E6%95%B0)

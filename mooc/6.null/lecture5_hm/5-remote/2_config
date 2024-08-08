@@ -4,8 +4,5 @@
      IdentityFile ~/.ssh/id_ed25519
      LocalForward 9999 localhost:8888
 
-1,2,3 is easy
-4 is interesting
 5 means you can only use ssh keys to login vm , but not password
-6,7 is non-sense, i don't like it
 
