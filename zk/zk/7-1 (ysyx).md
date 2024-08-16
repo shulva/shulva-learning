@@ -9,7 +9,6 @@
 >
 > ###### git commit 注意事项
 > [manually commit after trace](https://ysyx.oscc.cc/docs/ics-pa/0.6.html#local-commit)
-
 ### PA0
 
 > [!Question] 实验必做内容：[如何科学地提问](https://ysyx.oscc.cc/docs/2306/preliminary/0.1.html#%E5%A6%82%E4%BD%95%E7%A7%91%E5%AD%A6%E5%9C%B0%E6%8F%90%E9%97%AE)
@@ -92,3 +91,10 @@
 > 
 > make executes commands in the makefile to update one or more target *names*, where *name* is typically a program.
 >
+
+> [!Question] 实验必做内容：[Linux系统安装和基本使用 (oscc.cc)](https://ysyx.oscc.cc/docs/2306/preliminary/0.2.html)
+> 
+> ###### MIT The Missing Semester
+> [missing semester en](../../files/slides/6.null/missing%20semester%20en.pdf)
+> [计算机教育中缺失的一课-讲义及答案](https://missing-semester-cn.github.io/)
+> [6.null_assignment](../../mooc/6.null)
