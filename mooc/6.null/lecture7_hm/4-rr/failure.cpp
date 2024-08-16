@@ -1,5 +1,4 @@
 #include <iostream>
-// 我是虚拟机，对rr好像有问题，以后有机会再说吧
 int main()
 {
 	int arr[5]={0,0,0,0,0};
