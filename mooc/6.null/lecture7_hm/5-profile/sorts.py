@@ -1,6 +1,5 @@
 import random
 
-
 def test_sorted(fn, iters=1000):
     for i in range(iters):
         l = [random.randint(0, 100) for i in range(0, random.randint(0, 50))]
@@ -50,5 +49,6 @@ def quicksort_inplace(array, low=0, high=None):
 
 
 if __name__ == '__main__':
-    for fn in [quicksort, quicksort_inplace, insertionsort]:
-        test_sorted(fn)
+    test_sorted(quicksort)
+    test_sorted(insertionsort)
+    test_sorted(quicksort_inplace)
