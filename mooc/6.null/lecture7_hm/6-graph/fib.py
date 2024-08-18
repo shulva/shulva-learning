@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# pycallgraph这个项目太老了，不用做这个
 def fib0(): return 0
 
 def fib1(): return 1

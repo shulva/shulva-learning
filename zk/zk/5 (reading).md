@@ -10,6 +10,8 @@
 > [开源世界旅行手册](https://i.linuxtoy.org/docs/guide/index.html)
 > [What is Academic Integrity?](https://integrity.mit.edu/)
 > [Writing Code Integrity](https://integrity.mit.edu/handbook/writing-code)
+> [Premature Optimization (c2.com)](https://wiki.c2.com/?PrematureOptimization)
+> [Books (brendangregg.com)](https://www.brendangregg.com/books.html)
 
 > [!NOTE] Wiki
 > [Unix philosophy - Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)

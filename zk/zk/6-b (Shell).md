@@ -3,6 +3,7 @@
 
 是否与[6-a (Linux Tools)](6-a%20(Linux%20Tools).md)有重合情况？
 
+[ShellCheck – shell script analysis tool](https://www.shellcheck.net/)
 [shell 是如何知晓文件需要使用 sh 来解析的](https://en.wikipedia.org/wiki/Shebang_(Unix))
 
 > [!Abstract] 目录
@@ -49,15 +50,30 @@
 
 
 ### Shell中的字符串
-Strings in bash can be defined with ' and " delimiters, but they are not equivalent. 
-Strings delimited with ' are literal strings and will not substitute variable values whereas " delimited strings will.
+
+Strings delimited with ' are literal strings and will not substitute variable values 
+whereas " delimited strings will.
 > [!Example]
 > 
 > 
-> ```
+> ```bash
 > foo=bar 
 > echo "$foo"
 > # prints bar 
 > echo '$foo'
 > # prints $foo
+> ```
+
+### Shell脚本的可移植性
+
+> [!example]
+> ```bash
+> # for specific opreating systems
+> if [[ "$(uname)" == "Linux" ]]; then {do_something}; fi 
+>
+> # Check before using shell-specific features 
+> if [[ "$SHELL" == "zsh" ]]; then {do_something}; fi 
+>
+> # You can also make it machine-specific 
+> if [[ "$(hostname)" == "myServer" ]]; then {do_something}; fi
 > ```

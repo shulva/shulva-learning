@@ -71,7 +71,7 @@
 > [Makefile](../../codetest/c&Makefile/Makefile)
 > ###### Learn to use GDB
 > [retry_gdb](../../codetest/c&Makefile/retry.sh)
-> [2-f (gdb)](2-f%20(gdb).md)
+> [2-f-1 (debugger)](2-f-1%20(debugger).md)
 
 > [!info] 实验选做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
 > 
@@ -91,6 +91,8 @@
 > 
 > make executes commands in the makefile to update one or more target *names*, where *name* is typically a program.
 >
+
+### Linux系统安装和基本使用
 
 > [!Question] 实验必做内容：[Linux系统安装和基本使用 (oscc.cc)](https://ysyx.oscc.cc/docs/2306/preliminary/0.2.html)
 > 
