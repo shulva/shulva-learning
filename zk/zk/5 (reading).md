@@ -12,6 +12,7 @@
 > [Writing Code Integrity](https://integrity.mit.edu/handbook/writing-code)
 > [Premature Optimization (c2.com)](https://wiki.c2.com/?PrematureOptimization)
 > [Books (brendangregg.com)](https://www.brendangregg.com/books.html)
+> [版本号撰写](https://semver.org/lang/zh-CN/)
 
 > [!NOTE] Wiki
 > [Unix philosophy - Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)
