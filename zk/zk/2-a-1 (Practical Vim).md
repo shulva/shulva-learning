@@ -22,6 +22,9 @@
 > 
 > [如果可以，最好使用操作符命令，而不是可视模式](../../files/books/Vim.pdf#page=98)
 > 操作符命令修改文本时在 dot 范式下的表现优于可视模式
+>
+> [命令行模式复制更高效](files/books/Vim.pdf#page=122&selection=0,0,37,2) 
+> 在复制距离较远的行时，:t 命令通常比yyp更加高效（减少了移动的次数）。
 > 
 > > [!Example] 实战示例
 > >
@@ -30,6 +33,9 @@
 > >
 > > [不离开插入模式粘贴寄存器中的文本](../../files/books/Vim.pdf#page=80)
 > >
-> > [对于列文本的修改及灵活使用 24-26](../../files/books/Vim.pdf#page=101) 
+> > [列块编辑表格](files/books/Vim.pdf#page=101&selection=3,3,4,2)
+> >[修改整列块的文本](files/books/Vim.pdf#page=104&selection=3,0,3,5)
+> > [在长短不一的高亮块后添加文本](files/books/Vim.pdf#page=106&selection=3,0,3,14)
+> > [用高亮选区指定命令行模式范围](files/books/Vim.pdf#page=116&selection=75,0,75,9)
 
 

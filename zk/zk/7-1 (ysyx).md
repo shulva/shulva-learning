@@ -100,3 +100,5 @@
 > [missing semester en](../../files/slides/6.null/missing%20semester%20en.pdf)
 > [计算机教育中缺失的一课-讲义及答案](https://missing-semester-cn.github.io/)
 > [6.null_assignment](../../mooc/6.null)
+
+### 复习C语言
