@@ -39,3 +39,8 @@
 > > [用高亮选区指定命令行模式范围](files/books/Vim.pdf#page=116&selection=75,0,75,9)
 
 
+> [!Abstract] 跳转
+> [hjkl是低效的移动方式](files/books/Vim.pdf#page=186&selection=113,0,131,3)
+> 
+> >[!example]
+> > [动作+查找](files/books/Vim.pdf#page=203&selection=53,0,53,16)

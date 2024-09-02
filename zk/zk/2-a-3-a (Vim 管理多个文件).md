@@ -81,3 +81,15 @@
 | gT 或 :tabp[revious]    | 切换到上一标签页            |
 |                        |                     |
 |                        |                     |
+
+## Vim 打开及保存文件
+
+| 命令           | 效果                |
+| ------------ | ----------------- |
+| :edit {file} | 打开file文件          |
+| :find {file} | 在path中查找file文件并打开 |
+
+> [!NOTE] 以root权限保存文件
+> `:w !sudo tee % > /dev/null`
+> [这条命令是如何工作的？](files/books/Vim.pdf#page=181&selection=72,0,72,11)
+> 
