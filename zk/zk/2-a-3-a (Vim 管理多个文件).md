@@ -79,8 +79,7 @@
 | {N}gt 或 :tabn[ext] {N} | 切换到编号为 {N} 的标签页     |
 | gt 或 :tabn[ext]        | 切换到下一标签页            |
 | gT 或 :tabp[revious]    | 切换到上一标签页            |
-|                        |                     |
-|                        |                     |
+
 
 ## Vim 打开及保存文件
 
