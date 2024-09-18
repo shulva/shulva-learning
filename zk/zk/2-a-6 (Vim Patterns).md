@@ -38,6 +38,7 @@
 > [界定单词的边界](files/books/Vim.pdf#page=298&selection=9,0,9,23)
 > [圆括号与单词边界](files/books/Vim.pdf#page=296&selection=30,0,30,21)
 > [使用圆括号，但不捕获其内容](files/books/Vim.pdf#page=298&selection=91,0,91,13)
+> [使用子匹配重排CSV文件的字段](files/books/Vim.pdf#page=350&selection=3,0,5,5)
 
 > [!NOTE] 界定匹配的边界
 > Vim中的元字符 \zs与 \ze可以帮助我们界定匹配的边界。
