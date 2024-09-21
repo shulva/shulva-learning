@@ -10,6 +10,7 @@
 > [locate(1) - Linux manual page (man7.org)](https://www.man7.org/linux/man-pages/man1/locate.1.html)
 > [fd: A simple, fast and user-friendly alternative to 'find' ](https://github.com/sharkdp/fd)
 > [locate vs find](https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other)
+> 个人认为fd远强于find
 > ###### grep & rg
 > [grep(1) - Linux manual page](https://www.man7.org/linux/man-pages/man1/grep.1.html)
 > [ ripgrep ](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#quick-examples-comparing-tools)
