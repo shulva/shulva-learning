@@ -3,8 +3,8 @@
 /.idea/
 /files/
 /.obsidian/
-*.com
 
+*.com
 *.7z
 *.iso
 *.jar
@@ -12,6 +12,8 @@
 *.tar
 *.zip
 *.swp
+*.aux
+
 
 .DS_Store
 **/.DS_Store
