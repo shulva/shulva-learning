@@ -1,4 +1,4 @@
-# 使用 markdown 语法复刻1-b所提及的设计
+# 使用 markdown 语法复刻 1-b 所提及的设计
 #pdf #markdown
 
 `<font color=red>红色<font>` <font color=red>红色<font>
@@ -58,7 +58,7 @@ $$
 > [!info]  References
 > [Markdown 基本语法 | Markdown 官方教程](https://markdown.com.cn/basic-syntax/)
 > [Markdown 语法手册 - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/25240)
-> [markdown语法 | obsidian文档咖啡豆版](https://obsidian.vip/zh/markdown/)
+> [markdown 语法 | obsidian 文档咖啡豆版](https://obsidian.vip/zh/markdown/)
 > [Markdown 数学公式指导手册 | Freeopen](https://freeopen.github.io/mathjax/)
 > [Callouts - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Callouts)
 

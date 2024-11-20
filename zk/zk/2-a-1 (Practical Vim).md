@@ -3,16 +3,16 @@
 
 这部分笔记制作时，书中的指导思想应当与具体操作或者示例分开。
 
-> [!Abstract] Vim解决问题的方式
+> [!Abstract] Vim 解决问题的方式
 > 
 > [dot 范式](../../files/books/Vim.pdf#page=54)
-> 尽量使用 Vim 中的精髓部分——dot(.)，不停地执行-重复。
+> 尽量使用 Vim 中的精髓部分——dot(.)，不停地执行 - 重复。
 > 
 
 > [!Abstract] 模式
 > 
 > [控制撤销命令的粒度](../../files/books/Vim.pdf#page=58)
-> 在 Vim 中，我们自己可以控制撤销命令的粒度。从进入插入模式开始，直到返回普通模式为止，在此期间输入或删除的任何内容都被当成一次修改。这样我们的 undo 便能更加灵活 。
+> 在 Vim 中，我们自己可以控制撤销命令的粒度。从进入插入模式开始，直到返回普通模式为止，在此期间输入或删除的任何内容都被当成一次修改。这样我们的 undo 便能更加灵活。
 > 
 > [尽量构造简易可重复的修改](../../files/books/Vim.pdf#page=60)
 > 可重复的操作可以最大限度发挥 dot 的威力。
@@ -24,12 +24,12 @@
 > 操作符命令修改文本时在 dot 范式下的表现优于可视模式
 >
 > [命令行模式复制更高效](files/books/Vim.pdf#page=122&selection=0,0,37,2) 
-> 在复制距离较远的行时，:t 命令通常比yyp更加高效（减少了移动的次数）。
+> 在复制距离较远的行时，:t 命令通常比 yyp 更加高效（减少了移动的次数）。
 > 
 > > [!Example] 实战示例
 > >
 > >  [R -- 进入替换模式 ](../../files/books/Vim.pdf#page=87)
-> 推荐使用gR进入虚拟替换模式，详见链接。
+> 推荐使用 gR 进入虚拟替换模式，详见链接。
 > >
 > > [不离开插入模式粘贴寄存器中的文本](../../files/books/Vim.pdf#page=80)
 > >
@@ -40,7 +40,7 @@
 
 
 > [!Abstract] 跳转
-> [hjkl是低效的移动方式](files/books/Vim.pdf#page=186&selection=113,0,131,3)
+> [hjkl 是低效的移动方式](files/books/Vim.pdf#page=186&selection=113,0,131,3)
 > 
 > >[!example]
-> > [动作+查找](files/books/Vim.pdf#page=203&selection=53,0,53,16)
+> > [动作 + 查找](files/books/Vim.pdf#page=203&selection=53,0,53,16)

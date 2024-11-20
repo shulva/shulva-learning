@@ -1,4 +1,5 @@
 objects := $(wildcard *.tex)
+
 tex: $(objects)
 	xelatex $(objects)
 
