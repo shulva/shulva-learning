@@ -1,4 +1,3 @@
-This is the most important source *[csdiy.wiki](https://csdiy.wiki/)*
 
 - [程序语言理论与实现](https://bobzhang.github.io/courses/)
 - [acwing](https://www.acwing.com/activity/)
@@ -46,7 +45,8 @@ This is the most important source *[project-based-learning](https://github.com/p
 - [MIT 6.824 labs Rust version](https://github.com/pingcap/talent-plan/tree/master/courses/dss)
 - [Implement TCP, port CurrentHashMap to Rust, build a asynchronous zookeeper client](https://www.youtube.com/watch?v=bzja9fQWzdA&list=PLqbS7AVVErFivDY3iKAQk3_VAm8SXwt1X)
 - [cs 140e](https://github.com/dddrrreee/cs140e-20win/#who-should-take-this-class)
-- [机器学习系统:设计和实现](https://openmlsys.github.io/chapter_preface/index.html)
+- [机器学习系统：设计和实现](https://openmlsys.github.io/chapter_preface/index.html)
 - [System for AI](https://github.com/microsoft/AI-System)
 - [Machine Learning Compilation](https://mlc.ai/summer22-zh/)
 - [rust bible](https://course.rs/about-book.html)
+- [llvm](https://llvm.org/docs/tutorial/)
