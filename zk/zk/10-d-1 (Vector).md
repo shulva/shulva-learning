@@ -1,16 +1,15 @@
 # Vector
 #### 无序向量
 
-[向量](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6):定义 
+![向量](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6)
 
-[向量接口](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=7):各种接口函数的定义及功能
-[向量的构造及析构的实现](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=11):代码实现——[基于CopyFrom的构造](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=13)
+[向量ADT](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=7):各种接口函数的定义及功能
+[向量类的构造及析构的实现](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=11):代码实现——[基于CopyFrom的构造](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=13)
 [向量扩容算法 expand](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=17):代码实现——容量加倍策略
-
+[Java中的Vector](files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=69)
 > [!faq] 为何采用容量加倍策略呢？其它策略是否也可行？
    [容量递增策略](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=19)vs[容量加倍策略](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=20)
 >[对比](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=21):容量加倍策略的分摊扩容时间O(1)显著优于容量递增策略的O(n)
-
 
 > [!NOTE] 向量操作
 > [向量的元素访问get/put](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=24):重载下标操作符比原先的get和put更好(C++自带重载)

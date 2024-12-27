@@ -25,6 +25,38 @@
 > 使用 callout 语法进行背景色的对比，有多种颜色及形式可选
 > [Callouts - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Callouts)
 
+> [!abstract]
+> Aliases: `summary`, `tldr`
+
+> [!info]
+
+> [!todo]
+
+> [!tip]
+> Aliases: `hint`, `important`
+
+> [!success]
+> Aliases: `check`, `done`
+
+> [!question]
+> Aliases: `faq`, `help`
+
+> [!warning]
+> Aliases: `caution`, `attention`
+
+> [!failure]
+> Aliases: `fail`, `missing`
+
+> [!danger]
+> Aliases: `error`
+
+> [!bug]
+
+> [!example]
+
+> [!quote]
+> Aliases: `cite`
+
 表格可以使用 obsidian 右键自带的插入表格，较为方便
 
 脚注[^1]

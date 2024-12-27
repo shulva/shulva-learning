@@ -1,6 +1,6 @@
 # Bitmap
 
-[位图](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=91):定义
+![位图](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=91)
 
 > [!NOTE] [位图接口](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=92)
 > - test:将第i处置为true（将整数i加入当前集合）
