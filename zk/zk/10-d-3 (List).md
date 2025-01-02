@@ -11,6 +11,8 @@
 > [Vector:call-by-rank](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6):各元素与\[0, n)内的秩(rank)一一对应
 > RAM与图灵机的操作模式或许各自暗合了这两种思想？
 > **思考各种排序的复杂度时，你需要将这几个要素纳入参考!**
+> ###### 综合性
+> [Tree](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=2)则能兼具Vector和List的优点，同时具有高效的搜索，插入，删除
 
 #### 无序列表
 
