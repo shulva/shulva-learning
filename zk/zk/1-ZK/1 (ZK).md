@@ -2,13 +2,13 @@
 #zk
 
 > [!NOTE] zk 卡片本身结构
-> ![complete-zettel](../../files/images/zk/complete-zettel.png)
+> ![complete-zettel](../../../files/images/zk/complete-zettel.png)
 
 > [!NOTE]
 > ### Unique Identifier
 > id 对于 zk 来说是必不可少的。通过 id 我们才能独立地定位 zk 卡片，然后以此来形成知识和思想的网络。zk 卡片直接使用 id 来互相连接。
 > 
-> 1. Luhmann-id(recommended) ![2020-08-13_folgezettel-sequence](../../files/images/zk/2020-08-13_folgezettel-sequence.png)
+> 1. Luhmann-id(recommended) ![2020-08-13_folgezettel-sequence](../../../files/images/zk/2020-08-13_folgezettel-sequence.png)
 > 2. Time-based-id，类似图中的#200003110955
 > 3. 随便用什么字符串
 > 4. 使用卡片的 title 作为 id

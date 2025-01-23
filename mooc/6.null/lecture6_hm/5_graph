@@ -1,1 +1,8 @@
-/Users/shulva/.gitconfig
+[user]
+	name = shulva
+	email = 1329068252@qq.com
+[alias]
+  graph = log --all --graph --decorate --oneline
+  st = status
+[core]
+	excludesfile = /Users/shulva/.gitignore_global
