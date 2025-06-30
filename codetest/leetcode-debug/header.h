@@ -1,10 +1,14 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <unordered_set>
+#include <map>
+#include <list>
 #include <stack>
 #include <queue>
-using namespace std;
+#include <iterator>
 
+using namespace std;
 
 struct TreeNode {
     int val;
@@ -15,56 +19,58 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
 
-class Trie {
-
-    bool is_end;
-    Trie* letter[26];
-
+class Union {
 public:
 
-    Trie() {
-        is_end = false;
-        for (int i = 0; i < 26 ; ++i) {
-            letter[i] = nullptr;
+    vector<int> root;
+
+    void init(){
+        root.resize(1001);
+        for (int i = 1; i < 1001; ++i) {
+            root[i] = i;
         }
     }
 
-    void insert(string word) {
-        Trie* Word = this;
-        for(int i=0;i<word.length();i++)
-        {
-            int num = word[i]-'a';
-            if(!Word->letter[num])
-                Word->letter[num]= new Trie();
-            Word = Word->letter[num];
+    int find(int num){//find root
+        if(num==root[num])
+            return num;
+        else{
+            root[num] = find(root[num]);
+            return root[num];
         }
-        Word->is_end = true;
     }
 
-    bool search(string word) {
-        Trie* start = this;
-        for(int i=0;i<word.length();i++)
-        {
-            int num = word[i]-'a';
-            if(start->letter[num]==NULL)
-                return false;
-            start =start ->letter[num];
-        }
-        return start ->is_end;
+    bool is_Same(int u,int v){ // is_same_root
+        u = find(u) ;
+        v = find(v) ;
+        return u==v;
     }
 
-    bool startsWith(string prefix) {
-        Trie* start = this;
-        for(int i=0;i<prefix.length();i++)
-        {
-            int num =prefix[i]-'a';
-            if(start->letter[num]==NULL)
-                return false;
-            start=start->letter[num];
-        }
-        return true;
+    void join(int u,int v){ // v->u
+        int root_u = find(u);
+        int root_v = find(v);
+        if(root_u==root_v) return;
+        root[root_v] = root_u;
     }
 
 };
 
+class Solution {
+public:
+    int direction[4][2] = {{0,1},{0,-1},{1,0},{-1,0}};
+
+    int minCost(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+
+
+    }
+};

@@ -71,7 +71,7 @@
 > [Makefile](../../codetest/c&Makefile/Makefile)
 > ###### Learn to use GDB
 > [retry_gdb](../../codetest/c&Makefile/retry.sh)
-> [2-f-1 (debugger)](2-f-1%20(debugger).md)
+> [2-f-1 (debugger)](2-Tools/2-f-1%20(debugger).md)
 
 > [!info] 实验选做内容：[More Exploration](https://ysyx.oscc.cc/docs/ics-pa/0.5.html)
 > 

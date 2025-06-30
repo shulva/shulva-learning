@@ -12,8 +12,8 @@
 > 
 
 > [!example]
-> [数点不如数墩](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=40,60,47,1)
-> [非均型牌的价值](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=77,21,81,57)
+> [数点不如数墩](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=40,60,47,1)
+> [非均型牌的价值](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=77,21,81,57)
 
 > [!Note]
 > ### 2♣️ stayman 问高花
@@ -25,8 +25,8 @@
 > 
 
 > [!example]
-> [stayman](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=17&selection=36,0,37,1)
+> [stayman](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=17&selection=36,0,37,1)
 
 
-> [^1]: [response of 1NT:HCP](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=2,0,40,60)
-> [^2]:[stayman:rebid of 2♥️](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=17&selection=32,36,34,69)
+> [^1]: [response of 1NT:HCP](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=16&selection=2,0,40,60)
+> [^2]:[stayman:rebid of 2♥️](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=17&selection=32,36,34,69)

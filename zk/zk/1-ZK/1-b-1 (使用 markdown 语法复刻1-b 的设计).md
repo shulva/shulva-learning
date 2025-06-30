@@ -1,6 +1,8 @@
 # 使用 markdown 语法复刻 1-b 所提及的设计
 #pdf #markdown
 
+注意：使用css文件去调整文章样式是值得去探讨的
+
 `<font color=red>红色<font>` <font color=red>红色<font>
 
 `<font color=#075fa8>对比色<font>`<font color=#075fa8>对比色<font>

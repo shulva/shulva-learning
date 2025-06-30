@@ -1,6 +1,4 @@
-"D:\ide\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S D:\others\shulva-learning\codetest\leetcode-debug -B D:\others\shulva-learning\codetest\leetcode-debug\cmake-build-debug
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.28 or higher is required.  You are running version 3.25.2
-
-
--- Configuring incomplete, errors occurred!
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/shulva/Documents/shulva-learning/codetest/leetcode-debug -B /Users/shulva/Documents/shulva-learning/codetest/leetcode-debug/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/shulva/Documents/shulva-learning/codetest/leetcode-debug/cmake-build-debug

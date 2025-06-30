@@ -3,7 +3,7 @@
 > [!NOTE]
 > ### NT开叫条件
 > **1NT:** 15-17HCP(大牌点),最好不要考虑牌型点，均型牌(每个花色至少>=2),可能有五张高花
-> [可以不保证止张(大牌)](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=8,0,19,86)
+> [可以不保证止张(大牌)](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=8,0,19,86)
 > 
 > **1NT rebid:** 如果少于15HCP且为没有五张高花的均型牌，可以开叫一阶低花后再叫1NT
 > 
@@ -24,9 +24,9 @@
 > 3. 看情况。5-3-3-2强五张高花，弱双张(无A,K,Q)开叫1阶高花[^3]
 
 > [!example]
-> [Examples of 1NT Opening Bid](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=12&selection=25,0,25,27)
+> [Examples of 1NT Opening Bid](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=12&selection=25,0,25,27)
 > 
 
-[^1]:[1Major](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=23,0,34,55) 及《桥牌自然叫牌法》
-[^2]:[1NT](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=35,0,55,75)以及《SBWS》
-[^3]: [1Major or 1NT](files/books/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=60,50,65,34)
+[^1]:[1Major](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=23,0,34,55) 及《桥牌自然叫牌法》
+[^2]:[1NT](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=35,0,55,75)以及《SBWS》
+[^3]: [1Major or 1NT](../../../files/books/Contract%20Bridge/Standard-Bidding-with-SAYC-_Downey_-NedPomer_-Ellen_-_-_-Caitlyn_-_Z-Library_.pdf#page=11&selection=60,50,65,34)
