@@ -1,0 +1,1 @@
+https://wizardforcel.gitbooks.io/effective-cpp/content/0.html

@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <unordered_set>
+#include <unordered_map>
 #include <map>
 #include <list>
 #include <stack>
@@ -63,14 +64,45 @@ public:
 
 };
 
+struct Dnode{
+    int key,value;
+    Dnode* prev;
+    Dnode* next;
+    Dnode():key(0),value(0),prev(nullptr),next(nullptr){}
+    Dnode(int k,int v):key(k),value(v),prev(nullptr),next(nullptr){}
+};
+
 class Solution {
 public:
-    int direction[4][2] = {{0,1},{0,-1},{1,0},{-1,0}};
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 
-    int minCost(vector<vector<int>>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
+        if(list1== nullptr)
+            return list2;
+        else if(list2== nullptr)
+            return list1;
 
+        ListNode* ans = new ListNode();
+        ListNode* prev = ans;
 
+        while(list1!= nullptr && list2!= nullptr){
+            if(list1->val<list2->val){
+                prev = list1;
+                list1=list1->next;
+            }
+            else{
+                prev = list2;
+                list2=list2->next;
+            }
+            prev = prev->next;
+        }
+
+        if(list2!= nullptr)
+            prev->next = list2;
+        else
+            prev->next = list1;
+
+        return ans;
     }
 };
+
+
