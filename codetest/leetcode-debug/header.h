@@ -73,35 +73,10 @@ struct Dnode{
 };
 
 class Solution {
-public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+    public:
 
-        if(list1== nullptr)
-            return list2;
-        else if(list2== nullptr)
-            return list1;
+    int lengthOfLIS(vector<int>& nums) {
 
-        ListNode* ans = new ListNode();
-        ListNode* prev = ans;
-
-        while(list1!= nullptr && list2!= nullptr){
-            if(list1->val<list2->val){
-                prev = list1;
-                list1=list1->next;
-            }
-            else{
-                prev = list2;
-                list2=list2->next;
-            }
-            prev = prev->next;
-        }
-
-        if(list2!= nullptr)
-            prev->next = list2;
-        else
-            prev->next = list1;
-
-        return ans;
     }
 };
 
