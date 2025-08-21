@@ -6,5 +6,6 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "showInlineTitle": false,
-  "rightToLeft": false
+  "rightToLeft": false,
+  "readableLineLength": false
 }

@@ -7,6 +7,7 @@
   "textFontFamily": "Source Han Serif CN",
   "interfaceFontFamily": "Source Han Serif CN",
   "enabledCssSnippets": [
-    "img"
+    "img",
+    "weight"
   ]
 }

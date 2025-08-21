@@ -99,6 +99,7 @@ cudaError_t cudaMemcpy
 
 该函数的作用是将一定字节数的数据从源地址所指缓冲区复制到目标地址所指缓冲区。
 
+![](../../../../../files/images/MLsys/13-a/13-a-1-2.png)
 ### 核函数中数据与线程的对应
 
 将主机中的函数改为设备中的核函数是非常简单的,基本上就是去掉一层控制数据的循环。
@@ -123,7 +124,7 @@ const int n = blockDim.x * blockIdx.x + threadIdx.x;
 - 无论是从主机调用，还是从设备调用，核函数都是在设备中执行。调用核函数时必须指定执行配置，即三括号和它里面的参数。
 
 > [!question] 定义的总线程数多于元素个数怎么办？
-> ```
+> ```cpp
 > const int n = blockDim.x * blockIdx.x + threadIdx.x;
 > if (n >= N) return; //跳过访问非法的内存地址
 > z[n] = x[n] + y[n];

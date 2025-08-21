@@ -1,5 +1,4 @@
-# 线程束
-
+# 线程束Warp
 
 > [!question] 线程束的作用
 >  **线程块（Thread Block）是为程序员设计的逻辑分组，而线程束（Warp）是为硬件设计的物理执行单元。线程束的存在是为了极致的硬件效率。**
@@ -149,7 +148,6 @@ for (int offset = 16; offset > 0; offset >>= 1)
 | __shfl_xor_sync(mask, v, lane) | 在Warp内进行异或模式的数据交换。线程t接收来自线程t ^ lane的变量v的值。                         | 变量v的类型       | **v**: 要传输的变量。<br>**lane**: 用于计算源线程ID的异或掩码。     |
 
 ---
-
 
 使用这些函数时不需要在任何地方明显地使用同步函数，如`__syncwarp`。这是因为，这里所有的线程束内的基本函数（都以 `_sync` 结尾）都具有隐式的同步功能。
 
@@ -399,7 +397,7 @@ real reduce(const real *d_x)
 
 总之，除在适当的情况下使用静态全局内存替换动态全局内存外，还要尽量避免在较内层循环反复地分配与释放设备内存。
 
-![](../../../../../files/images/MLsys/13-a-6-3.png)
+![](../../../../../files/images/MLsys/13-a/13-a-6-3.png)
 
 
 [^1]: https://github.com/brucefan1983/CUDA-Programming/blob/master/src/10-warp/reduce.cu#L94
