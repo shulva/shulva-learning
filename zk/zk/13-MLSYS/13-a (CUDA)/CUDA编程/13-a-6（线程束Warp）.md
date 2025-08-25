@@ -141,7 +141,7 @@ for (int offset = 16; offset > 0; offset >>= 1)
 | __ballot_sync(mask, pred)      | 聚合Warp内各参与线程的布尔状态。若参与线程n的pred非零，则返回整数的第n位置1，否则置0。                  | unsigned int | **pred**: 一个布尔条件表达式。                            |
 | __all_sync(mask, pred)         | 对Warp内所有参与线程的pred值执行逻辑与（AND）规约。仅当所有参与线程的pred都非零时，才返回1。             | int (1 或 0)  | **pred**: 一个布尔条件表达式。                            |
 | __any_sync(mask, pred)         | 对Warp内所有参与线程的pred值执行逻辑或（OR）规约。只要有至少一个参与线程的pred非零，就返回1。             | int (1 或 0)  | **pred**: 一个布尔条件表达式。                            |
-| **Warp内数据移动 (Shuffle)**        |                                                                    |              |                                                 |
+| **Warp内数据移动 (Shuffle)**        | Warp Shuffle指令都是**直接从另一个线程的寄存器中读取数据，完全不需要通过共享内存**                  |              |                                                 |
 | __shfl_sync(mask, v, src)      | 从一个指定的源线程src读取其变量v的值，并将其广播给Warp内所有参与线程。                            | 变量v的类型       | **v**: 要传输的变量。<br>**src**: 源线程在Warp中的ID (0-31)。 |
 | __shfl_up_sync(mask, v, d)     | 将数据在Warp内向上移动d个位置。线程t接收来自线程t-d的变量v的值。若t-d < 0，则该线程接收自己的v值。         | 变量v的类型       | **v**: 要传输的变量。<br>**d**: 向上移动的距离/偏移量。           |
 | __shfl_down_sync(mask, v, d)   | 将数据在Warp内向下移动d个位置。线程t接收来自线程t+d的变量v的值。若t+d >= warpSize，则该线程接收自己的v值。 | 变量v的类型       | **v**: 要传输的变量。<br>**d**: 向下移动的距离/偏移量。           |
@@ -250,6 +250,8 @@ T __shfl_xor_sync(T v, int laneMask);
 
 第二，线程块片的洗牌函数（上述函数中的后 4 个）少了最后一个代表宽度的参数w，因为该宽度就是线程块片的大小，即定义线程块片的模板参数。
 
+与上面的Shuffle指令一样，Warp Shuffle指令都是**直接从另一个线程的寄存器中读取数据，完全不需要通过共享内存**。
+
 所以，上面的代码也可以改写成这样。使用协作组的核函数和使用线程束洗牌函数的核函数具有等价的执行效率。
 
 ```cpp
@@ -295,7 +297,7 @@ const int GRID_SIZE = 10240;
 //.....
 //
 real y = 0.0;
-const int stride = blockDim.x * gridDim.x;//128*10240
+const int stride = blockDim.x * gridDim.x;//128*10240=1310720
 
 //第一次调用核函数
 //1310720个线程以stride在d_x数组中跨越并累加值进入y中
@@ -307,7 +309,7 @@ for (int n = bid * blockDim.x + tid; n < N; n += stride)
 s_y[tid] = y;
 __syncthreads();
 
-//块内规约
+//块内规约到32，在一个Warp内
 for (int offset = blockDim.x>>1;offset>= 32; offset >>= 1)
 {
 	if (tid < offset)
@@ -317,11 +319,11 @@ for (int offset = blockDim.x>>1;offset>= 32; offset >>= 1)
 	__syncthreads();
 }
 
-y = s_y[tid];
+y = s_y[tid];//前32个为有效值
 
-thread_block_tile<32> g = tiled_partition<32>(this_thread_block());
+thread_block_tile<32> g = tiled_partition<32>(this_thread_block());//创建一个代表Warp的对象
 
-//最后，块内的128个线程的部分和进入y中
+//最后，块内的32个线程的部分和进入y中
 for (int i = g.size() >> 1; i > 0; i >>= 1)
 {
 	y += g.shfl_down(y, i);

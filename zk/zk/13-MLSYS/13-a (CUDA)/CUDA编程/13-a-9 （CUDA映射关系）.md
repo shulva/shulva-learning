@@ -1,6 +1,6 @@
 ### CUDA核函数的映射
 
-![](../../../../../files/images/MLsys/13-b/13-b-2-19.png)
+![](../../../../../files/images/MLsys/13-c/13-b-2-19.png)
 
 一个SM（流多处理器）可以同时运行多个Block，这些Block是并行执行的。SM中的调度器会在不同的Block之间切换，以最大化硬件利用率并隐藏延迟。当一个Block等待内存访问或其他操作时，调度器可以快速切换到另一个Block，使其继续执行。
 ![](../../../../../files/images/MLsys/13-a/13-a-9-1.png)
@@ -11,12 +11,12 @@
 线程组（Warps）映射: SIMD指令作用于Warp，Warp宽度为32个元素，为逻辑SIMD宽度
 线程块（Thread blocks）映射：每个线程块都调度在一个SM上运行，为达到SM的峰值效率，需要每个SM同时运行多个线程块。
 
-![](../../../../../files/images/MLsys/13-b/13-b-2-20.png)
+![](../../../../../files/images/MLsys/13-c/13-b-2-20.png)
 
 - **标号 ①**: 这条线从线程块 (Block) 指向一个SM表明：**一个线程块会被调度到一整个 SM上去执行**。运行在这个 SM 上的所有核心将共同执行这个块内的所有线程。这个块所使用的共享内存（Per-block Shared Memory）也自然地映射到了这个 SM 内部的物理 SMem 上。
 - **标号 ②**: 这条线从线程 (Thread) 指向 SM 内部的核心 (Cores)。这说明**一个线程中的具体指令，最终是在 SM 内部的某个核心上执行的**。线程的私有变量（myVar）会被加载到这些核心的寄存器中进行计算。
 
-![](../../../../../files/images/MLsys/13-b/13-b-2-21.png)
+![](../../../../../files/images/MLsys/13-c/13-b-2-21.png)
 
 > [!NOTE] 解释
 > - `float myVar` -> Registers / Per-thread Local Memory (寄存器 / 每线程局部内存)
@@ -67,7 +67,7 @@
 3. **通过大量Warp切换来隐藏延迟**: Warp Scheduler是实现这一点的关键。
 4. **专门的硬件来优化内存访问**: Address coalescing unit是提升内存带宽利用率的核心部件。
 
-![](../../../../../files/images/MLsys/13-b/13-b-2-22.png)
+![](../../../../../files/images/MLsys/13-c/13-b-2-22.png)
 
 > [!NOTE] SM解释
 > 指令前端 (Instruction Front-End)  控制单元负责取指令和调度，但不负责计算。
