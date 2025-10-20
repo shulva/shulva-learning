@@ -274,6 +274,7 @@ __global__ void reduce_kernel_v5(float *input, float* output, int n){
     int tid = threadIdx.x;
 	// 每个线程加载2个元素并在寄存器中求和
     sum = input_begin[tid] + input_begin[tid + blockDim.x];
+	
 	// 每个Warp独立地对自己的32个sum值进行规约
     sum += __shfl_down_sync(0xffffffff, sum, 16);
     sum += __shfl_down_sync(0xffffffff, sum, 8);

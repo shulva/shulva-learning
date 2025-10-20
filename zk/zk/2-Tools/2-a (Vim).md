@@ -7,6 +7,7 @@
 > [Vimium - Chrome Web Store ](https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)
 
 > [!NOTE] Vim Resources
+> https://cheatsheets.zip/vim
 > [Vim Tips Wiki | Fandom](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 > [Vimways ~ 2019](https://vimways.org/2019/)has Various vim tips
 > [VimGolf](https://www.vimgolf.com/)interesting vim game
