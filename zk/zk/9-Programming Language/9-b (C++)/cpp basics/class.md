@@ -8,16 +8,76 @@
 
 ### Constructor and destructor
 
-![2025Fall-07-Classes, 页面 32](files/slides/CS106L/2025Fall-07-Classes.pdf#page=32)
+> .h file
+```cpp
+class StanfordID {
+private:
+    std::string name;
+    std::string sunet;
+    int idNumber;
 
-![2025Fall-07-Classes, 页面 35](files/slides/CS106L/2025Fall-07-Classes.pdf#page=35)
+public:
+    // constructor for our StudentID
+    StanfordID(std::string name, std::string sunet, int idNumber);
 
-![2025Fall-07-Classes, 页面 41](files/slides/CS106L/2025Fall-07-Classes.pdf#page=41)
+    // method to get name, sunet, and idNumber, respectively
+    std::string getName();
+    std::string getSunet();
+    int getID();
+}
+
+```
+> .cpp file (implementation)
+```cpp
+#include "StanfordID.h"
+#include <string>
+
+// ⚠️ 注意：这里的 StanfordID:: 前缀是必须的
+StanfordID::StanfordID(std::string name, std::string sunet, int idNumber) {
+    name = name;         // 🔴 这里有一个潜在的逻辑错误（变量遮蔽）
+    sunet = sunet;       // 🔴 同样的问题
+    idNumber = idNumber; // 🔴 同样的问题
+}
+
+```
+
+> Use the **this** keyword
+```cpp
+// Use this this keyword to disambiguate which ‘name’ you’re referring to.
+StanfordID::StanfordID(std::string name, std::string sunet, int idNumber) {
+    this->name = name;
+    this->sunet = sunet;       
+    this->idNumber = idNumber; 
+}
+```
+
 
 当然，初始化还可以用一种名为**成员初始化列表**的方法，详见[9-b-6 （初始化与构造函数）](../cpp11/9-b-6%20（初始化与构造函数）.md#^list-construct)
-![2025Fall-07-Classes, 页面 41](files/slides/CS106L/2025Fall-07-Classes.pdf#page=42)
+> List initialization constructor (C++11) .cpp file (implementation)
 
-![2025Fall-07-Classes, 页面 52](files/slides/CS106L/2025Fall-07-Classes.pdf#page=52)
+```cpp
+#include "StanfordID.h"
+#include <string>
+
+// list initialization constructor
+// Recall uniform initialization, this is similar but not quite!
+StanfordID::StanfordID(std::string name, std::string sunet, int idNumber)
+    : name{name}, sunet{sunet}, idNumber{idNumber} {}; 
+
+```
+
+> 析构函数
+
+```cpp
+#include "StanfordID.h"
+#include <string>
+
+StanfordID::~StanfordID() {
+    // free/deallocate any data here (在这里释放/归还任何数据)
+    delete [] my_array; // for illustration (仅作演示用)
+}
+
+```
 
 ### 组合优于继承
 
@@ -203,10 +263,38 @@
 #### access modifer
 
 private inheritance:
-![2025Fall-08-Inheritance, 页面 49](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=48)
+不指明的话，默认是私有继承
+
+```cpp
+class Entity {
+public:
+    bool overlapsWith(const Entity& other);
+};
+
+// 注意：这里没有写 public, protected 或 private
+class Player : /* private */ Entity {
+    // Private inheritance (私有继承):
+    // - private members of Entity are inaccessible to all (Entity 的私有成员对谁都不可见)
+    // - public members become private (inaccessible to outside) (Entity 的公有成员在 Player 中变成了私有，外部无法访问)
+};
+```
 
 public inheritance:
-![2025Fall-08-Inheritance, 页面 49](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=49)
+```cpp
+class Entity {
+public:
+    bool overlapsWith(const Entity& other);
+};
+
+// ✅ 添加了 public 关键字
+class Player : public Entity {
+    // Public inheritance (公有继承):
+    // - private members of Entity are still inaccessible (Entity 的私有成员依然不可访问)
+    // - public members become public (accessible to outside) (Entity 的公有成员在 Player 中保持公有，外部可访问)
+};
+
+```
+
 
 ![2025Fall-08-Inheritance, 页面 50](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=50)
 
@@ -395,8 +483,16 @@ Using `Entity*` comes at a cost: We **forget** which type the object actually is
 
 还有一些其他要点，比如纯虚函数：
 
-![2025Fall-08-Inheritance, 页面 90](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=90)
+> pure virtual function
 
+Mark a virtual function as pure virtual by adding `= 0;` instead of an implementation!
+```cpp
+
+class Entity { 
+	public: virtual void update() = 0; 
+	virtual void render() = 0; 
+};
+```
 
 ![2025Fall-08-Inheritance, 页面 90](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=91)
 

@@ -13,9 +13,23 @@ v1.push_back(5);
 但是...
 ![2025Fall-09-TemplateClasses, 页面 25](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=25)
 
+> Templates have come a long way
 
-![2025Fall-09-TemplateClasses, 页面 27](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=27)
+```cpp
+//Template Declaration 
+//Vector is a template that takes in the name of a type T
+template <typename T>
+class Vector { // T gets replaced when Vector is instantiated
+public:
+    T& at(size_t index);
+    void push_back(const T& elem);
+    
+private:
+    // 指向 T 类型数组的指针
+    T* elems;
+};
 
+```
 
 ![2025Fall-09-TemplateClasses, 页面 27](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=29)
 
@@ -102,8 +116,6 @@ v1.push_back(5);
 
 ### 非类型模板参数
 
-![2025Fall-09-TemplateClasses, 页面 36](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=36)
-
 > [!NOTE] non-typename template parameter
 > ![2025Fall-09-TemplateClasses, 页面 37](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=37)
 > 
@@ -181,7 +193,7 @@ v1.push_back(5);
 
 ### Template quirks
 
-1. Must copy `template <…>` syntax in .cpp
+>  Must copy `template <…>` syntax in .cpp
 
 ```cpp
 // Vector.h 
@@ -201,7 +213,7 @@ T& Vector<T>::at(size_t i) {  // Compiler: “Ahh.. I’m happy now 😌”
 
 ```
 
-2. .h must include .cpp at bottom of file
+> .h must include .cpp at bottom of file
 
 ![2025Fall-09-TemplateClasses, 页面 46](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=46)
 
@@ -275,9 +287,26 @@ T& Vector<T>::at(size_t i) {  // Compiler: “Ahh.. I’m happy now 😌”
 > 为了避免混淆，很多 C++ 开发者在写模板时，根本不创建 `.cpp` 文件，而是直接把声明和实现都写在 `.h` 里；或者将实现文件的后缀改为 `.hpp` 或 `.tpp`，以暗示它不是一个普通的源文件，而是会被包含的模板实现文件。
 
 
-3. typename is the same as class
+> typename is the same as class
 
-![2025Fall-09-TemplateClasses, 页面 50](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=50&selection=4,3,4,6)
+All of the following are identical:
+```cpp
+// 1. 全部使用 typename (现代 C++ 推荐写法)
+template <typename K, typename V>
+struct pair;
+
+// 2. 全部使用 class (传统写法)
+template <class K, class V>
+struct pair;
+
+// 3. 混合使用 (合法，但少见)
+template <class K, typename V>
+struct pair;
+
+// 4. 混合使用 (合法，但少见)
+template <typename K, class V>
+struct pair;
+```
 
 ### Const Correctness
 
@@ -301,8 +330,6 @@ void push_back(const T& elem);
 - Objects marked as const can only make use of the const interface
 - The const interface are the functions that are const in an object
 ![2025Fall-09-TemplateClasses, 页面 60](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=60)
-
-![2025Fall-09-TemplateClasses, 页面 60](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=61)
 
 Inside a const method, this has type `const Vector<T>*`
 	
@@ -354,5 +381,3 @@ Overloading!
 
 使用mutable
 ![2025Fall-09-TemplateClasses, 页面 95](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=95)
-
-## Function Templates

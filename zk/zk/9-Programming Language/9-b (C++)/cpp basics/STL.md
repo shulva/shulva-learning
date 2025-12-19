@@ -175,3 +175,11 @@ But for all intents and purposes, you can think of it this way.
 
 传引用零拷贝，比传值拷贝性能更高
 ![2025Fall-05-Containers, 页面 43](files/slides/CS106L/2025Fall-05-Containers.pdf#page=44)
+
+## Functors 
+
+见链接：[How do Lambda work?](Function.md#How%20do%20Lambda%20work?)
+
+## Algorithms
+
+见链接：[Algorthims](Function.md#Algorthims)
