@@ -10,9 +10,6 @@ Streams: a general input/output facility for C++
 
 中间的相交部分是iostream(This intersection is known as iostream which takes has all of the characteristics of ostream and istream!)
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=32)
-
-
 ![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=33)
 
 
@@ -43,11 +40,10 @@ void foo()
 
 	std::cout << first << “ ” << last << “ said this: ”<< language << “ “ << extracted_quote << std::endl;
 } 
+
 ```
 
 We want to extract the quote , but we have >> problems ! So we can use getline() instead .
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=67)
-
 
 ![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=70)
 
@@ -168,7 +164,7 @@ tao is a double , so Fernandez >> double obviously is wrong
 
 ![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=121)
 
-这里的ignore指的是：**果你刚用了 `>>` 读取数据，紧接着又要用 `getline`，在中间插一句 `cin.ignore()`，把残留的回车符清理掉。**
+这里的ignore指的是：**如果你刚用了 `>>` 读取数据，紧接着又要用 `getline`，在中间插一句 `cin.ignore()`，把残留的回车符清理掉。**
 ![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=70)
 
 

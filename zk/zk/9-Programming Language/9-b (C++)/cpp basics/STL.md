@@ -10,10 +10,18 @@ vector已是老生常谈，在此不列举
 
 ### std::deque
 
-A deque has the same interface as vector, except we can push_front / pop_front
+A `deque` has the same interface as `vector`, except we can `push_front / pop_front`
+A `deque` is ad double-ended `queue`
+Allows efficient insertion/removal at either end
 
-![2025Fall-05-Containers, 页面 52](files/slides/CS106L/2025Fall-05-Containers.pdf#page=52)
-
+```cpp
+void receivePrice(deque<double>& prices, double price) { 
+	prices.push_front(price); // Super fast 
+	if (prices.size() > 10000) 
+		prices.pop_back(); // Remove last price 
+						   // so we don't exceed 10k 
+}
+```
 
 ![2025Fall-05-Containers, 页面 52](files/slides/CS106L/2025Fall-05-Containers.pdf#page=55)
 
@@ -43,12 +51,20 @@ for (const auto& [key, value] : map)  //结构化绑定获取
 
 ![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=72)
 
+>  `std::map<K,V>` requires `K` to have an `operator <`
 
-![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=74)
+```cpp
+// OKAY  ✅ - int has operator < 
+std::map<int, int> map1; 
+// ERROR ❌ - std::ifstream has no operator< 
+std::map<std::ifstream, int> map2;
+```
 
 ## std::set
 
 ![2025Fall-05-Containers, 页面 77](files/slides/CS106L/2025Fall-05-Containers.pdf#page=77)
+
+> 实现方式与`std::map`相同
 
 ![2025Fall-05-Containers, 页面 80](files/slides/CS106L/2025Fall-05-Containers.pdf#page=80)
 
@@ -58,7 +74,17 @@ for (const auto& [key, value] : map)  //结构化绑定获取
 
 ![2025Fall-05-Containers, 页面 95](files/slides/CS106L/2025Fall-05-Containers.pdf#page=95)
 
-![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=83)
+> You can think of unordered_map as an optimized version of map.It has the same interface as map
+
+```cpp
+std::unordered_map<std::string, int> map { 
+	{ "Chris", 2 }, 
+	{ "Nick", 51 }, 
+	{ "Sean", 35 }, 
+}; 
+int sean = map["Sean"]; // 35 
+map["Chris"] = 31;
+```
 
 ![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=84)
 
@@ -68,8 +94,15 @@ for (const auto& [key, value] : map)  //结构化绑定获取
 
 ![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=87)
 
-![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=89)
+> `std::unordered_map<K,V>` requires `K` to be hashable
+> Most basic types (`int, double, string`) are hashable by default
 
+```cpp
+// OKAY  ✅- int is hashable 
+std::unordered_map<int, int> map1; 
+// ERROR ❌- std::ifstream is not hashable 
+std::unordered_map<std::ifstream, int> map2;
+```
 
 You can control the max load factor before rehashing
 ```cpp
@@ -89,12 +122,25 @@ Containers and iterators work together to allow iteration
 
 ![2025Fall-06-Iterators, 页面 44](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=44)
 
-end() never points to an element!
+> `end()` never points to an element!
+
 ![2025Fall-06-Iterators, 页面 27](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=27)
 
-![2025Fall-06-Iterators, 页面 33](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=33)
+> Iterator Interface
 
+```cpp
+// Copy construction 
+auto it = c.begin(); 
 
+// Increment iterator forward 
+++it; 
+
+// Dereference iterator -- undefined if it == end() 
+auto& elem = *it; 
+
+// Equality: are we in the same spot? 
+if (it == c.end()) ...
+```
 
 > [!NOTE] Aside: Why do we use ++it instead of it++?
 >  ![2025Fall-06-Iterators, 页面 47](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=47)
@@ -144,15 +190,40 @@ end() never points to an element!
 
 ![2025Fall-06-Iterators, 页面 68](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=68)
 
-Iterators have a similar interface to pointers
-`T*` is the backing type for `vector<T>::iterator`
+Iterators have a similar interface to pointers.
+`T*` is the backing type for `vector<T>::iterator`.
 In the real STL implementation, the actual type is not T*. 
 But for all intents and purposes, you can think of it this way.
 
 当然，对于复杂的iterator(map之类)，事实上我们需要用一个类去作为迭代器，而非指针。使用运算符重载去重载`++,&`这些操作，从而提供统一的接口。
-![2025Fall-06-Iterators, 页面 92](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=92)
 
-![2025Fall-06-Iterators, 页面 54](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=54)
+> `T*` is the backing type for `vector<T>::iterator`
+> In the real STL implementation, the actual type is not `T*`. But for all intents and purposes, you can think of it this way.
+
+```cpp
+template <typename T> 
+class vector { 
+	using iterator = T*; 
+	// Implementation details... 
+};
+```
+
+```cpp
+All iterators provide these four operations
+
+auto it = c.begin(); 
+++it;
+*it;
+it == c.end();
+
+But most provide even more
+
+--it; // Move backwards 
+*it = elem; // Modify
+it += n; // Rand. access 
+it1 < it2 // Is before?
+```
+
 
 ![2025Fall-06-Iterators, 页面 59](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=59)
 
@@ -160,6 +231,7 @@ But for all intents and purposes, you can think of it this way.
 
 `it1==it2 -> ++it1==++it2`表明**读取操作是无副作用的**，不会像一些流操作一样，读取一次便消耗一个数据。
 这个公式证明了：**我们可以独立地、多次地访问同一个数据序列，而不会因为前一次的访问破坏了后一次的结果。**
+
 ![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=61)
 
 
