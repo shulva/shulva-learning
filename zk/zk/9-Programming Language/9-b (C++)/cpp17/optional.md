@@ -258,7 +258,46 @@ int main(){
 `std::optional`到底有何意义？
 搞来搞去还有一大堆问题？Why even bother with optionals?
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 67](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=67)
+> Monad: `and_then(),transform(),or_else()`
+
+```cpp
+/** 
+ * Calls a function to produce a new optional if there is a value; otherwise, returns nothing.
+ *
+ * The function passed to `and_then` 
+ * it takes a non-optional instance of type `T` and returns a `std::optional<U>`.
+ *
+ * If the optional has a value, `and_then` applies the function to its value and returns the result.
+ * If the optional doesn't have a value (i.e. it is `std::nullopt`), it returns `std::nullopt`.
+ */
+template <typename U>
+std::optional<U> std::optional<T>::and_then(std::function<std::optional<U>(T)> func);
+
+/**
+ * Applies a function to the stored value if present 
+ * Important!!: wrapping the result in an optional, or returns nothing otherwise.
+ * transform 会自动这个结果包装进 std::optional<U>
+ * 
+ * The function passed to `transform` 
+ * it takes a non-optional instance of type `T` and returns a non-optional instance of type `U`.
+ *
+ * If the optional has a value, `transform` applies the function to its value and returns the result wrapped in an `std::optional<U>`.
+ * If the optional doesn't have a value (i.e. it is `std::nullopt`), it returns `std::nullopt`.
+ */
+template <typename U>
+std::optional<U> std::optional<T>::transform(std::function<U(T)> func);
+
+/** 
+ * Returns the optional itself if it has a value; otherwise, it calls a function to produce a new optional.
+ *
+ * The opposite of `and_then`.
+ * The function passed to `or_else` takes in no arguments and returns a `std::optional<U>`.
+ * If the optional has a value, `or_else` returns it.
+ * If the optional doesn't have a value (i.e. it is `std::nullopt`), `or_else invokes the function and returns the result.
+ */
+template <typename U>
+std::optional<U> std::optional<T>::or_else(std::function<std::optional<U>(T)> func);
+```
 
 ```cpp
 #include <iostream>
@@ -280,7 +319,7 @@ int main() {
     std::optional<int> b = std::nullopt;  // 空
 
     // 1. and_then：链式「可能失败」运算（函数返回 optional）
-    auto r1 = a.and_then(half)            // 8 -> 4
+    auto r1 =   a.and_then(half)          // 8 -> 4
                  .and_then(half)          // 4 -> 2
                  .and_then(half);         // 2 -> 1
     // r1 = optional(1)

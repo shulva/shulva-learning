@@ -56,6 +56,7 @@ StanfordID min(const StanfordID& a, const StanfordID& b) {
 
 > you want to compare StanfordID objects by their idNumber member variable, how could you implement this?
 
+当你把一个运算符重载为**类的成员函数**时，这个类的对象实例 (this) 会自动成为运算符的**左操作数lhs**。因此，作为成员函数，你只需要为**右操作数rhs**提供一个参数。
 ```cpp
 #include StanfordID.h  // private: int idNumber
 int StanfordID::getIdNumber() { 

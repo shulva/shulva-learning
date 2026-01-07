@@ -2,7 +2,7 @@
 
 ## 基本操作
 > [!NOTE] :substitute
-> :[range]s[ubstitute]/{pattern}/{string}/[flags]，其中[range]的语法可以从[Vim-Ex定义范围语法](2-Tools/2-a-2-c%20（命令行模式）.md#Vim-Ex定义范围语法)中学习。
+> :[range]s[ubstitute]/{pattern}/{string}/[flags]，其中[range]的语法可以从[Vim-Ex定义范围语法](2-a-2-c%20（命令行模式）.md#Vim-Ex定义范围语法)中学习。
 
 | 替换域中的特殊字符        | 描述                                       |
 | ---------------- | ---------------------------------------- |
@@ -22,7 +22,7 @@
 > g看似为 全局之意（global），实则有误导之嫌。也许有人想借此标志位在整个文件范围内进行替换操作，但实际上，它仅表示**当前一整行范围**。
 
 > [!NOTE] 标志位c
-> 引入标志位c后，Vim 会对每处匹配结果提示是否进行替换，可以按y键完成这次修改，或者按n键跳过这一次修改。所有操作请见[所有的选项](../../../files/books/Tools/Vim.pdf#page=338&selection=68,3,68,10)
+> 引入标志位c后，Vim 会对每处匹配结果提示是否进行替换，可以按y键完成这次修改，或者按n键跳过这一次修改。所有操作请见[所有的选项](../../../../files/books/Tools/Vim.pdf#page=338&selection=68,3,68,10)
 
 > [!example]
 > :%s/content/copy/gc
@@ -46,6 +46,6 @@
 > 同样，此方法也会在命令历史中留下一项不完整的记录。
 
 > [!example]
-> [在替换过程中执行算术运算](../../../files/books/Tools/Vim.pdf#page=352&selection=3,0,3,12)
-> [交换两个或更多的单词](../../../files/books/Tools/Vim.pdf#page=354&selection=3,0,3,10)
-> [在多个文件中执行查找与替换](../../../files/books/Tools/Vim.pdf#page=357&selection=3,0,3,13)
+> [在替换过程中执行算术运算](../../../../files/books/Tools/Vim.pdf#page=352&selection=3,0,3,12)
+> [交换两个或更多的单词](../../../../files/books/Tools/Vim.pdf#page=354&selection=3,0,3,10)
+> [在多个文件中执行查找与替换](../../../../files/books/Tools/Vim.pdf#page=357&selection=3,0,3,13)

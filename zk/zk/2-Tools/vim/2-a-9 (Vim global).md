@@ -11,7 +11,7 @@
 > 首先，在默认情况下，:global命令的作用范围是整个文件。
 > 另外，[cmd]可以是除 :global命令之外的任何**Ex命令**。
 >
-> [当Ex命令与 :global一起组合使用时，也可以为[cmd]单独指定范围](../../../files/books/Tools/Vim.pdf#page=369&selection=8,0,16,5)
+> [当Ex命令与 :global一起组合使用时，也可以为[cmd]单独指定范围](../../../../files/books/Tools/Vim.pdf#page=369&selection=8,0,16,5)
 
 > [!NOTE] :global命令的广义形式
 >  :g/{start}/ .,{finish} [cmd] 可以将其解读为“对从 {start} 开始，到 {finish} 结束的所有文本行，执行指定的 [cmd]”。
@@ -39,4 +39,4 @@
 > But if the commands change the current line, `:g` continues from there(the current line has changed).
 > you can analyze an example below named "执行复数个命令"
 
-![Vim-Ex命令](2-Tools/2-a-2-c%20（命令行模式）.md#Vim-Ex命令)
+![Vim-Ex命令](2-a-2-c%20（命令行模式）.md#Vim-Ex命令)

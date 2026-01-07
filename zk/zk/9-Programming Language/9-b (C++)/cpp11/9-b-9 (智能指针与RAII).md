@@ -47,7 +47,6 @@ std::string returnNameCheckPawsome(int petId) {
 
 ## RAII
 
-
 > [!question] RAII: Resource Acquisition is Initialization 
 > RAII was developed by this lad: Bjarne
 > And it's a concept that is very emblematic in C++, among other languages. 

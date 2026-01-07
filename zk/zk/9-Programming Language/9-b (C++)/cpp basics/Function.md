@@ -205,6 +205,12 @@ std::unique_copy(InputIt i1, InputIt i2, OutputIt o, BinaryPred p);
 
 ![2025Fall-11-FunctionsAndLambdas, 页面 75](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=75)
 
+> 注：对于像 `std::set 或 std::map` 这种大小不能预先设定、需要动态插入元素的容器，你不能直接使用它们的迭代器作为输出目标。你需要使用一个**插入迭代器 (Insert Iterator)**。
+> 插入迭代器是一种特殊的适配器，它将赋值操作 (=) 巧妙地转换成容器的 insert() 调用。你需要使用 `std::inserter`
+> 对应作业的assignment4有使用样例
+
+> **Hint: there is nothing preventing the range given by `first` from overlapping with the range given by `d_first`!**
+
 ![2025Fall-11-FunctionsAndLambdas, 页面 77](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=77)
 
 ```cpp
@@ -283,7 +289,7 @@ STD ranges provides new versions of `<algorithm>` for ranges
 ```cpp
 int main() { 
 	std::vector<char> v = {'a', 'b', 'c', 'd', 'e’};
-	 auto it = std::ranges::find(v, 'c'); // Look! I can pass v here because it is a range!
+	auto it = std::ranges::find(v, 'c'); // Look! I can pass v here because it is a range!
 }
 ```
 

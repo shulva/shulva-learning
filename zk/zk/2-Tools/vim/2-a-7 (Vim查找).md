@@ -16,7 +16,7 @@
 
 > [!NOTE] gn/gN
 > 如果当前光标已经位于某个匹配之上，则gn会操作当前匹配。但是如果光标并没有位于某个匹配上，gn将会跳转至下一处匹配并对其进行操作。
-> 将gn/gN理解为{motion}就好。类似dgn,cgn,gUgn都是可以的，更详细的案例分析请见[对完整的查找匹配进行操作](../../../files/books/Tools/Vim.pdf#page=318&selection=3,0,3,12)。
+> 将gn/gN理解为{motion}就好。类似dgn,cgn,gUgn都是可以的，更详细的案例分析请见[对完整的查找匹配进行操作](../../../../files/books/Tools/Vim.pdf#page=318&selection=3,0,3,12)。
 
 > [!NOTE] //
 > 当把查找域留空时，Vim将重用上一次的查找模式。你下次可以尝试一下//e\<CR>

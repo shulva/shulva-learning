@@ -23,8 +23,8 @@
 > 在 very nomagic(即\V)搜索模式下创建正则表达式也不是不可能，不过会很别扭，因为必须为每个符号转义。作为通用法则，如果想按正则表达式查找，就用模式开关 \v，而如果想按原义查找文本，就用原义开关 \V。
 
 > [!NOTE] 正向查找时要转义 / 字符，反向查找时要转义?号。反斜杠字符永远都需要转义，无论采用的是正向还是反向查找方式
-> [查找域结束符](../../../files/books/Tools/Vim.pdf#page=305&selection=113,0,113,6)
-> [转义问题字符](../../../files/books/Tools/Vim.pdf#page=302&selection=3,0,3,6)
+> [查找域结束符](../../../../files/books/Tools/Vim.pdf#page=305&selection=113,0,113,6)
+> [转义问题字符](../../../../files/books/Tools/Vim.pdf#page=302&selection=3,0,3,6)
 
 ## 正则表达式
 
@@ -35,10 +35,10 @@
 > 在 very magic搜索模式下，用 < 与 > 符号表示单词定界符。
 
 > [!example]
-> [界定单词的边界](../../../files/books/Tools/Vim.pdf#page=298&selection=9,0,9,23)
-> [圆括号与单词边界](../../../files/books/Tools/Vim.pdf#page=296&selection=30,0,30,21)
-> [使用圆括号，但不捕获其内容](../../../files/books/Tools/Vim.pdf#page=298&selection=91,0,91,13)
-> [使用子匹配重排CSV文件的字段](../../../files/books/Tools/Vim.pdf#page=350&selection=3,0,5,5)
+> [界定单词的边界](../../../../files/books/Tools/Vim.pdf#page=298&selection=9,0,9,23)
+> [圆括号与单词边界](../../../../files/books/Tools/Vim.pdf#page=296&selection=30,0,30,21)
+> [使用圆括号，但不捕获其内容](../../../../files/books/Tools/Vim.pdf#page=298&selection=91,0,91,13)
+> [使用子匹配重排CSV文件的字段](../../../../files/books/Tools/Vim.pdf#page=350&selection=3,0,5,5)
 
 > [!NOTE] 界定模式匹配的边界
 > Vim中的元字符 \zs与 \ze可以帮助我们界定匹配的边界。

@@ -65,7 +65,7 @@
 
 > [!NOTE] 窗口与标签页的关系
 > Vim 的标签页与缓冲区并非一一对应的关系（类似Tmux），你应该把标签页想成容纳一系列窗口的容器。
-> ![vim-tab](../../../files/images/zk/vim-tab.png)
+> ![vim-tab](../../../../files/images/zk/vim-tab.png)
 
 | 命令                     | 用途                  |
 | ---------------------- | ------------------- |
@@ -88,5 +88,5 @@
 
 > [!NOTE] 以root权限保存文件
 > `:w !sudo tee % > /dev/null`
-> [这条命令是如何工作的？](../../../files/books/Tools/Vim.pdf#page=181&selection=72,0,72,11)
+> [这条命令是如何工作的？](../../../../files/books/Tools/Vim.pdf#page=181&selection=72,0,72,11)
 > 

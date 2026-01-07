@@ -57,8 +57,8 @@
 > 可以把 t{char} 及 T{char} 命令当成“直到查找到指定的字符为止”（search till the specified character）的命令，它们使光标停留在 {char} 前面的那个字符上， f{char} 和 F{char} 命令则把光标移动到指定字符上。
 
 > [!exam]
-> [为什么同时需要两种查找字符命令呢？](../../../files/books/Tools/Vim.pdf#page=198&selection=86,0,86,19)
-> [在使用字符查找命令时，最好选择出现频率比较低的字母作目标字符](../../../files/books/Tools/Vim.pdf#page=199&selection=103,0,103,15)
+> [为什么同时需要两种查找字符命令呢？](../../../../files/books/Tools/Vim.pdf#page=198&selection=86,0,86,19)
+> [在使用字符查找命令时，最好选择出现频率比较低的字母作目标字符](../../../../files/books/Tools/Vim.pdf#page=199&selection=103,0,103,15)
 
 ## 用精确的文本对象选择选区
 
