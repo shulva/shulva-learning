@@ -1,6 +1,6 @@
 # 监督学习
 
-![](12-a%20（机器学习）.md#^supervised-learning)
+![](Machine%20Learning%20intro.md#^supervised-learning)
 
 ## intro
 
@@ -171,11 +171,12 @@ Softmax分类器得名于**softmax函数**，该函数用于将原始的类别�
 而且Softmax函数是符合Multinominal Logistic Regression的。
 Softmax分类器就是二元的逻辑斯谛回归（Logistic Regression）分类器在多类别问题上的泛化。
 
+> [!NOTE] Why we are only using Softmax function?
 > Softmax is great because it does a function which converts any set of floating point numbers into a probability  distribution where they will sum to 1. 
-   And depending on the value of score, that will translate to the relative probability of that value.
-   So if you have a really high positive number , and everything else is very low negative , you will have nearly 1 for Softmax and 0 is almost for the other values.
-   So it is nice because it converts any lists of floating point numbers into a list of probability based on the values of lists.
-   That's the main utility of Softmax.
+> And depending on the value of score, that will translate to the relative probability of that value.
+> So if you have a really high positive number , and everything else is very low negative , you will have nearly 1 for Softmax and 0 is almost for the other values.
+> So it is nice because it converts any lists of floating point numbers into a list of probability based on the values of lists.
+> That's the main utility of Softmax.
 
 > [!NOTE] Multinominal Logistic Regression
 > Logistic Regression思想的核心在于：二分类事件输出的对数几率(log odds)是由输入$x$的线性函数表示的模型(统计学习方法6.1.2)
@@ -206,7 +207,7 @@ Softmax分类器就是二元的逻辑斯谛回归（Logistic Regression）分类
 > 
 > 因此，Softmax分类器是在最小化估计的类别概率（即我们上面看到的交叉熵损失中的参数）与“真实”分布之间的交叉熵。
 > 在这个解释中真实分布是所有概率质量都集中在正确类别上的分布（即 `p = [0, ..., 1, ..., 0]`，在第 `y_i` 个位置上为1）。
-> 数学推导在此：[交叉熵](12-a-1（监督学习）.md#交叉熵)
+> 数学推导在此：[交叉熵](Supervised%20learning%20intro.md#交叉熵)
 > 
 > 此外，由于交叉熵可以写成熵和KL散度（Kullback-Leibler divergence）的形式：
 > $H(p,q) = H(p) + D_KL(p||q) ,$ $D_{\text{KL}}(p \| q) = \sum_{x} p(x) \log\left(\frac{p(x)}{q(x)}\right)$
@@ -319,8 +320,6 @@ SVM和Softmax之间的性能差异通常非常小，不同的人对于哪个分�
 但是，SVM一旦满足了间隔条件就感到满意了，它不会在这个约束之外去微观管理（micromanage）各个分数的精确值。这可以被直观地理解为一个**特性**：例如，一个汽车分类器，它可能应该把大部分“精力”投入到区分“汽车”和“卡车”这个困难的问题上，而不应该被那些“青蛙”的样本所影响——对于“青蛙”，模型已经给出了极低的分数，而且它们很可能聚集在数据空间中一个完全不同的区域。
 
 ---
-
-
 
 ## 一些数学推导
 

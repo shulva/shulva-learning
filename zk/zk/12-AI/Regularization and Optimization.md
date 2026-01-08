@@ -22,8 +22,8 @@ L2会使小于1的数更小，而且L2会引入curvature（曲度），从而更
 图中答案是same
 ![lecture_3, 页面 23](files/slides/CS231n/lecture_3.pdf#page=23)
 
-所以，我们有如下的形式：
-![lecture_3, 页面 23](files/slides/CS231n/lecture_3.pdf#page=25)
+所以，我们有如下的整体形式。现在问题是：How do we find the best W?
+![lecture_4, 页面 5](files/slides/CS231n/lecture_4.pdf#page=5)
 
 
 ## Optimiazation intro
@@ -52,10 +52,6 @@ for num in xrange(1000):
 # in attempt 0 the loss was 9.401632, best 9.401632
 # in attempt 1 the loss was 8.959668, best 8.959668
 # in attempt 2 the loss was 9.044034, best 8.959668
-# in attempt 3 the loss was 9.278948, best 8.959668
-# in attempt 4 the loss was 8.857370, best 8.857370
-# in attempt 5 the loss was 8.943151, best 8.857370
-# in attempt 6 the loss was 8.605604, best 8.605604
 # ... (truncated: continues for 1000 lines)
 ```
 
@@ -232,6 +228,9 @@ AdamW 将权重惩罚和梯度分开处理，使得惩罚更加直接和有效�
 
 ![lecture_3, 页面 76](files/slides/CS231n/lecture_3.pdf#page=76)
 
+---
+
+![](../../../files/images/AI/cs231n-1.png)
 
 ## Learning Rates
 

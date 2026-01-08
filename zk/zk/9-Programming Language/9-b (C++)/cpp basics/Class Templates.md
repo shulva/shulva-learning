@@ -365,7 +365,11 @@ Overloading!
 ![2025Fall-09-TemplateClasses, 页面 82](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=82)
 
 用转换的方法消灭冗余
-> 注：图片中的文字 "What in the Bjarne is going on here?" 是一个梗，指的是Bjarne Stroustrup，意为：“这写的是什么牛大了的 C++ 代码？”
+> 注：图片中的文字 "What in the Bjarne is going on here?" 是一个梗，指的是Bjarne Stroustrup，意为：“这写的是什么黑魔法？”
+
+不过这里好像有点问题？正常来说是在const版本里实现完整的逻辑，之后在non-const版本中使用类似
+` const_cast<T&>(static_cast<const Vector<T>&>(*this).findElement(value));`的逻辑来转换
+详情请见Effective C++中的Item3
 
 ![2025Fall-09-TemplateClasses, 页面 83](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=83)
 
@@ -377,7 +381,7 @@ Overloading!
 
 ![2025Fall-09-TemplateClasses, 页面 89](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=92)
 
-#### 是否有更细粒度的控制...?
+#### 是否有更细粒度的控制? mutable
 
 使用mutable
 ![2025Fall-09-TemplateClasses, 页面 95](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=95)
