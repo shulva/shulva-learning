@@ -4,6 +4,7 @@
 
 > Regularization is to do worse on the training data but better on the test data or just unseen data
 
+所以按照这里的定义，[Dropout](CNN.md#Dropout)也是典型的Regularization方法
 f1 is overfit , f2 is doing better on unseen data.
 ![lecture_3, 页面 15](files/slides/CS231n/lecture_3.pdf#page=15)
 
@@ -110,8 +111,20 @@ while Ture:
 > If we calculate all , it costs a lot. So we can use sgd
 > the reason why it is called sgd because we are sampling a random subset of our data
 
-每次循环都只随机地取一小部分数据
+ 但梯度下降实际执行可能会非常慢，因为在一次更新参数之前，我们必须遍历整个数据集。 因此，我们通常会在每次需要计算更新的时候只随机抽取一小批样本， 这种叫做**小批量随机梯度下降**。每次循环都只随机地取一小部分数据
+
 ![lecture_3, 页面 48](files/slides/CS231n/lecture_3.pdf#page=48)
+
+在每次迭代中，我们首先随机抽样一个小批量$\mathcal{B}$。 然后，我们计算小批量的梯度。最后，我们将梯度乘以一个预先确定的正数$\eta$(学习率），并从当前参数的值中减掉(使损失函数值变小的方向）。
+
+![](../../../files/images/AI/12-c-6.png)
+
+
+批量大小和学习率的值通常是手动预先指定，而不是通过模型训练得到的。 这些可以调整但不在训练过程中更新的参数称为**超参数**（hyperparameter）。 
+
+**调参**（hyperparameter tuning）是选择超参数的过程。 超参数通常是我们根据训练迭代结果来调整的， 而训练迭代结果是在独立的验证数据集上评估得到的。
+
+![](../../../files/images/AI/12-c-7.png)
 
 当然，SGD也存在着潜在的问题
 

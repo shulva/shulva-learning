@@ -207,7 +207,7 @@ Softmax分类器就是二元的逻辑斯谛回归（Logistic Regression）分类
 > 
 > 因此，Softmax分类器是在最小化估计的类别概率（即我们上面看到的交叉熵损失中的参数）与“真实”分布之间的交叉熵。
 > 在这个解释中真实分布是所有概率质量都集中在正确类别上的分布（即 `p = [0, ..., 1, ..., 0]`，在第 `y_i` 个位置上为1）。
-> 数学推导在此：[交叉熵](Supervised%20learning%20intro.md#交叉熵)
+> 数学推导在此：[交叉熵](linear%20classification%20intro.md#交叉熵)
 > 
 > 此外，由于交叉熵可以写成熵和KL散度（Kullback-Leibler divergence）的形式：
 > $H(p,q) = H(p) + D_KL(p||q) ,$ $D_{\text{KL}}(p \| q) = \sum_{x} p(x) \log\left(\frac{p(x)}{q(x)}\right)$

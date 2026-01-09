@@ -17,7 +17,7 @@
 So , we need some sort of non-linearity in the middle of neural net work to be able to give us the power to solve non-linear problem.
 ![lecture_4, 页面 31](files/slides/CS231n/lecture_4.pdf#page=31)
 
-激活函数有很多种，按需选择
+激活函数有很多种，按需选择，这里有一些原理解释:[Sigmoid & Relu & Gelu](CNN.md#Sigmoid%20&%20Relu%20&%20Gelu)
 
 > [!question] How would we choose for a new problem which of these activation functions to use?
 > Actually , it's **empirical** in most cases. But we often start with value , or we go with standard activation functions being used for those specific architectures. There are some activation functions that are commonly used in CNN , or in transformer, and different architectures.  
@@ -92,6 +92,7 @@ But neural networks with random connections can [work](files/slides/CS231n/lectu
 ![lecture_4, 页面 71](files/slides/CS231n/lecture_4.pdf#page=72)
 
 UpStream gradient上游来的反向信息+自身算出的local gradient
+计算结点无需关心整个计算图的结构或是其他的什么宏观问题，它只需要专注计算就好
 ![lecture_4, 页面 78](files/slides/CS231n/lecture_4.pdf#page=78)
 
 
