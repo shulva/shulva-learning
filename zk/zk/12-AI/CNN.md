@@ -139,6 +139,14 @@ Number of learnable parameters: Parameters per filter: 3\*5\*5 + 1 (for bias) = 
 有多种不同的Norm方法如下，C的意思是Channel
 ![lecture_6, 页面 12](files/slides/CS231n/lecture_6.pdf#page=12)
 
+>  can normalization resolve the issues that arise with having weights initialized incorrectly?
+
+假设有一个很简单的问题：输入一个坐标，让NN判断象限。可以在图表中看到归一化之后，error是大幅下降了的。
+==Normalization may not always make sense!== 
+In this case, easy to see why it's helpful (LayerNorm does not change quadrant of inputs)
+
+![lecture_7, 页面 9](files/slides/CS231n/lecture_7.pdf#page=9)
+
 ---
 #### Dropout
 
@@ -322,6 +330,7 @@ Dropout是一个典型的方法
 - 网格搜索是低效的，它在所有维度上均匀分配，但大部分算力都被浪费在了不重要的超参数上。
 - 随机搜索虽然看起来随机，但它保证了在每个维度上探索的多样性，尤其是在那些真正重要的超参数上，它能探索到更多的可能性。(绿线是性能曲线)
 
+还有一些[直观的图像方法](files/slides/CS231n/lecture_7.pdf#page=12)可供选择
 ![lecture_6, 页面 95](files/slides/CS231n/lecture_6.pdf#page=95)
 
 
