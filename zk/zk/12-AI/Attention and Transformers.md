@@ -7,7 +7,7 @@
 
 > 引子：RNN encoder and RNN decoder
 
-We can think the last hidden state of encoder as the summarizing , or encoding all of the information in the entire input sequence.
+	 We can think the last hidden state of encoder as the summarizing , or encoding all of the information in the entire input sequence.
 
 这里有一个问题，用来表达上下文信息的Context vector的大小是固定的，不会随着input的规模变化而变化。
 ![lecture_8, 页面 11](files/slides/CS231n/lecture_8.pdf#page=11)
@@ -36,16 +36,14 @@ Compute new alignment scores $e_{2i}$,i and attention weights $a_{2i}$ ，生成
 
 > So, we solve the old problem : the fixed length context vector.
 
-We are no longer bottlenecking the input sequence through a single fixed length vector.
-==Instead, We have a new mechanism, where every time step of the decoder, the network look back at the entire input sequence, re-summarize the input sequence to generalize a new context vector on the fly for this one time step of the decoder, and then uses that to produce new outputs.==
+We are no longer bottlenecking the input sequence through a single fixed length vector.==Instead, We have a new mechanism, where every time step of the decoder, the network look back at the entire input sequence, re-summarize the input sequence to generalize a new context vector on the fly for this one time step of the decoder, and then uses that to produce new outputs.==
 我们不停地回顾，注意(attend)原来的输入，所以这个机制名为Attention.
 
 ![lecture_8, 页面 23](files/slides/CS231n/lecture_8.pdf#page=23)
 
 > Visualize attention weights and Diagonal attention 
 
-We can see "European Economic Area" has the different order with "zone économique européenne"!
-So how does model figure out the grammar?haha, that's the mystery of deep learning. 
+	  We can see "European Economic Area" has the different order with "zone économique européenne"! So how does model figure out the grammar?haha, that's the mystery of deep learning. 
 ![lecture_8, 页面 27](files/slides/CS231n/lecture_8.pdf#page=27)
 
 ---

@@ -98,7 +98,7 @@ $$
 > 上图中所采用的是分子布局，即**导数的形状主要由分子（被求导的函数 y）的维度结构决定**，同理对应的有分母布局。
 > 可以将其看作：标量 y 的结构是 (1,)并且列向量 x 的结构是 (n,1)。为了**匹配**分子的输出方式，∂$\mathbf{y}$/∂x 的维度在结果中表现为 (1,n)。
 
-## 随机梯度下降-Stochastic Gradient Descent
+### 随机梯度下降-Stochastic Gradient Descent
 
 所以，一般的梯度下降如下：
 
@@ -143,7 +143,7 @@ Saddle points much more common in high dimension.
 当然，这些问题并非sgd所独有，其他使用梯度下降的算法也会有这样的问题。
 ![lecture_3, 页面 53](files/slides/CS231n/lecture_3.pdf#page=53)
 
-## SGD + Momentum
+### SGD + Momentum
 
 > 3.梯度下降的过程中，由于sgd只取了一部分数据，所以sgd下降的过程中会有很多noise，具体表现为下降过程中并不是直接的往minimum的方向走，而是会往其他的方向走。这也会拖慢到达最优解的速度
 
