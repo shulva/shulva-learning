@@ -5,7 +5,7 @@
 监督学习下，我们需要海量的，**有标注的数据**。但是这很昂贵，也很耗时。
 所以，有没有办法在不需要大量人工标签的情况下训练网络？
 
-![lecture_12, 页面 8](files/slides/CS231n/lecture_12.pdf#page=8)
+![lecture_12, 页面 8](files/slides/CS231n/lecture_12.pdf#page=8&rect=0,0,720,400)
 
 我们的应对方法是：
 首先，在pretext Task(相当于预训练)阶段，输入no labels没有标签的数据。（No manual annotation）。
@@ -16,26 +16,26 @@
 之后，在Downstream Task阶段，我们使用有标签的数据（虽然不多就是了）。
 这时，我们就可以将上面训练好的模型直接拿下来用，再训练，就像之前提到的Transfer Learning迁移学习。
 这时模型学会了通用的特征后，再用少量标签数据稍加微调，就能解决实际问题。
-![lecture_12, 页面 9](files/slides/CS231n/lecture_12.pdf#page=9)
+![lecture_12, 页面 9](files/slides/CS231n/lecture_12.pdf#page=9&rect=0,0,720,400)
 
 Pretext的Learned Representation的右半部分一般是Decoder/Classifier/Regressor
 Downstream Task一般在右半部分只需要加上一层，甚至只需要一个全连接层就行了。你可以只训练这个FC。
-![lecture_12, 页面 11](files/slides/CS231n/lecture_12.pdf#page=11)
+![lecture_12, 页面 11](files/slides/CS231n/lecture_12.pdf#page=11&rect=0,0,720,400)
 
 一般来说，衡量pretext task中学习目标的好坏，还是通过性能来判断。
 Transfer Learning and Downstream Task Performance 
 Assess the utility of the learned representations by transferring them to a downstream supervised task.
-![lecture_12, 页面 15](files/slides/CS231n/lecture_12.pdf#page=15)
+![lecture_12, 页面 15](files/slides/CS231n/lecture_12.pdf#page=15&rect=0,0,720,400)
 
 ## Pretext Tasks
 
 但是，至少slides前面介绍的基于预测旋转角度、预测色彩（拼图/着色）的早期自监督方法，已经属于过时的技术了。
 在 2015-2019 年左右，这些被称为 **Pretext Tasks** 的方法非常流行，比如Rotation , coloring ,etc.
-![lecture_13, 页面 5](files/slides/CS231n/lecture_13.pdf#page=5)
+![lecture_13, 页面 5](files/slides/CS231n/lecture_13.pdf#page=5&rect=0,0,720,400)
 
 Learned representations may be tied to a specific pretext task! 
 Can we come up with a more general pretext task?
-![lecture_12, 页面 66](files/slides/CS231n/lecture_12.pdf#page=66)
+![lecture_12, 页面 66](files/slides/CS231n/lecture_12.pdf#page=66&rect=0,0,720,400)
 
 虽然早期的图像变换任务开启了自监督学习的大门，让模型学会了一些常识，但它们太依赖人工设计，且学到的东西往往太局限，不够通用。它们被后来居上的**对比学习 (Contrastive Learning)** 淘汰了，主要原因有两个：
 1. 学到的特征太Domain Specific
@@ -50,19 +50,19 @@ Can we come up with a more general pretext task?
 [MAE的重建效果](files/slides/CS231n/lecture_12.pdf#page=52)
 Those are not masked are given to the encoder to encode in two features that are then passed through decoder to generate the complete image.
 而且大规模覆盖原图（75%）之后，重建图片很难。而这意味着模型需要学习更好的feature
-![lecture_12, 页面 53](files/slides/CS231n/lecture_12.pdf#page=54)
+![lecture_12, 页面 53](files/slides/CS231n/lecture_12.pdf#page=54&rect=0,0,720,400)
 
 > MAE encoder
 
 Uses transformer blocks，Embeds the patches by linear projection and add positional embeddings. ViT
-![lecture_12, 页面 55](files/slides/CS231n/lecture_12.pdf#page=55)
+![lecture_12, 页面 55](files/slides/CS231n/lecture_12.pdf#page=55&rect=0,0,720,400)
 
 Decoder 本身也是一个 Transformer（通常比 Encoder 小很多，轻量级）。
 最后Decoder通过一个简单的线性层，把特征向量变回具体的像素值，重画出整张图。
 Decoder 的唯一用处就是帮 Encoder 进行预训练。
 一旦训练结束，我们只需要那个训练好的，性能优秀的 Encoder 来做下游任务（比如分类），Decoder 直接扔掉。
 这是一个**非对称**的自编码器设计(Encoder处理少量块，网络深。Decoder处理全部块，网络浅)。
-![lecture_12, 页面 56](files/slides/CS231n/lecture_12.pdf#page=56)
+![lecture_12, 页面 56](files/slides/CS231n/lecture_12.pdf#page=56&rect=0,0,720,400)
 
 ---
 #### Linear Probing vs Full Fine-tuning
@@ -85,7 +85,7 @@ Decoder 的唯一用处就是帮 Encoder 进行预训练。
 这不仅是利用预训练的知识，还要让模型根据新的任务（新数据）进行自我调整和适应。
 这通常能得到最高的准确率，是实际应用中最常用的方法。
 
-![lecture_12, 页面 58](files/slides/CS231n/lecture_12.pdf#page=58)
+![lecture_12, 页面 58](files/slides/CS231n/lecture_12.pdf#page=58&rect=0,0,720,400)
 
 ---
 
@@ -107,18 +107,18 @@ Decoder 的唯一用处就是帮 Encoder 进行预训练。
 
 1:设计好的任务很难。2：学习到的特征不通用。
 
-![lecture_12, 页面 62](files/slides/CS231n/lecture_12.pdf#page=62)
+![lecture_12, 页面 62](files/slides/CS231n/lecture_12.pdf#page=62&rect=0,0,720,400)
 
 ---
 ## Contrastive representation learning
 
 x是原图，x positive是正确的图像，x negative是无关的图像。
-![lecture_12, 页面 70](files/slides/CS231n/lecture_12.pdf#page=70)
+![lecture_12, 页面 70](files/slides/CS231n/lecture_12.pdf#page=70&rect=0,0,720,400)
 
 > This seems familiar -> Cross entropy loss for a N-way softmax classifier!
 
 learn to find the only positive one sample from the N samples , other N-1 is negative samples.
-![lecture_12, 页面 72](files/slides/CS231n/lecture_12.pdf#page=72)
+![lecture_12, 页面 72](files/slides/CS231n/lecture_12.pdf#page=72&rect=0,0,720,400)
 
 L就是交叉熵损失函数，希望模型能找到那个正确的 1 positive，远离其他的N-1个negative。
 最小化这个 Loss，等价于最大化 $f(x)与f(x^+)$ 之间的互信息（Mutual Information）的下界。
@@ -131,7 +131,7 @@ L就是交叉熵损失函数，希望模型能找到那个正确的 1 positive�
 empirically，负样本越多越好，Batch Size越大越好。
 科学解释一下的话，那就是更多的负样本意味着分母中的求和项更多，模型面临的干扰项更多，这逼迫模型必须学出更本质的特征才能在众多干扰中找到正确的正样本。
 对比学习本质上是在做一个N 选 1 的选择题扰项越多，做对题目所需的理解能力（特征质量/互信息）就越高。
-![lecture_12, 页面 75](files/slides/CS231n/lecture_12.pdf#page=75)
+![lecture_12, 页面 75](files/slides/CS231n/lecture_12.pdf#page=75&rect=0,0,720,400)
 
 ### SimCLR
 
@@ -146,22 +146,22 @@ empirically，负样本越多越好，Batch Size越大越好。
 我们希望 $z_i$ 和 $z_j$（同一个图的两个分身）的相似度越高越好。这里用的是**余弦相似度 (Cosine Similarity)**。在这个batch中还有很多其他的图，我们希望与这些负样本的相似度越低越好。
 
 **Maximize agreement**: ——最大化正样本对之间的一致性。
-![lecture_12, 页面 76](files/slides/CS231n/lecture_12.pdf#page=76)
+![lecture_12, 页面 76](files/slides/CS231n/lecture_12.pdf#page=76&rect=0,0,720,400)
 
 代码如下所示：
-![lecture_12, 页面 80](files/slides/CS231n/lecture_12.pdf#page=80)
+![lecture_12, 页面 80](files/slides/CS231n/lecture_12.pdf#page=80&rect=0,0,720,400)
 
 这里就是把N张原始图片用数据增强做出2N张，之后全部扔进编码器。
 2N张图片是成对排列的，2k与2k+1是来源自同一张图片的正样本对。
 之后算出它们2N-2N之间的相似度矩阵，然后要求模型在每一行中，把正样本（蓝色块）的相似度推到最高，把其他所有负样本（白色块）的相似度压到最低。
-![lecture_12, 页面 82](files/slides/CS231n/lecture_12.pdf#page=82)
+![lecture_12, 页面 82](files/slides/CS231n/lecture_12.pdf#page=82&rect=0,0,720,400)
 
 ---
 ### MoCo
 
 SimCLR有一些问题，it Need large batch size with lots of negatives!
 SimCLR 想要好的效果，必须要有巨大的 Batch Size（为了凑够多的负样本）。
-![lecture_12, 页面 86](files/slides/CS231n/lecture_12.pdf#page=86)
+![lecture_12, 页面 86](files/slides/CS231n/lecture_12.pdf#page=86&rect=0,0,720,400)
 
 MoCo 提出了一种动量更新 + 队列机制，想要解决这个问题。
 
@@ -191,7 +191,7 @@ MoCo 使用了两个长得一模一样的网络，但它们的更新方式完全
 $\theta_k$ (Key 参数) = $0.999 \times \theta_k$ (保持自己) + $0.001 \times \theta_q$ (学一点点 Query 参数)。
 这就是**动量**。它保证了 Key Encoder 的参数变化非常平缓，使得队列里虽然存的是不同时刻算出来的特征，但它们在大致的分布上是一致的，可以放在一起比较。
 
-![lecture_12, 页面 88](files/slides/CS231n/lecture_12.pdf#page=88)
+![lecture_12, 页面 88](files/slides/CS231n/lecture_12.pdf#page=88&rect=0,0,720,400)
 
 > 可见，SimCLR确实需要很多显存
 
@@ -200,7 +200,7 @@ SimCLR中的**Non-linear projection head**以及**strong data augmentation**真�
 而且解耦了Batch Size与negative samples之间的关系使其成本很低。
 
 [MoCo V3](files/slides/CS231n/lecture_12.pdf#page=102&selection=17,0,17,5) ？你自己读paper去吧。
-![lecture_12, 页面 93](files/slides/CS231n/lecture_12.pdf#page=93)
+![lecture_12, 页面 93](files/slides/CS231n/lecture_12.pdf#page=93&rect=0,0,720,400)
 
 ---
 ### Contrastive Predictive Coding (CPC)
@@ -210,7 +210,7 @@ SimCLR中的**Non-linear projection head**以及**strong data augmentation**真�
 实例就是前文提过的SimCLR,MoCo采用的方法。不关心图片内部的时间顺序，只关心整体的一致性。和空间概念相关。
 序列则是与时间相关，要预测接下来的片段是什么。（这么一说好像也算是LLM的origin之一？）
 
-![lecture_12, 页面 94](files/slides/CS231n/lecture_12.pdf#page=94)
+![lecture_12, 页面 94](files/slides/CS231n/lecture_12.pdf#page=94&rect=0,0,720,400)
 
 
 > **"contrast between 'right' and 'wrong' sequences"**
@@ -226,7 +226,7 @@ SimCLR中的**Non-linear projection head**以及**strong data augmentation**真�
 
 [CPC的具体操作](files/slides/CS231n/lecture_12.pdf#page=98)我懒得做笔记了，你自己看吧。
 
-![lecture_12, 页面 95](files/slides/CS231n/lecture_12.pdf#page=95)
+![lecture_12, 页面 95](files/slides/CS231n/lecture_12.pdf#page=95&rect=0,0,720,400)
 
 ---
 ### DINO (Self-Distillation with NO labels)
@@ -269,4 +269,4 @@ DINO V2学习了142M的数据后，表现的就更为强大了。DINO好处如�
 2.  **Transformer 友好**: DINO 特别适合 Vision Transformer (ViT)。
 3.  **涌现特性 (Emerging Properties)**: 神奇的是，DINO 训练出来的 ViT，其自注意力图（Attention Map）能自动把图片里的物体（比如一只鸟）完美地分割出来，即使训练时从来没给过任何分割标签！这是之前的有监督学习都很难做到的。
 
-![lecture_12, 页面 104](files/slides/CS231n/lecture_12.pdf#page=104)
+![lecture_12, 页面 104](files/slides/CS231n/lecture_12.pdf#page=104&rect=0,0,720,400)

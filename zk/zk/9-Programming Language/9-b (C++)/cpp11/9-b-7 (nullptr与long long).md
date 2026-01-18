@@ -2,6 +2,8 @@
 
 > [!quote]
 > https://en.cppreference.com/w/cpp/language/nullptr.html
+
+---
 ## nullptr
 
 `nullptr` 是C++11引入的**指针字面量**，用于表示空指针。它解决了传统空指针表示方式（如`NULL`和`0`）在类型安全性和重载解析方面的不足。
@@ -19,6 +21,7 @@
 - `NULL`是预处理宏，通常定义为整数`0`或`(void*)0`
 - `nullptr`在重载解析中更精确，不会与整数类型混淆
 
+---
 ### 基础用法
 
 **替代传统的NULL和0**
@@ -113,6 +116,7 @@ int main() {
 }
 ```
 
+---
 ### 注意事项
 
 `nullptr`的类型是`std::nullptr_t`，这是一个特殊的类型，可以 **隐式** 转换为任何指针类型：
@@ -148,6 +152,8 @@ if (ptr) { // 等价于 if (ptr != nullptr)
 
 bool isEmpty = (ptr == nullptr);  // true
 ```
+
+---
 ## long long
 
 **为什么引入?**

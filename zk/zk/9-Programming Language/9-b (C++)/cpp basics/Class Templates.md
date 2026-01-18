@@ -1,6 +1,6 @@
 # Class Templates
 
-![2025Fall-09-TemplateClasses, 页面 20](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=20)
+![2025Fall-09-TemplateClasses, 页面 20](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=20&rect=0,0,960,540)
 
 于是，我们有：
 ```cpp
@@ -11,7 +11,7 @@ v1.push_back(5);
 ```
 
 但是...
-![2025Fall-09-TemplateClasses, 页面 25](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=25)
+![2025Fall-09-TemplateClasses, 页面 25](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=25&rect=0,0,960,540)
 
 > Templates have come a long way
 
@@ -31,12 +31,12 @@ private:
 
 ```
 
-![2025Fall-09-TemplateClasses, 页面 27](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=29)
+![2025Fall-09-TemplateClasses, 页面 27](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=29&rect=0,0,960,540)
 
 
 
 > [!NOTE] java泛型与cpp模板
-> ![2025Fall-09-TemplateClasses, 页面 35](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=35)
+> ![2025Fall-09-TemplateClasses, 页面 35](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=35&rect=0,0,960,540)
 > 
 > 图里有两种类型：
 > 
@@ -117,7 +117,7 @@ private:
 ### 非类型模板参数
 
 > [!NOTE] non-typename template parameter
-> ![2025Fall-09-TemplateClasses, 页面 37](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=37)
+> ![2025Fall-09-TemplateClasses, 页面 37](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=37&rect=0,0,960,540)
 > 
 > 
 > 1）**模板参数不一定都是类型（typename）**；  
@@ -215,9 +215,9 @@ T& Vector<T>::at(size_t i) {  // Compiler: “Ahh.. I’m happy now 😌”
 
 > .h must include .cpp at bottom of file
 
-![2025Fall-09-TemplateClasses, 页面 46](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=46)
+![2025Fall-09-TemplateClasses, 页面 46](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=46&rect=0,0,960,540)
 
-![2025Fall-09-TemplateClasses, 页面 46](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=47)
+![2025Fall-09-TemplateClasses, 页面 46](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=47&rect=0,0,960,540)
 
 
 > [!NOTE] why?
@@ -324,45 +324,45 @@ void push_back(const T& elem);
 ```
 
 但如果运行如下代码会有问题：
-![2025Fall-09-TemplateClasses, 页面 59](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=59)
+![2025Fall-09-TemplateClasses, 页面 59](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=59&rect=0,0,960,540)
 
 在方法的声明与实现后加上const可以解决问题(The const interface)
 - Objects marked as const can only make use of the const interface
 - The const interface are the functions that are const in an object
-![2025Fall-09-TemplateClasses, 页面 60](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=60)
+![2025Fall-09-TemplateClasses, 页面 60](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=60&rect=0,0,960,540)
 
 Inside a const method, this has type `const Vector<T>*`
 	
-![2025Fall-09-TemplateClasses, 页面 60](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=63)
+![2025Fall-09-TemplateClasses, 页面 60](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=63&rect=0,0,960,540)
 
 但是即使加上const，方法的声明与实现仍然有问题...
 
-![2025Fall-09-TemplateClasses, 页面 71](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=71)
+![2025Fall-09-TemplateClasses, 页面 71](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=71&rect=0,0,960,540)
 
 由于返回的不是`const T&`，当函数参数传入`const Vector<int>& v`时，我们事实上是可以修改值的
 
-![2025Fall-09-TemplateClasses, 页面 72](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=72)
+![2025Fall-09-TemplateClasses, 页面 72](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=72&rect=0,0,960,540)
 
 但是加上`const`，又会引发新的问题...
 
-![2025Fall-09-TemplateClasses, 页面 73](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=73)
+![2025Fall-09-TemplateClasses, 页面 73](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=73&rect=0,0,960,540)
 
 当函数参数传入`Vector<int>& v`时，我们又不可以修改值了
 
-![2025Fall-09-TemplateClasses, 页面 74](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=74)
+![2025Fall-09-TemplateClasses, 页面 74](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=74&rect=0,0,960,540)
 
 Overloading!
 只能定义两个版本作为解决方案了
 
-![2025Fall-09-TemplateClasses, 页面 75](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=75)
+![2025Fall-09-TemplateClasses, 页面 75](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=75&rect=0,0,960,540)
 
 但是很明显这很冗余，如果有更多且更复杂的方法需要overload呢？
 比如像`findElement()`这样实现更复杂的方法
 
-![2025Fall-09-TemplateClasses, 页面 78](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=78)
+![2025Fall-09-TemplateClasses, 页面 78](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=78&rect=0,0,960,540)
 
 使用`const_cast<>`消灭冗余
-![2025Fall-09-TemplateClasses, 页面 82](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=82)
+![2025Fall-09-TemplateClasses, 页面 82](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=82&rect=0,0,960,540)
 
 用转换的方法消灭冗余
 > 注：图片中的文字 "What in the Bjarne is going on here?" 是一个梗，指的是Bjarne Stroustrup，意为：“这写的是什么黑魔法？”
@@ -371,17 +371,17 @@ Overloading!
 ` const_cast<T&>(static_cast<const Vector<T>&>(*this).findElement(value));`的逻辑来转换
 详情请见Effective C++中的Item3
 
-![2025Fall-09-TemplateClasses, 页面 83](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=83)
+![2025Fall-09-TemplateClasses, 页面 83](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=83&rect=0,0,960,540)
 
 解析如下：
-![2025Fall-09-TemplateClasses, 页面 89](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=89)
+![2025Fall-09-TemplateClasses, 页面 89](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=89&rect=0,0,960,540)
 
 
 > Valid uses of const_cast are few and far between 意为 可以合理使用 `const_cast` 的情况是非常稀少、寥寥无几的
 
-![2025Fall-09-TemplateClasses, 页面 89](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=92)
+![2025Fall-09-TemplateClasses, 页面 89](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=92&rect=0,0,960,540)
 
 #### 是否有更细粒度的控制? mutable
 
 使用mutable
-![2025Fall-09-TemplateClasses, 页面 95](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=95)
+![2025Fall-09-TemplateClasses, 页面 95](files/slides/CS106L/2025Fall-09-TemplateClasses.pdf#page=95&rect=0,0,960,540)

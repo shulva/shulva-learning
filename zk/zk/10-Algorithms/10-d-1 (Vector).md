@@ -1,7 +1,7 @@
 # Vector
 #### 无序向量
 
-![向量](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6)
+![向量](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=6&rect=0,0,960,540)
 
 [向量ADT](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=7):各种接口函数的定义及功能
 [向量类的构造及析构的实现](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=11):代码实现——[基于CopyFrom的构造](files/slides/Tsinghua-DSA-2024Fall-chapter/02.Vector.pdf#page=13)

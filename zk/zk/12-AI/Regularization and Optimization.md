@@ -6,7 +6,7 @@
 
 所以按照这里的定义，[Dropout](CNN.md#Dropout)也是典型的Regularization方法
 f1 is overfit , f2 is doing better on unseen data.
-![lecture_3, 页面 15](files/slides/CS231n/lecture_3.pdf#page=15)
+![lecture_3, 页面 15](files/slides/CS231n/lecture_3.pdf#page=15&rect=0,0,720,400)
 
 > Occam's Razor: Among multiple competing hypotheses, the simplest is the best, William of Ockham 1285-1347
 
@@ -15,16 +15,16 @@ Why regularize?
 - Make the model simple so it works on test data 
 - Improve optimization by adding curvature
 
-![lecture_3, 页面 19](files/slides/CS231n/lecture_3.pdf#page=19)
+![lecture_3, 页面 19](files/slides/CS231n/lecture_3.pdf#page=19&rect=0,0,720,400)
 
 L2会使小于1的数更小，而且L2会引入curvature（曲度），从而更容易优化
 当然，并不一定非要使模型简化，性能才是我们必须要关注的
 
 图中答案是same
-![lecture_3, 页面 23](files/slides/CS231n/lecture_3.pdf#page=23)
+![lecture_3, 页面 23](files/slides/CS231n/lecture_3.pdf#page=23&rect=0,0,720,400)
 
 所以，我们有如下的整体形式。现在问题是：How do we find the best W?
-![lecture_4, 页面 5](files/slides/CS231n/lecture_4.pdf#page=5)
+![lecture_4, 页面 5](files/slides/CS231n/lecture_4.pdf#page=5&rect=0,0,720,400)
 
 
 ## Optimiazation intro
@@ -58,7 +58,7 @@ for num in xrange(1000):
 
 > 策略2：follow the gradient
 
-![lecture_3, 页面 32](files/slides/CS231n/lecture_3.pdf#page=32)
+![lecture_3, 页面 32](files/slides/CS231n/lecture_3.pdf#page=32&rect=0,0,720,400)
 
 通过数值的方法（加上一个很小的h）去计算梯度是比较慢的，而且只是一个近似的解
 
@@ -66,7 +66,7 @@ for num in xrange(1000):
 > - Analytic gradient: exact, fast, error-prone
 > - In practice: Always use analytic gradient, but check implementation with numerical gradient. This is called a gradient check.
 
-![lecture_3, 页面 39](files/slides/CS231n/lecture_3.pdf#page=42)
+![lecture_3, 页面 39](files/slides/CS231n/lecture_3.pdf#page=42&rect=0,0,720,400)
 
 我们通过计算当前损失函数L对于其参数$W$的梯度，从而不停地更改参数，最终最小化损失函数值
 
@@ -113,7 +113,7 @@ while Ture:
 
  但梯度下降实际执行可能会非常慢，因为在一次更新参数之前，我们必须遍历整个数据集。 因此，我们通常会在每次需要计算更新的时候只随机抽取一小批样本， 这种叫做**小批量随机梯度下降**。每次循环都只随机地取一小部分数据
 
-![lecture_3, 页面 48](files/slides/CS231n/lecture_3.pdf#page=48)
+![lecture_3, 页面 48](files/slides/CS231n/lecture_3.pdf#page=48&rect=0,0,720,400)
 
 在每次迭代中，我们首先随机抽样一个小批量$\mathcal{B}$。 然后，我们计算小批量的梯度。最后，我们将梯度乘以一个预先确定的正数$\eta$(学习率），并从当前参数的值中减掉(使损失函数值变小的方向）。
 
@@ -131,7 +131,7 @@ while Ture:
 > 1.损失函数在不同方向上的曲率差异巨大
 > 其在平缓的维度上进展极其缓慢，在陡峭的维度上来回震荡
 
-![lecture_3, 页面 51](files/slides/CS231n/lecture_3.pdf#page=51)
+![lecture_3, 页面 51](files/slides/CS231n/lecture_3.pdf#page=51&rect=0,0,720,400)
 
 补充：损失函数具有很高的condition number：即海森矩阵的最大奇异值与最小奇异值之比很大。
 这在数学上意味着该函数在不同方向上的弯曲程度（曲率）差异极大，其几何形状是一个狭长的椭圆形山谷。
@@ -141,7 +141,7 @@ while Ture:
 saddle point的直观表现：[鞍点](files/slides/CS231n/lecture_3.pdf#page=53)
 Saddle points much more common in high dimension.
 当然，这些问题并非sgd所独有，其他使用梯度下降的算法也会有这样的问题。
-![lecture_3, 页面 53](files/slides/CS231n/lecture_3.pdf#page=53)
+![lecture_3, 页面 53](files/slides/CS231n/lecture_3.pdf#page=53&rect=0,0,720,400)
 
 ### SGD + Momentum
 
@@ -160,7 +160,7 @@ You may see SGD+Momentum formulated different ways, but they are equivalent - gi
 > - ∇f(x_t)：另一部分是当前梯度，它提供了新的加速度。
 > 参数 x 不再直接用梯度更新，而是用新的速度 v 来更新。
 
-![lecture_3, 页面 60](files/slides/CS231n/lecture_3.pdf#page=60)
+![lecture_3, 页面 60](files/slides/CS231n/lecture_3.pdf#page=60&rect=0,0,720,400)
 
 ---
 ## RMSProp
@@ -170,7 +170,7 @@ You may see SGD+Momentum formulated different ways, but they are equivalent - gi
 Per-parameter learning rates" or "adaptive learning rates
 其认为**不同参数（维度）应该有不同的学习率**。它通过调整更新公式的**分母**项，来为每个参数自适应地调整学习率。
 
-![lecture_3, 页面 62](files/slides/CS231n/lecture_3.pdf#page=62)
+![lecture_3, 页面 62](files/slides/CS231n/lecture_3.pdf#page=62&rect=0,0,720,400)
 
 > [!NOTE] 讲解
 > *   **引入变量**: `grad_squared`
@@ -217,7 +217,7 @@ Adam (Adaptive Moment Estimation) 优化器同时维护了两种历史信息：
 
 通过结合这两者，Adam 既能像 Momentum 一样利用惯性，又能像 RMSProp 一样为每个参数自适应地调整学习率。
 
-![lecture_3, 页面 70](files/slides/CS231n/lecture_3.pdf#page=70)
+![lecture_3, 页面 70](files/slides/CS231n/lecture_3.pdf#page=70&rect=0,0,720,400)
 
 > [!question] un_bias的作用
 > 
@@ -239,7 +239,7 @@ Adam 将权重惩罚和梯度混在一起处理，导致惩罚效果受到自�
 AdamW 将权重惩罚和梯度分开处理，使得惩罚更加直接和有效。
 因此，AdamW 通常能获得比 Adam 更好的训练效果和模型泛化能力
 
-![lecture_3, 页面 76](files/slides/CS231n/lecture_3.pdf#page=76)
+![lecture_3, 页面 76](files/slides/CS231n/lecture_3.pdf#page=76&rect=0,0,720,400)
 
 ---
 
@@ -254,23 +254,23 @@ while Ture:
 	weights += - step_size * weights_grad 
 ```
 
-![lecture_3, 页面 79](files/slides/CS231n/lecture_3.pdf#page=79)
+![lecture_3, 页面 79](files/slides/CS231n/lecture_3.pdf#page=79&rect=0,0,720,400)
 
 事实上我们可以在训练过程中调整学习率,如下是多种调整学习率的方法：Step,Cosine,Liner,Inverse sqrt,Linear Warmup...
 具体可以去slides中看具体的学习率曲线是长什么样的，在此不赘述
 
-![lecture_3, 页面 84](files/slides/CS231n/lecture_3.pdf#page=84)
+![lecture_3, 页面 84](files/slides/CS231n/lecture_3.pdf#page=84&rect=0,0,720,400)
 
 ---
 ## Hessian optimize
 
 如下是使用梯度和hessian进行梯度下降的对比
 
-![lecture_3, 页面 88](files/slides/CS231n/lecture_3.pdf#page=87)
+![lecture_3, 页面 88](files/slides/CS231n/lecture_3.pdf#page=87&rect=0,0,720,400)
 
 second-order同时使用一阶导数（梯度）和二阶导数（海森矩阵）信息，更精确
 
-![lecture_3, 页面 88](files/slides/CS231n/lecture_3.pdf#page=88)
+![lecture_3, 页面 88](files/slides/CS231n/lecture_3.pdf#page=88&rect=0,0,720,400)
 
 但事实上，deep learning基本不用这种方法。根本原因在于其巨大的计算和存储开销
 
@@ -284,7 +284,7 @@ second-order同时使用一阶导数（梯度）和二阶导数（海森矩阵�
     - 矩阵求逆是一个计算量非常大的操作，其时间复杂度大约是 O(N³)。
     - 问题二（计算）: 在每次参数更新时都计算一次矩阵的逆，这个计算时间是完全无法接受的。
 	
-![lecture_3, 页面 90](files/slides/CS231n/lecture_3.pdf#page=90)
+![lecture_3, 页面 90](files/slides/CS231n/lecture_3.pdf#page=90&rect=0,0,720,400)
 
 当然，也有[BFGS和L-BFGS](files/slides/CS231n/lecture_3.pdf#page=112&selection=12,0,12,6)这样减少计算与存储成本的方法（计算从N\^3->N\^2,存储从N\^2->1）
 但是L-BFGS只在全批量的场景下表现很好，在minbatch的场景下表现不佳，所以还是很少用
@@ -294,7 +294,7 @@ second-order同时使用一阶导数（梯度）和二阶导数（海森矩阵�
 
 >  How to optimize more complex functions?
 
-![lecture_3, 页面 96](files/slides/CS231n/lecture_3.pdf#page=96)
+![lecture_3, 页面 96](files/slides/CS231n/lecture_3.pdf#page=96&rect=0,0,720,400)
 
 对于很多问题，我们需要引入非线性！
 现实世界中的很多问题，用直线是无法解决的。
@@ -302,4 +302,4 @@ second-order同时使用一阶导数（梯度）和二阶导数（海森矩阵�
 
 在神经网络中，**激活函数（Activation Function）** 就扮演了这个非线性变换的角色。它能把数据映射到一个新的空间，使得原本线性不可分的问题，在高维空间中变得线性可分。没有非线性激活函数，再多层的神经网络也只相当于一个单层的线性模型，无法解决复杂问题。
 
-![lecture_3, 页面 95](files/slides/CS231n/lecture_3.pdf#page=95)
+![lecture_3, 页面 95](files/slides/CS231n/lecture_3.pdf#page=95&rect=0,0,720,400)

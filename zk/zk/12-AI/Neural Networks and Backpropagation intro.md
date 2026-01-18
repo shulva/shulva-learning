@@ -10,25 +10,25 @@
 
 通过在两次线性变换之间插入一个非线性激活函数，神经网络获得了强大的特征学习能力，远超简单的线性模型。
 
-![lecture_4, 页面 28](files/slides/CS231n/lecture_4.pdf#page=29)
+![lecture_4, 页面 28](files/slides/CS231n/lecture_4.pdf#page=29&rect=0,0,720,400)
 
 我们通过激活函数来引入非线性，这里的`max(0,x)`便相当于激活函数。
 如果不引入非线性，那么最后化为的形式还是线性的。
 So , we need some sort of non-linearity in the middle of neural net work to be able to give us the power to solve non-linear problem.
-![lecture_4, 页面 31](files/slides/CS231n/lecture_4.pdf#page=31)
+![lecture_4, 页面 31](files/slides/CS231n/lecture_4.pdf#page=31&rect=0,0,720,400)
 
 激活函数有很多种，按需选择，这里有一些原理解释:[Sigmoid & Relu & Gelu](CNN.md#Sigmoid%20&%20Relu%20&%20Gelu)
 
 > [!question] How would we choose for a new problem which of these activation functions to use?
 > Actually , it's **empirical** in most cases. But we often start with value , or we go with standard activation functions being used for those specific architectures. There are some activation functions that are commonly used in CNN , or in transformer, and different architectures.  
 
-![lecture_4, 页面 32](files/slides/CS231n/lecture_4.pdf#page=32)
+![lecture_4, 页面 32](files/slides/CS231n/lecture_4.pdf#page=32&rect=0,0,720,400)
 
 ---
 ### Example of NN
 
 一般来说，more neurons = more capacity = better performance
-![lecture_4, 页面 34](files/slides/CS231n/lecture_4.pdf#page=34)
+![lecture_4, 页面 34](files/slides/CS231n/lecture_4.pdf#page=34&rect=0,0,720,400)
 
 
 > [!question] Why is the model more underfitting when we increase the value of lambda here?
@@ -40,7 +40,7 @@ So , we need some sort of non-linearity in the middle of neural net work to be a
 
 > Do not use size of neural network as a regularizer
 
-![lecture_4, 页面 41](files/slides/CS231n/lecture_4.pdf#page=41)
+![lecture_4, 页面 41](files/slides/CS231n/lecture_4.pdf#page=41&rect=0,0,720,400)
 
 > [!question] Why shoule we not choose the size of NN as a regularizer?
 > In networks , we often start increasing the number of parameters, until we see some levels of overfitting.
@@ -58,11 +58,11 @@ Biological Neurons:
 - Dendrites can perform complex non-linear computations 
 - Synapses are not a single weight but a complex non-linear dynamical system
 
-![lecture_4, 页面 45](files/slides/CS231n/lecture_4.pdf#page=45)
+![lecture_4, 页面 45](files/slides/CS231n/lecture_4.pdf#page=45&rect=0,0,720,400)
 
 Biological Neurons are Complex connectivity patterns, common architectures can not implement like it.
 But neural networks with random connections can [work](files/slides/CS231n/lecture_4.pdf#page=47) too!
-![lecture_4, 页面 45](files/slides/CS231n/lecture_4.pdf#page=46)
+![lecture_4, 页面 45](files/slides/CS231n/lecture_4.pdf#page=46&rect=0,0,720,400)
 
 ---
 ## Backpropagation
@@ -71,13 +71,13 @@ But neural networks with random connections can [work](files/slides/CS231n/lectu
 
 直接计算这一整个函数的$\nabla L$非常复杂，而且有不少缺点
 
-![lecture_4, 页面 51](files/slides/CS231n/lecture_4.pdf#page=51)
+![lecture_4, 页面 51](files/slides/CS231n/lecture_4.pdf#page=51&rect=0,0,720,400)
 
 
 > Better idea:Computational graphs + Backpropagation
 
 [CNN](files/slides/CS231n/lecture_4.pdf#page=53)就有类似的架构
-![lecture_4, 页面 52](files/slides/CS231n/lecture_4.pdf#page=52)
+![lecture_4, 页面 52](files/slides/CS231n/lecture_4.pdf#page=52&rect=0,0,720,400)
 
 > [!question] 为什么在反向传播中计算梯度？
 > 如果要得到一个输出$L$相对于 k 个不同的输入变量$w_i$ 的导数，通常需要进行 k 次独立的前向计算。
@@ -89,16 +89,16 @@ But neural networks with random connections can [work](files/slides/CS231n/lectu
 我们仍然需要正向计算去获得中间值和最终的值L来帮助反向传播计算梯度。
 ![](../../../files/images/AI/12-b-3-4.png)
 
-![lecture_4, 页面 71](files/slides/CS231n/lecture_4.pdf#page=72)
+![lecture_4, 页面 71](files/slides/CS231n/lecture_4.pdf#page=72&rect=0,0,720,400)
 
 UpStream gradient上游来的反向信息+自身算出的local gradient
 计算结点无需关心整个计算图的结构或是其他的什么宏观问题，它只需要专注计算就好
-![lecture_4, 页面 78](files/slides/CS231n/lecture_4.pdf#page=78)
+![lecture_4, 页面 78](files/slides/CS231n/lecture_4.pdf#page=78&rect=0,0,720,400)
 
 
 当然，计算图的构造不是唯一的。像[这个例子](files/slides/CS231n/lecture_4.pdf#page=79)也可以使用Sigmoid函数来简化计算图
 毕竟Sigmoid的local gradient是比较简洁优雅的
-![lecture_4, 页面 98](files/slides/CS231n/lecture_4.pdf#page=98)
+![lecture_4, 页面 98](files/slides/CS231n/lecture_4.pdf#page=98&rect=0,0,720,400)
 
 > Patterns in gradient flow 反向传播的一些基本模式
 
@@ -108,11 +108,11 @@ UpStream gradient上游来的反向信息+自身算出的local gradient
 4. Max门 (Max Gate): 像个路由器，只把梯度传给前向传播时值最大的那个输入，其他输入梯度为0。
 
 梯度在网络中反向传播时，会根据每个运算的数学性质，被相应地分配、缩放、聚合或路由。
-![lecture_4, 页面 102](files/slides/CS231n/lecture_4.pdf#page=102)
+![lecture_4, 页面 102](files/slides/CS231n/lecture_4.pdf#page=102&rect=0,0,720,400)
 
 所以整个过程是先做一遍前向传播，再去计算一遍反向传播
 Pytorch中有很多已经封装好的[API](files/slides/CS231n/lecture_4.pdf#page=110),这是Pytorch sigmoid layer的[内部实现](files/slides/CS231n/lecture_4.pdf#page=114)。
-![lecture_4, 页面 104](files/slides/CS231n/lecture_4.pdf#page=103)
+![lecture_4, 页面 104](files/slides/CS231n/lecture_4.pdf#page=103&rect=0,0,720,400)
 
 
 ---
@@ -133,7 +133,7 @@ $$
 \frac{\partial y}{\partial x_i} = \frac{\partial y}{\partial u_1} \frac{\partial u_1}{\partial x_i} + \frac{\partial y}{\partial u_2} \frac{\partial u_2}{\partial x_i} + \cdots + \frac{\partial y}{\partial u_m} \frac{\partial u_m}{\partial x_i}
 $$
 
-![lecture_4, 页面 118](files/slides/CS231n/lecture_4.pdf#page=118)
+![lecture_4, 页面 118](files/slides/CS231n/lecture_4.pdf#page=118&rect=0,0,720,400)
 
 > Backprop with Vectors
 
@@ -146,7 +146,7 @@ $$
 
 所以同理，最后的**∂L/∂x**与**∂L/∂y**做一个Matrix-vector乘法即可。
 
-![lecture_4, 页面 125](files/slides/CS231n/lecture_4.pdf#page=125)
+![lecture_4, 页面 125](files/slides/CS231n/lecture_4.pdf#page=125&rect=0,0,720,400)
 
 在下方这个例子中，input维度和output维度都为4，即$D_x=D_z=4$，所以Jacobian矩阵为4\*4的矩阵。
 这个雅可比矩阵是稀疏的：非对角线上的元素永远为零！
@@ -161,18 +161,18 @@ $$
 
 $$
 
-![lecture_4, 页面 132](files/slides/CS231n/lecture_4.pdf#page=132)
+![lecture_4, 页面 132](files/slides/CS231n/lecture_4.pdf#page=132&rect=0,0,720,400)
 
 ---
 ## What about Tensors?
 
 同理，计算的时候注意维度要对齐
-![lecture_4, 页面 137](files/slides/CS231n/lecture_4.pdf#page=137)
+![lecture_4, 页面 137](files/slides/CS231n/lecture_4.pdf#page=137&rect=0,0,720,400)
 
 Jacobians: $dy/dx: [(N×D)×(N×M)] dy/dw: [(D×M)×(N×M)]$ 
 For a neural net we may have N=64, D=M=4096 Each Jacobian takes ~256 GB of memory! Must work with them implicitly!
 这里的矩阵计算有误，结果应当为[17, 11,  8, -6],[ 5,  2, 11,  7]。不过无伤大雅
-![lecture_4, 页面 144](files/slides/CS231n/lecture_4.pdf#page=144)
+![lecture_4, 页面 144](files/slides/CS231n/lecture_4.pdf#page=144&rect=0,0,720,400)
 
 所以，不使用jacobian矩阵的公式方法为：
 These formulas are easy to remember: they are the only way to make shapes match up!

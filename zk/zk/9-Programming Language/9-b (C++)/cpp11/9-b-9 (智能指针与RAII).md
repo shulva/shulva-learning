@@ -15,10 +15,10 @@ std::string returnNameCheckPawsome(Pet p) {
 }
 ```
 
-![2025Fall-16-RAII-SmartPointers, 页面 15](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=15)
+![2025Fall-16-RAII-SmartPointers, 页面 15](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=15&rect=0,0,720,400)
 
 
-![2025Fall-16-RAII-SmartPointers, 页面 12](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=12)
+![2025Fall-16-RAII-SmartPointers, 页面 12](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=12&rect=0,0,720,400)
 
 ```cpp
 std::string returnNameCheckPawsome(int petId) {
@@ -83,7 +83,7 @@ if (!file) {
 - 如果不能保证可用，就干脆构造失败（抛异常 / 标记无效），不会产生「看起来存在，但用起来不对」的半吊子对象。
 
 
-![2025Fall-16-RAII-SmartPointers, 页面 29](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=29)
+![2025Fall-16-RAII-SmartPointers, 页面 29](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=29&rect=0,0,720,400)
 
 
 如下代码便没有遵循RAII: the ifstream is opened and closed in code, not constructor & destructor
@@ -168,7 +168,7 @@ std::lock_guard<std::mutex> guard(m);
 
 So for the memory , we can do the same...
 
-![2025Fall-16-RAII-SmartPointers, 页面 50](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=50)
+![2025Fall-16-RAII-SmartPointers, 页面 50](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=50&rect=0,0,720,400)
 
 ```cpp
 void rawPtrfn(){
@@ -184,11 +184,11 @@ void rawPtrfn(){
 
 > Remember we can't copy unique pointers
 
-![2025Fall-16-RAII-SmartPointers, 页面 55](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=55)
+![2025Fall-16-RAII-SmartPointers, 页面 55](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=55&rect=0,0,720,400)
 
 > `std::shared_ptr`
 
-![2025Fall-16-RAII-SmartPointers, 页面 57](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=57)
+![2025Fall-16-RAII-SmartPointers, 页面 57](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=57&rect=0,0,720,400)
 
 > We're still explicitly calling `new`  
 > No! we need something new!
@@ -203,13 +203,13 @@ std::shared_ptr<T> sharedPtr = std::make_shared<T>();
 std::weak_ptr<T> wp = sharedPtr;
 ```
 
-![2025Fall-16-RAII-SmartPointers, 页面 62](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=62)
+![2025Fall-16-RAII-SmartPointers, 页面 62](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=62&rect=0,0,720,400)
 
 
 > `std::weak_ptr` Weak pointers are a way to avoid circular dependencies in our code so that we don't leak any memory.
 
 `std::weak_ptr`最多的使用场景就是解决循环引用问题：
-![2025Fall-16-RAII-SmartPointers, 页面 66](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=66)
+![2025Fall-16-RAII-SmartPointers, 页面 66](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=66&rect=0,0,720,400)
 
 
-![2025Fall-16-RAII-SmartPointers, 页面 66](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=67)
+![2025Fall-16-RAII-SmartPointers, 页面 66](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=67&rect=0,0,720,400)

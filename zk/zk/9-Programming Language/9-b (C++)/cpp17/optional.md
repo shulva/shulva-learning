@@ -5,7 +5,7 @@
 > Type Safety: The extent to which a language prevents typing errors.
 > 类型安全：指一门编程语言在多大程度上能够通过类型系统防止程序里的类型错误。
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 15](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=15)
+![2025Fall-15-OptionalAndTypeSafety, 页面 15](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=15&rect=0,0,720,400)
 
 > Type Safety: The extent to which a language guarantees the behavior of programs.
 > 类型安全：指一门语言能在多大程度上，用类型系统来约束并保证程序的运行行为可预期。
@@ -23,7 +23,7 @@ void removeOddsFromEnd(vector<int>& vec){
 ```
 事实上，这段程序很容易引发UB
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 21](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=21)
+![2025Fall-15-OptionalAndTypeSafety, 页面 21](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=21&rect=0,0,720,400)
 
 > We can make no guarantees about what this function does! **我们无法对这个函数的行为做出任何保证！**
 > Key idea: it is the **programmers job** to enforce the **precondition** that `vec` be non-empty, otherwise we get undefined behavior!
@@ -87,12 +87,12 @@ std::pair<bool, valueType&> vector<valueType>::back(){
 
 But... we call the Default constructor of `valueType()`
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 34](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=34)
+![2025Fall-15-OptionalAndTypeSafety, 页面 34](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=34&rect=0,0,720,400)
 
 > 即使无视这些代价，一旦default的结果或者其它正常构造路径会产出用来当**特殊标记**的数值（这里是奇数），那整套用特殊值做状态检测的方案就会变得极不可靠——所以这是设计层面的 type safety 问题。
 > 在这个层面上，类型系统的检查暂时帮不上忙
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 35](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=35)
+![2025Fall-15-OptionalAndTypeSafety, 页面 35](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=35&rect=0,0,720,400)
 
 我们到底该返回什么？
 ```cpp
@@ -110,7 +110,7 @@ But... we call the Default constructor of `valueType()`
 > 
 > A common use case for `optional` is the return value of a function that may fail. As opposed to other approaches, such as `std::pair<T, bool>`, `optional` handles expensive-to-construct objects well and is more readable, as the intent is expressed explicitly.
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 39](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=41)
+![2025Fall-15-OptionalAndTypeSafety, 页面 39](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=41&rect=0,0,720,400)
 
 用 `{}` 和 `std::nullopt` 这两种写法，都可以用来表示“没有值的状态”，**可以互换使用**
 ```cpp
@@ -140,7 +140,7 @@ void removeOddsFromEnd(vector<int>& vec){
 
 > 使用`std::optional`提供的接口
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 47](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=47)
+![2025Fall-15-OptionalAndTypeSafety, 页面 47](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=47&rect=0,0,720,400)
 
 ```cpp
 #include <optional>
@@ -202,7 +202,7 @@ void removeOddsFromEnd(vector<int>& vec){
 }
 ```
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 54](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=54)
+![2025Fall-15-OptionalAndTypeSafety, 页面 54](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=54&rect=0,0,720,400)
 
 ## 用`std::optional`重新设计 `Vector`
 
@@ -237,7 +237,7 @@ int main(){
 }
 ```
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 58](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=58)
+![2025Fall-15-OptionalAndTypeSafety, 页面 58](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=58&rect=0,0,720,400)
 
 
 > 我们能做的最好的事情就是在出错时抛异常——这正是 `.at()` 的做法。
@@ -247,11 +247,11 @@ int main(){
     - `operator[]`：快，但不安全，不检查越界；
     - `at()`：安全，但有额外开销，越界就抛异常。
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 60](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=60)
+![2025Fall-15-OptionalAndTypeSafety, 页面 60](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=60&rect=0,0,720,400)
 
 > `std::optional`并非是完美的...
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 61](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=61)
+![2025Fall-15-OptionalAndTypeSafety, 页面 61](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=61&rect=0,0,720,400)
 
 ## Monad
 
@@ -385,7 +385,7 @@ int main() {
 
 逻辑统一、可组合、错误/空值传播自动化，很函数式、也很monadic，看来`std::optional`还是很有用的
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 72](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=72)
+![2025Fall-15-OptionalAndTypeSafety, 页面 72](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=72&rect=0,0,720,400)
 
 ## cpp的设计哲学与`std::optional`
 
@@ -399,12 +399,12 @@ int main() {
 - **写得好的类型 = 不容易炸的程序**
 
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 74](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=74)
+![2025Fall-15-OptionalAndTypeSafety, 页面 74](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=74&rect=0,0,720,400)
 
 > monad玩的飞起的语言：
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 76](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=76)
+![2025Fall-15-OptionalAndTypeSafety, 页面 76](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=76&rect=0,0,720,400)
 
 > Besides using them in classes, you can use them in application code where it makes sense! This is highly encouraged :)
 
-![2025Fall-15-OptionalAndTypeSafety, 页面 81](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=81)
+![2025Fall-15-OptionalAndTypeSafety, 页面 81](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=81&rect=0,0,720,400)

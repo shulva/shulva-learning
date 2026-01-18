@@ -3,18 +3,17 @@
 ### what are streams?
 
 Streams: a general input/output facility for C++
-
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=28)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=28&rect=0,0,1440,800)
 
 **basic_ios** ensures the stream is working correctly and where the stream comes from! maybe it is the console, keyboard, or a file
 
 中间的相交部分是iostream(This intersection is known as iostream which takes has all of the characteristics of ostream and istream!)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=33&rect=0,0,1440,800)
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=33)
 
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=42&rect=0,0,1440,800)
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=42)
-
+---
 ### stringstreams
 
 stringstreams is a way to **treat strings as streams **
@@ -45,16 +44,17 @@ void foo()
 
 We want to extract the quote , but we have >> problems ! So we can use getline() instead .
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=70)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=70&rect=0,0,1440,800)
 
+---
 ### cout and cin
 
 btw:[cerr and clog](https://www.geeksforgeeks.org/cpp/difference-between-cerr-and-clog/)
 contents in buffer not shown on external source until an explicit flush occurs!
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=76)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=76&rect=0,0,1440,800)
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=78)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=78&rect=0,0,1440,800)
 
 > [!NOTE] 输出缓冲区：std::endl 与 \n
 > 
@@ -129,9 +129,10 @@ contents in buffer not shown on external source until an explicit flush occurs!
 >     - **风险（交互式程序的大坑）：** 程序运行到了 `cin >> name` 开始等待你输入，但屏幕上一片漆黑。为什么？因为 "请输入名字:" 这句话还在缓冲区里没吐出来！用户不知道程序在等什么，以为程序卡死了。
 > 	
 
+---
 ### Output and input file streams
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=96)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=96&rect=0,0,1440,800)
 
 ```cpp
 int main() 
@@ -150,37 +151,39 @@ int main()
 }
 ```
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=106)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=106&rect=0,0,1440,800)
 
+---
 ### input streams
 
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=110)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=110&rect=0,0,1440,800)
 
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=112)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=112&rect=0,0,1440,800)
 
 tao is a double , so Fernandez >> double obviously is wrong
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=121)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=121&rect=0,0,1440,800)
 
 这里的ignore指的是：**如果你刚用了 `>>` 读取数据，紧接着又要用 `getline`，在中间插一句 `cin.ignore()`，把残留的回车符清理掉。**
-![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=70)
+![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=70&rect=0,0,960,540)
 
 
-![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=32)
+![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=32&rect=0,0,960,540)
 
-![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=138)
+![2025Fall-04-Streams, 页面 28](files/slides/CS106L/2025Fall-04-Streams.pdf#page=138&rect=0,0,1440,800)
 
 注意，如果你只使用了一个std::getline(std::cin,name);
 那么就意味着，虽然`getline` 会从输入流中一直读，直到遇到换行符 `\n`，并把这个 `\n` 从缓冲区里**拿走并丢弃**，但**不会**把它存到你的字符串变量里。所以，消耗完一个`\n`后，name没有读取到任何东西，之后，cin又要读取Rachel...，还是错误的。
 
+---
 ### Summary
 
-![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=21)
+![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=21&rect=0,0,960,540)
 
 
-![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=22)
+![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=22&rect=0,0,960,540)
 
 > [!NOTE]
 > 1. 什么时候程序会“卡住”等待输入？(Blocking)
@@ -229,7 +232,7 @@ tao is a double , so Fernandez >> double obviously is wrong
 > 7. **关键点：** 那个 `.` **并没有被丢弃**，它留在了缓冲区里，变成了下一个读取操作的“开头”。如果你后面紧接着写 `cin >> y;`，`y` 会直接撞上这个小数点。
 
 
-![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=71)
+![Streams 2, 页面 21](files/slides/CS106L/Streams%202.pdf#page=71&rect=0,0,960,540)
 
 ```cpp
 #include <iostream>

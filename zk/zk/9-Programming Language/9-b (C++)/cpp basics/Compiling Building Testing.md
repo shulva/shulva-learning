@@ -16,7 +16,7 @@
 
 > make and makefile
 
-![2025Fall-16-RAII-SmartPointers, 页面 80](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=80)
+![2025Fall-16-RAII-SmartPointers, 页面 80](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=80&rect=0,0,720,400)
 
 ```makefile
 # Compiler
@@ -42,7 +42,7 @@ clean:
 
 > For making our Makefiles we can and should use CMAKE
 
-![2025Fall-16-RAII-SmartPointers, 页面 83](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=83)
+![2025Fall-16-RAII-SmartPointers, 页面 83](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=83&rect=0,0,720,400)
 
 > 下面是一个CMakeLists.txt的示例
 
@@ -59,7 +59,7 @@ add_executable(main ${SRC_FILES}) // This command adds all of the source files o
 
 ```
 
-![2025Fall-16-RAII-SmartPointers, 页面 88](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=88)
+![2025Fall-16-RAII-SmartPointers, 页面 88](files/slides/CS106L/2025Fall-16-RAII-SmartPointers.pdf#page=88&rect=0,0,720,400)
 
 ## Testing
 
@@ -67,25 +67,25 @@ add_executable(main ${SRC_FILES}) // This command adds all of the source files o
 
 [IBM](https://www.ibm.com/think/topics/unit-testing):Unit testing is a test-driven development (TDD) method for evaluating software that pays special attention to an individual component or unit of code—the smallest increment possible
 
-![2025Fall-17-UnitTesting, 页面 6](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=6)
+![2025Fall-17-UnitTesting, 页面 6](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=6&rect=0,0,720,400)
 
 > How to ?
 
-![2025Fall-17-UnitTesting, 页面 11](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=11)
+![2025Fall-17-UnitTesting, 页面 11](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=11&rect=0,0,720,400)
 
 > Why should we...?
 
-![2025Fall-17-UnitTesting, 页面 15](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=15)
+![2025Fall-17-UnitTesting, 页面 15](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=15&rect=0,0,720,400)
 
 ### Google Test
 
 虽然市面上有很多测试框架，但是**Google Test 仍然是事实上的主流**
 
-![2025Fall-17-UnitTesting, 页面 24](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=24)
+![2025Fall-17-UnitTesting, 页面 24](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=24&rect=0,0,720,400)
 
 > 感谢Google诸神！
 
-![2025Fall-17-UnitTesting, 页面 44](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=44)
+![2025Fall-17-UnitTesting, 页面 44](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=44&rect=0,0,720,400)
 
 
 现在，假设我们有一个类需要测试:
@@ -170,10 +170,10 @@ TEST(AccountTest, BankAccountStartsEmpty) {
 > 测试宏TEST_F
 > Hm… this looks the same. What changed?
 
-![2025Fall-17-UnitTesting, 页面 32](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=32)
+![2025Fall-17-UnitTesting, 页面 32](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=32&rect=0,0,720,400)
 
 
-![2025Fall-17-UnitTesting, 页面 32](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=33)
+![2025Fall-17-UnitTesting, 页面 32](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=33&rect=0,0,720,400)
 
 
 > [!NOTE] `TEST_F` 和 `TEST` 的核心区别
@@ -187,7 +187,7 @@ TEST(AccountTest, BankAccountStartsEmpty) {
 >     - 成员变量：各个测试共享这套“起始状态”
 >     然后 `TEST_F` 里就可以直接用这些成员，不用再重复 new / delete。
 
-![2025Fall-17-UnitTesting, 页面 32](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=34)
+![2025Fall-17-UnitTesting, 页面 32](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=34&rect=0,0,720,400)
 
 > TEST_P : 应对参数化场景
 
@@ -208,7 +208,7 @@ TEST(AccountTest, BankAccountStartsEmpty) {
 每次测试开始前，把账户余额设置成这次参数里指定的 `initial_balance`。
 
 
-![2025Fall-17-UnitTesting, 页面 36](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=36)
+![2025Fall-17-UnitTesting, 页面 36](files/slides/CS106L/2025Fall-17-UnitTesting.pdf#page=36&rect=0,0,720,400)
 
 > Here is Our TEST_P!
 > But hold on...  What are the parameters? Where are they coming from? Who is defining them?

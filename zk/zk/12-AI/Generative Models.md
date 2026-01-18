@@ -6,14 +6,14 @@
 - **聚类 (Clustering)**: K-Means, GMM。把数据分成几堆。
 - **降维 (Dimensionality Reduction)**: PCA, t-SNE。把高维数据压扁到低维，方便可视化。
 - **密度估计 (Density Estimation)**: 估计数据的概率分布。
-![lecture_13, 页面 18](files/slides/CS231n/lecture_13.pdf#page=113)
+![lecture_13, 页面 18](files/slides/CS231n/lecture_13.pdf#page=113&rect=0,0,720,400)
 
 ---
 ### Generative,Discriminative,Conditional Generative Model
 
 牢记，接下来x代表data数据，y代表label标签。
 
-![lecture_13, 页面 23](files/slides/CS231n/lecture_13.pdf#page=23)
+![lecture_13, 页面 23](files/slides/CS231n/lecture_13.pdf#page=23&rect=0,0,720,400)
 
 > Discriminative Models
 
@@ -21,37 +21,37 @@ In this case , we are learning a probabilistic model of y condition on x , which
 Possible labels for each image compete for probability. No competition between images.
 
 其的缺点如下:
-![lecture_13, 页面 26](files/slides/CS231n/lecture_13.pdf#page=26)
+![lecture_13, 页面 26](files/slides/CS231n/lecture_13.pdf#page=26&rect=0,0,720,400)
 
 > Generative Models
 
 We want to learn a distribution over all possible image x.
-![lecture_13, 页面 29](files/slides/CS231n/lecture_13.pdf#page=29)
+![lecture_13, 页面 29](files/slides/CS231n/lecture_13.pdf#page=29&rect=0,0,720,400)
 
 > Conditional Generative Model
 
 Sometimes the y is very ill-defined(like just give you a picture or written text), then the question will become very complicated, it needs the model to have great reasoning ability.
-![lecture_13, 页面 30](files/slides/CS231n/lecture_13.pdf#page=30)
+![lecture_13, 页面 30](files/slides/CS231n/lecture_13.pdf#page=30&rect=0,0,720,400)
 
 理论上来说，我们可以通过贝叶斯公式组合Discriminative Model和Generative Model形成Conditional Generative Model ，
 但是实际上大家还是从头训练Conditional Generative Model。
-![lecture_13, 页面 32](files/slides/CS231n/lecture_13.pdf#page=32)
+![lecture_13, 页面 32](files/slides/CS231n/lecture_13.pdf#page=32&rect=0,0,720,400)
 
 What is the most useful aspect of Conditional Generative Model is to generate data from labels.
 You input y, and the model generative x with labels y.
 Generative Model和Conditional Generative Model虽然都是Generative Model，但此两者不可混为一谈。
 因为有不少人不喜欢写p(x|y)将其统一写成p(x)，注意，不要混淆。
-![lecture_13, 页面 35](files/slides/CS231n/lecture_13.pdf#page=35)
+![lecture_13, 页面 35](files/slides/CS231n/lecture_13.pdf#page=35&rect=0,0,720,400)
 
 ### Why Generative Models?
 
 当然，还可以文生图：Text to Image: Produce output image x from input text y
 还可以图生视频：Image to Video: What happens next?
-![lecture_13, 页面 37](files/slides/CS231n/lecture_13.pdf#page=37)
+![lecture_13, 页面 37](files/slides/CS231n/lecture_13.pdf#page=37&rect=0,0,720,400)
 
 You can not compute P(x), you can only sample form P(x) , so it is called "implicit" density.
 But, if the thing you really care about is sampling, then you maybe don't need to explicitly be able to see the value of density of input.
-![lecture_13, 页面 47](files/slides/CS231n/lecture_13.pdf#page=47)
+![lecture_13, 页面 47](files/slides/CS231n/lecture_13.pdf#page=47&rect=0,0,720,400)
 
 ---
 ## Autoregressive Models
@@ -74,17 +74,17 @@ Autoregressive自回归的字面意思是：**自己对自己的回归 (Self-Reg
 5.  最终形态：最大化这个“对数概率和”，在数学上等价于我们熟悉的**最小化损失函数**。
 这就是为什么我们在训练神经网络时，要用梯度下降去优化损失函数——本质上就是在做最大似然估计，让模型尽可能逼近数据的真实分布。
 
-![lecture_13, 页面 52](files/slides/CS231n/lecture_13.pdf#page=52)
+![lecture_13, 页面 52](files/slides/CS231n/lecture_13.pdf#page=52&rect=0,0,720,400)
 
 Break data sample x into some sequence subparts in some way.
 ==That's going to input the previous part of the sequence and try to give us a probability distribution over the next part of the sequence.It is familiar with RNN... and even masked transformer==
 
-![lecture_13, 页面 56](files/slides/CS231n/lecture_13.pdf#page=56)
+![lecture_13, 页面 56](files/slides/CS231n/lecture_13.pdf#page=56&rect=0,0,720,400)
 
 Language is naturally a sequence of 1D, it is easy to break that. It is discrete.
 Image is continuous. We need some tricks. We can treat image as a sequence of pixels. But it is too expensive!
 
-![lecture_13, 页面 59](files/slides/CS231n/lecture_13.pdf#page=59)
+![lecture_13, 页面 59](files/slides/CS231n/lecture_13.pdf#page=59&rect=0,0,720,400)
 
 
 > 自回归在图像生成领域的反击！
@@ -101,7 +101,7 @@ Image is continuous. We need some tricks. We can treat image as a sequence of pi
 
 只要我们能把图片有效地Token化，就能让自回归方法也能生图。
 
-![lecture_14, 页面 121](files/slides/CS231n/lecture_14.pdf#page=121)
+![lecture_14, 页面 121](files/slides/CS231n/lecture_14.pdf#page=121&rect=0,0,720,400)
 
 ---
 ## VAE
@@ -116,7 +116,7 @@ Image is continuous. We need some tricks. We can treat image as a sequence of pi
 6.  **核心策略**：我们转而去优化 $p(x)$ 的一个**下界（Lower Bound）**，也就是著名的 **ELBO**。
 7.  所以，只要把这个下界推得足够高，真实的概率也会跟着变高，从而达到训练模型的目的。
 
-![lecture_13, 页面 61](files/slides/CS231n/lecture_13.pdf#page=61)
+![lecture_13, 页面 61](files/slides/CS231n/lecture_13.pdf#page=61&rect=0,0,720,400)
 
 ### (Non-Variational) Autoencoders
 
@@ -136,7 +136,7 @@ Encoder and Decoder can be MLP, CNN, Transformer, …
 事实上，我们这里是想让NN在受限的情况下去学习一些non-trivial structure from data。
 我们所需要做的就是赋予其一个bottleneck，这里就是让z的长度远比x小。
 ==训练好之后，就可以用Encoder去做下游任务，行self-supervised故事。==
-![lecture_13, 页面 66](files/slides/CS231n/lecture_13.pdf#page=66)
+![lecture_13, 页面 66](files/slides/CS231n/lecture_13.pdf#page=66&rect=0,0,720,400)
 
 > 反其道而行之
 
@@ -145,7 +145,7 @@ Encoder and Decoder can be MLP, CNN, Transformer, …
 但是问题是，z作为一个中间的生成物，并不好生成。我们没有z的dataset去训练。
 所以，VAE想法是，我们可否强制这个z符合某种我们已知的分布呢？
 
-![lecture_13, 页面 70](files/slides/CS231n/lecture_13.pdf#page=70)
+![lecture_13, 页面 70](files/slides/CS231n/lecture_13.pdf#page=70&rect=0,0,720,400)
 
 ###  Variational Autoencoder (VAE)
 
@@ -165,13 +165,13 @@ $p_{\theta}(x|z)$ we can compute this with the decoder。这个分布的参数$\
 > **"Problem, we can't integrate over all z"**。
 > $z$ 是一个高维向量，空间大得没边。要穷举所有可能的 $z$ 进行积分，计算量是无穷大的，根本算不完。
 
-![lecture_13, 页面 80](files/slides/CS231n/lecture_13.pdf#page=80)
+![lecture_13, 页面 80](files/slides/CS231n/lecture_13.pdf#page=80&rect=0,0,720,400)
 
 > 再尝试用贝叶斯
 
 这里，$p_{\theta}(x|z)以及p_{\theta}(z)$都是可以计算的，但是$p_{\theta}(z|x)$难以计算。其代表**后验概率 (Posterior)**：给定图片x ,它是由哪个z生成的？
 算不出来？那我们就再训练一个神经网络去近似它！
-![lecture_13, 页面 86](files/slides/CS231n/lecture_13.pdf#page=86)
+![lecture_13, 页面 86](files/slides/CS231n/lecture_13.pdf#page=86&rect=0,0,720,400)
 
 
 
@@ -181,7 +181,7 @@ Decoder神经网络实际上输出的是这个分布的**均值** $\mu_{x|z}$（
 Encoder 神经网络输出两个向量：**均值 $\mu$** 和 **方差（或对角协方差）$\Sigma$**。$q$是学习出来的分布。
 这就定义了一个概率分布，告诉我们：“这张图片的特征大概率在这个均值附近，不确定性是这么多”。
 
-![lecture_13, 页面 91](files/slides/CS231n/lecture_13.pdf#page=91)
+![lecture_13, 页面 91](files/slides/CS231n/lecture_13.pdf#page=91&rect=0,0,720,400)
 
 而且，Maximizing $logp_{\theta}(x|z)$  is equivalent to minimizing L2 distance between x and network output!
 下文中，我们的z就可以看作是符合正态分布的随机噪声。
@@ -285,11 +285,11 @@ $$+ \underbrace{D_{KL}(q_\phi(z|x) \| p_\theta(z|x))}_{\text{Error}}$$
 **ELBO = 重建质量 (Reconstruction) - 正则化惩罚 (KL Divergence)**。
 直觉上来讲，就是重建质量要高的同时，Encoder 输出的分布 $q_\phi(z|x)$ 与我们设定的先验分布 $p(z)$之间差异要尽量小。
 
-![lecture_13, 页面 102](files/slides/CS231n/lecture_13.pdf#page=102)
+![lecture_13, 页面 102](files/slides/CS231n/lecture_13.pdf#page=102&rect=0,0,720,400)
 
 #### VAE-Trainging
 
-![lecture_13, 页面 103](files/slides/CS231n/lecture_13.pdf#page=103)
+![lecture_13, 页面 103](files/slides/CS231n/lecture_13.pdf#page=103&rect=0,0,720,400)
 
 1. 编码
 - 把图片 $x$ 喂给 Encoder 网络。 得到两个向量：**均值 $\mu_{z|x}$** 和 **方差$\Sigma_{z|x}$**。这样我们就确定了 $z$ 的概率分布 $q_\phi(z|x)$。
@@ -306,7 +306,7 @@ $$+ \underbrace{D_{KL}(q_\phi(z|x) \| p_\theta(z|x))}_{\text{Error}}$$
 *   **计算**: 如果假设输出服从高斯分布，这等价于计算它们之间的 **L2 距离。
 
 最后把 KL 惩罚和重建误差加起来作为总 Loss，反向传播更新参数。
-![lecture_13, 页面 109](files/slides/CS231n/lecture_13.pdf#page=109)
+![lecture_13, 页面 109](files/slides/CS231n/lecture_13.pdf#page=109&rect=0,0,720,400)
 
 ---
 
@@ -322,7 +322,7 @@ $z$ 既要有一定的规律性（服从正态分布，方便采样生成），�
 **总结：** VAE 实际上是在做一个**有损压缩**。我们强迫编码器把图片压缩成一个“带有噪声的代码”，这种噪声迫使编码器只保留最重要的特征，从而学到了数据的本质结构。
 
 当然，作为生成式模型，最后生成的时候从符合分布的z中sample，传递给训练好的decoder就可以了。
-![lecture_13, 页面 110](files/slides/CS231n/lecture_13.pdf#page=110)
+![lecture_13, 页面 110](files/slides/CS231n/lecture_13.pdf#page=110&rect=0,0,720,400)
 
 ## Generative Adversarial Networks (GANs)
 
@@ -334,16 +334,16 @@ We want the $p_{G}$ distribution to match the true $p$ data distribution as clos
 但是如何使 $p_{G}$ 逼近 $p$ 呢？VAE以及自回归模型中，我们会使用一个可以优化的函数来让模型完成逼近分布这件事。
 但是GAN中，则是训练两个互相对抗的神经网络。Generator G会生成符合$p_{G}$分布的，来源于符合分布 $p$ 的随机噪声$z$的假数据。
 而Discriminator Network D则要分辨出这个生成的数据是真是假。两个网络在对抗中提升性。 
-![lecture_14, 页面 15](files/slides/CS231n/lecture_14.pdf#page=15)
+![lecture_14, 页面 15](files/slides/CS231n/lecture_14.pdf#page=15&rect=0,0,720,400)
 
 Discriminator D希望可以max最大化这个公式的值。
 所以，左半部分肯定是$D(x)越接近1越好，辨别为真最好，这样log值大$。因为$x是从真实分布中p_{data}拿出来的新图$。
 而右半部分则是$D(G(z))越接近0越好，辨别为假最好，这样log值大$，因为$G(z)是生成器G用z造出来的假图$。
-![lecture_14, 页面 18](files/slides/CS231n/lecture_14.pdf#page=18)
+![lecture_14, 页面 18](files/slides/CS231n/lecture_14.pdf#page=18&rect=0,0,720,400)
 
 左半部分和G无关，因为左半部分是discriminator D 负责分辨数据真假的部分。
 G希望最小化这个值，所以G希望右半部分$D(G(z))越接近1越好，辨别为真最好，这样log值小$，因为$G(z)是生成器G用z$造出来的假图。$D(x)$将其辨别为真说明G成功骗过了D。
-![lecture_14, 页面 19](files/slides/CS231n/lecture_14.pdf#page=19)
+![lecture_14, 页面 19](files/slides/CS231n/lecture_14.pdf#page=19&rect=0,0,720,400)
 
 > GAN的问题
 
@@ -356,7 +356,7 @@ It is really hard to train, to tune, to make progress...
 
 而且，从图中我们可以看到，Generator 一开始的曲线是很平滑的(Gradients for G are close to 0)，所以难以训练。
 当然，训练完成过后我们把discriminator去掉，只使用generator生成即可。
-![lecture_14, 页面 25](files/slides/CS231n/lecture_14.pdf#page=25)
+![lecture_14, 页面 25](files/slides/CS231n/lecture_14.pdf#page=25&rect=0,0,720,400)
 
 > 为什么minimax函数是一个好的目标函数？
 
@@ -372,7 +372,7 @@ Outer Objective: 当$p_{G​}(x)=p_{data​}(x)$时，V取得最小。即当**�
 > *   理论并不能指导我们如何使用有限的数据去converge到Solution。
 > *   GAN 的训练非常不稳定，经常出现震荡、模式坍塌（Mode Collapse），很难收敛到这个理论最优解。
 
-![lecture_14, 页面 29](files/slides/CS231n/lecture_14.pdf#page=29)
+![lecture_14, 页面 29](files/slides/CS231n/lecture_14.pdf#page=29&rect=0,0,720,400)
 
 生成器D和G是神经网络，一般用CNN，也可以用更复杂的[结构](files/slides/CS231n/lecture_14.pdf#page=32)。
 
@@ -394,7 +394,7 @@ Outer Objective: 当$p_{G​}(x)=p_{data​}(x)$时，V取得最小。即当**�
 > 标准的 GAN 并没有一个 Encoder 网络。给你一张真图 $x$，你没法直接知道它对应的 $z$ 是什么。所以说它“放弃”了作为一个特征提取器的功能。GAN 强项在生成上。判别器逼着生成器去生成**极其清晰、锐利 (Crisp and Clean)** 的图片。因为只有足够清晰，才有可能骗过判别器。
 
 日后，Diffusion Model取代了GAN。
-![lecture_14, 页面 35](files/slides/CS231n/lecture_14.pdf#page=35)
+![lecture_14, 页面 35](files/slides/CS231n/lecture_14.pdf#page=35&rect=0,0,720,400)
 
 ---
 ## Diffusion
@@ -402,11 +402,11 @@ Outer Objective: 当$p_{G​}(x)=p_{data​}(x)$时，V取得最小。即当**�
 ### intro
 
 diffusion model现在的用处很多，例如：文生图以及文生视频。
-![lecture_14, 页面 102](files/slides/CS231n/lecture_14.pdf#page=102)
+![lecture_14, 页面 102](files/slides/CS231n/lecture_14.pdf#page=102&rect=0,0,720,400)
 
 Text-to-Video的训练很昂贵，因为相比于图，视频可以说直接多了一个时间序列，让训练sequence变的很长。
 2025年可称之为[The Era of Video Diffusion Models](files/slides/CS231n/lecture_14.pdf#page=106)。
-![lecture_14, 页面 105](files/slides/CS231n/lecture_14.pdf#page=105)
+![lecture_14, 页面 105](files/slides/CS231n/lecture_14.pdf#page=105&rect=0,0,720,400)
 
 ---
 
@@ -422,7 +422,7 @@ Text-to-Video的训练很昂贵，因为相比于图，视频可以说直接多�
 
 4.  **推理过程（生成数据）**：在推理阶段，首先从噪声分布中采样得到一个初始噪声 $x_1$（对应右图底部的 Full noise）。然后**按顺序多次应用**训练好的神经网络 $f_\theta$，一步步去除噪声，最终生成一个无噪的样本 $x_0$。
 
-![lecture_14, 页面 41](files/slides/CS231n/lecture_14.pdf#page=41)
+![lecture_14, 页面 41](files/slides/CS231n/lecture_14.pdf#page=41&rect=0,0,720,400)
 
 ---
 ### Rectified Flow 
@@ -443,7 +443,7 @@ $p_{data}$ is something crazy. That's what the universe is using to give us imag
 4.  **训练目标**：训练一个神经网络 $f_\theta$ 来**预测这个速度向量 $v$**。损失函数是预测值与真实速度之间的均方误差：
     $$ L = \| f_\theta(x_t, t) - v \|_2^2 $$
 
-![lecture_14, 页面 45](files/slides/CS231n/lecture_14.pdf#page=45)
+![lecture_14, 页面 45](files/slides/CS231n/lecture_14.pdf#page=45&rect=0,0,720,400)
 
 > Core training loop is just a few lines of code!
 
@@ -480,12 +480,12 @@ for x in dataset:
 
 ---
 
-![lecture_14, 页面 56](files/slides/CS231n/lecture_14.pdf#page=56)
+![lecture_14, 页面 56](files/slides/CS231n/lecture_14.pdf#page=56&rect=0,0,720,400)
 
 > Conditional Rectified Flow
 
 其实就是加上了label标签y。
-![lecture_14, 页面 61](files/slides/CS231n/lecture_14.pdf#page=61)
+![lecture_14, 页面 61](files/slides/CS231n/lecture_14.pdf#page=61&rect=0,0,720,400)
 
 但是，我们可否控制模型关注标签的程度？如果不行，那么模型可能有很多时候训练的并不如我们意。
 所以，我们可以采用一种叫做Classifier-Free Guidance (CFG)的方法。
@@ -516,7 +516,7 @@ for t in torch.linspace(1, 0, num_steps):
 
 CFG Used everywhere in practice! Very important for high-quality outputs.
 CFG有一个缺点，就是Doubles the cost of sampling…
-![lecture_14, 页面 67](files/slides/CS231n/lecture_14.pdf#page=67)
+![lecture_14, 页面 67](files/slides/CS231n/lecture_14.pdf#page=67&rect=0,0,720,400)
 
 > Optimal Prediction
 
@@ -533,10 +533,10 @@ CFG有一个缺点，就是Doubles the cost of sampling…
 `t = random.uniform(0, 1)`。我们在训练时，**均匀地**让模型去学简单阶段（$t=0, t=1$）和困难阶段（$t=0.5$）。
 这显然不是最高效的。既然中间阶段最难、最有信息量，那我们就应该**多花点时间练中间阶段，少花点时间练两头**。
 
-![lecture_14, 页面 79](files/slides/CS231n/lecture_14.pdf#page=79)
+![lecture_14, 页面 79](files/slides/CS231n/lecture_14.pdf#page=79&rect=0,0,720,400)
 
 我们可以改变采样 $t$ 的分布（不再是均匀分布），让模型更多地在那些重要的，比较难的 $t$ 值上进行训练。这就是**非均匀噪声调度 (Non-uniform noise schedule)** 的意义。如图的蓝色分布是比较常用的。
-![lecture_14, 页面 84](files/slides/CS231n/lecture_14.pdf#page=84)
+![lecture_14, 页面 84](files/slides/CS231n/lecture_14.pdf#page=84&rect=0,0,720,400)
 
 ---
 ### Latent Diffusion Models (LDMs)
@@ -545,7 +545,7 @@ LDMs的思路是，先训练Encoder+decoder将图片信息提取到隐空间。E
 训练diffusion的思路是，我们先用前面训练好的Encoder将图片信息提取至隐空间，之后再训练这个diffusion model去denoise这个noisy latent。
 之后在推理的阶段，我们将random latent送至diffusion多次，得到一个去除了noise多次的clean sample in latent space。
 之后再使用训练过的decoder，将这个clean latent转换为一个clean image。
-![lecture_14, 页面 92](files/slides/CS231n/lecture_14.pdf#page=92)
+![lecture_14, 页面 92](files/slides/CS231n/lecture_14.pdf#page=92&rect=0,0,720,400)
 
 > 如何训练Encoder和Decoder?
 
@@ -553,7 +553,7 @@ Encoder+Decoder部分我们使用VAE，因为VAE的latent space是比较平滑�
 但是VAE的缺点在于:Decoder outputs often blurry，输出质量不高。所以在训练 VAE 的Decoder时，**加入 GAN 的判别器** ！Encoder: 继续用 VAE 的规则，保证隐空间平滑。Decoder: 用 GAN 的规则，保证生成的图片清晰锐利。
 
 ==Modern LDM pipelines use VAE + GAN + diffusion!==
-![lecture_14, 页面 96](files/slides/CS231n/lecture_14.pdf#page=96)
+![lecture_14, 页面 96](files/slides/CS231n/lecture_14.pdf#page=96&rect=0,0,720,400)
 
 ---
 ###  Diffusion Transformer (DiT)
@@ -574,14 +574,14 @@ Encoder+Decoder部分我们使用VAE，因为VAE的latent space是比较平滑�
 > Concatenate (拼接) Joint Attention
 
 把条件当成额外的 token。直接把条件信息的 embedding 拼接到图像 token 序列的开头或结尾。
-![lecture_14, 页面 100](files/slides/CS231n/lecture_14.pdf#page=100)
+![lecture_14, 页面 100](files/slides/CS231n/lecture_14.pdf#page=100&rect=0,0,720,400)
 
 > Diffusion Distillation 
 
 Diffusion模型的生成图的过程较慢，即使是rectified flow也需要迭代个30-50次，所以我们可以采取蒸馏技术。
 “So distillation is an algorithm are basic ways that you can take a diffusion model that normally would take 30-100 iterations at inference time to get good samples and then modify the model in some way such that you can take many fewer steps on inference and still get good samples.”
 蒸馏技术牺牲了一点质量，压缩步骤，换来了更快的速度，下方有很多文献references推荐阅读，在此不详谈。
-![lecture_14, 页面 108](files/slides/CS231n/lecture_14.pdf#page=108)
+![lecture_14, 页面 108](files/slides/CS231n/lecture_14.pdf#page=108&rect=0,0,720,400)
 
 ---
 ### Math and Explain of Diffusion
@@ -589,7 +589,7 @@ Diffusion模型的生成图的过程较慢，即使是rectified flow也需要迭
 > Generalized Diffusion 泛化Rectified Flow中的参数
 
 slides往下翻，有什么VP,VE,x-prediction,在此不一一列举。
-![lecture_14, 页面 111](files/slides/CS231n/lecture_14.pdf#page=111)
+![lecture_14, 页面 111](files/slides/CS231n/lecture_14.pdf#page=111&rect=0,0,720,400)
 
 > So... How do we choose these functions? Usually through some **mathematical formalism**
 
@@ -617,7 +617,7 @@ slides往下翻，有什么VP,VE,x-prediction,在此不一一列举。
 *   **VAE**: 学习 Encoder (压缩) 和 Decoder (还原)。
 *   **Diffusion**: Encoder 是固定的加噪公式 (毁图)，只学习 Decoder (修图)。而且这个修图过程被拆成了很多小步。
 
-![lecture_14, 页面 116](files/slides/CS231n/lecture_14.pdf#page=116)
+![lecture_14, 页面 116](files/slides/CS231n/lecture_14.pdf#page=116&rect=0,0,720,400)
 
 > Diffusion Learns the Score Function
 
@@ -651,7 +651,7 @@ $$ \epsilon_\theta(x_t, t) \approx -\sigma \cdot \nabla_{x_t} \log p(x_t) $$
 ==扩散模型通过学习如何去噪，间接学习到了数据分布的**梯度场（Score Function）**。==
 ==生成过程就是利用这个梯度场，把随机噪声一步步推向真实数据分布的过程。==
 
-![lecture_14, 页面 117](files/slides/CS231n/lecture_14.pdf#page=117)
+![lecture_14, 页面 117](files/slides/CS231n/lecture_14.pdf#page=117&rect=0,0,720,400)
 
 > Diffusion Solves **Stochastic Differential Equations**
 
@@ -676,6 +676,6 @@ SDE 是描述**随机过程**的数学方程，公式：$d\mathbf{x} = f(\mathbf
 ==训练扩散模型，本质上就是在学习那个**分数函数**。一旦学到了，我们就可以通过反向SDE逆向解决问题。==
 通过神经网络，我们学会了如何把噪声重新变为图像。SDE 框架统一了之前所有的扩散模型变体。
 所以，我们只要有噪声的分布和学习过的神经网络，我们就能随意地通过取样噪声无限输出图像。
-![lecture_14, 页面 118](files/slides/CS231n/lecture_14.pdf#page=118)
+![lecture_14, 页面 118](files/slides/CS231n/lecture_14.pdf#page=118&rect=0,0,720,400)
 
 

@@ -1,6 +1,6 @@
 # Stack
 
-![04.Stack + Queue, 页面 2](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=2)
+![04.Stack + Queue, 页面 2](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=2&rect=0,0,960,540)
 
 [Stack-ADT](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=3):各种接口函数的定义及功能
 [Stack](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=4):实现与接口(push,pop,top),直接基于向量或列表的接口派生
@@ -10,7 +10,7 @@
 ## 栈的应用
 
 > [!example] 函数调用栈
-> ![Stack](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=10)
+> ![Stack](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=10&rect=0,0,960,540)
 
 > [!example] 进制转换
 > [Stack](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=21):给定任一10进制非负整数，将其转换为n进制表示形式
@@ -28,7 +28,7 @@
 > > - 多种括号:[如法炮制](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=31)
 
 > [!example] 中缀表达式计算:infix
-> ![演示](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=37)
+> ![演示](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=37&rect=0,0,960,540)
 >
 > - [思路](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=34):优先级高的局部执行计算，并被代以其数值。运算符渐少，直至得到最终结果
 > - [代码实现及执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=39):运算数栈和运算符栈两者配合处理
@@ -39,7 +39,7 @@
 
 > [!example] 逆波兰表达式RPN:postfix
 >
-> ![执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=58)
+> ![执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=58&rect=0,0,960,540)
 > - [思路](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=57):在由运算符（operator）和操作数（operand）组成的表达式中，不使用括号（parenthesis-free）即可表示带优先级的运算关系
 > - [代码实现中缀表达式转换RPN](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=63)
 >
@@ -51,7 +51,7 @@
 
 > [!example] 栈混洗
 >
-> ![执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=68)
+> ![执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=68&rect=0,0,960,540)
 > - [混洗总数SP(n)=?](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=69):catalan(n)
 > - [判断序列是否为栈混洗](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=72):任何$1 \le i \le j \le k \le n，[ ..., k , ..., i , ..., j , ... ]$的序列必非栈混洗
 > - [括号匹配](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=74):每一个栈混洗，都对应于栈S的n次push与n次pop操作构成的某一序列；反之亦然
@@ -61,7 +61,7 @@
 
 > [!example] 直方图内最大矩形
 >
->  ![执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=84)
+>  ![执行过程示例](files/slides/Tsinghua-DSA-2024Fall-chapter/04.Stack%20+%20Queue.pdf#page=84&rect=0,0,960,540)
 > - 可知$maxRect(r) = H[r]* (t(r)-s(r))$
 > - $s(r) = max\{k\ | 0 \le k \le r \ and\ H[k-1] < H[r]\}$
 > - $t(r) = min\{k\ | r \le k \le n \ and\ H[r] > H[k]\}$

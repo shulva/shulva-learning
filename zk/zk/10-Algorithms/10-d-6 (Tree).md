@@ -1,6 +1,6 @@
 # Tree
 
-![Rooted Tree](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=3)
+![Rooted Tree](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=3&rect=0,0,960,540)
 
 [树的接口](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=10):root(),parent()...
 [父节点+孩子节点的概念](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=11)
@@ -16,7 +16,7 @@
 
 ## 二叉树
 
-![二叉树接口](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=15)
+![二叉树接口](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=15&rect=0,0,960,540)
 
  [BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=21)：二叉树节点模版类
  [BinNode](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=22)：插入新节点，更新高度
@@ -34,13 +34,13 @@
 ### 二叉树的遍历
 
  > [!NOTE] 先序遍历
- > ![BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=33)
+ > ![BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=33&rect=0,0,960,540)
  > 先序遍历的[递归实现](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=35)是比较容易的，那么它的迭代实现又如何呢？
  > [代码实现-迭代](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=35)：如图所示，访问子树x的藤蔓，各右子树（根）入栈
  > [实例](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=37)
  
   > [!NOTE] 中序遍历
- > ![BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=41)
+ > ![BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=41&rect=0,0,960,540)
  > 中序遍历的[递归实现](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=39)是比较容易的，那么它的迭代实现又如何呢？
  > [代码实现-迭代](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=43)：如图所示，访问子树x的藤蔓，各右子树（根）入栈
  > [实例](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=45)如链接所示。
@@ -54,7 +54,7 @@
 
 
   > [!NOTE] 后序遍历
- > ![BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=57)
+ > ![BinNode-Template](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=57&rect=0,0,960,540)
  > 后序遍历的[递归实现](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=54)是比较容易的，那么它的迭代实现又如何呢？
  > [代码实现-迭代](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=59)：从根出发下行 尽可能沿左分支。实不得已，才沿右分支
  > [实例](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=61)如链接所示。
@@ -82,7 +82,7 @@
  > 如此，通过对增强序列分而治之，即可[重构原树](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=83)
 ### Huffman树
 
-![huffman](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=86)
+![huffman](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=86&rect=0,0,960,540)
 
 由于字符的频率不同，我们的编码树可以使用[Huffman的贪心策略](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=92)构建最优带权编码树，尽管贪心策略未必总能得到最优解，但非常幸运，如上算法的确能够得到最优编码树之一
 
@@ -100,7 +100,7 @@
 - 设计复杂度更低的算法 + 证明更高的问题难度下界 
 - 一旦算法的复杂度达到难度下界，则说明就大O记号的意义而言，算法已经最优
 
-![判定树](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=114)
+![判定树](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=114&rect=0,0,960,540)
 
 线性规约:
-![判定树](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=119)
+![判定树](files/slides/Tsinghua-DSA-2024Fall-chapter/05.Binary%20Trees.pdf#page=119&rect=0,0,960,540)

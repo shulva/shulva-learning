@@ -4,7 +4,7 @@
 
 > Definition: A predicate is a boolean-valued function **谓词是一个返回布尔值的函数**
 
-![2025Fall-11-FunctionsAndLambdas, 页面 19](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=19)
+![2025Fall-11-FunctionsAndLambdas, 页面 19](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=19&rect=0,0,960,540)
 
 > Key Idea: We need to pass a predicate to a function
 
@@ -22,15 +22,14 @@ It find(It first, It last, const T& value) { // const T& value -> ??? pred
 }
 ```
 
-![2025Fall-11-FunctionsAndLambdas, 页面 25](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=25)
+![2025Fall-11-FunctionsAndLambdas, 页面 25](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=25&rect=0,0,960,540)
 
-![2025Fall-11-FunctionsAndLambdas, 页面 28](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=28)
+![2025Fall-11-FunctionsAndLambdas, 页面 28](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=28&rect=0,0,960,540)
 
 Passing functions allows us to generalize an algorithm with user-defined behaviour.
 but... Seriously though, **what is the type of Pred?**
 Here is the answer:
-
-![2025Fall-11-FunctionsAndLambdas, 页面 34](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=34)
+![2025Fall-11-FunctionsAndLambdas, 页面 34](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=34&rect=0,0,960,540)
 
 ## Lambda
 
@@ -45,8 +44,7 @@ find_if(begin, end, lessThan6);
 find_if(begin, end, lessThan7);
 
 ```
-
-![2025Fall-11-FunctionsAndLambdas, 页面 36](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=36)
+![2025Fall-11-FunctionsAndLambdas, 页面 36](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=36&rect=0,0,960,540)
 
 ```cpp
 // why this wouldn’t work? because.. the num of parameter in find function!
@@ -54,19 +52,18 @@ bool isLessThan(int elem, int n) {
 	return elem < n; 
 }
 ```
-
-![2025Fall-11-FunctionsAndLambdas, 页面 38](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=38)
+![2025Fall-11-FunctionsAndLambdas, 页面 38](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=38&rect=0,0,960,540)
 
 >  We want to give our function extra state… without introducing another parameter 获取额外的状态（变量），但又不增加参数的数量
 
 隆重介绍：Lambda! **Lambda 函数是可以从周围环境（外层作用域）捕获状态的函数**
-![2025Fall-11-FunctionsAndLambdas, 页面 40](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=40)
+![2025Fall-11-FunctionsAndLambdas, 页面 40](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=40&rect=0,0,960,540)
 
 
-![2025Fall-11-FunctionsAndLambdas, 页面 40](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=41)
+![2025Fall-11-FunctionsAndLambdas, 页面 40](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=41&rect=0,0,960,540)
 
 
-![2025Fall-11-FunctionsAndLambdas, 页面 40](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=42)
+![2025Fall-11-FunctionsAndLambdas, 页面 40](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=42&rect=0,0,960,540)
 
 我们不一定非要使用捕获！Lambda 同样非常适合用于定义临时函数
 wait... What is `[](auto c)?`
@@ -83,14 +80,14 @@ auto it = find_if(corlys.begin(), corlys.end(),
 );
 ```
 
-![2025Fall-11-FunctionsAndLambdas, 页面 45](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=45)
+![2025Fall-11-FunctionsAndLambdas, 页面 45](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=45&rect=0,0,960,540)
 
 ### How do Lambda work?
 
 > Definition: A functor is any object that defines an operator()
 > In English: an object that acts like a function
 
-![2025Fall-11-FunctionsAndLambdas, 页面 48](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=48)
+![2025Fall-11-FunctionsAndLambdas, 页面 48](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=48&rect=0,0,960,540)
 
 **An example of a functor: `std::greater<T>`**
 ```cpp
@@ -109,7 +106,7 @@ g(1, 2); // false    // 但我们像调用函数一样调用它！
 
 **Another STL functor: `std::hash<T>`**
 
-![2025Fall-11-FunctionsAndLambdas, 页面 51](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=51)
+![2025Fall-11-FunctionsAndLambdas, 页面 51](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=51&rect=0,0,960,540)
 
 > [!NOTE] Template Specialization
 > 这是图中最关键的语法点：`template <> struct std::hash<MyType>`。
@@ -159,14 +156,14 @@ auto lessThanN = [n](int x) { return x < n; };
 find_if(begin, end, lessThanN);
 ```
 
-![2025Fall-11-FunctionsAndLambdas, 页面 57](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=57)
+![2025Fall-11-FunctionsAndLambdas, 页面 57](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=57&rect=0,0,960,540)
 
 
-![2025Fall-11-FunctionsAndLambdas, 页面 60](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=60)
+![2025Fall-11-FunctionsAndLambdas, 页面 60](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=60&rect=0,0,960,540)
 
 ## Algorthims
 
-![2025Fall-11-FunctionsAndLambdas, 页面 64](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=64)
+![2025Fall-11-FunctionsAndLambdas, 页面 64](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=64&rect=0,0,960,540)
 
 `<algorithm>` is a collection of template functions
 ```cpp
@@ -197,13 +194,13 @@ std::unique_copy(InputIt i1, InputIt i2, OutputIt o, BinaryPred p);
 
 ```
 
-![2025Fall-11-FunctionsAndLambdas, 页面 69](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=69)
+![2025Fall-11-FunctionsAndLambdas, 页面 69](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=69&rect=0,0,960,540)
 
 ## Example : Soundex
 
 > Goal: produce a phonetic encoding for names
 
-![2025Fall-11-FunctionsAndLambdas, 页面 75](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=75)
+![2025Fall-11-FunctionsAndLambdas, 页面 75](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=75&rect=0,0,960,540)
 
 > 注：对于像 `std::set 或 std::map` 这种大小不能预先设定、需要动态插入元素的容器，你不能直接使用它们的迭代器作为输出目标。你需要使用一个**插入迭代器 (Insert Iterator)**。
 > 插入迭代器是一种特殊的适配器，它将赋值操作 (=) 巧妙地转换成容器的 insert() 调用。你需要使用 `std::inserter`
@@ -211,7 +208,7 @@ std::unique_copy(InputIt i1, InputIt i2, OutputIt o, BinaryPred p);
 
 > **Hint: there is nothing preventing the range given by `first` from overlapping with the range given by `d_first`!**
 
-![2025Fall-11-FunctionsAndLambdas, 页面 77](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=77)
+![2025Fall-11-FunctionsAndLambdas, 页面 77](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=77&rect=0,0,960,540)
 
 ```cpp
 static char soundexEncode(char c)
@@ -268,7 +265,7 @@ Can we make our Soundex more readable? we need use ranges...
 Ranges are a new version of the STL
 > Definition: A range is anything with a begin and end
 
-![2025Fall-11-FunctionsAndLambdas, 页面 88](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=88)
+![2025Fall-11-FunctionsAndLambdas, 页面 88](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=88&rect=0,0,960,540)
 
 > why did we pass iterators to find?
 
@@ -303,10 +300,10 @@ int main() {
 }
 ```
 
-![2025Fall-11-FunctionsAndLambdas, 页面 92](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=92)
+![2025Fall-11-FunctionsAndLambdas, 页面 92](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=92&rect=0,0,960,540)
 
 
-![2025Fall-11-FunctionsAndLambdas, 页面 92](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=93)
+![2025Fall-11-FunctionsAndLambdas, 页面 92](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=93&rect=0,0,960,540)
 
 > Views: a way to compose algorithms
    Definition: A view is a range that lazily adapts another range
@@ -408,10 +405,10 @@ std::vector<char> upperVowel = letters
 
 虽然`views`是惰性的，但是**动词**类型的算法（如 `sort`, `reverse`, `shuffle`）时，**它们依然是立即执行的**，不会等到你“收集”结果时才执行。
 
-![2025Fall-11-FunctionsAndLambdas, 页面 105](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=105)
+![2025Fall-11-FunctionsAndLambdas, 页面 105](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=105&rect=0,0,960,540)
 
 
-![2025Fall-11-FunctionsAndLambdas, 页面 108](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=108)
+![2025Fall-11-FunctionsAndLambdas, 页面 108](files/slides/CS106L/2025Fall-11-FunctionsAndLambdas.pdf#page=108&rect=0,0,960,540)
 
 > In Cpp 26...?
 

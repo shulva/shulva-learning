@@ -6,7 +6,7 @@
 
 > Image Classification: A core task in Computer Vision
 
-![lecture_2, 页面 8](files/slides/CS231n/lecture_2.pdf#page=8)
+![lecture_2, 页面 8](files/slides/CS231n/lecture_2.pdf#page=8&rect=0,0,720,400)
 
 但是对于机器来说，其存在着诸多挑战：Viewpoint variation(All pixels change when the camera moves!) , Illumination, Background Clutter , Occlusion , Deformation , Intraclass variation , [Context]([lecture_2, 页面 15](files/slides/CS231n/lecture_2.pdf#page=15&selection=17,0,17,7))...
 
@@ -22,7 +22,7 @@ def classify_image(image):
 
 > Data-Driven Approach
 
-![lecture_2, 页面 19](files/slides/CS231n/lecture_2.pdf#page=19)
+![lecture_2, 页面 19](files/slides/CS231n/lecture_2.pdf#page=19&rect=0,0,720,400)
 
 ## K Nearest Neighbor
 
@@ -37,7 +37,7 @@ def predict(model,test_images): # Predict the label of the most similar training
 	return test_labels
 ```
 
-![lecture_2, 页面 23](files/slides/CS231n/lecture_2.pdf#page=23)
+![lecture_2, 页面 23](files/slides/CS231n/lecture_2.pdf#page=23&rect=0,0,720,400)
 
 **Q: With N examples, how fast are training and prediction?**  
 **A: Train O(1), predict O(N)**
@@ -85,12 +85,12 @@ def predict(self, X):
 
 > 当然，我们可以改变K的数值来调整算法，选用更多的周遭样本
 
-![lecture_2, 页面 30](files/slides/CS231n/lecture_2.pdf#page=30)
+![lecture_2, 页面 30](files/slides/CS231n/lecture_2.pdf#page=30&rect=0,0,720,400)
 
 > 同样，我们也可以改变distance的算法
 > K数值和L1/L2对这个问题的影响可以[在此](http://vision.stanford.edu/teaching/cs231n-demos/knn/)体验。L1会倾向于方块/直角，L2则会倾向于圆弧/斜线
 
-![lecture_2, 页面 32](files/slides/CS231n/lecture_2.pdf#page=32)
+![lecture_2, 页面 32](files/slides/CS231n/lecture_2.pdf#page=32&rect=0,0,720,400)
 
 > [!question] 如果我旋转坐标轴，分类结果会变吗？
 > - **L2 距离：不变。**
@@ -111,18 +111,18 @@ These are **hyperparameters**: choices about the algorithms themselves.
 We can take some part of the training data as validation set In Idea 3
 ==but sometimes validation set may not represent entire landscope because it is almost always much smaller==
 so we have 4....
-![lecture_2, 页面 40](files/slides/CS231n/lecture_2.pdf#page=40)
+![lecture_2, 页面 40](files/slides/CS231n/lecture_2.pdf#page=40&rect=0,0,720,400)
 
 > [CIFAR10](files/slides/CS231n/lecture_2.pdf#page=44&selection=14,8,14,23)的实验可以用来举个选取超参数的例子
 
-![lecture_2, 页面 41](files/slides/CS231n/lecture_2.pdf#page=41)
+![lecture_2, 页面 41](files/slides/CS231n/lecture_2.pdf#page=41&rect=0,0,720,400)
 
 > 但是，像素层面的数学距离根本无法代表图像内容的真实含义
 
 shifted在人类感官上应该没什么变化，Occluded和Tinted变了很多。但是在KNN眼里，他们都变化了很多
 仅仅因为shift 1 pixel
 
-![lecture_2, 页面 47](files/slides/CS231n/lecture_2.pdf#page=47)
+![lecture_2, 页面 47](files/slides/CS231n/lecture_2.pdf#page=47&rect=0,0,720,400)
 
 ## Linear Classifier
 
@@ -137,26 +137,26 @@ shifted在人类感官上应该没什么变化，Occluded和Tinted变了很多�
 
 分类就是做一次**矩阵乘法**，把**像素数据**压缩成**分类得分**，所有的“知识”都存储在参数 **$W$** 和 **$b$** 里。
 
-![lecture_2, 页面 53](files/slides/CS231n/lecture_2.pdf#page=53)
+![lecture_2, 页面 53](files/slides/CS231n/lecture_2.pdf#page=53&rect=0,0,720,400)
 
 ==W (权重矩阵) 和 b (偏置向量) 的每一行，都精确地对应一个分类的参数和偏置==
 
-![lecture_2, 页面 58](files/slides/CS231n/lecture_2.pdf#page=58)
+![lecture_2, 页面 58](files/slides/CS231n/lecture_2.pdf#page=58&rect=0,0,720,400)
 
 if we did not have the bias,all of these lines should have passed through the origin from the center of that space , which doesn't really make any sense.But with the bias , we can create more reliable functions and decision boundaries.
 
-![lecture_2, 页面 61](files/slides/CS231n/lecture_2.pdf#page=61)
+![lecture_2, 页面 61](files/slides/CS231n/lecture_2.pdf#page=61&rect=0,0,720,400)
 
 > hard to seperate! Because you a **linear** in space...
 
 线性分类器在空间中只是一条直线，对于下面的分类问题无能为力...
-![lecture_2, 页面 62](files/slides/CS231n/lecture_2.pdf#page=62)
+![lecture_2, 页面 62](files/slides/CS231n/lecture_2.pdf#page=62&rect=0,0,720,400)
 
 > How to choose a good $W$?
 > Define a loss function that quantifies our unhappiness with the scores across the training data.
 > Come up with a way of efficiently finding the parameters that minimize the loss function. ([损失函数](12-c-1（线性回归）.md#损失函数) optimization)
 
-![lecture_2, 页面 67](files/slides/CS231n/lecture_2.pdf#page=67)
+![lecture_2, 页面 67](files/slides/CS231n/lecture_2.pdf#page=67&rect=0,0,720,400)
 
 # Softmax classifier
 
@@ -186,7 +186,7 @@ Softmax分类器就是二元的逻辑斯谛回归（Logistic Regression）分类
 > 可见，其仍为输入$x$的线性函数表示的模型。
 > 核心思想没有改变，我们只是将二分类中的核心思想扩展到了多分类场景中
 
-![lecture_2, 页面 75](files/slides/CS231n/lecture_2.pdf#page=75)
+![lecture_2, 页面 75](files/slides/CS231n/lecture_2.pdf#page=75&rect=0,0,720,400)
 
 ---
 
@@ -257,7 +257,7 @@ Softmax分类器使用交叉熵损失（cross-entropy loss）。
 第二个Loss同理，计算时$S_{yi}$为car，减去4.9
 这里公式中的+1其实是可以选择的超参数，一般称之为delta/margin
 
-![lecture_2, 页面 90](files/slides/CS231n/lecture_2.pdf#page=91)
+![lecture_2, 页面 90](files/slides/CS231n/lecture_2.pdf#page=91&rect=0,0,720,400)
 
 Loss over full dataset is average: L = (2.9+0+12.9)/3 = 5.27
 
@@ -285,7 +285,7 @@ Loss over full dataset is average: L = (2.9+0+12.9)/3 = 5.27
 
 但需要强调的是，这两个数字是不可比较的；它们只有在**同一个分类器内部**、针对**相同数据**计算出的不同损失值之间进行比较时才有意义。
 
-![lecture_2, 页面 99](files/slides/CS231n/lecture_2.pdf#page=99)
+![lecture_2, 页面 99](files/slides/CS231n/lecture_2.pdf#page=99&rect=0,0,720,400)
 
 
 **Softmax分类器为每个类别提供“概率”。**

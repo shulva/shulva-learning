@@ -1,21 +1,21 @@
 # Memory
 
 地址空间从下方的0x0 -> 2\^64-1
-![2025Fall-06-Iterators, 页面 74](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=74)
+![2025Fall-06-Iterators, 页面 74](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=74&rect=0,0,960,540)
 
 
-![2025Fall-06-Iterators, 页面 76](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=76)
+![2025Fall-06-Iterators, 页面 76](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=76&rect=0,0,960,540)
 
 # Pointers
 
 A pointer is just a number
-![2025Fall-06-Iterators, 页面 80](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=80)
+![2025Fall-06-Iterators, 页面 80](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=80&rect=0,0,960,540)
 
 
-![2025Fall-06-Iterators, 页面 80](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=85)
+![2025Fall-06-Iterators, 页面 80](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=85&rect=0,0,960,540)
 
 连续的内存，我们可以用指针这样操作:
-![2025Fall-06-Iterators, 页面 87](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=87)
+![2025Fall-06-Iterators, 页面 87](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=87&rect=0,0,960,540)
 
 # References
 
@@ -31,13 +31,13 @@ std::cout << num << std::endl; // Output: 10
 ```
 
 有点抽象的图：
-![2025Fall-03-InitializationAndReferences, 页面 50](files/slides/CS106L/2025Fall-03-InitializationAndReferences.pdf#page=50)
+![2025Fall-03-InitializationAndReferences, 页面 50](files/slides/CS106L/2025Fall-03-InitializationAndReferences.pdf#page=50&rect=0,0,960,540)
 
 
 ### pass by value and pass by reference
 
 Passing in a variable by **value** into a function just means “Hey make a copy, do not take in the actual variable!”
-![2025Fall-03-InitializationAndReferences, 页面 57](files/slides/CS106L/2025Fall-03-InitializationAndReferences.pdf#page=57)
+![2025Fall-03-InitializationAndReferences, 页面 57](files/slides/CS106L/2025Fall-03-InitializationAndReferences.pdf#page=57&rect=0,0,960,540)
 
 Passing in a variable by **reference** into a function just means “Hey take in the actual piece of memory, do not make a copy!”
 

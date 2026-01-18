@@ -1,6 +1,6 @@
 # Operator Overloading
 
-![2025Fall-12-OperatorOverloading, 页面 19](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=19)
+![2025Fall-12-OperatorOverloading, 页面 19](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=19&rect=0,0,720,400)
 
 I want the min of 2<???>...
 类型 T 必须满足什么条件，我们才能使用 `min` 函数？
@@ -18,7 +18,7 @@ T min(const T& a, const T& b) {
 // min<T>(a, b);
 ```
 
-![2025Fall-12-OperatorOverloading, 页面 22](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=22&selection=0,4,0,10)
+![2025Fall-12-OperatorOverloading, 页面 22](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=22&rect=0,0,720,400)
 
 > So how do operators work with classes?
 
@@ -30,7 +30,7 @@ T min(const T& a, const T& b) {
 
 Operators are symbols that perform operations on values, objects, or types and produce a new value or effect.
 
-![2025Fall-12-OperatorOverloading, 页面 28](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=28)
+![2025Fall-12-OperatorOverloading, 页面 28](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=28&rect=0,0,720,400)
 
 > 🚫 C++ 不可重载运算符列表
 
@@ -69,10 +69,10 @@ bool StanfordID::operator<(const StanfordID& other) const {
 ```
 ## non-member overloading
 
-![2025Fall-12-OperatorOverloading, 页面 43](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=43)
+![2025Fall-12-OperatorOverloading, 页面 43](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=43&rect=0,0,720,400)
 
 
-![2025Fall-12-OperatorOverloading, 页面 44](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=44)
+![2025Fall-12-OperatorOverloading, 页面 44](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=44&rect=0,0,720,400)
 
 > Non-member overloading is actually preferred by the STL, and is more idiomatic C++ 
 > And... Why?
@@ -167,15 +167,15 @@ bool operator<(const std::string& lhs, const StanfordID& rhs) {
 > Can we access these with non-member operator overloading? No!
 
 但是non-member方法也有其缺点，毕竟我们将方法移到了类外部。如此这般，我们便无法访问类内部的私有成员。
-![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=52)
+![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=52&rect=0,0,720,400)
 
 
 而且，两者都定义是会引发UB的，歧义是非常非——常糟糕的！
 
-![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=55)
+![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=55&rect=0,0,720,400)
 
 所以，我们可以使用`friend`友元来解决非成员函数如何访问类内部的私有变量的问题。
-![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=58)
+![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=58&rect=0,0,720,400)
 
 - **在类内部声明**：在  类的定义里（通常在 `.h` 文件），加上一行带有 `friend` 关键字的函数声明。
 - **在类外部定义**：函数的具体实现代码依然写在类外面，不需要加`Class::`前缀。
@@ -206,7 +206,7 @@ bool operator< (const StanfordID& lhs, const StanfordID& rhs) {
 
 用运算符来传达意义是更直观的。
 
-![2025Fall-12-OperatorOverloading, 页面 67](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=67)
+![2025Fall-12-OperatorOverloading, 页面 67](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=67&rect=0,0,720,400)
 
 
-![2025Fall-12-OperatorOverloading, 页面 70](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=70)
+![2025Fall-12-OperatorOverloading, 页面 70](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=70&rect=0,0,720,400)

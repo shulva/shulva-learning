@@ -16,7 +16,7 @@
 
 #### 无序列表
 
-![List](files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=3)
+![List](files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=3&rect=0,0,960,540)
 
 [ListNode](files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=6):列表基本元素列表结点定义
 [List-ADT](files/slides/Tsinghua-DSA-2024Fall-chapter/03.List.pdf#page=8):各种接口函数的定义及功能

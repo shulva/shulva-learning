@@ -7,7 +7,7 @@
 我们之前介绍的模型，基本上都是训练特定的模型去解决特定的任务。
 **Pre-train** one model that acts as the **foundation** for many different tasks
 
-![lecture_16, 页面 4](files/slides/CS231n/lecture_16.pdf#page=4)
+![lecture_16, 页面 4](files/slides/CS231n/lecture_16.pdf#page=4&rect=0,60,1200,800)
 
 
 > There are many classes of Foundation Models
@@ -16,7 +16,7 @@ How do identify a model as a Foundation?
 - Always see with foundation models : general /robust to many different tasks
 - Often see with foundation models : Large parameters, Large amount of data, Self-supervised pre-training objective
 
-![lecture_16, 页面 9](files/slides/CS231n/lecture_16.pdf#page=9)
+![lecture_16, 页面 9](files/slides/CS231n/lecture_16.pdf#page=9&rect=0,60,1200,800)
 
 ---
 ## Classification Foundation models
@@ -36,17 +36,17 @@ CLIP的形式类似SimCLR。网络上是有很多的图文相关的资料可供C
 注意，下面两个公式的分母是不同的！这里显然是配对的样本值越大越好，不配对的越小越好。
 第一个公式相当于图片选文字,对于第i张图片$u_i$，它在所有n个文本中，可否识别出原配$v_i$?
 第二个公式相当于文字选图片,对于第i个文本$v_i$，它在所有n个图片中，可否识别出原配$u_i$?
-![lecture_16, 页面 16](files/slides/CS231n/lecture_16.pdf#page=18)
+![lecture_16, 页面 16](files/slides/CS231n/lecture_16.pdf#page=18&rect=0,60,1200,800)
 
 > At the end of training, you have a model that will give you a similarity score between an image and a text
 
-![lecture_16, 页面 21](files/slides/CS231n/lecture_16.pdf#page=21)
+![lecture_16, 页面 21](files/slides/CS231n/lecture_16.pdf#page=21&rect=0,60,1200,800)
 
 > But how do we use pre-trained vision-language models in a zero-shot manner?
 
 LLM的所有任务几乎都可以变换成**预测下一个词**的任务。如图，上面是预测任务，下面却是判断情感的任务。
 那么 CLIP 这种看图的模型，是怎么完成**没见过这个分类任务，却能直接分类的**任务呢？
-![lecture_16, 页面 23](files/slides/CS231n/lecture_16.pdf#page=23)
+![lecture_16, 页面 23](files/slides/CS231n/lecture_16.pdf#page=23&rect=0,60,1200,800)
 
 
 CLIP的方法是这样的：
@@ -60,17 +60,17 @@ CLIP的方法是这样的：
 - 计算图片向量I与`Mean  vector`之间的相似度，哪个分数最高就分成哪个类。
 
 这个简单的技巧能让 CLIP 在 ImageNet 上的分类准确率直接提升 **5%**。巨大的提升！
-![lecture_16, 页面 31](files/slides/CS231n/lecture_16.pdf#page=31)
+![lecture_16, 页面 31](files/slides/CS231n/lecture_16.pdf#page=31&rect=0,60,1200,800)
 
 整体流程如下，这个图的计算过程比较清晰：
-![lecture_16, 页面 32](files/slides/CS231n/lecture_16.pdf#page=32)
+![lecture_16, 页面 32](files/slides/CS231n/lecture_16.pdf#page=32&rect=0,60,1200,800)
 
 > Matches the accuracy of of ResNet 101 that has been trained on ImageNet, except CLIP was trained with no human labels at all! 
 
 CLIP训练中没有人工标签，性能也一样可以匹敌在ImageNet上训练出的ResNet 101!
 但是ImageNet在其他奇形怪状的dataset上表现不佳，但CLIP依然优秀！
 虽然 CLIP 的 Zero-Shot 能力非常惊艳，但在面对一些**高度专业化**的任务时，传统的预训练+专门的线性分类器训练依然是更稳妥的[选择](files/slides/CS231n/lecture_16.pdf#page=38)。CLIP 并不是万能的，它强在**通用性**，而非特定领域的**专业性**。
-![lecture_16, 页面 37](files/slides/CS231n/lecture_16.pdf#page=37)
+![lecture_16, 页面 37](files/slides/CS231n/lecture_16.pdf#page=37&rect=0,60,1200,800)
 
 > 为什么即使无标签，CLIP的性能还是这么出色？ Scale !
 
@@ -89,8 +89,7 @@ CoCa 把两种强大的能力结合在了一个模型里：
 *   CoCa 增加了一个 **Multimodal Text Decoder**。这个 Decoder 做的事情是：接收 Image Encoder 提取的图像特征（通过 `Cross-Attention`），然后生成描述这张图片的文字（Captioning）。
 
 *   **CoCa**: 既能读也能写。它不仅能像 CLIP 一样做分类，还能生成描述这张图片的文字,是一个更全能的多模态基础模型。
-
-![lecture_16, 页面 43](files/slides/CS231n/lecture_16.pdf#page=43)
+![lecture_16, 页面 43](files/slides/CS231n/lecture_16.pdf#page=43&rect=0,60,1200,800)
 
 ### CLIP的优劣势
 
@@ -98,7 +97,7 @@ CoCa 把两种强大的能力结合在了一个模型里：
 1.点积非常高效，无论是在训练还是在推理层面。
 2.模型不再受限于训练时见过的固定类别，而是能够识别和理解任何用自然语言描述的新物体或新概念。
 3.可以与其他模型组合。
-![lecture_16, 页面 46](files/slides/CS231n/lecture_16.pdf#page=46)
+![lecture_16, 页面 46](files/slides/CS231n/lecture_16.pdf#page=46&rect=0,60,1200,800)
 
 劣势在于：
 1.它太依赖 Batch Size，而且很难学到细粒度的概念。batchsize小，性能就很差。而且即使 Batch Size 很大，他也分辨不出"there is a mug in some grass" 与 "there is some grass in a mug" 之间的[差别](files/slides/CS231n/lecture_16.pdf#page=47&selection=12,0,12,5)。
@@ -107,7 +106,7 @@ CoCa 把两种强大的能力结合在了一个模型里：
 3.无法通过仅5B dataset处理世界上所有的图像问题，还需要做dataset的处理。
 
 可见，CLIP还有很多工作要做。
-![lecture_16, 页面 55](files/slides/CS231n/lecture_16.pdf#page=55)
+![lecture_16, 页面 55](files/slides/CS231n/lecture_16.pdf#page=55&rect=0,60,1200,800)
 
 ---
 ## Vision-Language Model (VLM)
@@ -115,14 +114,13 @@ CoCa 把两种强大的能力结合在了一个模型里：
 ### LLaVA
 
 > Can we build a model that can accept images and text as input, and then output text?
-
-![lecture_16, 页面 57](files/slides/CS231n/lecture_16.pdf#page=57)
+![lecture_16, 页面 57](files/slides/CS231n/lecture_16.pdf#page=57&rect=0,60,1200,800)
 
 
 Vision-Language Models 并非LLaVA首创， ViLBERT就有了。但是，他们必须针对每一个任务分别进行微调，并且需要使用相当复杂的、特定于该任务的方法（在 RefCOCO 任务中，需要使用Mask-RCNN对边界框进行重排序）。==very task-specific== ,基模的处理逻辑可不是这样的。
 
 LLaVA的想法就是将图片token化，之后加入到Transformer中。那么，我们该用什么方法呢？
-![lecture_16, 页面 62](files/slides/CS231n/lecture_16.pdf#page=62)
+![lecture_16, 页面 62](files/slides/CS231n/lecture_16.pdf#page=62&rect=0,60,1200,800)
 
 用CLIP的Encoder是很好的选择！
 
@@ -138,14 +136,13 @@ LLaVA的想法就是将图片token化，之后加入到Transformer中。那么�
     *   ViT 的**最后一层 (Final Layer)** 的主要任务是把图像特征压缩并对齐到文本特征空间，以便计算对比损失（Contrastive Loss）。这导致最后一层的特征往往变得非常抽象和全局化，甚至丢失了很多图像特有的空间细节（Spatial Information）。
 2.  **倒数第二层保留了更多细节**:
     *   **L-1 层 (Penultimate Layer)** 的特征（图中红色的那些方块）通常包含了更丰富的**视觉细节、空间位置信息**。
-
-![lecture_16, 页面 66](files/slides/CS231n/lecture_16.pdf#page=66)
+![lecture_16, 页面 66](files/slides/CS231n/lecture_16.pdf#page=66&rect=0,60,1200,800)
 
 LLaVA的全部架构如下：
 首先，将图片传入到一个训练好的Vision Encoder (CLIP)中，提取出features。
 之后将features传入到Linear Layer。这个Linear Layer will train to do s convert your CLIP representation into something  that the LLM can understand and make sense of.
 Linear Layer生成的token给LLM即可。当然，这个LLM一般是已被训练好的。
-![lecture_16, 页面 67](files/slides/CS231n/lecture_16.pdf#page=67)
+![lecture_16, 页面 67](files/slides/CS231n/lecture_16.pdf#page=67&rect=0,60,1200,800)
 
 ---
 #### Flamingo
@@ -155,33 +152,33 @@ Google的Flamingo架构做了一些改变。
 图片经过Vision Encoder之后会被直接传入到LLM的每一层。文字被拎出来作为Processed Text传入。
 Flamingo加入了两个部件，分别是Perceiver Resampler以及cross-attention layer(gated xattn-dense)。
 其他的部件都是冻结的，训练的就是这两个部件。其表现出了很好的[泛化能力](files/slides/CS231n/lecture_16.pdf#page=82)
-![lecture_16, 页面 69](files/slides/CS231n/lecture_16.pdf#page=73)
+![lecture_16, 页面 69](files/slides/CS231n/lecture_16.pdf#page=73&rect=0,60,1200,800)
 
 > Cross-Attention layer' purpose is to look at the image features and then decide what parts of the image features it wants to keep around, and what it thinks to be useful for the language model to know about.
 
 加入这个层的主要目的是让模型也有能力调节图片在生成过程中的参与程度的大小。
-![lecture_16, 页面 76](files/slides/CS231n/lecture_16.pdf#page=76)
+![lecture_16, 页面 76](files/slides/CS231n/lecture_16.pdf#page=76&rect=0,60,1200,800)
 
 Flamingo也有Masked机制。例如图片就没必要接触所有的Context，只需要接触他们各自对应的部分就好。
-![lecture_16, 页面 79](files/slides/CS231n/lecture_16.pdf#page=79)
+![lecture_16, 页面 79](files/slides/CS231n/lecture_16.pdf#page=79&rect=0,60,1200,800)
 
 #### Molmo
 
 虽然有很多蒸馏或是基于Open weights的模型也表现出了很好的多模态能力，但是这都源于闭源的OpenAI以及Gemini。
 如果没有他们，开源社区(底下的LLaVA)就像路边，没有很好的Performance，蒸馏的这些模型也无从谈起。
-![lecture_16, 页面 87](files/slides/CS231n/lecture_16.pdf#page=87)
+![lecture_16, 页面 87](files/slides/CS231n/lecture_16.pdf#page=87&rect=0,60,1200,800)
 
 Completely Open . Open Weights, Open Data, Open Code, Open Evals.
 上课的兄弟小吹了一波他们lab的[Molmo](files/slides/CS231n/lecture_16.pdf#page=91)
 
 他表明数据很重要(我也同意)，Molmo虽然只用了700000的Image-Text pairs训练，但他们的Image-Text pairs长这样：
-![lecture_16, 页面 100](files/slides/CS231n/lecture_16.pdf#page=100)
+![lecture_16, 页面 100](files/slides/CS231n/lecture_16.pdf#page=100&rect=0,60,1200,800)
 
 ## Segmentation Model
 
 ### Segment Anything Model (SAM)
 
-![lecture_16, 页面 112](files/slides/CS231n/lecture_16.pdf#page=112)
+![lecture_16, 页面 112](files/slides/CS231n/lecture_16.pdf#page=112&rect=0,60,1200,800)
 
 > Masking model trained on a dataset of a huge number of categories. So How to get this?
 > Model outputs mask of any objects that the user cares about. So How to know this?
@@ -190,7 +187,7 @@ Completely Open . Open Weights, Open Data, Open Code, Open Evals.
 想要模型应该输出**用户关心**的那个物体(涉及歧义)？该如何让模型明白用户的Prompt？
 
 基本架构如下。他还有个prompt encoder，我懒得写笔记了。
-![lecture_16, 页面 121](files/slides/CS231n/lecture_16.pdf#page=121)
+![lecture_16, 页面 121](files/slides/CS231n/lecture_16.pdf#page=121&rect=0,60,1200,800)
 
 其实最关键的还是数据的标注，SAM的作者建立了一个有关很大的数据集SA-1B。
 
@@ -199,7 +196,7 @@ Completely Open . Open Weights, Open Data, Open Code, Open Evals.
 *   模型能力比较强时。对于简单的物体，模型直接自动标好；对于困难的、模糊的物体，才让人类去标。
 *   模型已经大成时。给它海量的无标签图片，让它自己去把里面的所有物体都分割出来（生成 Mask）。SA-1B数据集大部分是由 SAM 模型自己生成的。[最终呈现的效果很好](files/slides/CS231n/lecture_16.pdf#page=125)。
 
-![lecture_16, 页面 124](files/slides/CS231n/lecture_16.pdf#page=124)
+![lecture_16, 页面 124](files/slides/CS231n/lecture_16.pdf#page=124&rect=0,60,1200,800)
 
 ---
 ## Chaining
@@ -209,7 +206,7 @@ Completely Open . Open Weights, Open Data, Open Code, Open Evals.
 图像分类时，CLIP如何面对没有见过的东西呢？（比如图上的marimba)
 这时，我们可以让LLM去描述我们需要分类的东西的特征（如下图），CLIP虽然没有见过特定的物品，但是见过这些特征，这时CLIP就可以分类的很好了。
 
-![lecture_16, 页面 132](files/slides/CS231n/lecture_16.pdf#page=132)
+![lecture_16, 页面 132](files/slides/CS231n/lecture_16.pdf#page=132&rect=0,60,1200,800)
 
 ### VisProg (visual programming)
 
@@ -218,8 +215,8 @@ Completely Open . Open Weights, Open Data, Open Code, Open Evals.
 
  既然我们已经有了很多厉害的小模型（比如专门认图的 VQA 模型），为什么不把它们像积木一样拼起来？
 我们可以利用 LLM把用户的自然语言指令，翻译成一段 **Python 代码**。让这段代码会去调用各种现成的视觉模型。这样就有很强的组合以及泛化能力。
-![lecture_16, 页面 136](files/slides/CS231n/lecture_16.pdf#page=136)
+![lecture_16, 页面 136](files/slides/CS231n/lecture_16.pdf#page=136&rect=0,60,1200,800)
 
 如下是模型以及各种可调用的函数作为LLM生成代码的武器库。其实这么一看有点像agent里的思想啊。。。
-![lecture_16, 页面 139](files/slides/CS231n/lecture_16.pdf#page=139)
+![lecture_16, 页面 139](files/slides/CS231n/lecture_16.pdf#page=139&rect=0,60,1200,800)
 

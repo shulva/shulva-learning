@@ -5,7 +5,8 @@
 Agent会根据State和Goal做出Action。
 Robot问题的独特之处在于Agent的行为Action是会影响现实世界的State，现实世界又会给予Agent反馈，直到Goal实现。
 像[围棋](files/slides/CS231n/lecture_17.pdf#page=14)就是一个例子。Slides中有很多例子。
-![lecture_17, 页面 9](files/slides/CS231n/lecture_17.pdf#page=9)
+
+![lecture_17, 页面 9](files/slides/CS231n/lecture_17.pdf#page=9&rect=0,0,960,540)
 
 但是机器人如何接受现实世界的State呢？换句话说，Agent怎么**感知**这个世界呢？
 
@@ -16,7 +17,7 @@ Robot问题的独特之处在于Agent的行为Action是会影响现实世界的S
 3.  **环境依赖性 (Situated)**：Robots are situated in the world.它处理的不是抽象的图片，而是必须实时应对当前物理环境的复杂变化（如光照、障碍物），视觉直接决定了它当下的生存和行为。
 
 A key challenge in Robot Learning is to close the perception-action loop.
-![lecture_17, 页面 27](files/slides/CS231n/lecture_17.pdf#page=27)
+![lecture_17, 页面 27](files/slides/CS231n/lecture_17.pdf#page=27&rect=0,0,960,540)
 
 Evaluation:评估机器人的好坏也是一个难点。
 
@@ -25,7 +26,7 @@ Evaluation:评估机器人的好坏也是一个难点。
 2.  但是:**昂贵 (Costly and Noisy)**:在现实中搭场景、跑机器人非常烧钱且耗时。虽然像大厂有钱可以硬抗。
 **相关性弱 (Weak Correlation)**: 你在电脑上训练时 Loss 降得很低（模型觉得自己学得很好），但这**并不代表**它在现实中抓取成功率就高。原因在于训练目标（Loss）和实际任务指标（Success Rate）不一致，以及训练和测试的环境差异。
 
-![lecture_17, 页面 94](files/slides/CS231n/lecture_17.pdf#page=94)
+![lecture_17, 页面 94](files/slides/CS231n/lecture_17.pdf#page=94&rect=0,0,960,540)
 
 ## Reinforcement Learning
 
@@ -36,14 +37,14 @@ RL trains agents that interact with an environment and learn to maximize reward 
 > The difference between RL and Supervised Learning
 
 这里是Supervised Learning的流程，和RL也很相像啊？到底有什么区别？不都是input output以及反馈的sequence吗？
-![lecture_17, 页面 34](files/slides/CS231n/lecture_17.pdf#page=34)
+![lecture_17, 页面 34](files/slides/CS231n/lecture_17.pdf#page=34&rect=0,0,960,540)
 
 此两者虽然流程上长得像，但是确实有很多区别。
 第一点就是Environment的混沌性，同样的action不一定有同样的reward，robot影响的环境是一个混沌的动态系统。
 第二点就是reward $r_t$ 并不是直接依赖于$a_t$，reward事实上可能是被以前的，累积的reward共同影响。就像下围棋，下错一步的影响可能不会立即显现，而是要过很久才会显现。
 第三点，做不了反向传播，Loss是可微的，但是reward是环境给的，我们没法对现实世界求导。
 第四点就是这里的Agent的Action $a_t$是会影响Environment以及下一步的State $S_{t+1}$的。Supervised Learning的上一步output输出可不会影响其他的input数据点。
-![lecture_17, 页面 37](files/slides/CS231n/lecture_17.pdf#page=37)
+![lecture_17, 页面 37](files/slides/CS231n/lecture_17.pdf#page=37&rect=0,0,960,540)
 
 > Deep Q-Learning
 
@@ -79,14 +80,14 @@ $$ L = ( \underbrace{r + \gamma \max_{a'} Q(s', a'; \theta_{old})}_{\text{目标
 > [!example] 有点难以理解？
 > 如果它预测某步棋值 80 分，但你照做后发现实际只得到了 0 分奖励，不过这步棋让你到了一个能在未来拿 90 分的好位置，那么它就会意识到这步棋的真实价值其实是 81 分（0 + 0.9×90），比预测值要高。于是它会通过Loss+反向传播修正参数，下次再遇到类似情况就会预测得更准。
 
-![lecture_17, 页面 40](files/slides/CS231n/lecture_17.pdf#page=40)
+![lecture_17, 页面 40](files/slides/CS231n/lecture_17.pdf#page=40&rect=0,0,960,540)
 
 Alpha Go的成功说明了一件事：
 
 	 Sometimes , making this method simpler will actually give you better performance by making it morecompatible by whatever infrastructure you can use for scale things up
 
 还有其他[Games](files/slides/CS231n/lecture_17.pdf#page=47)上的成功。
-![lecture_17, 页面 46](files/slides/CS231n/lecture_17.pdf#page=46)
+![lecture_17, 页面 46](files/slides/CS231n/lecture_17.pdf#page=46&rect=0,0,960,540)
 
 
 > Problem of Model-Free Reinforcement Learning -> Model-Based RL
@@ -109,7 +110,7 @@ Alpha Go的成功说明了一件事：
 
 **我们需要 Model-Based RL**，也就是让 AI 先学会一个**世界模型**（比如知道物理规律），然后在脑子里模拟和规划，而不是在现实中拿错误去试。
 
-![lecture_17, 页面 52](files/slides/CS231n/lecture_17.pdf#page=52)
+![lecture_17, 页面 52](files/slides/CS231n/lecture_17.pdf#page=52&rect=0,0,960,540)
 
 
 ---
@@ -128,7 +129,7 @@ Green是预测点 Red是目标点 这两者之间的差异相当于Loss，需要
 *   因为我们的模型可能不准（模拟和现实有差距），所以先**Execute the first action**，只执行计划好的第一步。再**Obtain new state**，看看实际上发生了什么，到了哪里。之后再通过梯度下降来优化action sequence。
 
 但是，我们应该用什么来代表State？
-![lecture_17, 页面 55](files/slides/CS231n/lecture_17.pdf#page=55)
+![lecture_17, 页面 55](files/slides/CS231n/lecture_17.pdf#page=55&rect=0,0,960,540)
 
 
 > What should be the form of $s_t$?
@@ -137,14 +138,14 @@ Green是预测点 Red是目标点 这两者之间的差异相当于Loss，需要
 *   **状态形式**: **整张图片（原始像素）**。训练一个视频预测模型。输入当前的一帧画面，预测下一帧画面是什么样子的。
 信息最全，什么都在里面。通用性强，不需要预处理。但是太难了！预测几百万个像素的变化非常困难且计算量巨大。
 
-![lecture_17, 页面 56](files/slides/CS231n/lecture_17.pdf#page=56)
+![lecture_17, 页面 56](files/slides/CS231n/lecture_17.pdf#page=56&rect=0,0,960,540)
 
  **2. Keypoint Dynamics (关键点动力学)**
 *   **状态形式**: **物体上的几个关键点坐标**（比如关节位置、物体中心点）。先用一个检测器找出图中的几个红点、绿点，然后只预测这几个点在下一刻会移动到哪里。优点是极其高效，从几百万个像素简化成了几十个坐标数字，计算快得多。缺点是只能描述刚体或者简单结构。如果是一块布、一堆沙子，几个点根本描述不清楚。
 
  **3. Particle Dynamics (粒子动力学)**
 *   **状态形式**是一大堆粒子（点云）。其把物体看作是由成百上千个小粒子组成的。预测每一个粒子的运动。特别适合描述**流体**或者柔性物体的过程。比关键点更细致，比像素更结构化。
-![lecture_17, 页面 60](files/slides/CS231n/lecture_17.pdf#page=60)
+![lecture_17, 页面 60](files/slides/CS231n/lecture_17.pdf#page=60&rect=0,0,960,540)
 
 ---
 ## Imitation Learning
@@ -153,7 +154,7 @@ Green是预测点 Red是目标点 这两者之间的差异相当于Loss，需要
 
 	We have the demonstration collected by the experts. Then we will use that as a training data to do supervised learning to trying this policy. And we will roll out the policy in the real environment and observe those failure cases.And we either collect additional data or provide corrective behaviors that allow those datasets to not only contain the initial demonstrations but also those corrective behaviors that gets the errors from the policy back to the canonical trajectory.
 
-![lecture_17, 页面 72](files/slides/CS231n/lecture_17.pdf#page=72)
+![lecture_17, 页面 72](files/slides/CS231n/lecture_17.pdf#page=72&rect=0,0,960,540)
 
 > 那么该如何选择这里的policy呢？
 
@@ -176,7 +177,7 @@ VLA不像传统方法那样去显式地建模状态或转移函数。本质上�
 
 现有的 VLM（如 GPT-4V）输出可能不总是完美 (Perfect) 的，但总是合理 (Reasonable) 的。
 同理，机器人基础模型生成的动作可能不是最优 (Optimal) 的，但生成的轨迹总是优美且合理的。
-![lecture_17, 页面 82](files/slides/CS231n/lecture_17.pdf#page=82)
+![lecture_17, 页面 82](files/slides/CS231n/lecture_17.pdf#page=82&rect=0,0,960,540)
 
 ---
 ### Case Study:Pi-Zero
@@ -193,6 +194,6 @@ VLA不像传统方法那样去显式地建模状态或转移函数。本质上�
 *   **Specialized**: 对于高难度的任务（如叠衣服），经过Post-Training，它能做得非常好。
 *   **Efficient**: 对于从未见过的任务（unseen tasks），它只需要很少的数据进行Post-Training就能快速学会。
 
-![lecture_17, 页面 86](files/slides/CS231n/lecture_17.pdf#page=86)
+![lecture_17, 页面 86](files/slides/CS231n/lecture_17.pdf#page=86&rect=0,0,960,540)
 
 

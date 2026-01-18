@@ -1,8 +1,8 @@
 # STL
 
-![2025Fall-05-Containers, 页面 32](files/slides/CS106L/2025Fall-05-Containers.pdf#page=32)
+![2025Fall-05-Containers, 页面 32](files/slides/CS106L/2025Fall-05-Containers.pdf#page=32&rect=0,0,960,540)
 
-![2025Fall-05-Containers, 页面 98](files/slides/CS106L/2025Fall-05-Containers.pdf#page=98)
+![2025Fall-05-Containers, 页面 98](files/slides/CS106L/2025Fall-05-Containers.pdf#page=98&rect=0,0,960,540)
 ## Sequence Containers
 
 Sequence containers store a linear sequence of elements
@@ -23,7 +23,7 @@ void receivePrice(deque<double>& prices, double price) {
 }
 ```
 
-![2025Fall-05-Containers, 页面 52](files/slides/CS106L/2025Fall-05-Containers.pdf#page=55)
+![2025Fall-05-Containers, 页面 52](files/slides/CS106L/2025Fall-05-Containers.pdf#page=55&rect=0,0,960,540)
 
 ## associative containers
 
@@ -41,15 +41,15 @@ for (const auto& [key, value] : map)  //结构化绑定获取
 }
 ```
 
-![2025Fall-05-Containers, 页面 61](files/slides/CS106L/2025Fall-05-Containers.pdf#page=61)
+![2025Fall-05-Containers, 页面 61](files/slides/CS106L/2025Fall-05-Containers.pdf#page=61&rect=0,0,960,540)
 
-![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=70)
-
-
-![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=71)
+![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=70&rect=0,0,960,540)
 
 
-![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=72)
+![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=71&rect=0,0,960,540)
+
+
+![2025Fall-05-Containers, 页面 70](files/slides/CS106L/2025Fall-05-Containers.pdf#page=72&rect=0,0,960,540)
 
 >  `std::map<K,V>` requires `K` to have an `operator <`
 
@@ -62,17 +62,17 @@ std::map<std::ifstream, int> map2;
 
 ## std::set
 
-![2025Fall-05-Containers, 页面 77](files/slides/CS106L/2025Fall-05-Containers.pdf#page=77)
+![2025Fall-05-Containers, 页面 77](files/slides/CS106L/2025Fall-05-Containers.pdf#page=77&rect=0,0,960,540)
 
 > 实现方式与`std::map`相同
 
-![2025Fall-05-Containers, 页面 80](files/slides/CS106L/2025Fall-05-Containers.pdf#page=80)
+![2025Fall-05-Containers, 页面 80](files/slides/CS106L/2025Fall-05-Containers.pdf#page=80&rect=0,0,960,540)
 
 ## std::unordered_map
 
-![2025Fall-05-Containers, 页面 91](files/slides/CS106L/2025Fall-05-Containers.pdf#page=91)
+![2025Fall-05-Containers, 页面 91](files/slides/CS106L/2025Fall-05-Containers.pdf#page=91&rect=0,0,960,540)
 
-![2025Fall-05-Containers, 页面 95](files/slides/CS106L/2025Fall-05-Containers.pdf#page=95)
+![2025Fall-05-Containers, 页面 95](files/slides/CS106L/2025Fall-05-Containers.pdf#page=95&rect=0,0,960,540)
 
 > You can think of unordered_map as an optimized version of map.It has the same interface as map
 
@@ -86,13 +86,13 @@ int sean = map["Sean"]; // 35
 map["Chris"] = 31;
 ```
 
-![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=84)
+![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=84&rect=0,0,960,540)
 
-![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=85)
+![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=85&rect=0,0,960,540)
 
-![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=86)
+![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=86&rect=0,0,960,540)
 
-![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=87)
+![2025Fall-05-Containers, 页面 83](files/slides/CS106L/2025Fall-05-Containers.pdf#page=87&rect=0,0,960,540)
 
 > `std::unordered_map<K,V>` requires `K` to be hashable
 > Most basic types (`int, double, string`) are hashable by default
@@ -120,11 +120,11 @@ map.max_load_factor(2.0); // Set the max load factor
 We need something to track where we are in a container… sort of like an index
 Containers and iterators work together to allow iteration
 
-![2025Fall-06-Iterators, 页面 44](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=44)
+![2025Fall-06-Iterators, 页面 44](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=44&rect=0,0,960,540)
 
 > `end()` never points to an element!
 
-![2025Fall-06-Iterators, 页面 27](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=27)
+![2025Fall-06-Iterators, 页面 27](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=27&rect=0,0,960,540)
 
 > Iterator Interface
 
@@ -143,7 +143,7 @@ if (it == c.end()) ...
 ```
 
 > [!NOTE] Aside: Why do we use ++it instead of it++?
->  ![2025Fall-06-Iterators, 页面 47](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=47)
+>  ![2025Fall-06-Iterators, 页面 47](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=47&rect=0,0,960,540)
 > 首先，我们要明确这两个操作符的定义（和 `int` 的行为一致）：
 > 
 > - **前置 (`++it`)**：先加，后用。
@@ -188,7 +188,7 @@ if (it == c.end()) ...
 
 ### Iterators Types
 
-![2025Fall-06-Iterators, 页面 68](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=68)
+![2025Fall-06-Iterators, 页面 68](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=68&rect=0,0,960,540)
 
 Iterators have a similar interface to pointers.
 `T*` is the backing type for `vector<T>::iterator`.
@@ -225,28 +225,28 @@ it1 < it2 // Is before?
 ```
 
 
-![2025Fall-06-Iterators, 页面 59](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=59)
+![2025Fall-06-Iterators, 页面 59](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=59&rect=0,0,960,540)
 
-![2025Fall-06-Iterators, 页面 58](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=58)
+![2025Fall-06-Iterators, 页面 58](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=58&rect=0,0,960,540)
 
 `it1==it2 -> ++it1==++it2`表明**读取操作是无副作用的**，不会像一些流操作一样，读取一次便消耗一个数据。
 这个公式证明了：**我们可以独立地、多次地访问同一个数据序列，而不会因为前一次的访问破坏了后一次的结果。**
 
-![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=61)
+![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=61&rect=0,0,960,540)
 
 
-![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=62)
+![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=62&rect=0,0,960,540)
 
-![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=63)
+![2025Fall-06-Iterators, 页面 61](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=63&rect=0,0,960,540)
 
-![2025Fall-06-Iterators, 页面 67](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=67)
+![2025Fall-06-Iterators, 页面 67](files/slides/CS106L/2025Fall-06-Iterators.pdf#page=67&rect=0,0,960,540)
 
 ### range-based
 
-![2025Fall-05-Containers, 页面 43](files/slides/CS106L/2025Fall-05-Containers.pdf#page=43)
+![2025Fall-05-Containers, 页面 43](files/slides/CS106L/2025Fall-05-Containers.pdf#page=43&rect=0,0,960,540)
 
 传引用零拷贝，比传值拷贝性能更高
-![2025Fall-05-Containers, 页面 43](files/slides/CS106L/2025Fall-05-Containers.pdf#page=44)
+![2025Fall-05-Containers, 页面 43](files/slides/CS106L/2025Fall-05-Containers.pdf#page=44&rect=0,0,960,540)
 
 ## Functors 
 

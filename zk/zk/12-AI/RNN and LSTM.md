@@ -4,31 +4,31 @@
 
 > RNN Advantages and Disadvantages
 
-![lecture_7, 页面 77](files/slides/CS231n/lecture_7.pdf#page=77)
+![lecture_7, 页面 77](files/slides/CS231n/lecture_7.pdf#page=77&rect=0,0,720,400)
 
 one to many:e.g. Image Captioning image -> sequence of words
 many to one:e.g. action prediction sequence of video frames -> action class
 many to many:e.g. Video Captioning Sequence of video frames -> caption
 
-![lecture_7, 页面 18](files/slides/CS231n/lecture_7.pdf#page=18)
+![lecture_7, 页面 18](files/slides/CS231n/lecture_7.pdf#page=18&rect=0,0,720,400)
 
 So, if you have a sequence of input x and a sequence of output y...
-![lecture_7, 页面 21](files/slides/CS231n/lecture_7.pdf#page=24)
+![lecture_7, 页面 21](files/slides/CS231n/lecture_7.pdf#page=24&rect=0,0,720,400)
 
 > Notice: the same function and the same set of parameters are used at every time step.
 
 here, We are using the same set of W and the same activation functions each time we are computing the hidden state.
-![lecture_7, 页面 21](files/slides/CS231n/lecture_7.pdf#page=22)
+![lecture_7, 页面 21](files/slides/CS231n/lecture_7.pdf#page=22&rect=0,0,720,400)
 
 > RNN output generation
 
 So here,$W_{hy}$ is a matrix that you will multiply by your hidden state. 
 It converts your hidden state to the dimension of your output.It is also the weight matrix you learn.
 So not only does it do the dimension change, but it also applies the transformation to your hidden state.
-![lecture_7, 页面 21](files/slides/CS231n/lecture_7.pdf#page=23)
+![lecture_7, 页面 21](files/slides/CS231n/lecture_7.pdf#page=23&rect=0,0,720,400)
 
 RNN激活函数的其中一个形式。这里的$W_{hh}以及W_{xh}和W_{hy}$从维度映射的角度去理解比较好。
-![lecture_7, 页面 26](files/slides/CS231n/lecture_7.pdf#page=26)
+![lecture_7, 页面 26](files/slides/CS231n/lecture_7.pdf#page=26&rect=0,0,720,400)
 
 ---
 ## Vanilla RNN Concrete Example
@@ -37,7 +37,7 @@ RNN激活函数的其中一个形式。这里的$W_{hh}以及W_{xh}和W_{hy}$从
 
 Q: What information should be captured in the "hidden" state?
 A: Previous input and current value for x.
-![lecture_7, 页面 29](files/slides/CS231n/lecture_7.pdf#page=29)
+![lecture_7, 页面 29](files/slides/CS231n/lecture_7.pdf#page=29&rect=0,0,720,400)
 
 $W_{xh}x_t$: Right hand term $x=0 -> [0, 0, 0] ; x=1 -> [1, 0, 0];$
 $W_{hh}h_{t-1}$:  we can see w_hh in code is `np.array([[0,0,0],[1,0,0],[0,0,1]])`.
@@ -51,7 +51,7 @@ $W_{hh}h_{t-1}$:  we can see w_hh in code is `np.array([[0,0,0],[1,0,0],[0,0,1]]
 
 > 效果看上去不错！不过这些W是人工设定的，在实践中，我们要怎么找到这些Weight Matrix呢？
 
-![lecture_7, 页面 36](files/slides/CS231n/lecture_7.pdf#page=36)
+![lecture_7, 页面 36](files/slides/CS231n/lecture_7.pdf#page=36&rect=0,0,720,400)
 
 ---
 ## RNN computational graph : Find W
@@ -59,26 +59,26 @@ $W_{hh}h_{t-1}$:  we can see w_hh in code is `np.array([[0,0,0],[1,0,0],[0,0,1]]
 > Re-use the same weight matrix at every time-step
 
 这里还有[Many to One](files/slides/CS231n/lecture_7.pdf#page=43)以及[One to Many](files/slides/CS231n/lecture_7.pdf#page=43)的情况。One to Many情况中填充x输入序列可以用全0或是y_{t-1}。
-![lecture_7, 页面 43](files/slides/CS231n/lecture_7.pdf#page=43)
+![lecture_7, 页面 43](files/slides/CS231n/lecture_7.pdf#page=43&rect=0,0,720,400)
 
 >  Backpropagation through time
 
 If you have an extremely long input sequence, you need to keeping the activations and the gradients at each time ==in memory== and then summing them all together.
 This is going to be ==extremely large memory cost== as your input sequence increases!
-![lecture_7, 页面 50](files/slides/CS231n/lecture_7.pdf#page=50)
+![lecture_7, 页面 50](files/slides/CS231n/lecture_7.pdf#page=50&rect=0,0,720,400)
 
 > Run forward and backward through chunks of the sequence instead of whole sequence
 
 当然，这是一种妥协，如果memory够用，肯定还是上面的方法更好。
-![lecture_7, 页面 51](files/slides/CS231n/lecture_7.pdf#page=51)
+![lecture_7, 页面 51](files/slides/CS231n/lecture_7.pdf#page=51&rect=0,0,720,400)
 
 在**前向传播**时，RNN 会完整地处理序列，让信息（hidden state）尽可能地向后流动，以维持长期的记忆。
 在**反向传播**时，为了节省计算和内存，并缓解梯度问题，我们只将梯度截断在最近的 k 个时间步内进行传播和更新。
-![lecture_7, 页面 52](files/slides/CS231n/lecture_7.pdf#page=52)
+![lecture_7, 页面 52](files/slides/CS231n/lecture_7.pdf#page=52&rect=0,0,720,400)
 
 只有Single output的则把loss累计起来，只在最后一步进行计算。
 反向传播同样会被截断，只会向后传播k步。
-![lecture_7, 页面 54](files/slides/CS231n/lecture_7.pdf#page=54)
+![lecture_7, 页面 54](files/slides/CS231n/lecture_7.pdf#page=54&rect=0,0,720,400)
 
 具体的RNN中的Weight Matrix的更新过程，请去本节中的[LSTM:Long Short Term Memory](RNN%20and%20LSTM.md#LSTM%20Long%20Short%20Term%20Memory)中浏览详细内容。
 
@@ -86,7 +86,7 @@ This is going to be ==extremely large memory cost== as your input sequence incre
 ## Character-level Language Model
 
 Time step wise classification based on softmax.
-![lecture_7, 页面 61](files/slides/CS231n/lecture_7.pdf#page=61)
+![lecture_7, 页面 61](files/slides/CS231n/lecture_7.pdf#page=61&rect=0,0,720,400)
 
 > Embedding layer
 
@@ -100,7 +100,7 @@ How you would have to represent that is basically a one with a bunch of zeros an
 然后，你每次只是把（嵌入矩阵的）其中一行作为你的输入向量，而不是用一个数字作为输入。相当于把嵌入层当做一个巨大的查找表。
 如果你不得不用（传统方法one-hot）来表示它，那基本上就是一个1和一堆0，而从优化的角度来看，只有嵌入层才能更好地工作。更重要的是，稠密的嵌入向量使得梯度能够有效地传播，让模型能够学习到单词之间的语义关系。
 
-![lecture_7, 页面 62](files/slides/CS231n/lecture_7.pdf#page=62)
+![lecture_7, 页面 62](files/slides/CS231n/lecture_7.pdf#page=62&rect=0,0,720,400)
 
 [随着多轮的训练](files/slides/CS231n/lecture_7.pdf#page=65),我们也可以看到效果在逐渐变好。
 这里也推荐[Andrej Karpathy](https://karpathy.github.io/)的文章：[RNN的有效性]https://karpathy.github.io/2015/05/21/rnn-effectiveness/
@@ -113,25 +113,25 @@ How you would have to represent that is basically a one with a bunch of zeros an
 ## RNN的缺点
 
 这里hidden state中反向传播的过程以及推导出的h_t相对于h_{t-1}的梯度。
-![lecture_7, 页面 99](files/slides/CS231n/lecture_7.pdf#page=99)
+![lecture_7, 页面 99](files/slides/CS231n/lecture_7.pdf#page=99&rect=0,0,720,400)
 
 > 最终公式中连绵不绝的梯度相乘会引来一个问题..
 
 [tanh'](files/slides/CS231n/lecture_7.pdf#page=104&selection=17,0,17,7)的最大值小于1，所以最后会导致梯度消失(vanishing gradient)问题。
 
-![lecture_7, 页面 103](files/slides/CS231n/lecture_7.pdf#page=103)
+![lecture_7, 页面 103](files/slides/CS231n/lecture_7.pdf#page=103&rect=0,0,720,400)
 
 我们可以不引入非线性，或者使用没有tan函数缺点的其他激活函数，但这无济于事，因为还有$W_{hh}$的连乘。
 只要$W_{hh}$的最大奇异值大于1或小于1，终究还是会有梯度爆炸或是梯度消失的问题。
 大于1的情况下，我们可以粗暴地直接通过设置阈值来防止梯度爆炸。
 但是如果要解决Largest singular value < 1: Vanishing gradients的问题，我们就得更改RNN的架构。
 
-![lecture_7, 页面 107](files/slides/CS231n/lecture_7.pdf#page=107)
+![lecture_7, 页面 107](files/slides/CS231n/lecture_7.pdf#page=107&rect=0,0,720,400)
 
 ## LSTM
 
 这里有一篇很好的[材料](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)可以用来理解LSTM。
-![lecture_7, 页面 110](files/slides/CS231n/lecture_7.pdf#page=115)
+![lecture_7, 页面 110](files/slides/CS231n/lecture_7.pdf#page=115&rect=0,0,720,400)
 
 非常精巧的设计!
 
@@ -166,14 +166,14 @@ LSTM 通过cell state `c_t` 的通道来进行梯度更新，梯度主要通过�
 
 
 
-![lecture_7, 页面 117](files/slides/CS231n/lecture_7.pdf#page=117)
+![lecture_7, 页面 117](files/slides/CS231n/lecture_7.pdf#page=117&rect=0,0,720,400)
 
 LSTM至少表现的很出色，虽然其并没有保证解决了梯度爆炸或是消失的问题。但是其至少提供了训练较长的RNN的方法。
-![lecture_7, 页面 119](files/slides/CS231n/lecture_7.pdf#page=119)
+![lecture_7, 页面 119](files/slides/CS231n/lecture_7.pdf#page=119&rect=0,0,720,400)
 
 And one thing could be cool is this idea of directly adding outputs and skipping some activation functions and other layers is actually high related to the idea of ResNets.ResNets have these skip connections.
 ResNets使训练层数变深，LSTM使time step可以更长。
-![lecture_7, 页面 121](files/slides/CS231n/lecture_7.pdf#page=121)
+![lecture_7, 页面 121](files/slides/CS231n/lecture_7.pdf#page=121&rect=0,0,720,400)
 
 RWKV,Mamba... 都是很有价值的工作。
-![lecture_7, 页面 122](files/slides/CS231n/lecture_7.pdf#page=122)
+![lecture_7, 页面 122](files/slides/CS231n/lecture_7.pdf#page=122&rect=0,0,720,400)

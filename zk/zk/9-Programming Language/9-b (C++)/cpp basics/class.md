@@ -1,10 +1,10 @@
 # Class
 
 
-![2025Fall-07-Classes, 页面 8](files/slides/CS106L/2025Fall-07-Classes.pdf#page=8)
+![2025Fall-07-Classes, 页面 8](files/slides/CS106L/2025Fall-07-Classes.pdf#page=8&rect=0,0,720,400)
 
 
-![2025Fall-07-Classes, 页面 8](files/slides/CS106L/2025Fall-07-Classes.pdf#page=21)
+![2025Fall-07-Classes, 页面 8](files/slides/CS106L/2025Fall-07-Classes.pdf#page=21&rect=0,0,720,400)
 
 ### Constructor and destructor
 
@@ -82,10 +82,10 @@ StanfordID::~StanfordID() {
 ### 组合优于继承
 
 > A car ~~is~~ has an engine!
-![2025Fall-08-Inheritance, 页面 99](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=99)
+![2025Fall-08-Inheritance, 页面 99](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=99&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 99](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=100)
+![2025Fall-08-Inheritance, 页面 99](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=100&rect=0,0,960,540)
 
 
 ---
@@ -252,13 +252,13 @@ StanfordID::~StanfordID() {
 
 ###  Inheritance
 
-![2025Fall-08-Inheritance, 页面 36](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=36)
+![2025Fall-08-Inheritance, 页面 36](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=36&rect=0,0,960,540)
 
 通过继承来消除类定义上的冗余：
-![2025Fall-08-Inheritance, 页面 43](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=43)
+![2025Fall-08-Inheritance, 页面 43](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=43&rect=0,0,960,540)
 
 
-![2025Fall-07-Classes, 页面 60](files/slides/CS106L/2025Fall-07-Classes.pdf#page=60)
+![2025Fall-07-Classes, 页面 60](files/slides/CS106L/2025Fall-07-Classes.pdf#page=60&rect=0,0,960,540)
 
 #### access modifer
 
@@ -296,13 +296,13 @@ class Player : public Entity {
 ```
 
 
-![2025Fall-08-Inheritance, 页面 50](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=50)
+![2025Fall-08-Inheritance, 页面 50](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=50&rect=0,0,960,540)
 
 protected inheritance:
-![2025Fall-08-Inheritance, 页面 51](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=51)
+![2025Fall-08-Inheritance, 页面 51](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=51&rect=0,0,960,540)
 #### diamond problem 菱形继承问题
 
-![2025Fall-07-Classes, 页面 80](files/slides/CS106L/2025Fall-07-Classes.pdf#page=81)
+![2025Fall-07-Classes, 页面 80](files/slides/CS106L/2025Fall-07-Classes.pdf#page=81&rect=0,0,960,540)
 
 > The way to fix this is to make B and C inherit from A in a virtual way. 
 > Virtual inheritance means that a derived class, in this case D, should only have a single instance of base classes, in this case A.
@@ -386,24 +386,24 @@ obj.hello(); // no longer ambiguous :)
 ### Class Memory Layout
 
 Python memory layout:
-![2025Fall-08-Inheritance, 页面 13](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=13)
+![2025Fall-08-Inheritance, 页面 13](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=13&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 13](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=14)
+![2025Fall-08-Inheritance, 页面 13](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=14&rect=0,0,960,540)
 
-![2025Fall-08-Inheritance, 页面 15](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=15)
+![2025Fall-08-Inheritance, 页面 15](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=15&rect=0,0,960,540)
 
 C++ stores less data in classes! This is one reason why C++ is more memory-efficient than Python
 
 #### functions
 
-![2025Fall-08-Inheritance, 页面 19](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=19)
+![2025Fall-08-Inheritance, 页面 19](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=19&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 19](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=20)
+![2025Fall-08-Inheritance, 页面 19](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=20&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 26](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=26)
+![2025Fall-08-Inheritance, 页面 26](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=26&rect=0,0,960,540)
 
 #### 多态
 
@@ -428,10 +428,10 @@ int main()
 但是执行时是会发生错误的。
 
 原因在于：
-![2025Fall-08-Inheritance, 页面 60](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=60)
+![2025Fall-08-Inheritance, 页面 60](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=60&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 61](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=61)
+![2025Fall-08-Inheritance, 页面 61](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=61&rect=0,0,960,540)
 
 
 于是，我们换一种方法...?
@@ -452,34 +452,34 @@ int main()
 ```
 
 按照下面的解释，这段代码应该是可行的。可惜，结果仍然不正确...
-![2025Fall-08-Inheritance, 页面 64](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=64)
+![2025Fall-08-Inheritance, 页面 64](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=64&rect=0,0,960,540)
 
 > 核心问题：which one is called??
 
-![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=70)
+![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=70&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=71)
+![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=71&rect=0,0,960,540)
 
 Using `Entity*` comes at a cost: We **forget** which type the object actually is
-![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=73)
+![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=73&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=75)
+![2025Fall-08-Inheritance, 页面 70](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=75&rect=0,0,960,540)
 
 所以，我们需要引入virtual function
 如果 `Entity` 类中没有将 `update()` 和 `render()` 声明为**虚函数（virtual functions）**，编译器会使用静态绑定（Static Binding）
 
-![2025Fall-08-Inheritance, 页面 78](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=78)
+![2025Fall-08-Inheritance, 页面 78](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=78&rect=0,0,960,540)
 
 ##### How virtual function work?
 
-![2025Fall-08-Inheritance, 页面 82](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=82)
+![2025Fall-08-Inheritance, 页面 82](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=82&rect=0,0,960,540)
 
-![2025Fall-08-Inheritance, 页面 85](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=85)
+![2025Fall-08-Inheritance, 页面 85](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=85&rect=0,0,960,540)
 
 
-![2025Fall-08-Inheritance, 页面 87](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=87)
+![2025Fall-08-Inheritance, 页面 87](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=87&rect=0,0,960,540)
 
 还有一些其他要点，比如纯虚函数：
 
@@ -494,7 +494,7 @@ class Entity {
 };
 ```
 
-![2025Fall-08-Inheritance, 页面 90](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=91)
+![2025Fall-08-Inheritance, 页面 90](files/slides/CS106L/2025Fall-08-Inheritance.pdf#page=91&rect=0,0,960,540)
 
 
 

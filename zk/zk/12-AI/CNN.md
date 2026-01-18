@@ -3,7 +3,7 @@
 > Two computational primitive that we can use to build convolutional Networks
 > **Convolutional Layer and Pooling Layer**
 
-![lecture_5, 页面 18](files/slides/CS231n/lecture_5.pdf#page=18)
+![lecture_5, 页面 18](files/slides/CS231n/lecture_5.pdf#page=18&rect=0,0,720,400)
 
 原来最原始的图片分类方法只使用了Raw pixel value，但是图片自身是有自己的feature的
 一个经典的feature representation/extractor是[Color Histogram](files/slides/CS231n/lecture_5.pdf#page=22&selection=13,0,13,7)，针对图片颜色的分布
@@ -14,11 +14,11 @@
 
 The difference is : A is designed by humans, B is learned via gradient descent.
 本质上还是数据说话，Data-Driven Approach
-![lecture_5, 页面 26](files/slides/CS231n/lecture_5.pdf#page=26)
+![lecture_5, 页面 26](files/slides/CS231n/lecture_5.pdf#page=26&rect=0,0,720,400)
 
 > Interesting thing: Features depend on content , not on their location.
 
-![lecture_5, 页面 106](files/slides/CS231n/lecture_5.pdf#page=106)
+![lecture_5, 页面 106](files/slides/CS231n/lecture_5.pdf#page=106&rect=0,0,720,400)
 
 ---
 ## CNN intro
@@ -28,7 +28,7 @@ The difference is : A is designed by humans, B is learned via gradient descent.
 > if we transform the pixel of an image into a vector, the spatial structure of images is destroyed!
 > image is two-dimensional
 
-![lecture_5, 页面 28](files/slides/CS231n/lecture_5.pdf#page=28)
+![lecture_5, 页面 28](files/slides/CS231n/lecture_5.pdf#page=28&rect=0,0,720,400)
 
 > Trained end-to-end with backprop + gradient descent
 
@@ -37,11 +37,11 @@ The difference is : A is designed by humans, B is learned via gradient descent.
 > ImageNet Classification with Deep Convolutional Neural Networks (AlexNet) [Krizhevsky, Sutskever, Hinton, 2012]
 > 2012 – 2020: ConvNets dominate [all vision tasks](files/slides/CS231n/lecture_5.pdf#page=35&selection=25,0,25,9)
 
-![lecture_5, 页面 31](files/slides/CS231n/lecture_5.pdf#page=31)
+![lecture_5, 页面 31](files/slides/CS231n/lecture_5.pdf#page=31&rect=0,0,720,400)
 
 > What happened after 2020?
 
-![lecture_5, 页面 41](files/slides/CS231n/lecture_5.pdf#page=41)
+![lecture_5, 页面 41](files/slides/CS231n/lecture_5.pdf#page=41&rect=0,0,720,400)
 
 ## Convolutional Layer
 
@@ -51,7 +51,7 @@ So anything built on dot products is basically a template matching.
 So the way that you should think about these fully connected layer is that we have a set of templates, each of the templates have the same size of the input. And the output is the template matching score between each one of our templates and the entire input.
 所以在这里，$W$的每一行都可以看作是一个template。$y=Wx$相当于templates匹配的过程,全连接层就是一组可学习的模板匹配器
 
-![lecture_5, 页面 47](files/slides/CS231n/lecture_5.pdf#page=47)
+![lecture_5, 页面 47](files/slides/CS231n/lecture_5.pdf#page=47&rect=0,0,720,400)
 
 So CNN's templates is no longer to have the same shape as the input.
 Instead, now our filters/templates will only look at a small subset of the input.
@@ -61,7 +61,7 @@ we can think about that small fliter as a little chunk of image template.
 **So we can transform problem to how much the sub part of the image match this template that we are learning in our 
 convolutional fliter**
 
-![lecture_5, 页面 51](files/slides/CS231n/lecture_5.pdf#page=51)
+![lecture_5, 页面 51](files/slides/CS231n/lecture_5.pdf#page=51&rect=0,0,720,400)
 
 OK,fine.But deep learning need more compute...
 当然，这里的number of filter and size of filter 都是超参数，属于我们在训练之前设置的。
@@ -69,7 +69,7 @@ filters就相当于Fully Connected Layer中的$W$,这些filters的初始化需�
 
 > Work on a batch of input images.it makes everything four-dimensional
 
-![lecture_5, 页面 61](files/slides/CS231n/lecture_5.pdf#page=62)
+![lecture_5, 页面 61](files/slides/CS231n/lecture_5.pdf#page=62&rect=0,0,720,400)
 
 
 > Simple ConvNet 
@@ -77,18 +77,18 @@ filters就相当于Fully Connected Layer中的$W$,这些filters的初始化需�
 $C_{out}$ 参数大小取决于有多少个filter
 但是上文的架构还有一个问题：Everything is all linear。所以我们需要通过激活函数引入非线性。
 
-![lecture_5, 页面 65](files/slides/CS231n/lecture_5.pdf#page=65)
+![lecture_5, 页面 65](files/slides/CS231n/lecture_5.pdf#page=65&rect=0,0,720,400)
 
 > What do Conv filters learn? we can **visualize** the first layer
 
 The thing we see is that we often learn two kinds of filters in here.
 One tends to be looking for colors.And the other category of filter we tend to see are looking for somehow the spatial structure of the images.But [Deep conv layers hard to visualize](files/slides/CS231n/lecture_5.pdf#page=69&selection=19,5,19,7).
-![lecture_5, 页面 68](files/slides/CS231n/lecture_5.pdf#page=68)
+![lecture_5, 页面 68](files/slides/CS231n/lecture_5.pdf#page=68&rect=0,0,720,400)
 
 > Solution of the shrink of Feature map
 > we can add padding.It will cause problem on the borders, but it seems to be ok in a lot of cases.
 
-![lecture_5, 页面 78](files/slides/CS231n/lecture_5.pdf#page=78)
+![lecture_5, 页面 78](files/slides/CS231n/lecture_5.pdf#page=78&rect=0,0,720,400)
 
 ---
 ### Receptive Fields
@@ -98,46 +98,47 @@ With L layers the receptive field size is 1 + L * (K – 1)
 
 So the **effective receptive fields** of a convolution is basically how many pixels in the original image has the opportunity to influence one activation of the network later on downstream.It grows linear with the number of layers.
 
-![lecture_5, 页面 83](files/slides/CS231n/lecture_5.pdf#page=83)
+![lecture_5, 页面 83](files/slides/CS231n/lecture_5.pdf#page=83&rect=0,0,720,400)
 
 So now, effective receptive fields is growing **exponentially** in the depth of the network.
-![lecture_5, 页面 87](files/slides/CS231n/lecture_5.pdf#page=87)
+![lecture_5, 页面 87](files/slides/CS231n/lecture_5.pdf#page=87&rect=0,0,720,400)
 
 ---
 ### Convolution Summary and Example
 
 Output volume size:32 = (32+2\*2-5)/1+1
 Number of learnable parameters: Parameters per filter: 3\*5\*5 + 1 (for bias) = 76.10 filters, so total is 10 * 76 = 760
-![lecture_5, 页面 93](files/slides/CS231n/lecture_5.pdf#page=93)
+![lecture_5, 页面 93](files/slides/CS231n/lecture_5.pdf#page=93&rect=0,0,720,400)
 
 还有一些其他的，例如[Pytorch中的CNN](files/slides/CS231n/lecture_5.pdf#page=95),[1d convolution](files/slides/CS231n/lecture_5.pdf#page=97&selection=14,0,14,5),[3d convolution](files/slides/CS231n/lecture_5.pdf#page=97)
-![lecture_5, 页面 94](files/slides/CS231n/lecture_5.pdf#page=94)
+![lecture_5, 页面 94](files/slides/CS231n/lecture_5.pdf#page=94&rect=0,0,720,400)
 
 ---
 ## Pooling Layer
 
+
 池化层计算并不多，做的操作也是类似上文中提到的downsample
-![lecture_5, 页面 101](files/slides/CS231n/lecture_5.pdf#page=101)
+![lecture_5, 页面 101](files/slides/CS231n/lecture_5.pdf#page=101&rect=0,0,720,400)
 
 最常用的方法是这里的Max pooling,当然也有其他的算法。
 池化层事实上是可能引入非线性的，Max pooling会引入，但Average pooling不会。
-![lecture_5, 页面 102](files/slides/CS231n/lecture_5.pdf#page=102)
+![lecture_5, 页面 102](files/slides/CS231n/lecture_5.pdf#page=102&rect=0,0,720,400)
 
 ## CNN Architecture
 
 ### How to build CNN?
 
-![lecture_6, 页面 9](files/slides/CS231n/lecture_6.pdf#page=9)
+![lecture_6, 页面 9](files/slides/CS231n/lecture_6.pdf#page=9&rect=0,0,720,400)
 
 ---
 #### Normalization Layer
 
 > scale / shift the input data
 
-![lecture_6, 页面 11](files/slides/CS231n/lecture_6.pdf#page=11)
+![lecture_6, 页面 11](files/slides/CS231n/lecture_6.pdf#page=11&rect=0,0,720,400)
 
 有多种不同的Norm方法如下，C的意思是Channel
-![lecture_6, 页面 12](files/slides/CS231n/lecture_6.pdf#page=12)
+![lecture_6, 页面 12](files/slides/CS231n/lecture_6.pdf#page=12&rect=0,0,720,400)
 
 >  can normalization resolve the issues that arise with having weights initialized incorrectly?
 
@@ -145,12 +146,12 @@ Number of learnable parameters: Parameters per filter: 3\*5\*5 + 1 (for bias) = 
 ==Normalization may not always make sense!== 
 In this case, easy to see why it's helpful (LayerNorm does not change quadrant of inputs)
 
-![lecture_7, 页面 9](files/slides/CS231n/lecture_7.pdf#page=9)
+![lecture_7, 页面 9](files/slides/CS231n/lecture_7.pdf#page=9&rect=0,0,720,400)
 
 ---
 #### Dropout
 
-![lecture_6, 页面 15](files/slides/CS231n/lecture_6.pdf#page=15)
+![lecture_6, 页面 15](files/slides/CS231n/lecture_6.pdf#page=15&rect=0,0,720,400)
 
 > How can this possibly be a good idea?
 
@@ -160,7 +161,7 @@ In this case, easy to see why it's helpful (LayerNorm does not change quadrant o
 > An FC layer with 4096 units has 2\^4096 ~ 10\^1233 possible masks! Only ~ 10\^82 atoms in the universe...
 
 drop out的一种解释是：防止特征（或神经元）之间形成过度依赖的关系。
-![lecture_6, 页面 16](files/slides/CS231n/lecture_6.pdf#page=16)
+![lecture_6, 页面 16](files/slides/CS231n/lecture_6.pdf#page=16&rect=0,0,720,400)
 
 > At test time all neurons are active always  
 > We must scale the activations so that for each neuron: output at test time = expected output at training time
@@ -206,15 +207,15 @@ def predict(X):
 > ==The gradient of  Sigmoid is very small on the graph of sigmoid when the value are Large positive or negative.==
 > Many layers of sigmoids =  smaller and smaller gradients in practice
 
-![lecture_6, 页面 23](files/slides/CS231n/lecture_6.pdf#page=23)
+![lecture_6, 页面 23](files/slides/CS231n/lecture_6.pdf#page=23&rect=0,0,720,400)
 
 > Relu:逐渐替代了Sigmoid，但是存在神经元死亡问题(x<0时没有梯度)，可能导致神经元不再更新自己的参数
 
-![lecture_6, 页面 26](files/slides/CS231n/lecture_6.pdf#page=26)
+![lecture_6, 页面 26](files/slides/CS231n/lecture_6.pdf#page=26&rect=0,0,720,400)
 
 >Gelu:改进了上文提到的Relu的问题
 
-![lecture_6, 页面 27](files/slides/CS231n/lecture_6.pdf#page=27)
+![lecture_6, 页面 27](files/slides/CS231n/lecture_6.pdf#page=27&rect=0,0,720,400)
 
 #### Case Study:VGGNet,Smaller filters
 
@@ -232,20 +233,20 @@ Only 3x3 CONV stride 1, pad 1 and 2x2 MAX POOL stride 2
 你可以[计算一下](files/slides/CS231n/lecture_6.pdf#page=41),看看两者的effective receptive field是不是相同的。
 So, stacking these 3\*3 layers is better than having just a large filter.
 
-![lecture_6, 页面 43](files/slides/CS231n/lecture_6.pdf#page=43)
+![lecture_6, 页面 43](files/slides/CS231n/lecture_6.pdf#page=43&rect=0,0,720,400)
 
 --- 
 #### Case Study:ResNet,Revolution of Depth
 
 层数更多的模型反而表现的没有浅层模型好？而且Training error更高表明这并不是因为过拟合？到底为什么？
-![lecture_6, 页面 47](files/slides/CS231n/lecture_6.pdf#page=47)
+![lecture_6, 页面 47](files/slides/CS231n/lecture_6.pdf#page=47&rect=0,0,720,400)
 
 > 理论上来说，层数更多的模型具有更多的参数，潜在能力一定是更好的
 > 所以，这大概率是因为深层数的模型更难以去优化，==这事实上是一个优化问题==
 
 所以，一个更深的模型，应该学习到什么，才能保证其表现至少和一个更浅的模型一样好？
 一个构造性的解决方案是：将那个更浅层模型中已经学好的层直接复制过来，然后将所有新增加的层设置为“恒等映射”。
-![lecture_6, 页面 49](files/slides/CS231n/lecture_6.pdf#page=49)
+![lecture_6, 页面 49](files/slides/CS231n/lecture_6.pdf#page=49&rect=0,0,720,400)
 
 **恒等映射 identity mapping**，简单来说就是一个函数 f(x)=x，它的输出永远等于它的输入。
 但在实际训练中，让一个由$W,bias$ 和**非线性激活函数**组成的复杂网络层去学习 f(x) = x 这个恒等映射是极其困难的。
@@ -259,7 +260,7 @@ So, stacking these 3\*3 layers is better than having just a large filter.
 它将学习目标从困难的 H(x) = x，转变成了极其简单的 F(x) = 0。
 对于神经网络来说，学习输出一个为零的 F(x) 是非常容易的。
 
-![lecture_6, 页面 52](files/slides/CS231n/lecture_6.pdf#page=52)
+![lecture_6, 页面 52](files/slides/CS231n/lecture_6.pdf#page=52&rect=0,0,720,400)
 
 > Very deep networks using residual connections
 
@@ -267,7 +268,7 @@ So, stacking these 3\*3 layers is better than having just a large filter.
 - ILSVRC'15 classification winner (3.57% top 5 error)  
 - Swept all classification and detection competitions in ILSVRC'15 and COCO'15!
 
-![lecture_6, 页面 55](files/slides/CS231n/lecture_6.pdf#page=55)
+![lecture_6, 页面 55](files/slides/CS231n/lecture_6.pdf#page=55&rect=0,0,720,400)
 
 ---
 #### How to initialize weights in neural network layers?
@@ -275,43 +276,43 @@ So, stacking these 3\*3 layers is better than having just a large filter.
 > 假设有一个 Forward pass for a 6-layer net with hidden size 4096 的神经网络
 
 参数值太小不好，梯度最终会消失。参数值太大又[爆炸](files/slides/CS231n/lecture_6.pdf#page=63&selection=16,0,16,6)了。
-![lecture_6, 页面 61](files/slides/CS231n/lecture_6.pdf#page=61)
+![lecture_6, 页面 61](files/slides/CS231n/lecture_6.pdf#page=61&rect=0,0,720,400)
 
 > How to fix this? Depends on the size of the layer
 
 见证黑魔法吧！当然，这只对CNN有效，不要生搬硬套到其他架构上。
-![lecture_6, 页面 65](files/slides/CS231n/lecture_6.pdf#page=65)
+![lecture_6, 页面 65](files/slides/CS231n/lecture_6.pdf#page=65&rect=0,0,720,400)
 
 ---
 ###  How to train CNNs? (practical tips )
 
 #### Data Preprocessing
 
-![lecture_6, 页面 67](files/slides/CS231n/lecture_6.pdf#page=67)
+![lecture_6, 页面 67](files/slides/CS231n/lecture_6.pdf#page=67&rect=0,0,720,400)
 
 #### Data augmentation
 
 Dropout是一个典型的方法
-![lecture_6, 页面 70](files/slides/CS231n/lecture_6.pdf#page=70)
+![lecture_6, 页面 70](files/slides/CS231n/lecture_6.pdf#page=70&rect=0,0,720,400)
 
 在CV领域，常用的方法有[变换图像](files/slides/CS231n/lecture_6.pdf#page=71&selection=17,0,17,14),[反转](files/slides/CS231n/lecture_6.pdf#page=72),裁剪并缩放,[Color Jitter](files/slides/CS231n/lecture_6.pdf#page=74),[Cutout](files/slides/CS231n/lecture_6.pdf#page=75)
 他们共同的特点就是让图片看起来与原来不一样的同时，也让我们易于去辨认图中的物体
-![lecture_6, 页面 73](files/slides/CS231n/lecture_6.pdf#page=73)
+![lecture_6, 页面 73](files/slides/CS231n/lecture_6.pdf#page=73&rect=0,0,720,400)
 
 ---
 #### Transfer Learning
 
 迁移学习，学会借力，使用别人的模型和数据集。
-![lecture_6, 页面 86](files/slides/CS231n/lecture_6.pdf#page=86)
+![lecture_6, 页面 86](files/slides/CS231n/lecture_6.pdf#page=86&rect=0,0,720,400)
 
 > What if you don't have a lot of data? Can you still train CNNs?
 > Yes, you can.But you need to be a little bit smart with how you do it.
 
 冻结前面的层，只训练单独的一层，有点类似Lora。或者直接全部微调所有层。
-![lecture_6, 页面 82](files/slides/CS231n/lecture_6.pdf#page=82)
+![lecture_6, 页面 82](files/slides/CS231n/lecture_6.pdf#page=82&rect=0,0,720,400)
 
 不同情况下的抉择，肯定是数据越多越好。
-![lecture_6, 页面 85](files/slides/CS231n/lecture_6.pdf#page=85)
+![lecture_6, 页面 85](files/slides/CS231n/lecture_6.pdf#page=85&rect=0,0,720,400)
 
 ---
 #### Hyperparameter Selection
@@ -320,7 +321,7 @@ Dropout是一个典型的方法
 > find a learning rate that makes the loss drop significantly within ~100 iterations 
 > Good learning rates to try: 1e-1, 1e-2, 1e-3, 1e-4, 1e-5
 
-![lecture_6, 页面 89](files/slides/CS231n/lecture_6.pdf#page=94)
+![lecture_6, 页面 89](files/slides/CS231n/lecture_6.pdf#page=94&rect=0,0,720,400)
 
 [这里](files/slides/CS231n/lecture_6.pdf#page=90&selection=17,0,17,8)总结了几种不同的情况，比如overfitting以及underfitting的情况。
 
@@ -331,7 +332,7 @@ Dropout是一个典型的方法
 - 随机搜索虽然看起来随机，但它保证了在每个维度上探索的多样性，尤其是在那些真正重要的超参数上，它能探索到更多的可能性。(绿线是性能曲线)
 
 还有一些[直观的图像方法](files/slides/CS231n/lecture_7.pdf#page=12)可供选择
-![lecture_6, 页面 95](files/slides/CS231n/lecture_6.pdf#page=95)
+![lecture_6, 页面 95](files/slides/CS231n/lecture_6.pdf#page=95&rect=0,0,720,400)
 
 
 
