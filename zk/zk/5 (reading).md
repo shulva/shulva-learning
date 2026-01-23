@@ -19,4 +19,3 @@
 > [IO多路复用 select/poll/epoll](https://mp.weixin.qq.com/s/5xj42JPKG8o5T7hjXIKywg)
 > [Netty1](https://mp.weixin.qq.com/s/52iS3RxIO_to29IG_JoOpw)
 > [Netty2](https://mp.weixin.qq.com/s/JZE22Ndvo0tWC2P-MD0ROg)
-> [Scalable IO in Java](../../files/slides/Scalable%20IO%20in%20Java.pdf)

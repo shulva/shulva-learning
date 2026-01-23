@@ -40,7 +40,7 @@ __global__ void reduce_kernel_baseline(float* input, float* output, int n) {
 ```
 
 
-![](../../../../files/images/MLsys/13-b/13-b-1.jpg)
+![](../../../../../files/images/MLsys/13-b/13-b-1.jpg)
 
 - s=1: (tid & 1) == 0 -> tid是偶数。活跃线程是0, 2, 4, ... 存在warp divergence
 - s=2: (tid & 3) == 0 -> tid是4的倍数。活跃线程是0, 4, 8, ... 存在warp divergence
@@ -82,7 +82,7 @@ __global__ void reduce_kernel_v1(float* input, float* output, int n) {
 }
 ```
 
-![](../../../../files/images/MLsys/13-b/13-b-2.jpg)
+![](../../../../../files/images/MLsys/13-b/13-b-2.jpg)
 
 thread:
 - s=1: tid为从0-BLOCK_SIZE/2的所有线程，index为0,2,4.. warp没有divergence
@@ -125,7 +125,7 @@ __global__ void reduce_kernel_v2(float* input, float* output, int n) {
 }
 ```
 
-![](../../../../files/images/MLsys/13-b/13-b-3.jpg)
+![](../../../../../files/images/MLsys/13-b/13-b-3.jpg)
 
 `sdata[threadIdx.x]`中所有的下标都是不同的，所以它们访问的Bank也都是不同的。
 `sdata[threadIdx.x+i]`同理，没有bank conflict。
@@ -134,7 +134,7 @@ __global__ void reduce_kernel_v2(float* input, float* output, int n) {
 
 在之前的版本中，我们直接将数组直接从global memory全部load到shared memory中， 但是实际上，我们可以在load到shared memory的同时进行计算,如下图:
 
-![](../../../../files/images/MLsys/13-b/13-b-4.jpg)
+![](../../../../../files/images/MLsys/13-b/13-b-4.jpg)
 
 在循环中，线程的利用率是越来越低的(1/2,1/4....)。相比之下，在归约之前，将全局内存中的数据复制到共享内存的操作对线程的利用率是 100% 的。我们可以利用这部分的线程在规约前做一些操作。
 
@@ -260,7 +260,7 @@ v4使用`if(tid<32)`使其他warp提前退场。Warp 0可以独立地、无等�
 
 ###### 优化5：使用shuffle指令在warp内部reduce
 
-[`__shfl_down_sync`](../13-a%20(CUDA)/CUDA编程/13-a-6（线程束Warp）.md#线程束内的基本函数)是CUDA提供的一个warp级别的shuffle指令，用于在同一个warp内的线程之间直接交换数据，**无需通过shared memory**。详情流程请看注释。
+[`__shfl_down_sync`](../CUDA编程/13-a-6（线程束Warp）.md#线程束内的基本函数)是CUDA提供的一个warp级别的shuffle指令，用于在同一个warp内的线程之间直接交换数据，**无需通过shared memory**。详情流程请看注释。
 
 warp reduce的次数取决于blocksize的大小，代码共进行了两次warp reduce。次数计算公式为$log_{32}(blocksize)$取上界。
 
@@ -308,9 +308,9 @@ __global__ void reduce_kernel_v5(float *input, float* output, int n){
 }
 ```
 
-![](../../../../files/images/MLsys/13-b/13-b-5.jpg)
+![](../../../../../files/images/MLsys/13-b/13-b-5.jpg)
 
-![](../../../../files/images/MLsys/13-b/13-b-6.jpg)
+![](../../../../../files/images/MLsys/13-b/13-b-6.jpg)
 
 | 版本       | 带宽 (GB/s) | 耗时 (ms) | 说明                                   |
 | -------- | --------- | ------- | ------------------------------------ |

@@ -7,7 +7,7 @@ MODE = "add"
 
 # 2. 设置目标路径 (可以是文件夹，也可以是单个 .md 文件路径)
 # TARGET_PATH = r"C:\Users\Name\Obsidian\CS231n\lecture_17.md"  # 单文件
-TARGET_PATH = r"./zk/zk/10-Algorithms/"                 # 文件夹
+TARGET_PATH = r"./zk/zk/13-MLSYS/13-c (HPC）/SPMD.md"                 # 文件夹
 # ===========================================
 
 def process_content(content, mode):
@@ -21,7 +21,7 @@ def process_content(content, mode):
         # Negative Lookahead: (?!.*&rect=) 确保这一行后面没有 &rect=
         # Group 2: )
         pattern = re.compile(r'(!\[.*?\]\(.*?\.pdf#page=\d+)(?!.*&rect=)(.*?\))')
-        replacement = r'\1&rect=0,0,960,540\2'
+        replacement = r'\1&rect=0,0,1920,1080\2'
         return pattern.subn(replacement, content)
 
     # 【移除模式】（逆过程）
