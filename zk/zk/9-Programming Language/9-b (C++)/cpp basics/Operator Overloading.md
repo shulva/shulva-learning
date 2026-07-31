@@ -177,7 +177,7 @@ bool operator<(const std::string& lhs, const StanfordID& rhs) {
 所以，我们可以使用`friend`友元来解决非成员函数如何访问类内部的私有变量的问题。
 ![2025Fall-12-OperatorOverloading, 页面 52](files/slides/CS106L/2025Fall-12-OperatorOverloading.pdf#page=58&rect=0,0,720,400)
 
-- **在类内部声明**：在  类的定义里（通常在 `.h` 文件），加上一行带有 `friend` 关键字的函数声明。
+- **在类内部声明**：在类的定义里（通常在 `.h` 文件），加上一行带有 `friend` 关键字的函数声明。
 - **在类外部定义**：函数的具体实现代码依然写在类外面，不需要加`Class::`前缀。
 
 ```cpp

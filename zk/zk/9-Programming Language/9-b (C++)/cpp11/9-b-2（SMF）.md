@@ -10,10 +10,25 @@
 > And the destructor is called when it goes out of scope
 
 ![2025Fall-13-SpecialMemberFunctions, 页面 15](files/slides/CS106L/2025Fall-13-SpecialMemberFunctions.pdf#page=15&rect=0,0,720,400)
+When we create a constructor, we need to initialize all of our member variables.
+However, initializing them to be the default value and then reassigning is inefficient!
 
-> 拷贝构造函数与拷贝赋值运算符的对比
+There are two steps happening here:
+- the first is that `_size, _capacity, and _data` may have been default initialized
+- Then the assignment to the variables, which effectively doubles the work.
 
-![2025Fall-13-SpecialMemberFunctions, 页面 22](files/slides/CS106L/2025Fall-13-SpecialMemberFunctions.pdf#page=22&rect=0,0,720,400)
+事实上，我们可以使用Member initialization Lists:[成员初始化列表](9-b-6%20（初始化与构造函数）.md#^list-construct)来提高效率
+成员初始化列表如何提高效率，以及何种情况下必须使用成员初始化列表，链接中描述的很详细
+
+```cpp
+template <typename T> 
+Vector<T>::Vector() 
+{
+	_size = 0;
+	_capacity = 4;
+	_data = new T[_capacity];
+}
+```
 
 > We don't have to write out any of these! They all have default versions that are generated automatically!
 
@@ -41,25 +56,13 @@ public:
 ![2025Fall-13-SpecialMemberFunctions, 页面 53](files/slides/CS106L/2025Fall-13-SpecialMemberFunctions.pdf#page=53&rect=0,0,720,400)
 ## Copy and copy assignment
 
-When we create a constructor, we need to initialize all of our member variables.
-However, initializing them to be the default value and then reassigning is inefficient!
 
-There are two steps happening here:
-- the first is that `_size, _capacity, and _data` may have been default initialized
-- Then the assignment to the variables, which effectively doubles the work.
+> 拷贝构造函数与拷贝赋值运算符的对比
 
-事实上，我们可以使用Member initialization Lists:[成员初始化列表](9-b-6%20（初始化与构造函数）.md#^list-construct)来提高效率
-成员初始化列表如何提高效率，以及何种情况下必须使用成员初始化列表，链接中描述的很详细
+拷贝构造函数：Creates a new object as a member-wise copy of another
+拷贝赋值运算符：Assigns an already existing object to another, both objects are constructed before using = operator
 
-```cpp
-template <typename T> 
-Vector<T>::Vector() 
-{
-	_size = 0;
-	_capacity = 4;
-	_data = new T[_capacity];
-}
-```
+![2025Fall-13-SpecialMemberFunctions, 页面 22](files/slides/CS106L/2025Fall-13-SpecialMemberFunctions.pdf#page=22&rect=0,0,720,400)
 
 > 有一些拷贝的情况，我们是必须override默认的SMF的
 
@@ -73,7 +76,8 @@ This is problematic because anything done to one pointer affects the other!
 
 ![2025Fall-13-SpecialMemberFunctions, 页面 41](files/slides/CS106L/2025Fall-13-SpecialMemberFunctions.pdf#page=41&rect=0,0,720,400)
 
-
+如下是copy函数的代码示例
+![2025Fall-15-OptionalAndTypeSafety, 页面 8](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=10&rect=0,0,720,400)
 ## delete
 
 > How do you prevent copies in special circumstance?
@@ -110,12 +114,14 @@ This usually happens when we work with **dynamically allocated memory**, like po
 ![2025Fall-15-OptionalAndTypeSafety, 页面 8](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=8&rect=0,0,720,400)
 
 > 当然，Rule of Three 别忘了也定义destructor，毕竟你要手动管理资源
+![2025Fall-14-MoveSemantics, 页面 85](files/slides/CS106L/2025Fall-14-MoveSemantics.pdf#page=85&rect=0,0,960,540)
 
-![2025Fall-14-MoveSemantics, 页面 85](files/slides/CS106L/2025Fall-14-MoveSemantics.pdf#page=85&rect=0,0,720,400)
+---
 
+![2025Fall-14-MoveSemantics, 页面 85](files/slides/CS106L/2025Fall-14-MoveSemantics.pdf#page=86&rect=960,540)
 
-![2025Fall-14-MoveSemantics, 页面 85](files/slides/CS106L/2025Fall-14-MoveSemantics.pdf#page=86&rect=0,0,720,400)
-
+如下是移动语义两个函数的代码示例：
+![2025Fall-15-OptionalAndTypeSafety, 页面 8](files/slides/CS106L/2025Fall-15-OptionalAndTypeSafety.pdf#page=12&rect=0,0,720,400)
 ## Pop Quiz
 
 ```cpp
