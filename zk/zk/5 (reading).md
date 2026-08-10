@@ -13,9 +13,3 @@
 > [Premature Optimization (c2.com)](https://wiki.c2.com/?PrematureOptimization)
 > [Books (brendangregg.com)](https://www.brendangregg.com/books.html)
 > [版本号撰写](https://semver.org/lang/zh-CN/)
-
-> [!NOTE] RPC
-> [Java BIO NIO 多路复用](https://mp.weixin.qq.com/s/VdyXDBevE48Wtr95ug_aKw)
-> [IO多路复用 select/poll/epoll](https://mp.weixin.qq.com/s/5xj42JPKG8o5T7hjXIKywg)
-> [Netty1](https://mp.weixin.qq.com/s/52iS3RxIO_to29IG_JoOpw)
-> [Netty2](https://mp.weixin.qq.com/s/JZE22Ndvo0tWC2P-MD0ROg)
