@@ -184,3 +184,27 @@ __memcpy_async(sram, dst, 512, NRAM2SRAM);       // st.async.sram.nram [r3], [r1
 ![多队列间数据依赖和同步](https://www.cambricon.com/docs/sdk_1.15.0/cntoolkit_3.7.2/programming_guide_1.7.0/_images/pipeline.png)
 
 
+在没有寄存器依赖和显式同步指令的情况下，不同队列中的指令并行执行。例如本例中的`offset = __load_gdram(ptr) (ld.gpr.gdram r0, [r0], 6)`指令和 `__bang_write_value(dst, 128, 0.0f) (writezero.nram.f32 [r1], 128)` 指令。
+
+由于硬件保证了寄存器依赖，因此 Scalar 流中的 `addr = base + offset (add.gpr.s48 r2, r0, 512)` 指令需要等待 IO 流中的 `offset = __load_gdram(ptr) (ld.gpr.gdram r0, [r0], 6)` 指令执行完毕后才能执行。 
+IO 流的 `__memcpy_async(gdram, addr, 512, NRAM2GDRAM) (st.async.gdram.nram [r2], [r1], 512)`指令需要等待 Scalar 流的`addr = base + offset (add.gpr.s48 r2, r0, 512)`指令执行完毕才能执行。 
+
+数据之间的依赖则由同步指令来保证。
+为了保证 IO 流的 `__memcpy_async(gdram, addr, 512, NRAM2GDRAM) (st.async.gdram.nram [r2], [r1], 512)`指令和 Move 流的 `__memcpy_async(sram, dst, 512, NRAM2SRAM) (st.async.sram.nram [r3], [r1], 512)` 指令与 Compute 流的 `__bang_write_value(dst, 128, 0.0f) (writezero.nram.f32 [r1], 128)` 指令之间的数据依赖，需要用户插入 `__sync()` 同步指令。
+因此，只有当 Compute 流的 `__bang_write_value(dst, 128, 0.0f) (writezero.nram.f32 [r1], 128)` 指令执行完毕以后， IO指令和Move指令才能开始执行。
+
+### 核间并行与同步
+
+抽象硬件模型支持多个 MLU Core 协同完成同一个计算任务，一个计算任务需要的硬件资源数量由任务类型决定。对于只需要一个 Cluster 的任务，硬件会启动4个 MLU Core 和 1 个 Memory Core 分多轮迭代处理所有 Task。
+**同一轮迭代的 Task 之间可以通过共享 SRAM 通信，也可以通过核间同步原语实现同步。**
+
+在抽象硬件模型中，核间同步包括局部同步和全局同步两种：
+- 局部同步用于完成同一个 Cluster 内不同 MLU Core 和 Memory Core 之间的同步；
+- 全局同步则用于完成多个 Cluster 之间的同步。
+
+核间同步原语默认会同步一个核心内部的所有指令流，软件也可以指定核间同步指令只同步某些指令流。
+
+用户应当合理划分计算任务，**尽量避免使用核间同步原语。**
+在必须使用核间同步原语时，应当控制同步范围，尽可能让最少的 MLU Core 和 Memory Core 参与同步。
+
+用户在对MLU硬件编程时需要尽可能地实现计算和 IO 的并行，合理切分计算任务，用计算时间掩藏 IO 时间。从宏观上看，软件应当充分利用 Memory Core 强大的 IO 能力和 MLU Core 强大的计算能力，将一个完整的计算任务切分为一系列子任务，子任务之间以流水线的方式依次在 Memory Core 上执行 IO 和在 MLU Core 上执行计算，MLU Core 和 Memory Core 通过 SRAM 进行数据交互。在 MLU Core 内部，还可以充分利用不同流之间的并行性，实现 Compute 流、Move 流、Scalar 流和 IO 流之间的并行。
