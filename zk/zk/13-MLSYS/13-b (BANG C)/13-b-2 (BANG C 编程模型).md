@@ -116,3 +116,376 @@ MLU 硬件对Union 任务的支持与硬件的具体配置有关。例如，一�
 硬件当前空闲的物理 Cluster 数量大于UnionN任务类型所需要的 Cluster 数量时，由 Cambricon BANG 异构并行计算平台根据硬件资源的占用情况决定是否将任务平均分配到更多的 Cluster 上执行。
 
 #### 示例
+
+- 任务类型为 Union2  
+- 任务规模为 {x=8,y=2, z=2}  
+- clusterDim 对应任务类型，在本例中 clusterDim = 2  
+- taskDimX，taskDimY，taskDimZ 分别对应任务规模，在本示例中，taskDimX=8， taskDimY=2，taskDimZ=2，taskDim = 8 * 2 * 2 = 32。
+- taskDimX = 8 ，因此需要同时占用8个 MLU Core，分别对应上面表格的8行；
+- 整个任务需要4轮迭代才能执行完毕，每个内建变量在每一轮的取值如上述表格的各列所示。
+
+<div style="
+  width:100%;
+  overflow-x:auto;
+  padding-bottom:8px;
+">
+
+<table style="
+  border-collapse:collapse;
+  min-width:1450px;
+  width:1450px;
+  text-align:center;
+  font-family:Arial, sans-serif;
+  font-size:16px;
+  white-space:nowrap;
+">
+
+  <thead>
+
+    <!-- 一级表头 -->
+    <tr style="
+      background:#0866c6;
+      color:#fff !important;
+      font-weight:bold;
+    ">
+
+      <th rowspan="2"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        Core
+      </th>
+
+      <th colspan="4"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        taskId
+      </th>
+
+      <th colspan="4"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        taskIdX
+      </th>
+
+      <th colspan="4"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        taskIdY
+      </th>
+
+      <th colspan="4"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        taskIdZ
+      </th>
+
+      <th colspan="4"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        clusterId
+      </th>
+
+      <th colspan="4"
+          style="
+            border:1px solid #333;
+            padding:14px 16px;
+            color:#fff !important;
+            background:#0866c6;
+          ">
+        coreId
+      </th>
+
+    </tr>
+
+
+    <!-- 二级表头 -->
+    <tr style="
+      background:#0866c6;
+      color:#fff !important;
+      font-weight:bold;
+    ">
+
+      <!-- taskId -->
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">0</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">1</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">2</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">3</th>
+
+      <!-- taskIdX -->
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">0</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">1</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">2</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">3</th>
+
+      <!-- taskIdY -->
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">0</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">1</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">2</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">3</th>
+
+      <!-- taskIdZ -->
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">0</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">1</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">2</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">3</th>
+
+      <!-- clusterId -->
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">0</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">1</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">2</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">3</th>
+
+      <!-- coreId -->
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">0</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">1</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">2</th>
+      <th style="border:1px solid #333;padding:12px;color:#fff !important;background:#0866c6;">3</th>
+
+    </tr>
+
+  </thead>
+
+
+  <tbody>
+
+    <!-- Core 0 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">0</td>
+
+      <!-- taskId -->
+      <td style="border:1px solid #333;">0</td>
+      <td style="border:1px solid #333;">8</td>
+      <td style="border:1px solid #333;">16</td>
+      <td style="border:1px solid #333;">24</td>
+
+      <!-- taskIdX -->
+      <td colspan="4" style="border:1px solid #333;">0</td>
+
+      <!-- taskIdY -->
+      <td rowspan="8"
+          style="border:1px solid #333;vertical-align:top;padding-top:14px;">
+        0
+      </td>
+
+      <td rowspan="8"
+          style="border:1px solid #333;vertical-align:top;padding-top:14px;">
+        1
+      </td>
+
+      <td rowspan="8"
+          style="border:1px solid #333;vertical-align:top;padding-top:14px;">
+        0
+      </td>
+
+      <td rowspan="8"
+          style="border:1px solid #333;vertical-align:top;padding-top:14px;">
+        1
+      </td>
+
+      <!-- taskIdZ -->
+      <td rowspan="8"
+          style="border:1px solid #333;vertical-align:top;padding-top:14px;">
+        0
+      </td>
+
+      <td rowspan="8"
+          style="border:1px solid #333;">
+      </td>
+
+      <td rowspan="8"
+          style="border:1px solid #333;vertical-align:top;padding-top:14px;">
+        1
+      </td>
+
+      <td rowspan="8"
+          style="border:1px solid #333;">
+      </td>
+
+      <!-- clusterId -->
+      <td colspan="4"
+          rowspan="4"
+          style="
+            border:1px solid #333;
+            vertical-align:top;
+            padding-top:14px;
+          ">
+        0
+      </td>
+
+      <!-- coreId -->
+      <td colspan="4"
+          style="border:1px solid #333;">
+        0
+      </td>
+
+    </tr>
+
+
+    <!-- Core 1 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">1</td>
+
+      <td style="border:1px solid #333;">1</td>
+      <td style="border:1px solid #333;">9</td>
+      <td style="border:1px solid #333;">17</td>
+      <td style="border:1px solid #333;">25</td>
+
+      <td colspan="4" style="border:1px solid #333;">1</td>
+
+      <td colspan="4" style="border:1px solid #333;">1</td>
+
+    </tr>
+
+
+    <!-- Core 2 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">2</td>
+
+      <td style="border:1px solid #333;">2</td>
+      <td style="border:1px solid #333;">10</td>
+      <td style="border:1px solid #333;">18</td>
+      <td style="border:1px solid #333;">26</td>
+
+      <td colspan="4" style="border:1px solid #333;">2</td>
+
+      <td colspan="4" style="border:1px solid #333;">2</td>
+
+    </tr>
+
+
+    <!-- Core 3 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">3</td>
+
+      <td style="border:1px solid #333;">3</td>
+      <td style="border:1px solid #333;">11</td>
+      <td style="border:1px solid #333;">19</td>
+      <td style="border:1px solid #333;">27</td>
+
+      <td colspan="4" style="border:1px solid #333;">3</td>
+
+      <td colspan="4" style="border:1px solid #333;">3</td>
+
+    </tr>
+
+
+    <!-- Core 4 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">4</td>
+
+      <td style="border:1px solid #333;">4</td>
+      <td style="border:1px solid #333;">12</td>
+      <td style="border:1px solid #333;">20</td>
+      <td style="border:1px solid #333;">28</td>
+
+      <td colspan="4" style="border:1px solid #333;">4</td>
+
+      <!-- clusterId = 1 -->
+      <td colspan="4"
+          rowspan="4"
+          style="
+            border:1px solid #333;
+            vertical-align:top;
+            padding-top:14px;
+          ">
+        1
+      </td>
+
+      <td colspan="4"
+          style="border:1px solid #333;">
+        0
+      </td>
+
+    </tr>
+
+
+    <!-- Core 5 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">5</td>
+
+      <td style="border:1px solid #333;">5</td>
+      <td style="border:1px solid #333;">13</td>
+      <td style="border:1px solid #333;">21</td>
+      <td style="border:1px solid #333;">29</td>
+
+      <td colspan="4" style="border:1px solid #333;">5</td>
+
+      <td colspan="4" style="border:1px solid #333;">1</td>
+
+    </tr>
+
+
+    <!-- Core 6 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">6</td>
+
+      <td style="border:1px solid #333;">6</td>
+      <td style="border:1px solid #333;">14</td>
+      <td style="border:1px solid #333;">22</td>
+      <td style="border:1px solid #333;">30</td>
+
+      <td colspan="4" style="border:1px solid #333;">6</td>
+
+      <td colspan="4" style="border:1px solid #333;">2</td>
+
+    </tr>
+
+
+    <!-- Core 7 -->
+    <tr>
+
+      <td style="border:1px solid #333;padding:14px;">7</td>
+
+      <td style="border:1px solid #333;">7</td>
+      <td style="border:1px solid #333;">15</td>
+      <td style="border:1px solid #333;">23</td>
+      <td style="border:1px solid #333;">31</td>
+
+      <td colspan="4" style="border:1px solid #333;">7</td>
+
+      <td colspan="4" style="border:1px solid #333;">3</td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+
+</div>
+
+
+> [!warning] 
+> taskDimX = 8，因此需要同时占用 8 个 MLU Core，分别对应上面表格的 8 行； 整个任务需要 4 轮迭代才能执行完毕，每个内建变量在每一轮的取值如上述表格的各列所示。
+
+## 任务类型
