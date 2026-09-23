@@ -1,5 +1,9 @@
 # Git
-#git
+
+## 课程笔记
+
+- [[2-b-1 (版本管理 1)|版本管理（1）]]
+- [[2-b-2 (版本管理 2)|版本管理（2）]]
 
 > [!NOTE] What is Git
 > [Git for Computer Scientists](https://eagain.net/articles/git-for-computer-scientists/)

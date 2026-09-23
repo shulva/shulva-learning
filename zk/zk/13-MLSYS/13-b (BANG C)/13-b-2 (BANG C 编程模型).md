@@ -44,7 +44,7 @@ int main() {
 - Kernel2 与 Kernel1 和 Kernel3 不在同一个队列中，因此 Kernel2 可以与 Kernel1 或 Kernel3 并行执行。
 ![Kernel Seq](https://www.cambricon.com/docs/sdk_1.15.0/cntoolkit_3.7.2/programming_guide_1.7.0/_images/timechart.png)
 
-## Task规模
+## Task 规模
 
 在 Cambricon BANG 异构并行编程模型中，一个 Kernel 描述了一个 Task 的行为。
 在具体编程过程中，用户需要将一个完整的计算任务拆解为一系列可以并行的 Task，所有的 Task 构成一个三维网格。这个三维网络的维度信息由用户做任务拆分时确定。
@@ -488,4 +488,95 @@ MLU 硬件对Union 任务的支持与硬件的具体配置有关。例如，一�
 > [!warning] 
 > taskDimX = 8，因此需要同时占用 8 个 MLU Core，分别对应上面表格的 8 行； 整个任务需要 4 轮迭代才能执行完毕，每个内建变量在每一轮的取值如上述表格的各列所示。
 
-## 任务类型
+## Task 映射
+
+任务映射决定一个 Task 最终在哪个设备、哪个计算单元上执行，以及多个 Task 按照什么顺序执行。主机侧运行时通过任务队列管理待执行任务，硬件资源空闲后，运行时再从队列中取出任务并下发到设备。设备侧的调度既可以由软件完成，也可以由硬件完成，目标是在不同 MLU 架构上尽可能充分地利用计算资源。
+
+需要区分三个容易混淆的概念：
+
+| 概念 | 回答的问题 |
+|---|---|
+| 任务类型 | 一个 Kernel 至少需要多少 MLU Core 或 Cluster，也就是硬件资源需求 |
+| 任务规模 | 计算被划分成多少个 Task，也就是 `taskDimX × taskDimY × taskDimZ` |
+| 任务映射 | 这些逻辑 Task 如何落到物理 Core 或 Cluster 上，并分几轮执行 |
+
+其中，`coreDim` 表示一个 Cluster 中参与执行的 MLU Core 数量。对于 UnionN 任务，`clusterDim = N`，表示一个 Job 至少占用 N 个 Cluster。
+
+### Block 任务的映射
+
+Block 任务只要求一个 MLU Core，因此只要有一个 Core 空闲，运行时就可以下发任务。它的最小并行度为 1。
+
+如果暂不考虑任务展开，所有 Task 逐个执行，需要的迭代次数为：
+
+$$
+\text{迭代次数}=taskDimX \times taskDimY \times taskDimZ
+$$
+
+实际下发时，驱动会参考硬件的实时利用率，决定是否把 Block 任务展开到多个空闲 Core 上。这里的“任务展开”是把原本需要多轮执行的 Task 分配给更多计算单元并行处理，它不会改变任务规模，只会减少执行轮数。
+
+### UnionN 任务的映射
+
+UnionN 任务以 N 个 Cluster 为最小资源单位，映射时需要同时满足以下条件：
+
+1. 至少有 N 个满足要求的连续物理 Cluster 空闲，任务才能下发。
+2. 起始物理 Cluster ID 必须按照 N 对齐，也就是能够被 N 整除。
+3. `taskDimX` 必须是 `N × coreDim` 的正整数倍：
+
+$$
+taskDimX \bmod (N \times coreDim)=0
+$$
+
+因此，UnionN 任务的最小并行度为：
+
+$$
+clusterDim \times coreDim=N \times coreDim
+$$
+
+如果暂不考虑任务展开，迭代次数为：
+
+$$
+\text{迭代次数}=\frac{taskDimX \times taskDimY \times taskDimZ}{N \times coreDim}
+$$
+
+对齐约束会影响不同任务能否同时驻留。例如，一块设备有 6 个 Cluster，先运行的 Union2 占用了某些 Cluster 后，剩余资源即使总数达到 4 个，也可能因为无法找到起始 ID 按 4 对齐的连续区域，而暂时不能下发 Union4。此时必须等待已有任务释放资源。
+
+驱动同样可以对 Union 任务进行展开。以 `coreDim = 4` 的设备为例，Union1、任务规模 `{8, 1, 1}` 的任务最低只占用 1 个 Cluster，每轮并行执行 4 个 Task，因此默认需要 2 轮。如果下发时至少有 2 个 Cluster 空闲，驱动可以让它同时占用 2 个 Cluster，将执行轮数减少为 1。
+
+> [!NOTE] 任务类型只规定最小并行粒度
+> UnionN 中的 N 规定任务至少占用多少个 Cluster，不代表运行时一定只分配 N 个 Cluster。空闲资源足够时，驱动可以展开任务，为它分配更多符合对齐要求的 Cluster。
+
+### eg1：对齐与任务展开
+
+假设设备有 16 个物理 Cluster，编号为 0 到 15，每个 Cluster 有 4 个 MLU Core。主机依次下发 4 个彼此独立的 Union 任务：
+
+| 任务     |         任务规模 |        最少占用 | 实际映射               | 迭代次数 |
+| ------ | -----------: | ----------: | ------------------ | ---: |
+| Union1 |  `{4, 1, 1}` | 1 个 Cluster | Cluster 0          |    1 |
+| Union2 |  `{8, 1, 1}` | 2 个 Cluster | Cluster 2 到 3      |    1 |
+| Union4 | `{16, 1, 1}` | 4 个 Cluster | Cluster 4 到 7      |    1 |
+| Union4 | `{32, 1, 1}` | 4 个 Cluster | 展开到 Cluster 8 到 15 |    1 |
+
+第二个任务没有映射到 Cluster 1 到 2，是因为 Union2 的起始物理 Cluster ID 必须能被 2 整除。第四个任务本来只需占用 4 个 Cluster，分 2 轮完成。由于此时 Cluster 8 到 15 都空闲，驱动将它展开到 8 个 Cluster，于是 1 轮即可完成。
+
+![Union 任务的对齐约束与任务展开](https://www.cambricon.com/docs/sdk_1.15.0/cntoolkit_3.7.2/programming_guide_1.7.0/_images/physical-logical-cluster-id.png)
+
+> [!IMPORTANT] 物理 ID 与逻辑 ID
+> 物理 Cluster ID 是整颗芯片上全局唯一的编号。逻辑 `clusterId` 则在每个 Job 内独立编号，取值范围为 0 到 `clusterDim - 1`。例如，Union4 任务展开到物理 Cluster 8 到 15 时，会形成两组并行 Job，两组看到的逻辑 `clusterId` 都是 0、1、2、3。
+
+### eg2：资源不足时的执行顺序
+
+假设设备只有 4 个物理 Cluster，主机依次启动三个彼此独立的 Kernel：
+
+- Kernel1 是 Union2，任务规模为 `{8, 1, 1}`。
+- Kernel2 是 Union1，任务规模为 `{8, 1, 1}`。
+- Kernel3 是 Union4，任务规模为 `{16, 2, 1}`。
+
+执行过程如下：
+
+1. Kernel1 获得 Cluster 0 到 1，共 8 个 MLU Core。因为 `taskDimX = 8`，所以 1 轮即可完成。
+2. Kernel2 与 Kernel1 没有依赖，只要还有 1 个 Cluster 空闲就能启动。它映射到 Cluster 2，没有展开，每轮执行 4 个 Task，因此需要 2 轮。Kernel1 和 Kernel2 可以并行执行。
+3. Kernel3 至少需要 4 个连续且满足对齐要求的 Cluster。虽然它与前两个 Kernel 没有数据依赖，但资源不足，因此必须等待 Kernel1 和 Kernel2 都完成。取得全部 4 个 Cluster 后，因为 `taskDimY = 2`，Kernel3 仍需执行 2 轮。
+
+![有限硬件资源下的 Union 任务映射与执行顺序](https://www.cambricon.com/docs/sdk_1.15.0/cntoolkit_3.7.2/programming_guide_1.7.0/_images/execuatemodel.png)
+
+这个例子说明，Kernel 之间没有数据依赖，并不等于它们一定能够并发执行。是否能够同时运行，还取决于任务类型要求的最小资源、Cluster 对齐约束，以及当时可用的物理资源。
