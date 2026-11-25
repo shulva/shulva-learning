@@ -580,3 +580,78 @@ $$
 ![有限硬件资源下的 Union 任务映射与执行顺序](https://www.cambricon.com/docs/sdk_1.15.0/cntoolkit_3.7.2/programming_guide_1.7.0/_images/execuatemodel.png)
 
 这个例子说明，Kernel 之间没有数据依赖，并不等于它们一定能够并发执行。是否能够同时运行，还取决于任务类型要求的最小资源、Cluster 对齐约束，以及当时可用的物理资源。
+
+## BANG C 语法
+
+### 常用宏定义
+
+``__BANG_ARCH__`` 
+编写设备侧代码时， 实现同样的功能可能在不同的架构上有不同的接口实现， 此时可以使用 ``__BANG_ARCH__`` 宏进行区分。
+
+``__MLU_NRAM_SIZE__`` 
+``__MLU_NRAM_SIZE__`` 表示特定架构默认的 NRAM 容量，单位是 KB。在编写设备侧代码时，可以使用``__MLU_NRAM_SIZE__`` 声明 NRAM 空间的数组。
+
+``__MLU_WRAM_SIZE__`` 
+``__MLU_WRAM_SIZE__`` 表示特定架构默认的 WRAM 容量，单位是 KB。在编写设备侧代码时，可以使用 ``__MLU_WRAM_SIZE__`` 声明 WRAM 空间的数组。 
+
+``__MLU_SRAM_SIZE__`` 
+``__MLU_SRAM_SIZE__`` 表示特定架构的 SRAM 容量， 单位是 KB。在编写设备侧代码时， 可以使用 ``__MLU_SRAM_SIZE__`` 声明 SRAM 空间的数组。
+
+### 常用函数修饰符
+
+``__mlu_host__``
+``__mlu_host__`` 修饰的函数表示可以在主机侧调用，通常与 __mlu_func__ 属性同时使用，表示被修饰的函数可以同时被主机侧和设备侧调用。对于不被本节所述的任何函数修饰符修饰的函数，仅能在主机侧调用。 
+
+``__mlu_global__`` 
+``__mlu_global__`` 用于修饰设备侧的 Kernel 入口函数。Kernel 函数只能由主机侧调用，不支持在设备侧调用。 
+
+``__mlu_func__`` 
+`` __mlu_func__ `` 用于修饰设备侧的函数。被 `` __mlu_func__ `` 修饰的函数默认会被**内联**。
+
+``__mlu_device__`` 
+``__mlu_device__`` 用于修饰设备侧的函数。被 ``__mlu_device__`` 修饰的函数默认不会被内联。为了避免函数调用影响性能，建议使用 ``__mlu_func__`` 修饰设备侧函数。
+
+### 常用地址空间修饰符
+
+``__nram__ ``
+修饰符表示被修饰的变量位于 NRAM 地址空间，NRAM 地址空间的变量可以声明在函数内部， 也可以声明在全局作用域。所有的向量运算指令的输入、输出数据必须位于 NRAM 地址空间，所有卷积运算的输入、输出神经元数据必须位于NRAM存储空间。
+
+``__wram__`` 
+``__wram__`` 修饰符表示被修饰的变量位于 WRAM 地址空间，WRAM 地址空间的变量可以声明在函数内部，也可以声明在全局作用域。所有的卷积运算、矩阵-向量乘法运算、积分运算和直方图运算的卷积核数据必须位于WRAM 地址空间。
+
+由 ``__nram__/__wram__`` 修饰的变量的生存期为一个 Task，不支持 Task 之间通过 NRAM/WRAM 通信。NRAM/WRAM 空间的变量不会被自动初始化，用户需要显式设置初值。不同 MLU Core 的 NRAM/WRAM 空间互相隔离。NRAM/WRAM 空间的数组起始地址默认 64 字节对齐，用户可以通过 ``__attribute__((aligned(N)))`` 属性修改对齐方式。其中，N 必须是 2 的整数次幂而且大于等于 64。
+
+``__mlu_device__`` 
+``__mlu_device__`` 修饰符表示被修饰的变量位于 GDRAM 地址空间。GDRAM 空间的变量必须声明在全局作用域，不支持在函数内使用 ``__mlu_device__``。GDRAM 空间的变量不会被自动初始化，用户需要显式设置初值。GDRAM 空间的变量的生存期为整个上下文，可以被所有 Task 共享。用户可以借助 GDRAM 变量完成原子操作。GDRAM 空间的数组起始地址默认 64 字节对齐，用户可以通过 ``__attribute__((aligned(N)))`` 属性修改对齐方式。其中，N 必须是 2 的整数次幂而且大于等于 64。
+
+``__mlu_shared__`` 
+``__mlu_shared__`` 修饰符表示被修饰的变量位于 SRAM 地址空间。SRAM 空间的变量可以声明在函数内部，也可以声明在全局作用域。SRAM 空间的变量不支持初始化。SRAM 空间的变量的生存期为整个 Kernel，可以被所有 Task 共享。SRAM 空间的数组起始地址默认 64 字节对齐，用户可以通过 ``__attribute__((aligned(N)))`` 属性修改对齐方式。其中，N 必须是 2 的整数次幂而且大于等于 64。
+
+### 内建变量
+
+``clusterDim`` 
+clusterDim 用于获取参与当前 Kernel 运算的 Cluster 数量。对于 UnionN（N=1, 2, 4, 8, ...）任务， clusterDim = N；对于 Block 任务，clusterDim = 0。
+
+``clusterId`` 
+clusterId 用于获取当前任务所在的逻辑 Cluster 编号，取值范围是 [0, clusterDim - 1]。
+
+``coreDim`` 
+``coreDim`` 用于获取一个 Cluster 包含的 MLU Core 数量。该值恒为 4。 
+
+``coreId`` 
+``coreId`` 用于获取当前任务所在的 MLU Core 或者 Memory Core 在**一个 Cluster 内**的逻辑编号。对于 MLU Core，coreId 的取值范围是 [0, coreDim -1]；对于 Memory Core，coreId 恒等于 128。
+
+``taskDimX`` 
+``taskDimX`` 用于获取当前 Kernel 在 X 维度的大小，其值与主机侧通过 cnrtDim3_t 设置的 X 值相同。 
+
+``taskDimY
+``taskDimY`` 用于获取当前 Kernel 在 Y 维度的大小，其值与主机侧通过 cnrtDim3_t 设置的 Y 值相同。 
+
+``taskDimZ`` 
+``taskDimZ`` 用于获取当前 Kernel 在 Z 维度的大小，其值与主机侧通过 cnrtDim3_t 设置的 Z 值相同。
+
+``taskDim``
+``taskDim`` 用于获取当前 Kernel 的任务总数，即 ``taskDim = taskDimX * taskDimY * taskDimZ。``
+
+``taskIdX`` 
+``taskIdX`` 用于获取当前任务在三维任务网络中的 X 方向的坐标，其取值范围为 [0, taskDimX - 1]。
